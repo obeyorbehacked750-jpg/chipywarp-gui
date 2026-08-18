@@ -12223,6 +12223,17 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo
 
 /***/ }),
 
+/***/ "./src/components/menu-bar/icon--tools.svg":
+/*!*************************************************!*\
+  !*** ./src/components/menu-bar/icon--tools.svg ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/d4df6f65e5ffb398cf70db4da26c47a9.svg";
+
+/***/ }),
+
 /***/ "./src/components/menu-bar/language-menu.jsx":
 /*!***************************************************!*\
   !*** ./src/components/menu-bar/language-menu.jsx ***!
@@ -12500,37 +12511,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_icon_mystuff_png__WEBPACK_IMPORTED_MODULE_41__);
 /* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./icon--profile.png */ "./src/components/menu-bar/icon--profile.png");
 /* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_icon_profile_png__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_43__);
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_47__);
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_48__);
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_49__);
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_50__);
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_51__);
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_52__);
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_53__);
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_54__);
-/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./chipywarp.png */ "./src/components/menu-bar/chipywarp.png");
-/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_chipywarp_png__WEBPACK_IMPORTED_MODULE_55__);
-/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
-/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
-/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_59__);
+/* harmony import */ var _icon_tools_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--tools.svg */ "./src/components/menu-bar/icon--tools.svg");
+/* harmony import */ var _icon_tools_svg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_tools_svg__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45__);
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_50__);
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51__);
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_53__);
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54__);
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./chipywarp.png */ "./src/components/menu-bar/chipywarp.png");
+/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_chipywarp_png__WEBPACK_IMPORTED_MODULE_56__);
+/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
+/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
+/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_60__);
+
 
 
 
@@ -12652,7 +12666,7 @@ MenuItemTooltip.propTypes = {
 const AboutButton = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.hoverable),
   iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.aboutIcon,
-  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
+  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
   onClick: props.onClick
 });
 AboutButton.propTypes = {
@@ -12696,7 +12710,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     document.removeEventListener('keydown', this.handleKeyPress);
   }
   handleClickNew() {
-    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_56__["default"].replaceProjectWarning));
+    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_57__["default"].replaceProjectWarning));
     this.props.onRequestCloseFile();
     if (readyToReplaceProject) {
       this.props.onClickNew(this.props.canSave && this.props.canCreateNew);
@@ -12765,13 +12779,13 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         document.documentElement.style.height = '';
       }
       if (mode === '1990') {
-        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_51___default.a;
+        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52___default.a;
       } else if (mode === '2020') {
-        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_52___default.a;
+        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_53___default.a;
       } else if (mode === '1920') {
-        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_54___default.a;
+        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55___default.a;
       } else if (mode === '220022BC') {
-        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_53___default.a;
+        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54___default.a;
       } else {
         document.getElementById('logo_img').src = this.props.logo;
       }
@@ -12850,7 +12864,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClose: this.props.onRequestCloseAbout
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.aboutIcon,
-      src: _icon_about_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
+      src: _icon_about_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
       draggable: false
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarMenu),
@@ -12888,7 +12902,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     const remixButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.remixButton),
       iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.remixButtonIcon,
-      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_43___default.a,
+      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_44___default.a,
       onClick: this.handleClickRemix
     }, remixMessage);
     const aboutButton = this.buildAboutMenu(this.props.onClickAbout);
@@ -12908,7 +12922,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       id: "logo_img",
-      src: _chipywarp_png__WEBPACK_IMPORTED_MODULE_55___default.a,
+      src: _chipywarp_png__WEBPACK_IMPORTED_MODULE_56___default.a,
       alt: "Chipywarp",
       draggable: false,
       height: 28,
@@ -12923,12 +12937,12 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onClickErrors,
       onClose: this.props.onRequestCloseErrors
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _tw_error_svg__WEBPACK_IMPORTED_MODULE_49___default.a,
+      src: _tw_error_svg__WEBPACK_IMPORTED_MODULE_50___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_44___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
       draggable: false,
       width: 8,
       height: 5
@@ -12972,7 +12986,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onClickFile,
       onClose: this.props.onRequestCloseFile
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_file_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+      src: _icon_file_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
       draggable: false,
       width: 20,
       height: 20
@@ -12982,7 +12996,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "File",
       id: "gui.menuBar.file"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_44___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
       draggable: false,
       width: 8,
       height: 5
@@ -13007,7 +13021,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleClickRemix
     }, remixMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.props.onStartSelectingFileUpload
-    }, this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_56__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }, this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_57__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       showSaveFilePicker: this.props.showSaveFilePicker
     }, (_className, downloadProject, extended) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.available && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.name !== null && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.getSaveToComputerHandler(extended.saveToLastFile)
@@ -13022,7 +13036,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Save as...",
       id: "tw.saveAs"
-    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_58__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
+    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_59__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.getSaveToComputerHandler(downloadProject)
     }, extended.available ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Save to separate file...",
@@ -13045,7 +13059,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onClickEdit,
       onClose: this.props.onRequestCloseEdit
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_edit_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
+      src: _icon_edit_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
       draggable: false,
       width: 20,
       height: 20
@@ -13055,7 +13069,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "Edit",
       id: "gui.menuBar.edit"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_44___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
       draggable: false,
       width: 8,
       height: 5
@@ -13170,7 +13184,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         gap: '6px'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyLjcgMTkuM0wxNi4yIDEyLjhDMTYuOCAxMS4yIDE2LjUgOS4zIDE1LjMgOC4xIDEzLjkgNi43IDExLjggNi41IDEwLjIgNy40TDEzLjUgMTAuNyAxMC43IDEzLjUgNy40IDEwLjJDNi41IDExLjggNi43IDEzLjkgOC4xIDE1LjMgOS4zIDE2LjUgMTEuMiAxNi44IDEyLjggMTYuMkwxOS4zIDIyLjdDMjAuMiAyMy42IDIxLjggMjMuNiAyMi43IDIyLjcgMjMuNiAyMS44IDIzLjYgMjAuMiAyMi43IDE5LjN6TTQuOCA3LjZMNy42IDQuOCAzLjQgMC42QzIuNS0wLjMgMS0wLjMgMC4xIDAuNiAtMC44IDEuNSAtMC44IDMgMC4xIDMuOUw0LjggNy42eiIvPjwvc3ZnPg==",
+      src: _icon_tools_svg__WEBPACK_IMPORTED_MODULE_43___default.a,
       draggable: false,
       width: 18,
       height: 18,
@@ -13181,7 +13195,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "Tools",
       id: "gui.menuBar.tools"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_44___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
       draggable: false,
       width: 8,
       height: 5
@@ -13198,7 +13212,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         gap: '8px'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_50___default.a,
+      src: _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51___default.a,
       draggable: false,
       width: 20,
       height: 20
@@ -13214,7 +13228,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         gap: '8px'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _addons_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
+      src: _addons_svg__WEBPACK_IMPORTED_MODULE_49___default.a,
       draggable: false,
       width: 20,
       height: 20
@@ -13222,40 +13236,6 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "Addons",
       id: "tw.menuBar.addons"
     }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_divider_divider_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.divider
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.tabContainer
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.tabButton, {
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.activeTab]: this.state.activeTab === 'editor'
-      }),
-      onClick: () => this.setState({
-        activeTab: 'editor'
-      })
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
-      defaultMessage: "Editor",
-      id: "gui.menuBar.tabEditor"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.tabButton, {
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.activeTab]: this.state.activeTab === 'extensions'
-      }),
-      onClick: () => this.setState({
-        activeTab: 'extensions'
-      })
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
-      defaultMessage: "Extensions",
-      id: "gui.menuBar.tabExtensions"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.tabButton, {
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.activeTab]: this.state.activeTab === 'settings'
-      }),
-      onClick: () => this.setState({
-        activeTab: 'settings'
-      })
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
-      defaultMessage: "Settings",
-      id: "gui.menuBar.tabSettings"
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_divider_divider_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.divider
     }), this.props.canEditTitle ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.growable)
@@ -13302,7 +13282,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       id: "community-button"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton
-    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_57__["default"], {
+    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_58__["default"], {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton,
       onClick: this.handleClickSeeInside
     }) : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -13318,7 +13298,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "{APP_NAME} Feedback",
       id: "tw.feedbackButton",
       values: {
-        APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_59__["APP_NAME"]
+        APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_60__["APP_NAME"]
       }
     }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.accountInfoGroup
@@ -41619,6 +41599,17 @@ __webpack_require__.r(__webpack_exports__);
   tags: ['tw'],
   featured: true
 }, {
+  name: 'PLACEHOLDER',
+  extensionId: 'mycustomext',
+  iconURL: _custom_custom_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
+  insetIconURL: _custom_custom_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
+  description: 'PLACEHOLDER',
+  featured: true,
+  disabled: false,
+  collaborator: 'PLACEHOLDER',
+  tags: ['cw'],
+  extensionURL: 'https://raw.githubusercontent.com/your-username/your-repo/main/my-extension.js'
+}, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Custom Extension",
     id: "tw.customExtension.name"
@@ -42197,7 +42188,7 @@ __webpack_require__.r(__webpack_exports__);
   tag: 'tw',
   intlLabel: "Turbowarp"
 }, {
-  tag: 'ch',
+  tag: 'cw',
   intlLabel: _brand__WEBPACK_IMPORTED_MODULE_0__["APP_NAME"]
 }]);
 
