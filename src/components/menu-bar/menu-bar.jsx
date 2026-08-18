@@ -93,6 +93,7 @@ import dropdownCaret from './dropdown-caret.svg';
 import aboutIcon from './icon--about.svg';
 import fileIcon from './icon--file.svg';
 import editIcon from './icon--edit.svg';
+import toolsIcon from './icon--tools.svg';
 import addonsIcon from './addons.svg';
 import errorIcon from './tw-error.svg';
 import advancedIcon from './tw-advanced.svg';
@@ -101,6 +102,7 @@ import ninetiesLogo from './nineties_logo.svg';
 import catLogo from './cat_logo.svg';
 import prehistoricLogo from './prehistoric-logo.svg';
 import oldtimeyLogo from './oldtimey-logo.svg';
+import chipywarpLogo from './chipywarp.png';
 
 import sharedMessages from '../../lib/shared-messages';
 
@@ -505,11 +507,11 @@ class MenuBar extends React.Component {
                             style={{ display: 'flex', alignItems: 'center' }}
                         >
                             <img
-                                src={catLogo} 
+                                src={chipywarpLogo} 
                                 alt="Join Chipywarp Discord Server"
                                 draggable={false}
-                                width={30}
-                                height={30}
+                                width={90}
+                                height={28}
                             />
                         </a>
                     </div>
@@ -906,6 +908,14 @@ class MenuBar extends React.Component {
                                 onOpen={this.handleOpenTools}
                                 onClose={this.handleCloseTools}
                             >
+                                <div style={{display: 'flex', alignItems: 'center', gap: '6px'}}>
+                                <img
+                                    src={toolsIcon}
+                                    draggable={false}
+                                    width={18}
+                                    height={18}
+                                    alt="Tools"
+                                />
                                 <span className={styles.collapsibleLabel}>
                                     <FormattedMessage
                                         defaultMessage="Tools"
