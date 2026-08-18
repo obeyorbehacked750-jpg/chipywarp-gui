@@ -1308,7 +1308,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.library-item_library-item_1DcMO {\n    transition: transform 0.4s ease;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n    flex-basis: 160px;\n    position: relative;\n    height: 160px;\n    max-width: 160px;\n    margin: 0.5rem;\n    padding: 1rem 1rem 0 1rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: var(--text-primary);\n    background: var(--ui-white);\n    border-width: 2px;\n    border-style: solid;\n    border-color: #ffffff00;\n    border-radius: 0.75rem;\n    text-align: center;\n    cursor: pointer;\n}\n\n.library-item_library-item-extension_3xus9 {\n    align-self: stretch;\n}\n\n.library-item_library-item_1DcMO:hover {\n    border-width: 2px;\n    border-color: var(--looks-secondary);\n}\n\n.library-item_hidden_1ILc7 {\n    display: none;\n}\n\n.library-item_disabled_1-aDH {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_disabled_1-aDH:hover {\n    border-color: var(--ui-black-transparent);\n}\n\n.library-item_library-item-image-container-wrapper_x4EWB {\n    height: 100px;\n    width: 100%;\n    position: relative;\n}\n\n.library-item_library-item-image-container_3dqjX {\n    position: absolute;\n    height: 100px;\n    width: 100%;\n}\n\n.library-item_library-item-inset-image-container_3PLJ1 {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    background-color: var(--pen-primary);\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_library-item-inset-image-container_3PLJ1 {\n    margin-left: 1rem;\n}\n\n[dir=\"rtl\"] .library-item_library-item-inset-image-container_3PLJ1 {\n    margin-right: 1rem;\n}\n\n.library-item_library-item-image_2bORn {\n    max-width: 100%;\n    max-height: 100%;\n}\n\n.library-item_library-item-inset-image_17Tmt {\n    width: 2.5rem;\n}\n\n.library-item_library-item-name_2qMXu {\n    width: 80%;\n    margin: 0.25rem 0;\n    text-align: center;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    min-width: 0;\n}\n\n.library-item_featured-item_3V2-t {\n    flex-basis: 300px;\n    max-width: 300px;\n    height: auto;\n    overflow: hidden;\n    padding: 0;\n}\n\n.library-item_featured-image-container_1KIHG {\n    position: relative;\n    width: 100%;\n}\n\n.library-item_featured-image_2gwZ6 {\n    width: 100%;\n    aspect-ratio: 2;\n}\n\n.library-item_featured-text_2KFel {\n    font-weight: bold;\n    padding: 10px;\n    /* height: 140px; */\n    width: 300px;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-text_22A1k {\n    text-align: left;\n    padding-left: 1.25rem;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-text_22A1k {\n    text-align: right;\n    padding-right: 1.25rem;\n}\n\n.library-item_featured-description_MjIJw {\n    display: block;\n    font-weight: normal;\n    line-height: 1.375rem;\n    padding-top: .3125rem;\n    padding-bottom: .25rem;\n}\n\n.library-item_featured-extension-metadata_3D8E8 {\n    width: 100%;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: flex-start;\n    font-size: 12px;\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-metadata_3D8E8 {\n    text-align: left;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-metadata_3D8E8 {\n    text-align: right;\n}\n\n.library-item_featured-extension-requirement_2u2IO {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-collaboration_2dGS9 {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-metadata-detail_1M9BV {\n    height: 100%;\n    padding-top: 0.4rem;\n    font-weight: bold;\n}\n\n.library-item_featured-extension-metadata-detail_1M9BV img {\n    margin-right: 0.25rem;\n    width: 20px;\n    height: 20px;\n}\n\n.library-item_extension-links_3wgib {\n    width: 300px;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    opacity: 0.75;\n    text-align: left;\n}\n\n.library-item_extension-links_3wgib a {\n    color: inherit !important;\n    text-decoration: underline;\n}\n\n.library-item_coming-soon-text_30OPh {\n    position: absolute;\n    background-color: var(--data-primary);\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_coming-soon-text_30OPh {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_coming-soon-text_30OPh {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_favorite-container_2M2ay {\n    display: none;\n    background: none;\n    border: none;\n    padding: 0;\n    margin: 0;\n    position: absolute;\n    top: 0.5rem;\n    left: 0.5rem;\n}\n\n.library-item_favorite-icon_1ENdX {\n    width: 32px;\n    height: 32px;\n}\n\n.library-item_favorite-container_2M2ay.library-item_active_2mL0e,\n.library-item_library-item_1DcMO:hover .library-item_favorite-container_2M2ay {\n    display: block;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.library-item_library-item_1DcMO {\n    transition: transform 0.4s ease;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n    flex-basis: 160px;\n    position: relative;\n    height: 160px;\n    max-width: 160px;\n    margin: 0.5rem;\n    padding: 1rem 1rem 0 1rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: var(--text-primary);\n    background: var(--ui-white);\n    border-width: 2px;\n    border-style: solid;\n    border-color: #ffffff00;\n    border-radius: 0.75rem;\n    text-align: center;\n    cursor: pointer;\n}\n\n.library-item_library-item-extension_3xus9 {\n    align-self: stretch;\n}\n\n.library-item_library-item_1DcMO:hover {\n    border-width: 2px;\n    border-color: var(--looks-secondary);\n}\n\n.library-item_hidden_1ILc7 {\n    display: none;\n}\n\n.library-item_disabled_1-aDH {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_disabled_1-aDH:hover {\n    border-color: var(--ui-black-transparent);\n}\n\n.library-item_library-item-image-container-wrapper_x4EWB {\n    height: 100px;\n    width: 100%;\n    position: relative;\n}\n\n.library-item_library-item-image-container_3dqjX {\n    position: absolute;\n    height: 100px;\n    width: 100%;\n}\n\n.library-item_library-item-inset-image-container_3PLJ1 {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    background-color: var(--pen-primary);\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_library-item-inset-image-container_3PLJ1 {\n    margin-left: 1rem;\n}\n\n[dir=\"rtl\"] .library-item_library-item-inset-image-container_3PLJ1 {\n    margin-right: 1rem;\n}\n\n.library-item_library-item-image_2bORn {\n    max-width: 100%;\n    max-height: 100%;\n}\n\n.library-item_library-item-inset-image_17Tmt {\n    width: 2.5rem;\n}\n\n.library-item_library-item-name_2qMXu {\n    width: 80%;\n    margin: 0.25rem 0 0 0;\n    text-align: center;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    min-width: 0;\n}\n\n.library-item_library-item-author_19UA5 {\n    font-size: 0.65rem;\n    opacity: 0.65;\n    width: 80%;\n    text-align: center;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    min-width: 0;\n    margin-bottom: 0.25rem;\n}\n\n.library-item_featured-item_3V2-t {\n    flex-basis: 300px;\n    max-width: 300px;\n    height: auto;\n    overflow: hidden;\n    padding: 0;\n}\n\n.library-item_featured-image-container_1KIHG {\n    position: relative;\n    width: 100%;\n}\n\n.library-item_featured-image_2gwZ6 {\n    width: 100%;\n    aspect-ratio: 2;\n}\n\n.library-item_featured-text_2KFel {\n    font-weight: bold;\n    padding: 10px;\n    /* height: 140px; */\n    width: 300px;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-text_22A1k {\n    text-align: left;\n    padding-left: 1.25rem;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-text_22A1k {\n    text-align: right;\n    padding-right: 1.25rem;\n}\n\n.library-item_featured-description_MjIJw {\n    display: block;\n    font-weight: normal;\n    line-height: 1.375rem;\n    padding-top: .3125rem;\n    padding-bottom: .25rem;\n}\n\n.library-item_featured-extension-metadata_3D8E8 {\n    width: 100%;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: flex-start;\n    font-size: 12px;\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-metadata_3D8E8 {\n    text-align: left;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-metadata_3D8E8 {\n    text-align: right;\n}\n\n.library-item_featured-extension-requirement_2u2IO {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-collaboration_2dGS9 {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-metadata-detail_1M9BV {\n    height: 100%;\n    padding-top: 0.4rem;\n    font-weight: bold;\n}\n\n.library-item_featured-extension-metadata-detail_1M9BV img {\n    margin-right: 0.25rem;\n    width: 20px;\n    height: 20px;\n}\n\n.library-item_extension-links_3wgib {\n    width: 300px;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    opacity: 0.75;\n    text-align: left;\n}\n\n.library-item_extension-links_3wgib a {\n    color: inherit !important;\n    text-decoration: underline;\n}\n\n.library-item_coming-soon-text_30OPh {\n    position: absolute;\n    background-color: var(--data-primary);\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_coming-soon-text_30OPh {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_coming-soon-text_30OPh {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_favorite-container_2M2ay {\n    display: none;\n    background: none;\n    border: none;\n    padding: 0;\n    margin: 0;\n    position: absolute;\n    top: 0.5rem;\n    left: 0.5rem;\n}\n\n.library-item_favorite-icon_1ENdX {\n    width: 32px;\n    height: 32px;\n}\n\n.library-item_favorite-container_2M2ay.library-item_active_2mL0e,\n.library-item_library-item_1DcMO:hover .library-item_favorite-container_2M2ay {\n    display: block;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -1330,6 +1330,8 @@ exports.locals = {
 	"libraryItemInsetImage": "library-item_library-item-inset-image_17Tmt",
 	"library-item-name": "library-item_library-item-name_2qMXu",
 	"libraryItemName": "library-item_library-item-name_2qMXu",
+	"library-item-author": "library-item_library-item-author_19UA5",
+	"libraryItemAuthor": "library-item_library-item-author_19UA5",
 	"featured-item": "library-item_featured-item_3V2-t",
 	"featuredItem": "library-item_featured-item_3V2-t",
 	"featured-image-container": "library-item_featured-image-container_1KIHG",
@@ -9873,7 +9875,9 @@ class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.
       draggable: false
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
       className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemName
-    }, this.props.name), this.props.showPlayButton ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_play_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, this.props.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+      className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemAuthor
+    }, "by ".concat(this.props.author || 'Chipywarp')), this.props.showPlayButton ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_play_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
       isPlaying: this.props.isPlaying,
       onPlay: this.props.onPlay,
       onStop: this.props.onStop
@@ -9883,6 +9887,7 @@ class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.
 /* eslint-enable react/prefer-stateless-function */
 
 LibraryItemComponent.propTypes = {
+  author: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   intl: react_intl__WEBPACK_IMPORTED_MODULE_0__["intlShape"],
   bluetoothRequired: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   collaborator: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
@@ -11710,7 +11715,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.hoverable)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-      href: "https://your-chipywarp-server.com",
+      href: "https://discord.gg/GQgedFUXp",
       target: "_blank",
       rel: "noopener noreferrer",
       style: {
@@ -11719,7 +11724,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       src: _cat_logo_svg__WEBPACK_IMPORTED_MODULE_52___default.a,
-      alt: "Join Chipywarp Server",
+      alt: "Join Chipywarp Discord Server",
       draggable: false,
       width: 30,
       height: 30
@@ -13262,6 +13267,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// Import ACCENT_GREEN here
 
 
 
@@ -13269,6 +13275,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const options = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"])({
+  // Add the green option configuration
+  [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["ACCENT_GREEN"]]: {
+    "id": "tw.accent.green",
+    "defaultMessage": "Green"
+  },
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["ACCENT_RED"]]: {
     "id": "tw.accent.red",
     "defaultMessage": "Red"
@@ -13292,14 +13303,11 @@ const icons = {
 const ColorIcon = props => icons[props.id] ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
   className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_13___default.a.accentIconOuter,
   src: icons[props.id],
-  draggable: false
-  // Image is decorative
-  ,
+  draggable: false,
   alt: ""
 }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
   className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_13___default.a.accentIconOuter,
   style: {
-    // menu-bar-background is var(...), don't want to evaluate with the current values
     backgroundColor: _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["ACCENT_MAP"][props.id].guiColors['looks-secondary'],
     backgroundImage: _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["ACCENT_MAP"][props.id].guiColors['menu-bar-background-image']
   }
@@ -13356,9 +13364,7 @@ const AccentThemeMenu = _ref => {
   }, Object.keys(options).map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(AccentMenuItem, {
     key: item,
     id: item,
-    isSelected: theme.accent === item
-    // eslint-disable-next-line react/jsx-no-bind
-    ,
+    isSelected: theme.accent === item,
     onClick: () => onChangeTheme(theme.set('accent', item))
   }))));
 };
@@ -27020,6 +27026,7 @@ class LibraryItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureCompo
     const iconURL = iconMd5 ? "https://cdn.assets.scratch.mit.edu/internalapi/asset/".concat(iconMd5, "/get/") : this.props.iconRawURL;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_library_item_library_item_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
       intl: this.props.intl,
+      author: this.props.author || this.props.collaborator,
       bluetoothRequired: this.props.bluetoothRequired,
       collaborator: this.props.collaborator,
       description: this.props.description,
@@ -27053,6 +27060,7 @@ class LibraryItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureCompo
 }
 LibraryItem.propTypes = {
   intl: react_intl__WEBPACK_IMPORTED_MODULE_3__["intlShape"],
+  author: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   bluetoothRequired: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   collaborator: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   description: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node]),
@@ -50348,6 +50356,17 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /*!**********************************!*\
   !*** ./node/extend.js (ignored) ***!
   \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 7:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
