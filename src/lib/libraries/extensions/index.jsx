@@ -54,7 +54,7 @@ import customExtensionIcon from './custom/custom.svg';
 import returnIcon from './custom/return.svg';
 import galleryIcon from './gallery/gallery.svg';
 import {APP_NAME} from '../../brand';
-import ChipywarpLogoSmall from '../static/favicon.ico'
+
 export default [
     {
         name: (
@@ -407,14 +407,14 @@ export default [
         featured: true
     },
     {
-    name: 'PLACEHOLDER',
-    extensionId: 'mycustomext',
-    iconURL: "https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/banner/chipywarp-tools.png",
-    insetIconURL: {ChipywarpLogoSmall},
-    description: 'PLACEHOLDER',
+    name: 'Chipywarp Tools',
+    extensionId: 'chipywarptools',
+    iconURL: "https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/banners/chipywarp-tools.png",
+    insetIconURL: "https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/extensions/icon.png",
+    description: 'Some chipywarp tools idk why you need use them, maybe also weird?',
     featured: true,
     disabled: false,
-    collaborator: 'PLACEHOLDER',
+    incompatibleWithScratch: false,
     tags: ['cw'],
     extensionURL: 'https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/extensions/chipywarptools.js'
     },
