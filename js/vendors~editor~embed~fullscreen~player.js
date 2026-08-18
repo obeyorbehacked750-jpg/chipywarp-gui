@@ -188857,6 +188857,7 @@ class Scratch3OperatorsBlocks {
       operator_subtract: this.subtract,
       operator_multiply: this.multiply,
       operator_divide: this.divide,
+      operator_percent: this.percent,
       operator_lt: this.lt,
       operator_equals: this.equals,
       operator_gt: this.gt,
@@ -188884,6 +188885,12 @@ class Scratch3OperatorsBlocks {
   }
   divide(args) {
     return Cast.toNumber(args.NUM1) / Cast.toNumber(args.NUM2);
+  }
+  percent(args) {
+    if (args.NUM2 !== undefined) {
+      return Cast.toNumber(args.NUM1) * Cast.toNumber(args.NUM2) / 100;
+    }
+    return Cast.toNumber(args.NUM1 || args.NUM) / 100;
   }
   lt(args) {
     return Cast.compare(args.OPERAND1, args.OPERAND2) < 0;
