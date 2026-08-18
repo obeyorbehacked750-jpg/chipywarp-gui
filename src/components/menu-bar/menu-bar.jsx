@@ -234,9 +234,9 @@ class MenuBar extends React.Component {
             'handleCloseTools'
         ]);
         
-        // Added local state to manage the Tools dropdown menu seamlessly
         this.state = {
-            toolsMenuOpen: false
+            toolsMenuOpen: false,
+            activeTab: 'editor' // Added for tabs functionality
         };
     }
     
@@ -901,7 +901,7 @@ class MenuBar extends React.Component {
                             </MenuLabel>
                         )}
                         
-                        {/* TOOLS DROPDOWN: Replaces independent Addon & Advanced buttons */}
+                        {/* TOOLS DROPDOWN: Fixed Flex Layout */}
                         {(this.props.onClickAddonSettings || this.props.onClickSettingsModal) && (
                             <MenuLabel
                                 open={this.state.toolsMenuOpen}
@@ -909,26 +909,27 @@ class MenuBar extends React.Component {
                                 onClose={this.handleCloseTools}
                             >
                                 <div style={{display: 'flex', alignItems: 'center', gap: '6px'}}>
-                                <img
-                                    src={toolsIcon}
-                                    draggable={false}
-                                    width={18}
-                                    height={18}
-                                    alt="Tools"
-                                />
-                                <span className={styles.collapsibleLabel}>
-                                    <FormattedMessage
-                                        defaultMessage="Tools"
-                                        description="Text for tools dropdown menu"
-                                        id="gui.menuBar.tools"
+                                    <img
+                                        src={toolsIcon}
+                                        draggable={false}
+                                        width={18}
+                                        height={18}
+                                        alt="Tools"
                                     />
-                                </span>
-                                <img
-                                    src={dropdownCaret}
-                                    draggable={false}
-                                    width={8}
-                                    height={5}
-                                />
+                                    <span className={styles.collapsibleLabel}>
+                                        <FormattedMessage
+                                            defaultMessage="Tools"
+                                            description="Text for tools dropdown menu"
+                                            id="gui.menuBar.tools"
+                                        />
+                                    </span>
+                                    <img
+                                        src={dropdownCaret}
+                                        draggable={false}
+                                        width={8}
+                                        height={5}
+                                    />
+                                </div> {/* Added missing closing div here! */}
                                 <MenuBarMenu
                                     className={classNames(styles.menuBarMenu)}
                                     open={this.state.toolsMenuOpen}
@@ -963,6 +964,50 @@ class MenuBar extends React.Component {
                                 </MenuBarMenu>
                             </MenuLabel>
                         )}
+                    </div>
+                    
+                    <Divider className={styles.divider} />
+
+                    {/* TOP BAR NAVIGATION TABS INJECTED HERE */}
+                    <div className={styles.tabContainer}>
+                        <button
+                            className={classNames(styles.tabButton, {
+                                [styles.activeTab]: this.state.activeTab === 'editor'
+                            })}
+                            onClick={() => this.setState({ activeTab: 'editor' })}
+                        >
+                            <FormattedMessage
+                                defaultMessage="Editor"
+                                description="Tab to open main editor"
+                                id="gui.menuBar.tabEditor"
+                            />
+                        </button>
+                    
+                        <button
+                            className={classNames(styles.tabButton, {
+                                [styles.activeTab]: this.state.activeTab === 'extensions'
+                            })}
+                            onClick={() => this.setState({ activeTab: 'extensions' })}
+                        >
+                            <FormattedMessage
+                                defaultMessage="Extensions"
+                                description="Tab to open extensions view"
+                                id="gui.menuBar.tabExtensions"
+                            />
+                        </button>
+                    
+                        <button
+                            className={classNames(styles.tabButton, {
+                                [styles.activeTab]: this.state.activeTab === 'settings'
+                            })}
+                            onClick={() => this.setState({ activeTab: 'settings' })}
+                        >
+                            <FormattedMessage
+                                defaultMessage="Settings"
+                                description="Tab to open settings view"
+                                id="gui.menuBar.tabSettings"
+                            />
+                        </button>
                     </div>
 
                     <Divider className={styles.divider} />
