@@ -124,6 +124,9 @@
     height: $menu-bar-button-size;
 }
 
+..menu-bar_title-field {
+    width: auto;
+}
 .remix-button {
     background-color: $pen-primary
 }
@@ -232,4 +235,23 @@
 .menu-item-link {
     color: inherit;
     text-decoration: none;
+}
+
+/* Custom Menu Bar Alignments */
+.alignleft {
+    justify-content: flex-start !important;
+}
+
+.aligncenter {
+    justify-content: center !important;
+}
+
+.alignright {
+    justify-content: flex-end !important;
+}
+
+/* Fix spacing if aligned center or right */
+.aligncenter .main-menu, 
+.alignright .main-menu {
+    flex-grow: 0;
 }

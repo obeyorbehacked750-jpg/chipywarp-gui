@@ -30,13 +30,13 @@
 
 [dir="ltr"] [class^="backpack_backpack-header"] {
   border-top-right-radius: 0;
-  border-top-left-radius: 0.5rem;
+  border-top-left-radius: 1rem;
 }
 [dir="ltr"] [class^="blocks_blocks_C530M"] .injectionDiv,
 [dir="ltr"] [class^="asset-panel_wrapper"] {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-left-radius: 1rem;
 }
 [dir="ltr"] [class^="gui_extension-button-container"] {
   border-bottom-left-radius: 0.5rem;

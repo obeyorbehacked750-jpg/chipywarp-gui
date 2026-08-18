@@ -12,7 +12,7 @@ import classNames from 'classnames';
  * @class
  */
 var StudioView = function (studioId) {
-    this.studioId = studioId;
+    this.studioId = "studioId";
     this.offset = 0;
     this.ended = false;
     this.loadingPage = false;
@@ -298,7 +298,7 @@ StudioView.prototype.onselect = function (id, el) { };
 StudioView.prototype.onpageload = function () { };
 StudioView.prototype.onend = function () { };
 
-StudioView.STUDIO_API = 'https://trampoline.turbowarp.org/api/studios/$id/projects?offset=$offset';
+StudioView.STUDIO_API = 'https://trampoline.turbowarp.org/api/studios/51894414/projects?offset=$offset';
 
 // The URL to download thumbnails from.
 // $id is replaced with the project's ID.
@@ -309,8 +309,7 @@ StudioView.THUMBNAIL_SRC = 'https://trampoline.turbowarp.org/thumbnails/$id?widt
 StudioView.PROJECT_PAGE = 'https://turbowarp.org/$id';
 
 // The URL for studio pages.
-// $id is replaced with the studio ID.
-StudioView.STUDIO_PAGE = 'https://scratch.mit.edu/studios/$id/';
+StudioView.STUDIO_PAGE = 'https://scratch.mit.edu/studios/51894414/';
 
 // The amount of "placeholders" to insert before the next page loads.
 StudioView.PLACEHOLDER_COUNT = 9;

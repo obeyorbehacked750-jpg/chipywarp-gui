@@ -8,6 +8,15 @@
     flex-direction: column;
 }
 
+..paint-editor_canvas-container_x2D0a {
+    border: none;
+
+}
+
+..blocks_blocks_C530M .injectionDiv {
+    border: 1px solid #ffff00;
+}
+
 .body-wrapper {
     flex-grow: 1;
     background-color: $ui-primary;

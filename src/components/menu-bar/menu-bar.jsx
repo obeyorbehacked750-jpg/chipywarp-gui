@@ -232,13 +232,35 @@ class MenuBar extends React.Component {
             'getSaveToComputerHandler',
             'restoreOptionMessage',
             'handleOpenTools',
-            'handleCloseTools'
+            'handleCloseTools',
+            'handleAlignmentCycle'
         ]);
         
         this.state = {
             toolsMenuOpen: false,
-            activeTab: 'editor'
+            activeTab: 'editor',
+            menuBarAlignment: localStorage.getItem('menuBarAlignment') || 'left'
         };
+    }
+
+    handleAlignmentCycle (e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        
+        const current = this.state.menuBarAlignment;
+        let nextAlignment = 'center';
+        
+        if (current === 'left') {
+            nextAlignment = 'center';
+        } else if (current === 'center') {
+            nextAlignment = 'right';
+        } else if (current === 'right') {
+            nextAlignment = 'left';
+        }
+        
+        this.setState({ menuBarAlignment: nextAlignment });
+        localStorage.setItem('menuBarAlignment', nextAlignment);
     }
     
     handleOpenTools () {
@@ -493,12 +515,12 @@ class MenuBar extends React.Component {
             <Box
                 className={classNames(
                     this.props.className,
-                    styles.menuBar
+                    styles.menuBar,
+                    styles[`align${this.state.menuBarAlignment}`] 
                 )}
             >
                 <div className={styles.mainMenu}>
                     
-                    {/* CHIPYWARP MAIN LOGO */}
                     <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         <a 
                             href="https://discord.gg/GQgedFUXp" 
@@ -903,7 +925,6 @@ class MenuBar extends React.Component {
                             </MenuLabel>
                         )}
                         
-                        {/* TOOLS DROPDOWN WITH INLINE BASE64 WRENCH ICON */}
                         {(this.props.onClickAddonSettings || this.props.onClickSettingsModal) && (
                             <MenuLabel
                                 open={this.state.toolsMenuOpen}
@@ -963,14 +984,27 @@ class MenuBar extends React.Component {
                                             </MenuItem>
                                         )}
                                     </MenuSection>
+
+                                    {/* ALIGNMENT TOGGLE BUTTON LOCATED HERE */}
+                                    <MenuSection>
+                                        <MenuItem onClick={this.handleAlignmentCycle}>
+                                            <div style={{display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 'bold'}}>
+                                                <FormattedMessage
+                                                    defaultMessage="Set Menu-bar Align ({align})"
+                                                    description="Button to cycle menu bar alignment"
+                                                    id="tw.menuBar.setAlign"
+                                                    values={{ align: this.state.menuBarAlignment }}
+                                                />
+                                            </div>
+                                        </MenuItem>
+                                    </MenuSection>
+
                                 </MenuBarMenu>
                             </MenuLabel>
                         )}
                     </div>
                     
                     <Divider className={styles.divider} />
-
-
 
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
