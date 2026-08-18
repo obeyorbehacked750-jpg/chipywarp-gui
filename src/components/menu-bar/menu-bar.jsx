@@ -88,7 +88,9 @@ import styles from './menu-bar.css';
 import helpIcon from '../../lib/assets/icon--tutorials.svg';
 import mystuffIcon from './icon--mystuff.png';
 import profileIcon from './icon--profile.png';
+import toolsIcon from './icon--tools.svg';
 import remixIcon from './icon--remix.svg';
+
 import dropdownCaret from './dropdown-caret.svg';
 import aboutIcon from './icon--about.svg';
 import fileIcon from './icon--file.svg';
@@ -910,7 +912,7 @@ class MenuBar extends React.Component {
                             >
                                 <div style={{display: 'flex', alignItems: 'center', gap: '6px'}}>
                                     <img
-                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyLjcgMTkuM0wxNi4yIDEyLjhDMTYuOCAxMS4yIDE2LjUgOS4zIDE1LjMgOC4xIDEzLjkgNi43IDExLjggNi41IDEwLjIgNy40TDEzLjUgMTAuNyAxMC43IDEzLjUgNy40IDEwLjJDNi41IDExLjggNi43IDEzLjkgOC4xIDE1LjMgOS4zIDE2LjUgMTEuMiAxNi44IDEyLjggMTYuMkwxOS4zIDIyLjdDMjAuMiAyMy42IDIxLjggMjMuNiAyMi43IDIyLjcgMjMuNiAyMS44IDIzLjYgMjAuMiAyMi43IDE5LjN6TTQuOCA3LjZMNy42IDQuOCAzLjQgMC42QzIuNS0wLjMgMS0wLjMgMC4xIDAuNiAtMC44IDEuNSAtMC44IDMgMC4xIDMuOUw0LjggNy42eiIvPjwvc3ZnPg=="
+                                        src={toolsIcon}
                                         draggable={false}
                                         width={18}
                                         height={18}
@@ -968,49 +970,7 @@ class MenuBar extends React.Component {
                     
                     <Divider className={styles.divider} />
 
-                    {/* TOP BAR NAVIGATION TABS */}
-                    <div className={styles.tabContainer}>
-                        <button
-                            className={classNames(styles.tabButton, {
-                                [styles.activeTab]: this.state.activeTab === 'editor'
-                            })}
-                            onClick={() => this.setState({ activeTab: 'editor' })}
-                        >
-                            <FormattedMessage
-                                defaultMessage="Editor"
-                                description="Tab to open main editor"
-                                id="gui.menuBar.tabEditor"
-                            />
-                        </button>
-                    
-                        <button
-                            className={classNames(styles.tabButton, {
-                                [styles.activeTab]: this.state.activeTab === 'extensions'
-                            })}
-                            onClick={() => this.setState({ activeTab: 'extensions' })}
-                        >
-                            <FormattedMessage
-                                defaultMessage="Extensions"
-                                description="Tab to open extensions view"
-                                id="gui.menuBar.tabExtensions"
-                            />
-                        </button>
-                    
-                        <button
-                            className={classNames(styles.tabButton, {
-                                [styles.activeTab]: this.state.activeTab === 'settings'
-                            })}
-                            onClick={() => this.setState({ activeTab: 'settings' })}
-                        >
-                            <FormattedMessage
-                                defaultMessage="Settings"
-                                description="Tab to open settings view"
-                                id="gui.menuBar.tabSettings"
-                            />
-                        </button>
-                    </div>
 
-                    <Divider className={styles.divider} />
 
                     {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>

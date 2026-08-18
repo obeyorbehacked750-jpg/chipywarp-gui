@@ -407,6 +407,18 @@ export default [
         featured: true
     },
     {
+    name: 'PLACEHOLDER',
+    extensionId: 'mycustomext',
+    iconURL: customExtensionIcon,
+    insetIconURL: customExtensionIcon,
+    description: 'PLACEHOLDER',
+    featured: true,
+    disabled: false,
+    collaborator: 'PLACEHOLDER',
+    tags: ['cw'],
+    extensionURL: 'https://raw.githubusercontent.com/your-username/your-repo/main/my-extension.js'
+    },
+    {
         name: (
             <FormattedMessage
                 defaultMessage="Custom Extension"
