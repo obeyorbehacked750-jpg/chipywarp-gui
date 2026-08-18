@@ -39231,16 +39231,16 @@ __webpack_require__.r(__webpack_exports__);
   tags: ['tw'],
   featured: true
 }, {
-  name: 'PLACEHOLDER',
-  extensionId: 'mycustomext',
-  iconURL: _custom_custom_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
-  insetIconURL: _custom_custom_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
-  description: 'PLACEHOLDER',
+  name: 'Chipywarp Tools',
+  extensionId: 'chipywarptools',
+  iconURL: "https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/banners/chipywarp-tools.png",
+  insetIconURL: "https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/extensions/icon.png",
+  description: 'Some chipywarp tools idk why you need use them, maybe also weird?',
   featured: true,
   disabled: false,
-  collaborator: 'PLACEHOLDER',
+  incompatibleWithScratch: false,
   tags: ['cw'],
-  extensionURL: 'https://raw.githubusercontent.com/your-username/your-repo/main/my-extension.js'
+  extensionURL: 'https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/extensions/chipywarptools.js'
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Custom Extension",
