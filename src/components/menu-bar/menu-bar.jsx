@@ -93,7 +93,6 @@ import dropdownCaret from './dropdown-caret.svg';
 import aboutIcon from './icon--about.svg';
 import fileIcon from './icon--file.svg';
 import editIcon from './icon--edit.svg';
-import toolsIcon from './icon--tools.svg';
 import addonsIcon from './addons.svg';
 import errorIcon from './tw-error.svg';
 import advancedIcon from './tw-advanced.svg';
@@ -236,11 +235,10 @@ class MenuBar extends React.Component {
         
         this.state = {
             toolsMenuOpen: false,
-            activeTab: 'editor' // Added for tabs functionality
+            activeTab: 'editor'
         };
     }
     
-    // Handlers for Tools menu
     handleOpenTools () {
         this.setState({ toolsMenuOpen: true });
     }
@@ -498,7 +496,7 @@ class MenuBar extends React.Component {
             >
                 <div className={styles.mainMenu}>
                     
-                    {/* CHIPYWARP SERVER LOGO LINK */}
+                    {/* CHIPYWARP MAIN LOGO */}
                     <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         <a 
                             href="https://discord.gg/GQgedFUXp" 
@@ -507,11 +505,13 @@ class MenuBar extends React.Component {
                             style={{ display: 'flex', alignItems: 'center' }}
                         >
                             <img
-                                src={chipywarpLogo} 
-                                alt="Join Chipywarp Discord Server"
+                                id="logo_img"
+                                src={chipywarpLogo}
+                                alt="Chipywarp"
                                 draggable={false}
-                                width={90}
                                 height={28}
+                                width={90}
+                                style={{ objectFit: 'contain' }}
                             />
                         </a>
                     </div>
@@ -901,7 +901,7 @@ class MenuBar extends React.Component {
                             </MenuLabel>
                         )}
                         
-                        {/* TOOLS DROPDOWN: Fixed Flex Layout */}
+                        {/* TOOLS DROPDOWN WITH INLINE BASE64 WRENCH ICON */}
                         {(this.props.onClickAddonSettings || this.props.onClickSettingsModal) && (
                             <MenuLabel
                                 open={this.state.toolsMenuOpen}
@@ -910,7 +910,7 @@ class MenuBar extends React.Component {
                             >
                                 <div style={{display: 'flex', alignItems: 'center', gap: '6px'}}>
                                     <img
-                                        src={toolsIcon}
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyLjcgMTkuM0wxNi4yIDEyLjhDMTYuOCAxMS4yIDE2LjUgOS4zIDE1LjMgOC4xIDEzLjkgNi43IDExLjggNi41IDEwLjIgNy40TDEzLjUgMTAuNyAxMC43IDEzLjUgNy40IDEwLjJDNi41IDExLjggNi43IDEzLjkgOC4xIDE1LjMgOS4zIDE2LjUgMTEuMiAxNi44IDEyLjggMTYuMkwxOS4zIDIyLjdDMjAuMiAyMy42IDIxLjggMjMuNiAyMi43IDIyLjcgMjMuNiAyMS44IDIzLjYgMjAuMiAyMi43IDE5LjN6TTQuOCA3LjZMNy42IDQuOCAzLjQgMC42QzIuNS0wLjMgMS0wLjMgMC4xIDAuNiAtMC44IDEuNSAtMC44IDMgMC4xIDMuOUw0LjggNy42eiIvPjwvc3ZnPg=="
                                         draggable={false}
                                         width={18}
                                         height={18}
@@ -929,7 +929,7 @@ class MenuBar extends React.Component {
                                         width={8}
                                         height={5}
                                     />
-                                </div> {/* Added missing closing div here! */}
+                                </div>
                                 <MenuBarMenu
                                     className={classNames(styles.menuBarMenu)}
                                     open={this.state.toolsMenuOpen}
@@ -968,7 +968,7 @@ class MenuBar extends React.Component {
                     
                     <Divider className={styles.divider} />
 
-                    {/* TOP BAR NAVIGATION TABS INJECTED HERE */}
+                    {/* TOP BAR NAVIGATION TABS */}
                     <div className={styles.tabContainer}>
                         <button
                             className={classNames(styles.tabButton, {
