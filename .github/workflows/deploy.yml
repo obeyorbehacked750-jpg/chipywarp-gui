@@ -6,7 +6,7 @@ on:
       - main
       - master
       - develop
-      
+
 permissions:
   contents: write
 
@@ -27,20 +27,11 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-
       - name: Build project
         run: npm run build
 
-      - name: Run Start Command
-        run: npm start
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
