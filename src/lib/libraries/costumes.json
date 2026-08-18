@@ -1,5 +1,65 @@
 [
     {
+        "name": "Solo-Bot",
+        "md5ext": "f39db15e6f6635472d3563453f6b6707.svg",
+        "assetId": "f39db15e6f6635472d3563453f6b6707",
+        "dataFormat": "svg",
+        "rotationCenterX": 52.75754499999999,
+        "rotationCenterY": 52.75754499999999,
+        "info": [0, 1, 2],
+        "tags": ["chipywarp"]
+    },
+    {
+        "name": "Solo-Bot2",
+        "md5ext": "f93841b97459ff584d148b12962cdeea.svg",
+        "assetId": "f93841b97459ff584d148b12962cdeea",
+        "dataFormat": "svg",
+        "rotationCenterX": 52.75753499999996,
+        "rotationCenterY": 52.75753500000002,
+        "info": [0, 1, 2],
+        "tags": ["chipywarp"]
+    },
+    {
+        "name": "Solo-Bot3",
+        "md5ext": "654b99cc500dd96dfbc2c52a9adc99f6.svg",
+        "assetId": "654b99cc500dd96dfbc2c52a9adc99f6",
+        "dataFormat": "svg",
+        "rotationCenterX": 52.75753499999996,
+        "rotationCenterY": 52.75751500000001,
+        "info": [0, 1, 2],
+        "tags": ["chipywarp"]
+    },
+    {
+        "name": "Solo-Bot4",
+        "md5ext": "2a59416e03196c0ff6dc0073cf296277.svg",
+        "assetId": "2a59416e03196c0ff6dc0073cf296277",
+        "dataFormat": "svg",
+        "rotationCenterX": 52.75753499999999,
+        "rotationCenterY": 52.75753499999999,
+        "info": [0, 1, 2],
+        "tags": ["chipywarp"]
+    },
+    {
+        "name": "Solo-Bot5",
+        "md5ext": "3b971de116bac1d18e439e43dd647ff0.svg",
+        "assetId": "3b971de116bac1d18e439e43dd647ff0",
+        "dataFormat": "svg",
+        "rotationCenterX": 52.75752499999999,
+        "rotationCenterY": 52.75753499999999,
+        "info": [0, 1, 2],
+        "tags": ["chipywarp"]
+    },
+    {
+        "name": "Solo-Bot6",
+        "md5ext": "78968e09fbc4c15c46132416548f4d44.svg",
+        "assetId": "78968e09fbc4c15c46132416548f4d44",
+        "dataFormat": "svg",
+        "rotationCenterX": 52.757514999999984,
+        "rotationCenterY": 52.75753499999999,
+        "info": [0, 1, 2],
+        "tags": ["chipywarp"]
+    },
+    {
         "name": "Abby-a",
         "tags": [
             "people",
