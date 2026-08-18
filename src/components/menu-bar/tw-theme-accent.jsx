@@ -7,7 +7,8 @@ import {connect} from 'react-redux';
 import check from './check.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import {MenuItem, Submenu} from '../menu/menu.jsx';
-import {ACCENT_BLUE, ACCENT_MAP, ACCENT_PURPLE, ACCENT_RED, ACCENT_RAINBOW, Theme} from '../../lib/themes/index.js';
+// Import ACCENT_GREEN here
+import {ACCENT_BLUE, ACCENT_MAP, ACCENT_PURPLE, ACCENT_RED, ACCENT_RAINBOW, ACCENT_GREEN, Theme} from '../../lib/themes/index.js';
 import {openAccentMenu, accentMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {setTheme} from '../../reducers/theme.js';
 import {persistTheme} from '../../lib/themes/themePersistance.js';
@@ -15,9 +16,15 @@ import rainbowIcon from './tw-accent-rainbow.svg';
 import styles from './settings-menu.css';
 
 const options = defineMessages({
+    // Add the green option configuration
+    [ACCENT_GREEN]: {
+        defaultMessage: 'Green',
+        description: 'Name of the default green color scheme, used by Chipywarp.',
+        id: 'tw.accent.green'
+    },
     [ACCENT_RED]: {
         defaultMessage: 'Red',
-        description: 'Name of the red color scheme, used by TurboWarp by default.',
+        description: 'Name of the red color scheme, used by TurboWarp.',
         id: 'tw.accent.red'
     },
     [ACCENT_PURPLE]: {
@@ -47,14 +54,12 @@ const ColorIcon = props => (
             className={styles.accentIconOuter}
             src={icons[props.id]}
             draggable={false}
-            // Image is decorative
             alt=""
         />
     ) : (
         <div
             className={styles.accentIconOuter}
             style={{
-                // menu-bar-background is var(...), don't want to evaluate with the current values
                 backgroundColor: ACCENT_MAP[props.id].guiColors['looks-secondary'],
                 backgroundImage: ACCENT_MAP[props.id].guiColors['menu-bar-background-image']
             }}
@@ -120,7 +125,6 @@ const AccentThemeMenu = ({
                     key={item}
                     id={item}
                     isSelected={theme.accent === item}
-                    // eslint-disable-next-line react/jsx-no-bind
                     onClick={() => onChangeTheme(theme.set('accent', item))}
                 />
             ))}

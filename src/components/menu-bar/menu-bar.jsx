@@ -499,15 +499,14 @@ class MenuBar extends React.Component {
                     {/* CHIPYWARP SERVER LOGO LINK */}
                     <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         <a 
-                            href="https://your-chipywarp-server.com" 
+                            href="https://discord.gg/GQgedFUXp" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             style={{ display: 'flex', alignItems: 'center' }}
                         >
-                            {/* You can replace catLogo with your custom logo variable if imported at top */}
                             <img
                                 src={catLogo} 
-                                alt="Join Chipywarp Server"
+                                alt="Join Chipywarp Discord Server"
                                 draggable={false}
                                 width={30}
                                 height={30}

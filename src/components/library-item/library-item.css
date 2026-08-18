@@ -91,7 +91,7 @@
 
 .library-item-name {
     width: 80%;
-    margin: 0.25rem 0;
+    margin: 0.25rem 0 0 0;
     text-align: center;
 
     /*
@@ -102,6 +102,18 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     min-width: 0;
+}
+
+.library-item-author {
+    font-size: 0.65rem;
+    opacity: 0.65;
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    margin-bottom: 0.25rem;
 }
 
 .featured-item {

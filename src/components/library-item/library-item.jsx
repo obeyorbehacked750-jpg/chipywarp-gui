@@ -236,6 +236,9 @@ class LibraryItemComponent extends React.PureComponent {
                     </Box>
                 </Box>
                 <span className={styles.libraryItemName}>{this.props.name}</span>
+                <span className={styles.libraryItemAuthor}>
+                    {`by ${this.props.author || 'Chipywarp'}`}
+                </span>
                 {this.props.showPlayButton ? (
                     <PlayButton
                         isPlaying={this.props.isPlaying}
@@ -253,6 +256,7 @@ class LibraryItemComponent extends React.PureComponent {
 
 
 LibraryItemComponent.propTypes = {
+    author: PropTypes.string,
     intl: intlShape,
     bluetoothRequired: PropTypes.bool,
     collaborator: PropTypes.string,
