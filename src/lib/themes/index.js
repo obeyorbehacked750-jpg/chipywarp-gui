@@ -1,6 +1,6 @@
 import defaultsDeep from 'lodash.defaultsdeep';
 
-import * as accentGreen from './green.js';
+import * as accentGreen from './accent/green.js';
 import * as accentPurple from './accent/purple';
 import * as accentBlue from './accent/blue';
 import * as accentRed from './accent/red';
