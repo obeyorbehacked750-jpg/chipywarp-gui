@@ -60,13 +60,13 @@ const projectData = translateFunction => {
                 currentCostume: 0,
                 costumes: [
                     {
-                        assetId: '927d672925e7b99f7813735c484c6922',
-                        name: translator(messages.costume, {index: 1}),
+                        name: 'Chicken',
                         bitmapResolution: 1,
-                        md5ext: '927d672925e7b99f7813735c484c6922.svg',
                         dataFormat: 'svg',
-                        rotationCenterX: 30.74937882782359,
-                        rotationCenterY: 58.864768144346826
+                        assetId: '36feff3c05d97b28d4dae8cd7b31cd3b',
+                        md5ext: '36feff3c05d97b28d4dae8cd7b31cd3b.svg',
+                        rotationCenterX: 83,
+                        rotationCenterY: 89.22499874000435
                     }
                 ],
                 sounds: [],
@@ -87,6 +87,5 @@ const projectData = translateFunction => {
         }
     });
 };
-
 
 export default projectData;

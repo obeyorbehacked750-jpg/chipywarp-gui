@@ -10,11 +10,12 @@
 
 ..paint-editor_canvas-container_x2D0a {
     border: none;
-
 }
 
-..blocks_blocks_C530M .injectionDiv {
-    border: 1px solid #ffff00;
+[class*="blocks_blocks_"] .injectionDiv {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .body-wrapper {

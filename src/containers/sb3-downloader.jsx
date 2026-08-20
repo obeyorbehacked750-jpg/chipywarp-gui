@@ -10,12 +10,11 @@ import {setFileHandle} from '../reducers/tw';
 import {getIsShowingProject} from '../reducers/project-state';
 import log from '../lib/log';
 
-// from sb-file-uploader-hoc.jsx
 const getProjectTitleFromFilename = fileInputFilename => {
     if (!fileInputFilename) return '';
-    // only parse title with valid scratch project extensions
-    // (.sb, .sb2, and .sb3)
-    const matches = fileInputFilename.match(/^(.*)\.sb[23]?$/);
+    // only parse title with valid project extensions
+    // (.cwp, .sb, .sb2, and .sb3)
+    const matches = fileInputFilename.match(/^(.*)\.(cwp|sb[23]?)$/);
     if (!matches) return '';
     return matches[1].substring(0, 100); // truncate project title to max 100 chars
 };
@@ -100,9 +99,9 @@ class SB3Downloader extends React.Component {
                 suggestedName: this.props.projectFilename,
                 types: [
                     {
-                        description: 'Scratch 3 Project',
+                        description: 'ChipyWarp Project',
                         accept: {
-                            'application/octet-stream': '.sb3'
+                            'application/octet-stream': '.cwp'
                         }
                     }
                 ],
@@ -265,13 +264,13 @@ class SB3Downloader extends React.Component {
         );
     }
 }
-
+// Update: replaced CWP instead SB3
 const getProjectFilename = (curTitle, defaultTitle) => {
     let filenameTitle = curTitle;
     if (!filenameTitle || filenameTitle.length === 0) {
         filenameTitle = defaultTitle;
     }
-    return `${filenameTitle.substring(0, 100)}.sb3`;
+    return `${filenameTitle.substring(0, 100)}.cwp`;
 };
 
 SB3Downloader.propTypes = {
