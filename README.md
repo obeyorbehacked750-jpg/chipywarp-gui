@@ -1,4 +1,16 @@
 # Chipywarp GUI v.0.24
 ✨ Welcome to chipywarp-gui repository 
+ℹ Chipywarp is turbowarp/scratch mod!
 
-💬 We have own official discord server
+# Chipywarp Chats:
+ - Discord: 
+ - Telegram:
+ - Forum:
+
+🤔 How to host localy and make custom updates?
+1. Fork that repo
+2. Use that command that bellow
+```
+npm start
+```
+3. Here you go!
