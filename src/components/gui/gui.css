@@ -8,14 +8,10 @@
     flex-direction: column;
 }
 
-..paint-editor_canvas-container_x2D0a {
-    border: none;
-}
-
-[class*="blocks_blocks_"] .injectionDiv {
+:global(.injectionDiv),
+:global(.blocklySvg) {
     border: none !important;
     outline: none !important;
-    box-shadow: none !important;
 }
 
 .body-wrapper {

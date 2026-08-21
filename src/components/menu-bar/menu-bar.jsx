@@ -44,6 +44,11 @@ import {
     isTimeTravelNow,
     setTimeTravel
 } from '../../reducers/time-travel';
+
+// Mod manager
+import modManagerIcon from './icon--modmgr.svg';
+
+import {openTipsLibrary, openSettingsModal, openRestorePointModal, openModManager} from '../../reducers/modals';
 import {
     autoUpdateProject,
     getIsUpdating,
@@ -233,7 +238,8 @@ class MenuBar extends React.Component {
             'restoreOptionMessage',
             'handleOpenTools',
             'handleCloseTools',
-            'handleAlignmentCycle'
+            'handleAlignmentCycle',
+            'handleEditFont'
         ]);
         
         this.state = {
@@ -263,6 +269,50 @@ class MenuBar extends React.Component {
         localStorage.setItem('menuBarAlignment', nextAlignment);
     }
     
+      handleEditFont (e) {
+        if (e) {
+            e.stopPropagation();
+        }
+        
+        // 1. Create a hidden file input
+        const fileInput = document.createElement('input');
+        fileInput.type = 'file';
+        fileInput.accept = '.ttf,.otf,.woff,.woff2'; // Accept common font formats
+        
+        // 2. Listen for the file selection
+        fileInput.onchange = (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            // 3. Create a temporary local URL for the uploaded font file
+            const fontUrl = URL.createObjectURL(file);
+            const fontFamilyName = 'ChipywarpUserFont';
+
+            // 4. Check if a custom font style tag already exists to replace it, or create a new one
+            let styleTag = document.getElementById('custom-user-font-style');
+            if (!styleTag) {
+                styleTag = document.createElement('style');
+                styleTag.id = 'custom-user-font-style';
+                document.head.appendChild(styleTag);
+            }
+
+            // 5. Inject the @font-face rule and apply it to the page
+            // Using !important ensures it overrides default interface fonts
+            styleTag.innerHTML = `
+                @font-face {
+                    font-family: '${fontFamilyName}';
+                    src: url('${fontUrl}');
+                }
+                body, * {
+                    font-family: '${fontFamilyName}', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+                }
+            `;
+        };
+        
+        // 6. Trigger the file picker dialog
+        fileInput.click();
+    }
+
     handleOpenTools () {
         this.setState({ toolsMenuOpen: true });
     }
@@ -534,7 +584,7 @@ class MenuBar extends React.Component {
                                 alt="Chipywarp"
                                 draggable={false}
                                 height={28}
-                                width={90}
+                                width={110}
                                 style={{ objectFit: 'contain' }}
                             />
                         </a>
@@ -597,6 +647,9 @@ class MenuBar extends React.Component {
                             canChangeLanguage={this.props.canChangeLanguage}
                             canChangeTheme={this.props.canChangeTheme}
                             isRtl={this.props.isRtl}
+                            menuBarAlignment={this.state.menuBarAlignment}
+                            onToggleAlignment={this.handleAlignmentCycle}
+                            onEditFont={this.handleEditFont}
                             onClickDesktopSettings={
                                 this.props.onClickDesktopSettings &&
                                 this.handleClickDesktopSettings
@@ -984,21 +1037,6 @@ class MenuBar extends React.Component {
                                             </MenuItem>
                                         )}
                                     </MenuSection>
-
-                                    {/* ALIGNMENT TOGGLE BUTTON LOCATED HERE */}
-                                    <MenuSection>
-                                        <MenuItem onClick={this.handleAlignmentCycle}>
-                                            <div style={{display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 'bold'}}>
-                                                <FormattedMessage
-                                                    defaultMessage="Set Menu-bar Align ({align})"
-                                                    description="Button to cycle menu bar alignment"
-                                                    id="tw.menuBar.setAlign"
-                                                    values={{ align: this.state.menuBarAlignment }}
-                                                />
-                                            </div>
-                                        </MenuItem>
-                                    </MenuSection>
-
                                 </MenuBarMenu>
                             </MenuLabel>
                         )}
@@ -1152,7 +1190,7 @@ MenuBar.propTypes = {
     onClickErrors: PropTypes.func,
     onRequestCloseErrors: PropTypes.func,
     confirmReadyToReplaceProject: PropTypes.func,
-    currentLocale: PropTypes.string.isRequired,
+    currentLocale: PropTypes.string,
     editMenuOpen: PropTypes.bool,
     enableCommunity: PropTypes.bool,
     fileMenuOpen: PropTypes.bool,
@@ -1164,7 +1202,7 @@ MenuBar.propTypes = {
     isShowingProject: PropTypes.bool,
     isTotallyNormal: PropTypes.bool,
     isUpdating: PropTypes.bool,
-    locale: PropTypes.string.isRequired,
+    locale: PropTypes.string,
     loginMenuOpen: PropTypes.bool,
     mode1920: PropTypes.bool,
     mode1990: PropTypes.bool,

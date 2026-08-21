@@ -1,0 +1,94 @@
+@import "../../css/colors.css";
+@import "../../css/filters.css";
+@import "../../css/default-colors.css";
+
+.modal-content {
+    max-width: 750px;
+}
+
+.body {
+    background: $ui-modal-background;
+    padding: 1.5rem 2.25rem;
+    min-height: 150px;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+@media (max-height: 600px) {
+    .modal-content {
+        margin: 50px auto;
+    }
+    .body {
+        max-height: calc(100vh - 150px);
+    }
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 4px;
+}
+
+.setting.active {
+    background: $badge-background;
+}
+
+.setting:hover,
+.setting:focus-within {
+    background: $badge-border;
+}
+
+.label {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 0.5rem;
+}
+
+.help-icon {
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.help-icon img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: $filter-icon-black;
+}
+
+.detail {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.85rem;
+    color: $text-primary-default;
+    opacity: 0.8;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.75rem 0 0.25rem 0;
+    font-weight: bold;
+}
+
+.divider {
+    flex-grow: 1;
+    margin-left: 1rem;
+    border-top: 1px dashed $ui-tertiary;
+}

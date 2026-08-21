@@ -33,6 +33,15 @@
     color: $menu-bar-foreground;
 }
 
+/* Target the injection div globally, ignoring the Webpack hash */
+.injectionDiv {
+    border: none !important;
+}
+
+.blocks_blocks_C530M .injectionDiv {
+    border: none !important;
+}
+
 .main-menu {
     display: flex;
     flex-direction: row;
@@ -81,7 +90,6 @@
 
 .title-field-growable {
     flex-grow: 1;
-    width: 2rem;
 }
 
 .file-group {
