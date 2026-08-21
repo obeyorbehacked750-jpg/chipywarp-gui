@@ -1,4 +1,4 @@
-name: Build and Deploy Mod
+name: Build and Deploy
 
 on:
   push:
@@ -21,8 +21,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: 24
+          # Removed "cache: 'npm'" because your repo doesn't have a package-lock.json
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
@@ -35,4 +35,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          
