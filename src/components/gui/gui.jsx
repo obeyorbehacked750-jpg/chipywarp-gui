@@ -115,12 +115,13 @@ const GUIComponent = props => {
         isTotallyNormal,
         loading,
         logo,
-        renderLogin,
+        modManagerModalVisible,
         onClickAbout,
         onClickAccountNav,
         onCloseAccountNav,
         onClickAddonSettings,
         onClickDesktopSettings,
+        onClickModManager,
         onClickNewWindow,
         onClickPackager,
         onLogOut,
@@ -193,6 +194,7 @@ const GUIComponent = props => {
                 {fontsModalVisible && <TWFontsModal />}
                 {unknownPlatformModalVisible && <TWUnknownPlatformModal />}
                 {invalidProjectModalVisible && <TWInvalidProjectModal />}
+                {modManagerModalVisible && <ModManager />}
             </React.Fragment>
         );
 
@@ -314,6 +316,7 @@ const GUIComponent = props => {
                     onClickAccountNav={onClickAccountNav}
                     onClickAddonSettings={onClickAddonSettings}
                     onClickDesktopSettings={onClickDesktopSettings}
+                    onClickModManager={onClickModManager}
                     onClickNewWindow={onClickNewWindow}
                     onClickPackager={onClickPackager}
                     onClickLogo={onClickLogo}
@@ -498,12 +501,14 @@ GUIComponent.propTypes = {
     isTotallyNormal: PropTypes.bool,
     loading: PropTypes.bool,
     logo: PropTypes.string,
+    modManagerModalVisible: PropTypes.bool,
     onActivateCostumesTab: PropTypes.func,
     onActivateSoundsTab: PropTypes.func,
     onActivateTab: PropTypes.func,
     onClickAccountNav: PropTypes.func,
     onClickAddonSettings: PropTypes.func,
     onClickDesktopSettings: PropTypes.func,
+    onClickModManager: PropTypes.func,
     onClickNewWindow: PropTypes.func,
     onClickPackager: PropTypes.func,
     onClickLogo: PropTypes.func,
@@ -573,7 +578,8 @@ const mapStateToProps = state => ({
     // This is the button's mode, as opposed to the actual current state
     blocksId: state.scratchGui.timeTravel.year.toString(),
     stageSizeMode: state.scratchGui.stageSize.stageSize,
-    theme: state.scratchGui.theme.theme
+    theme: state.scratchGui.theme.theme,
+    modManagerModalVisible: state.scratchGui.modals.modManagerModal
 });
 
 export default injectIntl(connect(

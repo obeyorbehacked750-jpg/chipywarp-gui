@@ -157,7 +157,6 @@ const MenuBarItemTooltip = ({
     );
 };
 
-
 MenuBarItemTooltip.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
@@ -198,7 +197,6 @@ AboutButton.propTypes = {
     onClick: PropTypes.func.isRequired
 };
 
-// Unlike <MenuItem href="">, this uses an actual <a>
 const MenuItemLink = props => (
     <a
         href={props.href}
@@ -268,26 +266,22 @@ class MenuBar extends React.Component {
         localStorage.setItem('menuBarAlignment', nextAlignment);
     }
     
-      handleEditFont (e) {
+    handleEditFont (e) {
         if (e) {
             e.stopPropagation();
         }
         
-        // 1. Create a hidden file input
         const fileInput = document.createElement('input');
         fileInput.type = 'file';
-        fileInput.accept = '.ttf,.otf,.woff,.woff2'; // Accept common font formats
+        fileInput.accept = '.ttf,.otf,.woff,.woff2';
         
-        // 2. Listen for the file selection
         fileInput.onchange = (event) => {
             const file = event.target.files[0];
             if (!file) return;
 
-            // 3. Create a temporary local URL for the uploaded font file
             const fontUrl = URL.createObjectURL(file);
             const fontFamilyName = 'ChipywarpUserFont';
 
-            // 4. Check if a custom font style tag already exists to replace it, or create a new one
             let styleTag = document.getElementById('custom-user-font-style');
             if (!styleTag) {
                 styleTag = document.createElement('style');
@@ -295,8 +289,6 @@ class MenuBar extends React.Component {
                 document.head.appendChild(styleTag);
             }
 
-            // 5. Inject the @font-face rule and apply it to the page
-            // Using !important ensures it overrides default interface fonts
             styleTag.innerHTML = `
                 @font-face {
                     font-family: '${fontFamilyName}';
@@ -308,7 +300,6 @@ class MenuBar extends React.Component {
             `;
         };
         
-        // 6. Trigger the file picker dialog
         fileInput.click();
     }
 
@@ -1012,7 +1003,10 @@ class MenuBar extends React.Component {
                                 >
                                     <MenuSection>
                                         {this.props.onClickModManager && (
-                                            <MenuItem onClick={this.props.onClickModManager}>
+                                            <MenuItem onClick={() => {
+                                                this.handleCloseTools();
+                                                this.props.onClickModManager();
+                                            }}>
                                                 <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
                                                     <img src={modManagerIcon} draggable={false} width={20} height={20} alt="Mod Manager" />
                                                     <FormattedMessage
@@ -1024,7 +1018,10 @@ class MenuBar extends React.Component {
                                             </MenuItem>
                                         )}
                                         {this.props.onClickSettingsModal && (
-                                            <MenuItem onClick={this.props.onClickSettingsModal}>
+                                            <MenuItem onClick={() => {
+                                                this.handleCloseTools();
+                                                this.props.onClickSettingsModal();
+                                            }}>
                                                 <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
                                                     <img src={advancedIcon} draggable={false} width={20} height={20} />
                                                     <FormattedMessage
@@ -1036,7 +1033,10 @@ class MenuBar extends React.Component {
                                             </MenuItem>
                                         )}
                                         {this.props.onClickAddonSettings && (
-                                            <MenuItem onClick={this.props.onClickAddonSettings}>
+                                            <MenuItem onClick={() => {
+                                                this.handleCloseTools();
+                                                this.props.onClickAddonSettings();
+                                            }}>
                                                 <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
                                                     <img src={addonsIcon} draggable={false} width={20} height={20} />
                                                     <FormattedMessage
