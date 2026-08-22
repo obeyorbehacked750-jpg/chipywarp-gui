@@ -1230,15 +1230,12 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.gui_page-wrapper_1cgy0 {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n..gui_paint-editor_canvas-container_x2D0a_14u5D {\n    border: none;\n}\n\n[class*=\"blocks_blocks_\"] .gui_injectionDiv_pA5NM {\n    border: none !important;\n    outline: none !important;\n    box-shadow: none !important;\n}\n\n.gui_body-wrapper_-N0sA {\n    flex-grow: 1;\n    background-color: var(--ui-primary);\n}\n\n.gui_body-wrapper_-N0sA * {\n    box-sizing: border-box;\n}\n\n.gui_flex-wrapper_uXHkj {\n    display: flex;\n\n    /*\n        Make 2 columns:\n        a) for the blocks + workspace panes, and\n        b) for combined stage menu + stage + sprite/stage selectors\n    */\n    flex-direction: row;\n    height: 100%;\n\n    /*\n        Stop scrollbar popping in and out from scratch-blocks border issue\n        https://github.com/LLK/scratch-gui/issues/318\n        TW: and also fix double horizontal scrollbar at some screen sizes in paint editor\n    */\n    overflow: hidden;\n}\n\n.gui_editor-wrapper_2DYcj {\n    /*\n        This is carefully balanced--  the minimum width at which the GUI will be displayed is 1024px.\n        At that size, the stage pane is 408px wide, with $space of padding to each side.\n        However, we must also add the border width to the stage pane. All-in-all, the stage pane's final width is\n        408px + ($space + $stage-standard-border-width * 2) (one border & padding per left/right side).\n\n        @todo This is in place to prevent \"doubling up\" of horizontal scrollbars in narrow windows, but there are likely\n        much better ways to solve that (e.g. undo #2124, remove this flex-basis entirely). However, they run their own\n        risks of breaking things, so let's just leave this as-is for the time being.\n    */\n    flex-basis: calc(1024px - 408px - ((0.5rem + 0.0625rem) * 2));\n    flex-grow: 1;\n    flex-shrink: 0;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-list_87TYM {\n    height: 2.75rem;\n    width: 250px; /* Match width of the toolbox */\n    display: flex;\n    align-items: flex-end;\n    flex-shrink: 0;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 500;\n    font-size: 0.80rem;\n\n    /* Overrides for react-tabs styling */\n    margin: 0 !important;\n    border-bottom: 0 !important;\n\n    color: var(--text-primary);\n}\n\n.gui_tab_27Unf {\n    flex-grow: 1;\n    height: 80%;\n    margin-bottom: 0;\n\n    border-radius: 1rem 1rem 0 0;\n    border: 1px solid var(--ui-black-transparent);\n\n    padding: 0.125rem 1.25rem 0;\n    font-size: 0.75rem;\n\n    background-color: var(--ui-tertiary);\n    color: var(--ui-text-primary-transparent);\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n    white-space: nowrap;\n}\n\n[dir=\"ltr\"] .gui_tab_27Unf {\n    margin-left: -0.5rem;\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf {\n    margin-right: -0.5rem;\n}\n\n[dir=\"ltr\"] .gui_tab_27Unf:nth-of-type(1) {\n    margin-left: 0;\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf:nth-of-type(1) {\n    margin-right: 0;\n}\n\n/* Use z-indices to force left-on-top for tabs */\n\n.gui_tab_27Unf:nth-of-type(1) {\n    z-index: 3;\n}\n\n.gui_tab_27Unf:nth-of-type(2) {\n    z-index: 2;\n}\n\n.gui_tab_27Unf:nth-of-type(3) {\n    z-index: 1;\n}\n\n.gui_tab_27Unf:hover {\n  background-color: var(--ui-primary);\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu {\n    height: 90%;\n    color: var(--looks-secondary);\n    background-color: var(--ui-white);\n    z-index: 4; /* Make sure selected is always above */\n}\n\n.gui_tab_27Unf img {\n    width: 1.375rem;\n    filter: grayscale(100%);\n}\n\n[dir=\"ltr\"] .gui_tab_27Unf img {\n    margin-right: 0.125rem;\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf img {\n    margin-left: 0.125rem;\n}\n\n/* mirror blocks and sound tab icons */\n\n[dir=\"rtl\"] .gui_tab_27Unf:nth-of-type(1) img {\n    transform: scaleX(-1);\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf:nth-of-type(3) img {\n    transform: scaleX(-1);\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu img {\n    filter: none;\n}\n\n/* Tab style overrides from react-tabs */\n\n.gui_tab_27Unf.gui_is-selected_sHAiu:after {\n    display: none;\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu:focus {\n    outline: none;\n    box-shadow: none;\n    border-color: var(--ui-black-transparent);\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu:focus:after {\n    display: none;\n}\n\n/* Body of the tabs */\n\n.gui_tabs_AgmuP {\n    position: relative;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-panel_22sLx {\n    position: relative;\n    flex-grow: 1;\n    display: none;\n}\n\n.gui_tab-panel_22sLx.gui_is-selected_sHAiu {\n    display: flex;\n}\n\n.gui_blocks-wrapper_1ccgf {\n    flex-grow: 1;\n    position: relative;\n}\n\n.gui_stage-and-target-wrapper_69KBf {\n    /*\n        Makes rows for children:\n          1) stage menu\n          2) stage\n          3) sprite/stage selectors\n        Only reason we need this, is so .targetWrapper, which holds the selectors,\n        goes to full vertical height of the window\n    */\n    display: flex;\n    flex-direction: column;\n    /* pad entire wrapper to the left and right; allow children to fill width */\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n\n    /* this will only ever be as wide as the stage */\n    flex-basis: 0;\n}\n\n.gui_target-wrapper_36Gbz {\n    display: flex;\n    flex-grow: 1;\n    flex-basis: 0;\n\n    padding-top: 0.5rem;\n    min-height: 0; /* this makes it work in Firefox */\n\n    /*\n        For making the sprite-selector a scrollable pane\n        @todo: Not working in Safari\n    */\n    /* TODO this also breaks the thermometer menu */\n    /* overflow: hidden; */\n}\n\n.gui_extension-button-container_b4rCs {\n    width: 3.75rem;\n    height: 3.25rem;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 42;\n    background: var(--looks-secondary);\n\n    border: 1px solid var(--looks-secondary);\n    box-sizing: content-box; /* To match scratch-block vertical toolbox borders */\n}\n\n.gui_extension-button-container_b4rCs:before {\n    content: \"\";\n    position: absolute;\n    top: calc(calc(-1 * 15px) - 1px);\n    left: -1px;\n    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15));\n    height: 15px;\n    width: calc(100% + 0.5px);\n}\n\n.gui_extension-button_2T7PA {\n    background: none;\n    border: none;\n    outline: none;\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.gui_extension-button-icon_S4gDk {\n    width: 1.75rem;\n    height: 1.75rem;\n}\n\n[dir=\"rtl\"] .gui_extension-button-icon_S4gDk {\n    transform: scaleX(-1);\n}\n\n.gui_extension-button_2T7PA > div {\n    margin-top: 0;\n}\n\n/* Sprite Selection Watermark */\n\n.gui_watermark_3vBYb {\n    position: absolute;\n    top: 1.25rem;\n    pointer-events: none;\n}\n\n[dir=\"ltr\"] .gui_watermark_3vBYb {\n    right: 1.25rem;\n}\n\n[dir=\"rtl\"] .gui_watermark_3vBYb {\n    left: 1.25rem;\n}\n\n/* Menu */\n\n.gui_menu-bar-position_3U1T0 {\n    position: relative;\n    z-index: 491;\n}\n\n/* Alerts */\n\n.gui_alerts-container_15BWp {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    z-index: 490;\n    position: absolute;\n    margin-top: 53px;\n    pointer-events: none;\n}\n\n/*\n    Make the (background) page not scrollable when modals are open\n    This CSS class is automatically added to the body when react-modal is open\n*/\n\n.ReactModal__Body--open {\n    overflow: hidden;\n}\n\n/* when in the browser's fullscreen mode, we need to put our own background to avoid just having black */\n\n.gui_fullscreen-background_3g8mV {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    /* overridden by JS; this will be used if the browser can't understand that color */\n    background-color: white;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.gui_page-wrapper_1cgy0 {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.injectionDiv,\n.blocklySvg {\n    border: none !important;\n    outline: none !important;\n}\n\n.gui_body-wrapper_-N0sA {\n    flex-grow: 1;\n    background-color: var(--ui-primary);\n}\n\n.gui_body-wrapper_-N0sA * {\n    box-sizing: border-box;\n}\n\n.gui_flex-wrapper_uXHkj {\n    display: flex;\n\n    /*\n        Make 2 columns:\n        a) for the blocks + workspace panes, and\n        b) for combined stage menu + stage + sprite/stage selectors\n    */\n    flex-direction: row;\n    height: 100%;\n\n    /*\n        Stop scrollbar popping in and out from scratch-blocks border issue\n        https://github.com/LLK/scratch-gui/issues/318\n        TW: and also fix double horizontal scrollbar at some screen sizes in paint editor\n    */\n    overflow: hidden;\n}\n\n.gui_editor-wrapper_2DYcj {\n    /*\n        This is carefully balanced--  the minimum width at which the GUI will be displayed is 1024px.\n        At that size, the stage pane is 408px wide, with $space of padding to each side.\n        However, we must also add the border width to the stage pane. All-in-all, the stage pane's final width is\n        408px + ($space + $stage-standard-border-width * 2) (one border & padding per left/right side).\n\n        @todo This is in place to prevent \"doubling up\" of horizontal scrollbars in narrow windows, but there are likely\n        much better ways to solve that (e.g. undo #2124, remove this flex-basis entirely). However, they run their own\n        risks of breaking things, so let's just leave this as-is for the time being.\n    */\n    flex-basis: calc(1024px - 408px - ((0.5rem + 0.0625rem) * 2));\n    flex-grow: 1;\n    flex-shrink: 0;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-list_87TYM {\n    height: 2.75rem;\n    width: 250px; /* Match width of the toolbox */\n    display: flex;\n    align-items: flex-end;\n    flex-shrink: 0;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 500;\n    font-size: 0.80rem;\n\n    /* Overrides for react-tabs styling */\n    margin: 0 !important;\n    border-bottom: 0 !important;\n\n    color: var(--text-primary);\n}\n\n.gui_tab_27Unf {\n    flex-grow: 1;\n    height: 80%;\n    margin-bottom: 0;\n\n    border-radius: 1rem 1rem 0 0;\n    border: 1px solid var(--ui-black-transparent);\n\n    padding: 0.125rem 1.25rem 0;\n    font-size: 0.75rem;\n\n    background-color: var(--ui-tertiary);\n    color: var(--ui-text-primary-transparent);\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n    white-space: nowrap;\n}\n\n[dir=\"ltr\"] .gui_tab_27Unf {\n    margin-left: -0.5rem;\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf {\n    margin-right: -0.5rem;\n}\n\n[dir=\"ltr\"] .gui_tab_27Unf:nth-of-type(1) {\n    margin-left: 0;\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf:nth-of-type(1) {\n    margin-right: 0;\n}\n\n/* Use z-indices to force left-on-top for tabs */\n\n.gui_tab_27Unf:nth-of-type(1) {\n    z-index: 3;\n}\n\n.gui_tab_27Unf:nth-of-type(2) {\n    z-index: 2;\n}\n\n.gui_tab_27Unf:nth-of-type(3) {\n    z-index: 1;\n}\n\n.gui_tab_27Unf:hover {\n  background-color: var(--ui-primary);\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu {\n    height: 90%;\n    color: var(--looks-secondary);\n    background-color: var(--ui-white);\n    z-index: 4; /* Make sure selected is always above */\n}\n\n.gui_tab_27Unf img {\n    width: 1.375rem;\n    filter: grayscale(100%);\n}\n\n[dir=\"ltr\"] .gui_tab_27Unf img {\n    margin-right: 0.125rem;\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf img {\n    margin-left: 0.125rem;\n}\n\n/* mirror blocks and sound tab icons */\n\n[dir=\"rtl\"] .gui_tab_27Unf:nth-of-type(1) img {\n    transform: scaleX(-1);\n}\n\n[dir=\"rtl\"] .gui_tab_27Unf:nth-of-type(3) img {\n    transform: scaleX(-1);\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu img {\n    filter: none;\n}\n\n/* Tab style overrides from react-tabs */\n\n.gui_tab_27Unf.gui_is-selected_sHAiu:after {\n    display: none;\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu:focus {\n    outline: none;\n    box-shadow: none;\n    border-color: var(--ui-black-transparent);\n}\n\n.gui_tab_27Unf.gui_is-selected_sHAiu:focus:after {\n    display: none;\n}\n\n/* Body of the tabs */\n\n.gui_tabs_AgmuP {\n    position: relative;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-panel_22sLx {\n    position: relative;\n    flex-grow: 1;\n    display: none;\n}\n\n.gui_tab-panel_22sLx.gui_is-selected_sHAiu {\n    display: flex;\n}\n\n.gui_blocks-wrapper_1ccgf {\n    flex-grow: 1;\n    position: relative;\n}\n\n.gui_stage-and-target-wrapper_69KBf {\n    /*\n        Makes rows for children:\n          1) stage menu\n          2) stage\n          3) sprite/stage selectors\n        Only reason we need this, is so .targetWrapper, which holds the selectors,\n        goes to full vertical height of the window\n    */\n    display: flex;\n    flex-direction: column;\n    /* pad entire wrapper to the left and right; allow children to fill width */\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n\n    /* this will only ever be as wide as the stage */\n    flex-basis: 0;\n}\n\n.gui_target-wrapper_36Gbz {\n    display: flex;\n    flex-grow: 1;\n    flex-basis: 0;\n\n    padding-top: 0.5rem;\n    min-height: 0; /* this makes it work in Firefox */\n\n    /*\n        For making the sprite-selector a scrollable pane\n        @todo: Not working in Safari\n    */\n    /* TODO this also breaks the thermometer menu */\n    /* overflow: hidden; */\n}\n\n.gui_extension-button-container_b4rCs {\n    width: 3.75rem;\n    height: 3.25rem;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 42;\n    background: var(--looks-secondary);\n\n    border: 1px solid var(--looks-secondary);\n    box-sizing: content-box; /* To match scratch-block vertical toolbox borders */\n}\n\n.gui_extension-button-container_b4rCs:before {\n    content: \"\";\n    position: absolute;\n    top: calc(calc(-1 * 15px) - 1px);\n    left: -1px;\n    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15));\n    height: 15px;\n    width: calc(100% + 0.5px);\n}\n\n.gui_extension-button_2T7PA {\n    background: none;\n    border: none;\n    outline: none;\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.gui_extension-button-icon_S4gDk {\n    width: 1.75rem;\n    height: 1.75rem;\n}\n\n[dir=\"rtl\"] .gui_extension-button-icon_S4gDk {\n    transform: scaleX(-1);\n}\n\n.gui_extension-button_2T7PA > div {\n    margin-top: 0;\n}\n\n/* Sprite Selection Watermark */\n\n.gui_watermark_3vBYb {\n    position: absolute;\n    top: 1.25rem;\n    pointer-events: none;\n}\n\n[dir=\"ltr\"] .gui_watermark_3vBYb {\n    right: 1.25rem;\n}\n\n[dir=\"rtl\"] .gui_watermark_3vBYb {\n    left: 1.25rem;\n}\n\n/* Menu */\n\n.gui_menu-bar-position_3U1T0 {\n    position: relative;\n    z-index: 491;\n}\n\n/* Alerts */\n\n.gui_alerts-container_15BWp {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    z-index: 490;\n    position: absolute;\n    margin-top: 53px;\n    pointer-events: none;\n}\n\n/*\n    Make the (background) page not scrollable when modals are open\n    This CSS class is automatically added to the body when react-modal is open\n*/\n\n.ReactModal__Body--open {\n    overflow: hidden;\n}\n\n/* when in the browser's fullscreen mode, we need to put our own background to avoid just having black */\n\n.gui_fullscreen-background_3g8mV {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    /* overridden by JS; this will be used if the browser can't understand that color */\n    background-color: white;\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"page-wrapper": "gui_page-wrapper_1cgy0",
 	"pageWrapper": "gui_page-wrapper_1cgy0",
-	"paint-editor_canvas-container_x2D0a": "gui_paint-editor_canvas-container_x2D0a_14u5D",
-	"paintEditorCanvasContainerX2D0A": "gui_paint-editor_canvas-container_x2D0a_14u5D",
-	"injectionDiv": "gui_injectionDiv_pA5NM",
 	"body-wrapper": "gui_body-wrapper_-N0sA",
 	"bodyWrapper": "gui_body-wrapper_-N0sA",
 	"flex-wrapper": "gui_flex-wrapper_uXHkj",
@@ -1538,12 +1535,15 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.menu-bar_menu-bar_JcuHF {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    flex-wrap: nowrap;\n    gap: 0.5rem;\n\n    /*\n        For most things, we shouldn't explicitly set height, and let the\n        content push the element to whatever fits. Using a fixed height\n        instead, will help us subtract the value we assign from the body,\n        adding up to a perfect 100%. This means we don't need to set\n        overflow: hidden, which makes it hard to debug. border-box\n        simplifies by all of this by removing padding from the equation.\n    */\n    box-sizing: border-box;\n    height: 3rem;\n\n    /*\n        @todo: This adds ~20px in Chrome, when scrolling to the right,\n        but fixes [FFx + Safari] [resize window down + scroll to the right] bug.\n        width: 100%;\n    */\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.75rem;\n    font-weight: bold;\n    background-color: var(--menu-bar-background);\n    background-image: var(--menu-bar-background-image);\n    color: var(--menu-bar-foreground);\n}\n\n.menu-bar_main-menu_3wjWH {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    align-items: center;\n    flex-grow: 1;\n    gap: 0.5rem;\n}\n\n.menu-bar_inactive_2rk8q {\n    opacity: 0;\n}\n\n.menu-bar_scratch-logo_2uReV {\n    height:  1.6rem;\n    vertical-align: middle;\n}\n\n.menu-bar_scratch-logo_2uReV.menu-bar_clickable_1g3uo {\n    cursor: pointer;\n}\n\n.menu-bar_menu-bar-item_oLDa- {\n    display: flex;\n    text-decoration: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    align-self: center;\n    position: relative;\n    align-items: center;\n    white-space: nowrap;\n    height: 3rem;\n}\n\n.menu-bar_menu-bar-item_oLDa-.menu-bar_hoverable_c6WFB {\n    cursor: pointer;\n}\n\n.menu-bar_menu-bar-item_oLDa-.menu-bar_active_2Lfqh,\n.menu-bar_menu-bar-item_oLDa-.menu-bar_hoverable_c6WFB:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.menu-bar_menu-bar-item_oLDa-.menu-bar_growable_1sHWN {\n    max-width: 12rem;\n    flex: 1;\n}\n\n.menu-bar_title-field-growable_3qr4G {\n    flex-grow: 1;\n    width: 2rem;\n}\n\n.menu-bar_file-group_1_CHX {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    gap: 0.5rem;\n}\n\n.menu-bar_file-group_1_CHX .menu-bar_menu-bar-item_oLDa- {\n    padding: 0 0.5rem;\n}\n\n.menu-bar_menu-bar-menu_239MD {\n    margin-top: 3rem;\n    z-index: 491;\n}\n\n.menu-bar_feedback-link_1BnAR {\n    color: var(--menu-bar-background);\n    text-decoration: none;\n}\n\n.menu-bar_feedback-button_2rEcj {\n    background-color: white;\n    color: inherit;\n    height: 34px;\n}\n\n.menu-bar_divider_2VFCm {\n    height: 34px;\n}\n\n.menu-bar_author-info_22Nub {\n    margin-left: .25rem;\n    margin-right: .6875rem;\n}\n\n.menu-bar_menu-bar-button_3IDN0 {\n    height: 2rem;\n}\n\n..menu-bar_menu-bar_title-field_HrpPx {\n    width: auto;\n}\n\n.menu-bar_remix-button_2LQQc {\n    background-color: var(--pen-primary)\n}\n\n.menu-bar_remix-button-icon_2E93U {\n    height: 1.25rem;\n}\n\n.menu-bar_coming-soon_3yU1L >:not(.menu-bar_coming-soon-tooltip_20GhI) {\n    opacity: 0.5;\n}\n\n.menu-bar_account-info-group_MeJZP {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_account-info-group_MeJZP .menu-bar_menu-bar-item_oLDa- {\n    margin: 0 .25rem;\n    padding: 0 0.75rem;\n}\n\n.menu-bar_mystuff-icon_3DtcD {\n    margin: 0 .25rem;\n    height: 1rem;\n}\n\n.menu-bar_help-icon_3Xtrt {\n    margin: 0 .25rem 0 0;\n}\n\n[dir=\"rtl\"] .menu-bar_help-icon_3Xtrt {\n    margin: 0 0 0 .25rem;\n}\n\n.menu-bar_account-nav-menu_3uu9p, .menu-bar_mystuff-button_16jPf {\n    padding: 0 .25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_profile-icon_2bJkI {\n    margin: 0 .25rem;\n    width: 2rem;\n    border-radius: calc(0.5rem / 2);\n}\n\n.menu-bar_dropdown-caret-icon_FkdUe {\n    width: 0.5rem;\n    height: 0.5rem;\n}\n\n[dir=\"ltr\"] .menu-bar_dropdown-caret-icon_FkdUe {\n    margin-left: .5rem;\n}\n\n[dir=\"rtl\"] .menu-bar_dropdown-caret-icon_FkdUe {\n    margin-right: .5rem;\n}\n\n.menu-bar_disabled_3x5sy {\n    opacity: 0.5;\n}\n\n.menu-bar_mystuff_3RiSb > a {\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 45%;\n  padding-right: 10px;\n  padding-left: 10px;\n  width: 30px;\n  overflow: hidden;\n  text-indent: 50px;\n  white-space: nowrap;\n}\n\n.menu-bar_mystuff_3RiSb > a:hover {\n  background-size: 50%;\n}\n\n.menu-bar_mystuff_3RiSb > a {\n  /* background-image: url(\"/images/mystuff.png\"); */\n}\n\n.menu-bar_about-icon_dZI7K {\n    height: 1.25rem;\n    margin: 0.5rem;\n    vertical-align: middle;\n}\n\n.menu-bar_collapsible-label_o2tym {\n    margin: 0 .25rem;\n}\n\n@media only screen and (max-width: 1124px) {\n    .menu-bar_tutorials-label_2tFBo, .menu-bar_collapsible-label_o2tym {\n        display: none;\n    }\n\n    .menu-bar_help-icon_3Xtrt {\n        margin-right: 0;\n    }\n}\n\n.menu-bar_menu-item-link_20T0- {\n    color: inherit;\n    text-decoration: none;\n}\n\n/* Custom Menu Bar Alignments */\n\n.menu-bar_alignleft_2ak-D {\n    justify-content: flex-start !important;\n}\n\n.menu-bar_aligncenter_OAuO1 {\n    justify-content: center !important;\n}\n\n.menu-bar_alignright_1Ghi7 {\n    justify-content: flex-end !important;\n}\n\n/* Fix spacing if aligned center or right */\n\n.menu-bar_aligncenter_OAuO1 .menu-bar_main-menu_3wjWH, \n.menu-bar_alignright_1Ghi7 .menu-bar_main-menu_3wjWH {\n    flex-grow: 0;\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.menu-bar_menu-bar_JcuHF {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    flex-wrap: nowrap;\n    gap: 0.5rem;\n\n    /*\n        For most things, we shouldn't explicitly set height, and let the\n        content push the element to whatever fits. Using a fixed height\n        instead, will help us subtract the value we assign from the body,\n        adding up to a perfect 100%. This means we don't need to set\n        overflow: hidden, which makes it hard to debug. border-box\n        simplifies by all of this by removing padding from the equation.\n    */\n    box-sizing: border-box;\n    height: 3rem;\n\n    /*\n        @todo: This adds ~20px in Chrome, when scrolling to the right,\n        but fixes [FFx + Safari] [resize window down + scroll to the right] bug.\n        width: 100%;\n    */\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.75rem;\n    font-weight: bold;\n    background-color: var(--menu-bar-background);\n    background-image: var(--menu-bar-background-image);\n    color: var(--menu-bar-foreground);\n}\n\n/* Target the injection div globally, ignoring the Webpack hash */\n\n.menu-bar_injectionDiv_2jpm6 {\n    border: none !important;\n}\n\n.menu-bar_blocks_blocks_C530M_21Ov5 .menu-bar_injectionDiv_2jpm6 {\n    border: none !important;\n}\n\n.menu-bar_main-menu_3wjWH {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    align-items: center;\n    flex-grow: 1;\n    gap: 0.5rem;\n}\n\n.menu-bar_inactive_2rk8q {\n    opacity: 0;\n}\n\n.menu-bar_scratch-logo_2uReV {\n    height:  1.6rem;\n    vertical-align: middle;\n}\n\n.menu-bar_scratch-logo_2uReV.menu-bar_clickable_1g3uo {\n    cursor: pointer;\n}\n\n.menu-bar_menu-bar-item_oLDa- {\n    display: flex;\n    text-decoration: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    align-self: center;\n    position: relative;\n    align-items: center;\n    white-space: nowrap;\n    height: 3rem;\n}\n\n.menu-bar_menu-bar-item_oLDa-.menu-bar_hoverable_c6WFB {\n    cursor: pointer;\n}\n\n.menu-bar_menu-bar-item_oLDa-.menu-bar_active_2Lfqh,\n.menu-bar_menu-bar-item_oLDa-.menu-bar_hoverable_c6WFB:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.menu-bar_menu-bar-item_oLDa-.menu-bar_growable_1sHWN {\n    max-width: 12rem;\n    flex: 1;\n}\n\n.menu-bar_title-field-growable_3qr4G {\n    flex-grow: 1;\n}\n\n.menu-bar_file-group_1_CHX {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    gap: 0.5rem;\n}\n\n.menu-bar_file-group_1_CHX .menu-bar_menu-bar-item_oLDa- {\n    padding: 0 0.5rem;\n}\n\n.menu-bar_menu-bar-menu_239MD {\n    margin-top: 3rem;\n    z-index: 491;\n}\n\n.menu-bar_feedback-link_1BnAR {\n    color: var(--menu-bar-background);\n    text-decoration: none;\n}\n\n.menu-bar_feedback-button_2rEcj {\n    background-color: white;\n    color: inherit;\n    height: 34px;\n}\n\n.menu-bar_divider_2VFCm {\n    height: 34px;\n}\n\n.menu-bar_author-info_22Nub {\n    margin-left: .25rem;\n    margin-right: .6875rem;\n}\n\n.menu-bar_menu-bar-button_3IDN0 {\n    height: 2rem;\n}\n\n..menu-bar_menu-bar_title-field_HrpPx {\n    width: auto;\n}\n\n.menu-bar_remix-button_2LQQc {\n    background-color: var(--pen-primary)\n}\n\n.menu-bar_remix-button-icon_2E93U {\n    height: 1.25rem;\n}\n\n.menu-bar_coming-soon_3yU1L >:not(.menu-bar_coming-soon-tooltip_20GhI) {\n    opacity: 0.5;\n}\n\n.menu-bar_account-info-group_MeJZP {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_account-info-group_MeJZP .menu-bar_menu-bar-item_oLDa- {\n    margin: 0 .25rem;\n    padding: 0 0.75rem;\n}\n\n.menu-bar_mystuff-icon_3DtcD {\n    margin: 0 .25rem;\n    height: 1rem;\n}\n\n.menu-bar_help-icon_3Xtrt {\n    margin: 0 .25rem 0 0;\n}\n\n[dir=\"rtl\"] .menu-bar_help-icon_3Xtrt {\n    margin: 0 0 0 .25rem;\n}\n\n.menu-bar_account-nav-menu_3uu9p, .menu-bar_mystuff-button_16jPf {\n    padding: 0 .25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_profile-icon_2bJkI {\n    margin: 0 .25rem;\n    width: 2rem;\n    border-radius: calc(0.5rem / 2);\n}\n\n.menu-bar_dropdown-caret-icon_FkdUe {\n    width: 0.5rem;\n    height: 0.5rem;\n}\n\n[dir=\"ltr\"] .menu-bar_dropdown-caret-icon_FkdUe {\n    margin-left: .5rem;\n}\n\n[dir=\"rtl\"] .menu-bar_dropdown-caret-icon_FkdUe {\n    margin-right: .5rem;\n}\n\n.menu-bar_disabled_3x5sy {\n    opacity: 0.5;\n}\n\n.menu-bar_mystuff_3RiSb > a {\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 45%;\n  padding-right: 10px;\n  padding-left: 10px;\n  width: 30px;\n  overflow: hidden;\n  text-indent: 50px;\n  white-space: nowrap;\n}\n\n.menu-bar_mystuff_3RiSb > a:hover {\n  background-size: 50%;\n}\n\n.menu-bar_mystuff_3RiSb > a {\n  /* background-image: url(\"/images/mystuff.png\"); */\n}\n\n.menu-bar_about-icon_dZI7K {\n    height: 1.25rem;\n    margin: 0.5rem;\n    vertical-align: middle;\n}\n\n.menu-bar_collapsible-label_o2tym {\n    margin: 0 .25rem;\n}\n\n@media only screen and (max-width: 1124px) {\n    .menu-bar_tutorials-label_2tFBo, .menu-bar_collapsible-label_o2tym {\n        display: none;\n    }\n\n    .menu-bar_help-icon_3Xtrt {\n        margin-right: 0;\n    }\n}\n\n.menu-bar_menu-item-link_20T0- {\n    color: inherit;\n    text-decoration: none;\n}\n\n/* Custom Menu Bar Alignments */\n\n.menu-bar_alignleft_2ak-D {\n    justify-content: flex-start !important;\n}\n\n.menu-bar_aligncenter_OAuO1 {\n    justify-content: center !important;\n}\n\n.menu-bar_alignright_1Ghi7 {\n    justify-content: flex-end !important;\n}\n\n/* Fix spacing if aligned center or right */\n\n.menu-bar_aligncenter_OAuO1 .menu-bar_main-menu_3wjWH, \n.menu-bar_alignright_1Ghi7 .menu-bar_main-menu_3wjWH {\n    flex-grow: 0;\n}", ""]);
 
 // exports
 exports.locals = {
 	"menu-bar": "menu-bar_menu-bar_JcuHF",
 	"menuBar": "menu-bar_menu-bar_JcuHF",
+	"injectionDiv": "menu-bar_injectionDiv_2jpm6",
+	"blocks_blocks_C530M": "menu-bar_blocks_blocks_C530M_21Ov5",
+	"blocksBlocksC530M": "menu-bar_blocks_blocks_C530M_21Ov5",
 	"main-menu": "menu-bar_main-menu_3wjWH",
 	"mainMenu": "menu-bar_main-menu_3wjWH",
 	"inactive": "menu-bar_inactive_2rk8q",
@@ -4673,14 +4673,13 @@ class ActionMenu extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     this.containerRef = ref;
   }
   render() {
-    const {
-      className,
-      img: mainImg,
-      title: mainTitle,
-      moreButtons,
-      tooltipPlace,
-      onClick
-    } = this.props;
+    const _this$props = this.props,
+      className = _this$props.className,
+      mainImg = _this$props.img,
+      mainTitle = _this$props.title,
+      moreButtons = _this$props.moreButtons,
+      tooltipPlace = _this$props.tooltipPlace,
+      onClick = _this$props.onClick;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_action_menu_css__WEBPACK_IMPORTED_MODULE_5___default.a.menuContainer, className, {
         [_action_menu_css__WEBPACK_IMPORTED_MODULE_5___default.a.expanded]: this.state.isOpen,
@@ -4710,15 +4709,13 @@ class ActionMenu extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: _action_menu_css__WEBPACK_IMPORTED_MODULE_5___default.a.moreButtons
     }, (moreButtons || []).map((_ref, keyId) => {
-      let {
-        img,
-        title,
-        onClick: handleClick,
-        fileAccept,
-        fileChange,
-        fileInput,
-        fileMultiple
-      } = _ref;
+      let img = _ref.img,
+        title = _ref.title,
+        handleClick = _ref.onClick,
+        fileAccept = _ref.fileAccept,
+        fileChange = _ref.fileChange,
+        fileInput = _ref.fileInput,
+        fileMultiple = _ref.fileMultiple;
       const isComingSoon = !handleClick;
       const hasFileInput = fileInput;
       const tooltipId = "".concat(this.mainTooltipId, "-").concat(title);
@@ -4910,21 +4907,19 @@ const closeButtonColors = {
   [_lib_alerts_index_jsx__WEBPACK_IMPORTED_MODULE_7__["AlertLevels"].WARN]: _close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_5__["default"].COLOR_ORANGE
 };
 const AlertComponent = _ref => {
-  let {
-    content,
-    closeButton,
-    extensionName,
-    iconSpinner,
-    iconURL,
-    level,
-    showDownload,
-    showSaveNow,
-    onCloseAlert,
-    onDownload,
-    onSaveNow,
-    onReconnect,
-    showReconnect
-  } = _ref;
+  let content = _ref.content,
+    closeButton = _ref.closeButton,
+    extensionName = _ref.extensionName,
+    iconSpinner = _ref.iconSpinner,
+    iconURL = _ref.iconURL,
+    level = _ref.level,
+    showDownload = _ref.showDownload,
+    showSaveNow = _ref.showSaveNow,
+    onCloseAlert = _ref.onCloseAlert,
+    onDownload = _ref.onDownload,
+    onSaveNow = _ref.onSaveNow,
+    onReconnect = _ref.onReconnect,
+    showReconnect = _ref.showReconnect;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_alert_css__WEBPACK_IMPORTED_MODULE_8___default.a.alert, _alert_css__WEBPACK_IMPORTED_MODULE_8___default.a[level])
   }, (iconSpinner || iconURL) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -5048,11 +5043,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const AlertsComponent = _ref => {
-  let {
-    alertsList,
-    className,
-    onCloseAlert
-  } = _ref;
+  let alertsList = _ref.alertsList,
+    className = _ref.className,
+    onCloseAlert = _ref.onCloseAlert;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     bounds: "parent",
     className: className
@@ -5140,11 +5133,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const InlineMessageComponent = _ref => {
-  let {
-    content,
-    iconSpinner,
-    level
-  } = _ref;
+  let content = _ref.content,
+    iconSpinner = _ref.iconSpinner,
+    level = _ref.level;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_inline_message_css__WEBPACK_IMPORTED_MODULE_5___default.a.inlineMessage, _inline_message_css__WEBPACK_IMPORTED_MODULE_5___default.a[level])
   }, iconSpinner && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spinner_spinner_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -5362,31 +5353,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Selector = props => {
-  const {
-    buttons,
-    containerRef,
-    dragType,
-    isRtl,
-    items,
-    selectedItemIndex,
-    draggingIndex,
-    draggingType,
-    ordering,
-    onAddSortable,
-    onRemoveSortable,
-    onDeleteClick,
-    onDuplicateClick,
-    onExportClick,
-    onItemClick
-  } = props;
+  const buttons = props.buttons,
+    containerRef = props.containerRef,
+    dragType = props.dragType,
+    isRtl = props.isRtl,
+    items = props.items,
+    selectedItemIndex = props.selectedItemIndex,
+    draggingIndex = props.draggingIndex,
+    draggingType = props.draggingType,
+    ordering = props.ordering,
+    onAddSortable = props.onAddSortable,
+    onRemoveSortable = props.onRemoveSortable,
+    onDeleteClick = props.onDeleteClick,
+    onDuplicateClick = props.onDuplicateClick,
+    onExportClick = props.onExportClick,
+    onItemClick = props.onItemClick;
   const isRelevantDrag = draggingType === dragType;
   let newButtonSection = null;
   if (buttons.length > 0) {
-    const {
-      img,
-      title,
-      onClick
-    } = buttons[0];
+    const _buttons$ = buttons[0],
+      img = _buttons$.img,
+      title = _buttons$.title,
+      onClick = _buttons$.onClick;
     const moreButtons = buttons.slice(1);
     newButtonSection = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
       className: _selector_css__WEBPACK_IMPORTED_MODULE_9___default.a.newButtons
@@ -5844,23 +5832,21 @@ const labelMap = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"
   }
 });
 const Backpack = _ref => {
-  let {
-    blockDragOver,
-    containerRef,
-    contents,
-    dragOver,
-    error,
-    expanded,
-    intl,
-    loading,
-    showMore,
-    onToggle,
-    onDelete,
-    onRename,
-    onMouseEnter,
-    onMouseLeave,
-    onMore
-  } = _ref;
+  let blockDragOver = _ref.blockDragOver,
+    containerRef = _ref.containerRef,
+    contents = _ref.contents,
+    dragOver = _ref.dragOver,
+    error = _ref.error,
+    expanded = _ref.expanded,
+    intl = _ref.intl,
+    loading = _ref.loading,
+    showMore = _ref.showMore,
+    onToggle = _ref.onToggle,
+    onDelete = _ref.onDelete,
+    onRename = _ref.onRename,
+    onMouseEnter = _ref.onMouseEnter,
+    onMouseLeave = _ref.onMouseLeave,
+    onMore = _ref.onMore;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _backpack_css__WEBPACK_IMPORTED_MODULE_7___default.a.backpackContainer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6018,10 +6004,8 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const BlocksComponent = props => {
-  const {
-      containerRef,
-      dragOver
-    } = props,
+  const containerRef = props.containerRef,
+    dragOver = props.dragOver,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
     className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_blocks_css__WEBPACK_IMPORTED_MODULE_4___default.a.blocks, {
@@ -6125,24 +6109,22 @@ const getRandomColor = function () {
   };
 }();
 const Box = props => {
-  const {
-      alignContent,
-      alignItems,
-      alignSelf,
-      basis,
-      children,
-      className,
-      componentRef,
-      direction,
-      element,
-      grow,
-      height,
-      justifyContent,
-      width,
-      wrap,
-      shrink,
-      style
-    } = props,
+  const alignContent = props.alignContent,
+    alignItems = props.alignItems,
+    alignSelf = props.alignSelf,
+    basis = props.basis,
+    children = props.children,
+    className = props.className,
+    componentRef = props.componentRef,
+    direction = props.direction,
+    element = props.element,
+    grow = props.grow,
+    height = props.height,
+    justifyContent = props.justifyContent,
+    width = props.width,
+    wrap = props.wrap,
+    shrink = props.shrink,
+    style = props.style,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(element, _objectSpread({
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _box_css__WEBPACK_IMPORTED_MODULE_4___default.a.box),
@@ -6285,9 +6267,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"
 });
 const noop = () => {};
 const BrowserModal = _ref => {
-  let {
-      intl
-    } = _ref,
+  let intl = _ref.intl,
     props = _objectWithoutProperties(_ref, _excluded);
   const title = props.onClickDesktopSettings ? messages.systemNotSupported : messages.browserNotSupported;
   const incompatibleUserscripts = Object(_lib_tw_environment_support_prober_js__WEBPACK_IMPORTED_MODULE_5__["findIncompatibleUserscripts"])();
@@ -6413,16 +6393,14 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const ButtonComponent = _ref => {
-  let {
-      className,
-      disabled,
-      iconClassName,
-      iconSrc,
-      iconWidth,
-      iconHeight,
-      onClick,
-      children
-    } = _ref,
+  let className = _ref.className,
+    disabled = _ref.disabled,
+    iconClassName = _ref.iconClassName,
+    iconSrc = _ref.iconSrc,
+    iconWidth = _ref.iconWidth,
+    iconHeight = _ref.iconHeight,
+    onClick = _ref.onClick,
+    children = _ref.children,
     props = _objectWithoutProperties(_ref, _excluded);
   if (disabled) {
     onClick = function onClick() {};
@@ -6541,14 +6519,12 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const CardHeader = _ref => {
-  let {
-    onCloseCards,
-    onShrinkExpandCards,
-    onShowAll,
-    totalSteps,
-    step,
-    expanded
-  } = _ref;
+  let onCloseCards = _ref.onCloseCards,
+    onShrinkExpandCards = _ref.onShrinkExpandCards,
+    onShowAll = _ref.onShowAll,
+    totalSteps = _ref.totalSteps,
+    step = _ref.step,
+    expanded = _ref.expanded;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: expanded ? _card_css__WEBPACK_IMPORTED_MODULE_5___default.a.headerButtons : classnames__WEBPACK_IMPORTED_MODULE_2___default()(_card_css__WEBPACK_IMPORTED_MODULE_5___default.a.headerButtons, _card_css__WEBPACK_IMPORTED_MODULE_5___default.a.headerButtonsHidden)
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -6647,10 +6623,8 @@ VideoStep.propTypes = {
   video: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired
 };
 const ImageStep = _ref2 => {
-  let {
-    title,
-    image
-  } = _ref2;
+  let title = _ref2.title,
+    image = _ref2.image;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _card_css__WEBPACK_IMPORTED_MODULE_5___default.a.stepTitle
   }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -6667,12 +6641,10 @@ ImageStep.propTypes = {
   title: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.node.isRequired
 };
 const NextPrevButtons = _ref3 => {
-  let {
-    isRtl,
-    onNextStep,
-    onPrevStep,
-    expanded
-  } = _ref3;
+  let isRtl = _ref3.isRtl,
+    onNextStep = _ref3.onNextStep,
+    onPrevStep = _ref3.onPrevStep,
+    expanded = _ref3.expanded;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, onNextStep ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: expanded ? isRtl ? _card_css__WEBPACK_IMPORTED_MODULE_5___default.a.leftCard : _card_css__WEBPACK_IMPORTED_MODULE_5___default.a.rightCard : _card_css__WEBPACK_IMPORTED_MODULE_5___default.a.hidden
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -6706,12 +6678,10 @@ CardHeader.propTypes = {
   totalSteps: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number
 };
 const PreviewsStep = _ref4 => {
-  let {
-    deckIds,
-    content,
-    onActivateDeckFactory,
-    onShowAll
-  } = _ref4;
+  let deckIds = _ref4.deckIds,
+    content = _ref4.content,
+    onActivateDeckFactory = _ref4.onActivateDeckFactory,
+    onShowAll = _ref4.onShowAll;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _card_css__WEBPACK_IMPORTED_MODULE_5___default.a.stepTitle
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
@@ -6757,30 +6727,26 @@ PreviewsStep.propTypes = {
   onShowAll: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func.isRequired
 };
 const Cards = props => {
-  const {
-      activeDeckId,
-      content,
-      dragging,
-      isRtl,
-      locale,
-      onActivateDeckFactory,
-      onCloseCards,
-      onShrinkExpandCards,
-      onDrag,
-      onStartDrag,
-      onEndDrag,
-      onShowAll,
-      onNextStep,
-      onPrevStep,
-      showVideos,
-      step,
-      expanded
-    } = props,
+  const activeDeckId = props.activeDeckId,
+    content = props.content,
+    dragging = props.dragging,
+    isRtl = props.isRtl,
+    locale = props.locale,
+    onActivateDeckFactory = props.onActivateDeckFactory,
+    onCloseCards = props.onCloseCards,
+    onShrinkExpandCards = props.onShrinkExpandCards,
+    onDrag = props.onDrag,
+    onStartDrag = props.onStartDrag,
+    onEndDrag = props.onEndDrag,
+    onShowAll = props.onShowAll,
+    onNextStep = props.onNextStep,
+    onPrevStep = props.onPrevStep,
+    showVideos = props.showVideos,
+    step = props.step,
+    expanded = props.expanded,
     posProps = _objectWithoutProperties(props, _excluded);
-  let {
-    x,
-    y
-  } = posProps;
+  let x = posProps.x,
+    y = posProps.y;
   if (activeDeckId === null) return;
 
   // Tutorial cards need to calculate their own dragging bounds
@@ -8738,17 +8704,15 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"
   }
 });
 const Controls = function Controls(props) {
-  const {
-      active,
-      className,
-      intl,
-      onGreenFlagClick,
-      onStopAllClick,
-      turbo,
-      framerate,
-      interpolation,
-      isSmall
-    } = props,
+  const active = props.active,
+    className = props.className,
+    intl = props.intl,
+    onGreenFlagClick = props.onGreenFlagClick,
+    onStopAllClick = props.onStopAllClick,
+    turbo = props.turbo,
+    framerate = props.framerate,
+    interpolation = props.interpolation,
+    isSmall = props.isSmall,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", _extends({
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_controls_css__WEBPACK_IMPORTED_MODULE_8___default.a.controlsContainer, className)
@@ -9269,10 +9233,9 @@ class Dial extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
    * @returns {number} Direction in degrees, clockwise, 90=horizontal.
    */
   directionToMouseEvent(e) {
-    const {
-      x: mx,
-      y: my
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_3__["getEventXY"])(e);
+    const _getEventXY = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_3__["getEventXY"])(e),
+      mx = _getEventXY.x,
+      my = _getEventXY.y;
     const bbox = this.containerElement.getBoundingClientRect();
     const cy = bbox.top + bbox.height / 2;
     const cx = bbox.left + bbox.width / 2;
@@ -9325,10 +9288,9 @@ class Dial extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     this.handleElement = el;
   }
   render() {
-    const {
-      direction,
-      radius
-    } = this.props;
+    const _this$props = this.props,
+      direction = _this$props.direction,
+      radius = _this$props.radius;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _dial_css__WEBPACK_IMPORTED_MODULE_4___default.a.container
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -9585,9 +9547,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Divider = _ref => {
-  let {
-    className
-  } = _ref;
+  let className = _ref.className;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_divider_css__WEBPACK_IMPORTED_MODULE_3___default.a.divider, className)
   });
@@ -9650,11 +9610,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /* eslint no-confusing-arrow: ["error", {"allowParens": true}] */
 const DragLayer = _ref => {
-  let {
-    dragging,
-    img,
-    currentOffset
-  } = _ref;
+  let dragging = _ref.dragging,
+    img = _ref.img,
+    currentOffset = _ref.currentOffset;
   return dragging ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _drag_layer_css__WEBPACK_IMPORTED_MODULE_2___default.a.dragLayer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -9738,14 +9696,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const FilterComponent = props => {
-  const {
-    className,
-    onChange,
-    onClear,
-    placeholderText,
-    filterQuery,
-    inputClassName
-  } = props;
+  const className = props.className,
+    onChange = props.onChange,
+    onClear = props.onClear,
+    placeholderText = props.placeholderText,
+    filterQuery = props.filterQuery,
+    inputClassName = props.inputClassName;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _filter_css__WEBPACK_IMPORTED_MODULE_6___default.a.filter, {
       [_filter_css__WEBPACK_IMPORTED_MODULE_6___default.a.isActive]: filterQuery.length > 0
@@ -9912,9 +9868,7 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const Input = props => {
-  const {
-      small
-    } = props,
+  const small = props.small,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", _extends({}, componentProps, {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_input_css__WEBPACK_IMPORTED_MODULE_3___default.a.inputForm, props.className, {
@@ -10059,12 +10013,10 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const GreenFlagComponent = function GreenFlagComponent(props) {
-  const {
-      active,
-      className,
-      onClick,
-      title
-    } = props,
+  const active = props.active,
+    className = props.className,
+    onClick = props.onClick,
+    title = props.title,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", _extends({
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _green_flag_css__WEBPACK_IMPORTED_MODULE_4___default.a.greenFlag, {
@@ -10100,7 +10052,7 @@ GreenFlagComponent.defaultProps = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNi42MyAxNy41Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMntmaWxsOiM0Y2JmNTY7c3Ryb2tlOiM0NTk5M2Q7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO30uY2xzLTJ7c3Ryb2tlLXdpZHRoOjEuNXB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi0tZ3JlZW4tZmxhZzwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNLjc1LDJBNi40NCw2LjQ0LDAsMCwxLDguNDQsMmgwYTYuNDQsNi40NCwwLDAsMCw3LjY5LDBWMTIuNGE2LjQ0LDYuNDQsMCwwLDEtNy42OSwwaDBhNi40NCw2LjQ0LDAsMCwwLTcuNjksMCIvPjxsaW5lIGNsYXNzPSJjbHMtMiIgeDE9IjAuNzUiIHkxPSIxNi43NSIgeDI9IjAuNzUiIHkyPSIwLjc1Ii8+PC9zdmc+"
+module.exports = "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXIiIGRhdGEtbmFtZT0iTGF5ZXIgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTYuNjMgMTcuNSI+PGRlZnM+PHN0eWxlPi5jbHMtMSwuY2xzLTJ7ZmlsbDojNGNiZjU2O3N0cm9rZTojNDU5OTNkO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9LmNscy0ye3N0cm9rZS13aWR0aDoxLjVweDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmljb24tLWdyZWVuLWZsYWc8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTS43NSwyQTYuNDQsNi40NCwwLDAsMSw4LjQ0LDJoMGE2LjQ0LDYuNDQsMCwwLDAsNy42OSwwVjEyLjRhNi40NCw2LjQ0LDAsMCwxLTcuNjksMGgwYTYuNDQsNi40NCwwLDAsMC03LjY5LDAiLz48bGluZSBjbGFzcz0iY2xzLTIiIHgxPSIwLjc1IiB5MT0iMTYuNzUiIHgyPSIwLjc1IiB5Mj0iMC43NSIvPjwvc3ZnPgo="
 
 /***/ }),
 
@@ -10187,21 +10139,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../containers/tw-fonts-modal.jsx */ "./src/containers/tw-fonts-modal.jsx");
 /* harmony import */ var _containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../containers/tw-unknown-platform-modal.jsx */ "./src/containers/tw-unknown-platform-modal.jsx");
 /* harmony import */ var _containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../containers/tw-invalid-project-modal.jsx */ "./src/containers/tw-invalid-project-modal.jsx");
-/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../lib/layout-constants */ "./src/lib/layout-constants.js");
-/* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
-/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
-/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
+/* harmony import */ var _containers_mod_manager_jsx__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../containers/mod-manager.jsx */ "./src/containers/mod-manager.jsx");
+/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../lib/layout-constants */ "./src/lib/layout-constants.js");
+/* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
+/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
+/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
 const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksId", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canChangeTheme", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "intl", "isCreating", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "isTotallyNormal", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickDesktopSettings", "onClickNewWindow", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onOpenCustomExtensionModal", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "securityManager", "showComingSoon", "showOpenFilePicker", "showSaveFilePicker", "soundsTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "theme", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "fontsModalVisible", "unknownPlatformModalVisible", "invalidProjectModalVisible", "vm"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -10267,131 +10221,129 @@ const getFullscreenBackgroundColor = () => {
 const fullscreenBackgroundColor = getFullscreenBackgroundColor();
 const GUIComponent = props => {
   const _omit = lodash_omit__WEBPACK_IMPORTED_MODULE_1___default()(props, 'dispatch'),
-    {
-      accountNavOpen,
-      activeTabIndex,
-      alertsVisible,
-      authorId,
-      authorThumbnailUrl,
-      authorUsername,
-      basePath,
-      backdropLibraryVisible,
-      backpackHost,
-      backpackVisible,
-      blocksId,
-      blocksTabVisible,
-      cardsVisible,
-      canChangeLanguage,
-      canChangeTheme,
-      canCreateNew,
-      canEditTitle,
-      canManageFiles,
-      canRemix,
-      canSave,
-      canCreateCopy,
-      canShare,
-      canUseCloud,
-      children,
-      connectionModalVisible,
-      costumeLibraryVisible,
-      costumesTabVisible,
-      customStageSize,
-      enableCommunity,
-      intl,
-      isCreating,
-      isEmbedded,
-      isFullScreen,
-      isPlayerOnly,
-      isRtl,
-      isShared,
-      isWindowFullScreen,
-      isTelemetryEnabled,
-      isTotallyNormal,
-      loading,
-      logo,
-      renderLogin,
-      onClickAbout,
-      onClickAccountNav,
-      onCloseAccountNav,
-      onClickAddonSettings,
-      onClickDesktopSettings,
-      onClickNewWindow,
-      onClickPackager,
-      onLogOut,
-      onOpenRegistration,
-      onToggleLoginOpen,
-      onActivateCostumesTab,
-      onActivateSoundsTab,
-      onActivateTab,
-      onClickLogo,
-      onExtensionButtonClick,
-      onOpenCustomExtensionModal,
-      onProjectTelemetryEvent,
-      onRequestCloseBackdropLibrary,
-      onRequestCloseCostumeLibrary,
-      onRequestCloseTelemetryModal,
-      onSeeCommunity,
-      onShare,
-      onShowPrivacyPolicy,
-      onStartSelectingFileUpload,
-      onTelemetryModalCancel,
-      onTelemetryModalOptIn,
-      onTelemetryModalOptOut,
-      securityManager,
-      showComingSoon,
-      showOpenFilePicker,
-      showSaveFilePicker,
-      soundsTabVisible,
-      stageSizeMode,
-      targetIsStage,
-      telemetryModalVisible,
-      theme,
-      tipsLibraryVisible,
-      usernameModalVisible,
-      settingsModalVisible,
-      customExtensionModalVisible,
-      fontsModalVisible,
-      unknownPlatformModalVisible,
-      invalidProjectModalVisible,
-      vm
-    } = _omit,
+    accountNavOpen = _omit.accountNavOpen,
+    activeTabIndex = _omit.activeTabIndex,
+    alertsVisible = _omit.alertsVisible,
+    authorId = _omit.authorId,
+    authorThumbnailUrl = _omit.authorThumbnailUrl,
+    authorUsername = _omit.authorUsername,
+    basePath = _omit.basePath,
+    backdropLibraryVisible = _omit.backdropLibraryVisible,
+    backpackHost = _omit.backpackHost,
+    backpackVisible = _omit.backpackVisible,
+    blocksId = _omit.blocksId,
+    blocksTabVisible = _omit.blocksTabVisible,
+    cardsVisible = _omit.cardsVisible,
+    canChangeLanguage = _omit.canChangeLanguage,
+    canChangeTheme = _omit.canChangeTheme,
+    canCreateNew = _omit.canCreateNew,
+    canEditTitle = _omit.canEditTitle,
+    canManageFiles = _omit.canManageFiles,
+    canRemix = _omit.canRemix,
+    canSave = _omit.canSave,
+    canCreateCopy = _omit.canCreateCopy,
+    canShare = _omit.canShare,
+    canUseCloud = _omit.canUseCloud,
+    children = _omit.children,
+    connectionModalVisible = _omit.connectionModalVisible,
+    costumeLibraryVisible = _omit.costumeLibraryVisible,
+    costumesTabVisible = _omit.costumesTabVisible,
+    customStageSize = _omit.customStageSize,
+    enableCommunity = _omit.enableCommunity,
+    intl = _omit.intl,
+    isCreating = _omit.isCreating,
+    isEmbedded = _omit.isEmbedded,
+    isFullScreen = _omit.isFullScreen,
+    isPlayerOnly = _omit.isPlayerOnly,
+    isRtl = _omit.isRtl,
+    isShared = _omit.isShared,
+    isWindowFullScreen = _omit.isWindowFullScreen,
+    isTelemetryEnabled = _omit.isTelemetryEnabled,
+    isTotallyNormal = _omit.isTotallyNormal,
+    loading = _omit.loading,
+    logo = _omit.logo,
+    renderLogin = _omit.renderLogin,
+    onClickAbout = _omit.onClickAbout,
+    onClickAccountNav = _omit.onClickAccountNav,
+    onCloseAccountNav = _omit.onCloseAccountNav,
+    onClickAddonSettings = _omit.onClickAddonSettings,
+    onClickDesktopSettings = _omit.onClickDesktopSettings,
+    onClickNewWindow = _omit.onClickNewWindow,
+    onClickPackager = _omit.onClickPackager,
+    onLogOut = _omit.onLogOut,
+    onOpenRegistration = _omit.onOpenRegistration,
+    onToggleLoginOpen = _omit.onToggleLoginOpen,
+    onActivateCostumesTab = _omit.onActivateCostumesTab,
+    onActivateSoundsTab = _omit.onActivateSoundsTab,
+    onActivateTab = _omit.onActivateTab,
+    onClickLogo = _omit.onClickLogo,
+    onExtensionButtonClick = _omit.onExtensionButtonClick,
+    onOpenCustomExtensionModal = _omit.onOpenCustomExtensionModal,
+    onProjectTelemetryEvent = _omit.onProjectTelemetryEvent,
+    onRequestCloseBackdropLibrary = _omit.onRequestCloseBackdropLibrary,
+    onRequestCloseCostumeLibrary = _omit.onRequestCloseCostumeLibrary,
+    onRequestCloseTelemetryModal = _omit.onRequestCloseTelemetryModal,
+    onSeeCommunity = _omit.onSeeCommunity,
+    onShare = _omit.onShare,
+    onShowPrivacyPolicy = _omit.onShowPrivacyPolicy,
+    onStartSelectingFileUpload = _omit.onStartSelectingFileUpload,
+    onTelemetryModalCancel = _omit.onTelemetryModalCancel,
+    onTelemetryModalOptIn = _omit.onTelemetryModalOptIn,
+    onTelemetryModalOptOut = _omit.onTelemetryModalOptOut,
+    securityManager = _omit.securityManager,
+    showComingSoon = _omit.showComingSoon,
+    showOpenFilePicker = _omit.showOpenFilePicker,
+    showSaveFilePicker = _omit.showSaveFilePicker,
+    soundsTabVisible = _omit.soundsTabVisible,
+    stageSizeMode = _omit.stageSizeMode,
+    targetIsStage = _omit.targetIsStage,
+    telemetryModalVisible = _omit.telemetryModalVisible,
+    theme = _omit.theme,
+    tipsLibraryVisible = _omit.tipsLibraryVisible,
+    usernameModalVisible = _omit.usernameModalVisible,
+    settingsModalVisible = _omit.settingsModalVisible,
+    customExtensionModalVisible = _omit.customExtensionModalVisible,
+    fontsModalVisible = _omit.fontsModalVisible,
+    unknownPlatformModalVisible = _omit.unknownPlatformModalVisible,
+    invalidProjectModalVisible = _omit.invalidProjectModalVisible,
+    vm = _omit.vm,
     componentProps = _objectWithoutProperties(_omit, _excluded);
   if (children) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], componentProps, children);
   }
   const tabClassNames = {
-    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabs,
-    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tab),
-    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabList),
-    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabPanel),
-    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.isSelected),
-    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.isSelected)
+    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tabs,
+    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tab),
+    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tabList),
+    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.tabPanel),
+    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.isSelected),
+    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.isSelected)
   };
-  const unconstrainedWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["UNCONSTRAINED_NON_STAGE_WIDTH"] + _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["FIXED_WIDTH"] + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["FIXED_WIDTH"]);
+  const unconstrainedWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["UNCONSTRAINED_NON_STAGE_WIDTH"] + _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["FIXED_WIDTH"] + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["FIXED_WIDTH"]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_6___default.a, {
     minWidth: unconstrainedWidth
   }, isUnconstrained => {
-    const stageSize = Object(_lib_screen_utils__WEBPACK_IMPORTED_MODULE_38__["resolveStageSize"])(stageSizeMode, isUnconstrained);
+    const stageSize = Object(_lib_screen_utils__WEBPACK_IMPORTED_MODULE_39__["resolveStageSize"])(stageSizeMode, isUnconstrained);
     const alwaysEnabledModals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], {
       securityManager: securityManager
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_34__["default"], null), unknownPlatformModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null), invalidProjectModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null));
     return isPlayerOnly ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, isWindowFullScreen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.fullscreenBackground,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.fullscreenBackground,
       style: {
         backgroundColor: fullscreenBackgroundColor
       }
     }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
       isEmbedded: isEmbedded,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__["isRendererSupported"])(),
       isRtl: isRtl,
       loading: loading,
-      stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["STAGE_SIZE_MODES"].full,
+      stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"].full,
       vm: vm
     }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.alertsContainer
     }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], _extends({
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.pageWrapper,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.pageWrapper,
       dir: isRtl ? 'rtl' : 'ltr',
       style: {
         minWidth: 1024 + Math.max(0, customStageSize.width - 480),
@@ -10410,11 +10362,11 @@ const GUIComponent = props => {
     }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       isFullScreen: true,
       messageId: "gui.loader.creating"
-    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       isRtl: isRtl,
       onClickDesktopSettings: onClickDesktopSettings
     }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.alertsContainer
     }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], {
       vm: vm
     }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -10437,7 +10389,7 @@ const GUIComponent = props => {
       canRemix: canRemix,
       canSave: canSave,
       canShare: canShare,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarPosition,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarPosition,
       enableCommunity: enableCommunity,
       isShared: isShared,
       isTotallyNormal: isTotallyNormal,
@@ -10462,11 +10414,11 @@ const GUIComponent = props => {
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.bodyWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.bodyWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.flexWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.flexWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.editorWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.editorWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tabs"], {
       forceRenderTabPanel: true,
       className: tabClassNames.tabs,
@@ -10480,7 +10432,7 @@ const GUIComponent = props => {
       className: tabClassNames.tab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_43__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_44__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Code",
       id: "gui.gui.codeTab"
@@ -10489,7 +10441,7 @@ const GUIComponent = props => {
       onClick: onActivateCostumesTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_45__["default"])()
     }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Backdrops",
       id: "gui.gui.backdropsTab"
@@ -10501,14 +10453,14 @@ const GUIComponent = props => {
       onClick: onActivateSoundsTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_46__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Sounds",
       id: "gui.gui.soundsTab"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.blocksWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.blocksWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
       key: "".concat(blocksId, "/").concat(theme.id),
       canUseCloud: canUseCloud,
@@ -10522,17 +10474,17 @@ const GUIComponent = props => {
       theme: theme,
       vm: vm
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButtonContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.extensionButtonContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButton,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.extensionButton,
       title: intl.formatMessage(messages.addExtension),
       onClick: onExtensionButtonClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButtonIcon,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.extensionButtonIcon,
       draggable: false,
-      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42___default.a
+      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_43___default.a
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.watermark
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.watermark
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -10544,15 +10496,15 @@ const GUIComponent = props => {
     }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       host: backpackHost
     }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.stageAndTargetWrapper, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a[stageSize])
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.stageAndTargetWrapper, _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a[stageSize])
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_41__["isRendererSupported"])(),
       isRtl: isRtl,
       stageSize: stageSize,
       vm: vm
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.targetWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_42___default.a.targetWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
       stageSize: stageSize,
       vm: vm
@@ -10635,10 +10587,10 @@ GUIComponent.propTypes = {
   showOpenFilePicker: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   showSaveFilePicker: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   soundsTabVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["STAGE_SIZE_MODES"])),
+  stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"])),
   targetIsStage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   telemetryModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_39__["Theme"]),
+  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_40__["Theme"]),
   tipsLibraryVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   usernameModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   settingsModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
@@ -10669,7 +10621,7 @@ GUIComponent.defaultProps = {
   isTotallyNormal: false,
   loading: false,
   showComingSoon: false,
-  stageSizeMode: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_37__["STAGE_SIZE_MODES"].large
+  stageSizeMode: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"].large
 };
 const mapStateToProps = state => ({
   customStageSize: state.scratchGui.customStageSize,
@@ -10748,13 +10700,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const IconButton = _ref => {
-  let {
-    img,
-    disabled,
-    className,
-    title,
-    onClick
-  } = _ref;
+  let img = _ref.img,
+    disabled = _ref.disabled,
+    className = _ref.className,
+    title = _ref.title,
+    onClick = _ref.onClick;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_icon_button_css__WEBPACK_IMPORTED_MODULE_4___default.a.container, className, disabled ? _icon_button_css__WEBPACK_IMPORTED_MODULE_4___default.a.disabled : null),
     role: "button",
@@ -11803,12 +11753,11 @@ class LoupeComponent extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compon
     const boxLineWidth = 1 / zoomScale;
     const colorRingWidth = 15 / zoomScale;
     const ctx = this.canvas.getContext('2d');
-    const {
-      color,
-      data,
-      width,
-      height
-    } = this.props.colorInfo;
+    const _this$props$colorInfo = this.props.colorInfo,
+      color = _this$props$colorInfo.color,
+      data = _this$props$colorInfo.data,
+      width = _this$props$colorInfo.width,
+      height = _this$props$colorInfo.height;
     this.canvas.width = zoomScale * width;
     this.canvas.height = zoomScale * height;
 
@@ -11849,9 +11798,7 @@ class LoupeComponent extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compon
   }
   render() {
     const _this$props = this.props,
-      {
-        colorInfo
-      } = _this$props,
+      colorInfo = _this$props.colorInfo,
       boxProps = _objectWithoutProperties(_this$props, _excluded);
     const x = colorInfo.x - zoomScale * colorInfo.width / 2;
     const y = colorInfo.y - zoomScale * colorInfo.height / 2;
@@ -11958,15 +11905,11 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const ActualAuthorInfo = _ref => {
-  let {
-    className,
-    imageUrl,
-    projectTitle,
-    // TODO: use userId to link to user's profile
-    userId,
-    // eslint-disable-line no-unused-vars
-    username
-  } = _ref;
+  let className = _ref.className,
+    imageUrl = _ref.imageUrl,
+    projectTitle = _ref.projectTitle,
+    userId = _ref.userId,
+    username = _ref.username;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, _author_info_css__WEBPACK_IMPORTED_MODULE_5___default.a.authorInfo)
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_user_avatar_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -11996,9 +11939,7 @@ ActualAuthorInfo.propTypes = {
   username: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool])
 };
 const AuthorInfo = _ref2 => {
-  let {
-      projectId
-    } = _ref2,
+  let projectId = _ref2.projectId,
     props = _objectWithoutProperties(_ref2, _excluded);
   return projectId ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     className: _author_info_css__WEBPACK_IMPORTED_MODULE_5___default.a.link,
@@ -12106,10 +12047,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const CommunityButton = _ref => {
-  let {
-    className,
-    onClick
-  } = _ref;
+  let className = _ref.className,
+    onClick = _ref.onClick;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _community_button_css__WEBPACK_IMPORTED_MODULE_6___default.a.communityButton),
     iconClassName: _community_button_css__WEBPACK_IMPORTED_MODULE_6___default.a.communityButtonIcon,
@@ -12174,6 +12113,17 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjAi
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOC43Nzc3OCIgaGVpZ2h0PSIyMy4xMTExMSIgdmlld0JveD0iMCwwLDE4Ljc3Nzc4LDIzLjExMTExIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMwLjYxMTExLC0xNjguNDQ0NDQpIj48ZyBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTIzNC42MTExMSwxOTAuNTU1NTZjLTEuNjU2ODYsMCAtMywtMS4zNDMxNCAtMywtM3YtMTUuMTExMTFjMCwtMS42NTY4NiAxLjM0MzE0LC0zIDMsLTNoMTAuNzc3NzhjMS42NTY4NiwwIDMsMS4zNDMxNCAzLDN2MTUuMTExMTFjMCwxLjY1Njg2IC0xLjM0MzE1LDMgLTMsM3oiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI0Mi44MzMzMywxNjkuNjY2Njd2NS40NDQ0NWg0LjQ0NDQ1IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjM0LjgzMzMzLDE3OC43Nzc3OGgxMCIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTIzNC43MjIyMiwxODIuMjIyMjJoNy44ODg4OSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6OS4zODg4OTAwMDAwMDAwMzI6MTEuNTU1NTU0OTk5OTk5OTk4LS0+"
+
+/***/ }),
+
+/***/ "./src/components/menu-bar/icon--modmgr.svg":
+/*!**************************************************!*\
+  !*** ./src/components/menu-bar/icon--modmgr.svg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/7c67e2601425784a243cd7e0f15c50a3.svg";
 
 /***/ }),
 
@@ -12405,12 +12355,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const MenuBarMenu = _ref => {
-  let {
-    children,
-    className,
-    open,
-    place = 'right'
-  } = _ref;
+  let children = _ref.children,
+    className = _ref.className,
+    open = _ref.open,
+    _ref$place = _ref.place,
+    place = _ref$place === void 0 ? 'right' : _ref$place;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: className
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_containers_menu_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -12508,51 +12457,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../reducers/modals */ "./src/reducers/modals.js");
 /* harmony import */ var _reducers_mode__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../reducers/mode */ "./src/reducers/mode.js");
 /* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../reducers/time-travel */ "./src/reducers/time-travel.js");
-/* harmony import */ var _reducers_project_state__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../reducers/project-state */ "./src/reducers/project-state.js");
-/* harmony import */ var _reducers_menus__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../reducers/menus */ "./src/reducers/menus.js");
-/* harmony import */ var _reducers_tw_js__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../reducers/tw.js */ "./src/reducers/tw.js");
-/* harmony import */ var _lib_collect_metadata__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../lib/collect-metadata */ "./src/lib/collect-metadata.js");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39__);
-/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/assets/icon--tutorials.svg */ "./src/lib/assets/icon--tutorials.svg");
-/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_40__);
-/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./icon--mystuff.png */ "./src/components/menu-bar/icon--mystuff.png");
-/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_icon_mystuff_png__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./icon--profile.png */ "./src/components/menu-bar/icon--profile.png");
-/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_icon_profile_png__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _icon_tools_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--tools.svg */ "./src/components/menu-bar/icon--tools.svg");
-/* harmony import */ var _icon_tools_svg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_tools_svg__WEBPACK_IMPORTED_MODULE_43__);
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_47__);
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_48__);
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_49__);
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_50__);
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51__);
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52__);
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_53__);
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54__);
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55__);
-/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./chipywarp.png */ "./src/components/menu-bar/chipywarp.png");
-/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_chipywarp_png__WEBPACK_IMPORTED_MODULE_56__);
-/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
-/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
-/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_60__);
+/* harmony import */ var _icon_modmgr_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./icon--modmgr.svg */ "./src/components/menu-bar/icon--modmgr.svg");
+/* harmony import */ var _icon_modmgr_svg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_icon_modmgr_svg__WEBPACK_IMPORTED_MODULE_35__);
+/* harmony import */ var _reducers_project_state__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../reducers/project-state */ "./src/reducers/project-state.js");
+/* harmony import */ var _reducers_menus__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../reducers/menus */ "./src/reducers/menus.js");
+/* harmony import */ var _reducers_tw_js__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../reducers/tw.js */ "./src/reducers/tw.js");
+/* harmony import */ var _lib_collect_metadata__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../lib/collect-metadata */ "./src/lib/collect-metadata.js");
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40__);
+/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../lib/assets/icon--tutorials.svg */ "./src/lib/assets/icon--tutorials.svg");
+/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_41__);
+/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./icon--mystuff.png */ "./src/components/menu-bar/icon--mystuff.png");
+/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_icon_mystuff_png__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--profile.png */ "./src/components/menu-bar/icon--profile.png");
+/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_profile_png__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _icon_tools_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./icon--tools.svg */ "./src/components/menu-bar/icon--tools.svg");
+/* harmony import */ var _icon_tools_svg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_icon_tools_svg__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_45__);
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_50__);
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_51__);
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_53__);
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_54__);
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_56__);
+/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./chipywarp.png */ "./src/components/menu-bar/chipywarp.png");
+/* harmony import */ var _chipywarp_png__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_chipywarp_png__WEBPACK_IMPORTED_MODULE_57__);
+/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
+/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
+/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_61___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_61__);
 
 
 
@@ -12587,6 +12538,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+// Mod manager
 
 
 
@@ -12627,20 +12581,19 @@ const twMessages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessage
   }
 });
 const MenuBarItemTooltip = _ref => {
-  let {
-    children,
-    className,
-    enable,
-    id,
-    place = 'bottom'
-  } = _ref;
+  let children = _ref.children,
+    className = _ref.className,
+    enable = _ref.enable,
+    id = _ref.id,
+    _ref$place = _ref.place,
+    place = _ref$place === void 0 ? 'bottom' : _ref$place;
   if (enable) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, children);
   }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_coming_soon_coming_soon_jsx__WEBPACK_IMPORTED_MODULE_13__["ComingSoonTooltip"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.comingSoon, className),
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.comingSoon, className),
     place: place,
-    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.comingSoonTooltip,
+    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.comingSoonTooltip,
     tooltipId: id
   }, children);
 };
@@ -12652,17 +12605,15 @@ MenuBarItemTooltip.propTypes = {
   place: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['top', 'bottom', 'left', 'right'])
 };
 const MenuItemTooltip = _ref2 => {
-  let {
-    id,
-    isRtl,
-    children,
-    className
-  } = _ref2;
+  let id = _ref2.id,
+    isRtl = _ref2.isRtl,
+    children = _ref2.children,
+    className = _ref2.className;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_coming_soon_coming_soon_jsx__WEBPACK_IMPORTED_MODULE_13__["ComingSoonTooltip"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.comingSoon, className),
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.comingSoon, className),
     isRtl: isRtl,
     place: isRtl ? 'left' : 'right',
-    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.comingSoonTooltip,
+    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.comingSoonTooltip,
     tooltipId: id
   }, children);
 };
@@ -12673,9 +12624,9 @@ MenuItemTooltip.propTypes = {
   isRtl: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
 };
 const AboutButton = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.hoverable),
-  iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.aboutIcon,
-  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+  className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.hoverable),
+  iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.aboutIcon,
+  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
   onClick: props.onClick
 });
 AboutButton.propTypes = {
@@ -12687,7 +12638,7 @@ const MenuItemLink = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___de
   href: props.href,
   rel: "noreferrer",
   target: "_blank",
-  className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuItemLink
+  className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuItemLink
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], null, props.children));
 MenuItemLink.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node.isRequired,
@@ -12696,7 +12647,7 @@ MenuItemLink.propTypes = {
 class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleOpenTools', 'handleCloseTools', 'handleAlignmentCycle']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleOpenTools', 'handleCloseTools', 'handleAlignmentCycle', 'handleEditFont']);
     this.state = {
       toolsMenuOpen: false,
       activeTab: 'editor',
@@ -12721,6 +12672,41 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     });
     localStorage.setItem('menuBarAlignment', nextAlignment);
   }
+  handleEditFont(e) {
+    if (e) {
+      e.stopPropagation();
+    }
+
+    // 1. Create a hidden file input
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = '.ttf,.otf,.woff,.woff2'; // Accept common font formats
+
+    // 2. Listen for the file selection
+    fileInput.onchange = event => {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      // 3. Create a temporary local URL for the uploaded font file
+      const fontUrl = URL.createObjectURL(file);
+      const fontFamilyName = 'ChipywarpUserFont';
+
+      // 4. Check if a custom font style tag already exists to replace it, or create a new one
+      let styleTag = document.getElementById('custom-user-font-style');
+      if (!styleTag) {
+        styleTag = document.createElement('style');
+        styleTag.id = 'custom-user-font-style';
+        document.head.appendChild(styleTag);
+      }
+
+      // 5. Inject the @font-face rule and apply it to the page
+      // Using !important ensures it overrides default interface fonts
+      styleTag.innerHTML = "\n                @font-face {\n                    font-family: '".concat(fontFamilyName, "';\n                    src: url('").concat(fontUrl, "');\n                }\n                body, * {\n                    font-family: '").concat(fontFamilyName, "', \"Helvetica Neue\", Helvetica, Arial, sans-serif !important;\n                }\n            ");
+    };
+
+    // 6. Trigger the file picker dialog
+    fileInput.click();
+  }
   handleOpenTools() {
     this.setState({
       toolsMenuOpen: true
@@ -12738,7 +12724,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     document.removeEventListener('keydown', this.handleKeyPress);
   }
   handleClickNew() {
-    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_57__["default"].replaceProjectWarning));
+    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_58__["default"].replaceProjectWarning));
     this.props.onRequestCloseFile();
     if (readyToReplaceProject) {
       this.props.onClickNew(this.props.canSave && this.props.canCreateNew);
@@ -12807,13 +12793,13 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         document.documentElement.style.height = '';
       }
       if (mode === '1990') {
-        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_52___default.a;
+        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_53___default.a;
       } else if (mode === '2020') {
-        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_53___default.a;
+        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_54___default.a;
       } else if (mode === '1920') {
-        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_55___default.a;
+        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_56___default.a;
       } else if (mode === '220022BC') {
-        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_54___default.a;
+        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_55___default.a;
       } else {
         document.getElementById('logo_img').src = this.props.logo;
       }
@@ -12843,7 +12829,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       this.props.onRequestCloseFile();
       downloadProjectCallback();
       if (this.props.onProjectTelemetryEvent) {
-        const metadata = Object(_lib_collect_metadata__WEBPACK_IMPORTED_MODULE_38__["default"])(this.props.vm, this.props.projectTitle, this.props.locale);
+        const metadata = Object(_lib_collect_metadata__WEBPACK_IMPORTED_MODULE_39__["default"])(this.props.vm, this.props.projectTitle, this.props.locale);
         this.props.onProjectTelemetryEvent('projectDidSave', metadata);
       }
     };
@@ -12891,11 +12877,11 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onRequestOpenAbout,
       onClose: this.props.onRequestCloseAbout
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.aboutIcon,
-      src: _icon_about_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.aboutIcon,
+      src: _icon_about_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
       draggable: false
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarMenu),
       open: this.props.aboutMenuOpen,
       place: this.props.isRtl ? 'right' : 'left'
     }, onClickAbout.map(itemProps => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
@@ -12928,18 +12914,18 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       id: "gui.menuBar.new"
     });
     const remixButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.remixButton),
-      iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.remixButtonIcon,
-      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_44___default.a,
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarButton, _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.remixButton),
+      iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.remixButtonIcon,
+      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
       onClick: this.handleClickRemix
     }, remixMessage);
     const aboutButton = this.buildAboutMenu(this.props.onClickAbout);
     const menuBar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(this.props.className, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBar, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a["align".concat(this.state.menuBarAlignment)])
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(this.props.className, _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBar, _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a["align".concat(this.state.menuBarAlignment)])
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.mainMenu
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.mainMenu
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.hoverable)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.hoverable)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
       href: "https://discord.gg/GQgedFUXp",
       target: "_blank",
@@ -12950,32 +12936,32 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       id: "logo_img",
-      src: _chipywarp_png__WEBPACK_IMPORTED_MODULE_56___default.a,
+      src: _chipywarp_png__WEBPACK_IMPORTED_MODULE_57___default.a,
       alt: "Chipywarp",
       draggable: false,
       height: 28,
-      width: 90,
+      width: 110,
       style: {
         objectFit: 'contain'
       }
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.fileGroup
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.fileGroup
     }, this.props.errors.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_menu_label_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
       open: this.props.errorsMenuOpen,
       onOpen: this.props.onClickErrors,
       onClose: this.props.onRequestCloseErrors
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _tw_error_svg__WEBPACK_IMPORTED_MODULE_50___default.a,
+      src: _tw_error_svg__WEBPACK_IMPORTED_MODULE_51___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
       draggable: false,
       width: 8,
       height: 5
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarMenu),
       open: this.props.errorsMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuItemLink, {
@@ -12989,11 +12975,9 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "This is a bug. Please report it.",
       id: "tw.menuBar.reportError2"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, this.props.errors.map(_ref3 => {
-      let {
-        id,
-        sprite,
-        error
-      } = _ref3;
+      let id = _ref3.id,
+        sprite = _ref3.sprite,
+        error = _ref3.error;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         key: id
       }, this.props.intl.formatMessage(twMessages.compileError, {
@@ -13004,6 +12988,9 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       canChangeLanguage: this.props.canChangeLanguage,
       canChangeTheme: this.props.canChangeTheme,
       isRtl: this.props.isRtl,
+      menuBarAlignment: this.state.menuBarAlignment,
+      onToggleAlignment: this.handleAlignmentCycle,
+      onEditFont: this.handleEditFont,
       onClickDesktopSettings: this.props.onClickDesktopSettings && this.handleClickDesktopSettings,
       onOpenCustomSettings: this.props.onClickAddonSettings && this.props.onClickAddonSettings.bind(null, 'editor-theme3'),
       onRequestClose: this.props.onRequestCloseSettings,
@@ -13014,22 +13001,22 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onClickFile,
       onClose: this.props.onRequestCloseFile
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_file_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
+      src: _icon_file_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.collapsibleLabel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "File",
       id: "gui.menuBar.file"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
       draggable: false,
       width: 8,
       height: 5
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarMenu),
       open: this.props.fileMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
@@ -13049,7 +13036,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleClickRemix
     }, remixMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.props.onStartSelectingFileUpload
-    }, this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_57__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }, this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_58__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       showSaveFilePicker: this.props.showSaveFilePicker
     }, (_className, downloadProject, extended) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.available && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.name !== null && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.getSaveToComputerHandler(extended.saveToLastFile)
@@ -13064,7 +13051,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Save as...",
       id: "tw.saveAs"
-    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_59__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
+    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_60__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.getSaveToComputerHandler(downloadProject)
     }, extended.available ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Save to separate file...",
@@ -13087,39 +13074,35 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onClickEdit,
       onClose: this.props.onRequestCloseEdit
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_edit_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
+      src: _icon_edit_svg__WEBPACK_IMPORTED_MODULE_49___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.collapsibleLabel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Edit",
       id: "gui.menuBar.edit"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
       draggable: false,
       width: 8,
       height: 5
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarMenu),
       open: this.props.editMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, this.props.isPlayerOnly ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_deletion_restorer_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], null, (handleRestore, _ref4) => {
-      let {
-        restorable,
-        deletedItem
-      } = _ref4;
+      let restorable = _ref4.restorable,
+        deletedItem = _ref4.deletedItem;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.disabled]: !restorable
+          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.disabled]: !restorable
         }),
         onClick: this.handleRestoreOption(handleRestore)
       }, this.restoreOptionMessage(deletedItem));
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_turbo_mode_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], null, (toggleTurboMode, _ref5) => {
-      let {
-        turboMode
-      } = _ref5;
+      let turboMode = _ref5.turboMode;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         onClick: toggleTurboMode
       }, turboMode ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
@@ -13130,9 +13113,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         id: "gui.menuBar.turboModeOn"
       }));
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_framerate_changer_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null, (changeFramerate, _ref6) => {
-      let {
-        framerate
-      } = _ref6;
+      let framerate = _ref6.framerate;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         onClick: changeFramerate
       }, framerate === 60 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
@@ -13148,13 +13129,11 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "Change Username",
       id: "tw.menuBar.changeUsername"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], null, (toggleCloudVariables, _ref7) => {
-      let {
-        enabled,
-        canUseCloudVariables
-      } = _ref7;
+      let enabled = _ref7.enabled,
+        canUseCloudVariables = _ref7.canUseCloudVariables;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.disabled]: !canUseCloudVariables
+          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.disabled]: !canUseCloudVariables
         }),
         onClick: toggleCloudVariables
       }, canUseCloudVariables ? enabled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
@@ -13180,14 +13159,14 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "Mode",
       id: "gui.menuBar.modeMenu"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarMenu),
       open: this.props.modeMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.handleSetMode('NOW')
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.inactive]: !this.props.modeNow
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.inactive]: !this.props.modeNow
       })
     }, '✓'), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Normal mode",
@@ -13196,7 +13175,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleSetMode('2020')
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.inactive]: !this.props.mode2020
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.inactive]: !this.props.mode2020
       })
     }, '✓'), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Caturday mode",
@@ -13212,23 +13191,23 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         gap: '6px'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_tools_svg__WEBPACK_IMPORTED_MODULE_43___default.a,
+      src: _icon_tools_svg__WEBPACK_IMPORTED_MODULE_44___default.a,
       draggable: false,
       width: 18,
       height: 18,
       alt: "Tools"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.collapsibleLabel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Tools",
       id: "gui.menuBar.tools"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
       draggable: false,
       width: 8,
       height: 5
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarMenu),
       open: this.state.toolsMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, this.props.onClickSettingsModal && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
@@ -13240,7 +13219,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         gap: '8px'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_51___default.a,
+      src: _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_52___default.a,
       draggable: false,
       width: 20,
       height: 20
@@ -13256,95 +13235,80 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         gap: '8px'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _addons_svg__WEBPACK_IMPORTED_MODULE_49___default.a,
+      src: _addons_svg__WEBPACK_IMPORTED_MODULE_50___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Addons",
       id: "tw.menuBar.addons"
-    })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
-      onClick: this.handleAlignmentCycle
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        fontWeight: 'bold'
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
-      defaultMessage: "Set Menu-bar Align ({align})",
-      id: "tw.menuBar.setAlign",
-      values: {
-        align: this.state.menuBarAlignment
-      }
     }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_divider_divider_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.divider
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.divider
     }), this.props.canEditTitle ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.growable)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.growable)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       enable: true,
       id: "title-field"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_project_title_input_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.titleFieldGrowable)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.titleFieldGrowable)
     }))) : this.props.authorUsername && this.props.authorUsername !== this.props.username ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_author_info_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.authorInfo,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.authorInfo,
       imageUrl: this.props.authorThumbnailUrl,
       projectId: this.props.projectId,
       projectTitle: this.props.projectTitle,
       userId: this.props.authorId,
       username: this.props.authorUsername
     }) : null, this.props.canShare ? (this.props.isShowingProject || this.props.isUpdating) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_project_watcher_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       onDoneUpdating: this.props.onSeeCommunity
     }, waitForUpdate => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_share_button_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarButton,
       isShared: this.props.isShared,
       onClick: () => {
         this.handleClickShare(waitForUpdate);
       }
     }))) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       id: "share-button"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_share_button_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarButton
     }))) : null, this.props.canRemix && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem)
     }, remixButton), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.communityButtonWrapper)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.communityButtonWrapper)
     }, this.props.enableCommunity ? (this.props.isShowingProject || this.props.isUpdating) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_project_watcher_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       onDoneUpdating: this.props.onSeeCommunity
     }, waitForUpdate => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarButton,
       onClick: () => {
         this.handleClickSeeCommunity(waitForUpdate);
       }
     })) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       id: "community-button"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton
-    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_58__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarButton
+    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_59__["default"], {
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarButton,
       onClick: this.handleClickSeeInside
     }) : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.menuBarItem
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.menuBarItem
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.feedbackLink,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.feedbackLink,
       href: "https://scratch.mit.edu/users/GarboMuffin/#comments",
       rel: "noopener noreferrer",
       target: "_blank"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.feedbackButton
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.feedbackButton
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "{APP_NAME} Feedback",
       id: "tw.feedbackButton",
       values: {
-        APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_60__["APP_NAME"]
+        APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_61__["APP_NAME"]
       }
     }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_39___default.a.accountInfoGroup
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_40___default.a.accountInfoGroup
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_save_status_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], {
       showSaveFilePicker: this.props.showSaveFilePicker
     })), aboutButton);
@@ -13379,7 +13343,7 @@ MenuBar.propTypes = {
   onClickErrors: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   onRequestCloseErrors: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   confirmReadyToReplaceProject: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
-  currentLocale: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired,
+  currentLocale: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
   editMenuOpen: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   enableCommunity: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   fileMenuOpen: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
@@ -13391,7 +13355,7 @@ MenuBar.propTypes = {
   isShowingProject: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   isTotallyNormal: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   isUpdating: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
-  locale: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired,
+  locale: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
   loginMenuOpen: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   mode1920: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   mode1990: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
@@ -13458,23 +13422,23 @@ const mapStateToProps = (state, ownProps) => {
     authorUsername: state.scratchGui.tw.author.username,
     authorThumbnailUrl: state.scratchGui.tw.author.thumbnail,
     projectId: state.scratchGui.projectState.projectId,
-    aboutMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["aboutMenuOpen"])(state),
-    accountMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["accountMenuOpen"])(state),
+    aboutMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["aboutMenuOpen"])(state),
+    accountMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["accountMenuOpen"])(state),
     currentLocale: state.locales.locale,
-    fileMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["fileMenuOpen"])(state),
-    editMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["editMenuOpen"])(state),
+    fileMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["fileMenuOpen"])(state),
+    editMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["editMenuOpen"])(state),
     errors: state.scratchGui.tw.compileErrors,
-    errorsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["errorsMenuOpen"])(state),
+    errorsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["errorsMenuOpen"])(state),
     isPlayerOnly: state.scratchGui.mode.isPlayerOnly,
     isRtl: state.locales.isRtl,
-    isUpdating: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_35__["getIsUpdating"])(loadingState),
-    isShowingProject: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_35__["getIsShowingProject"])(loadingState),
+    isUpdating: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_36__["getIsUpdating"])(loadingState),
+    isShowingProject: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_36__["getIsShowingProject"])(loadingState),
     locale: state.locales.locale,
-    loginMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["loginMenuOpen"])(state),
-    modeMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["modeMenuOpen"])(state),
+    loginMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["loginMenuOpen"])(state),
+    modeMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["modeMenuOpen"])(state),
     projectTitle: state.scratchGui.projectTitle,
     sessionExists: state.session && typeof state.session.session !== 'undefined',
-    settingsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["settingsMenuOpen"])(state),
+    settingsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["settingsMenuOpen"])(state),
     username: user ? user.username : null,
     userOwnsProject: ownProps.authorUsername && user && ownProps.authorUsername === user.username,
     vm: state.scratchGui.vm,
@@ -13487,36 +13451,36 @@ const mapStateToProps = (state, ownProps) => {
 };
 const mapDispatchToProps = dispatch => ({
   onClickSeeInside: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_33__["setPlayer"])(false)),
-  autoUpdateProject: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_35__["autoUpdateProject"])()),
+  autoUpdateProject: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_36__["autoUpdateProject"])()),
   onOpenTipLibrary: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_32__["openTipsLibrary"])()),
-  onClickAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openAccountMenu"])()),
-  onRequestCloseAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeAccountMenu"])()),
-  onClickFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openFileMenu"])()),
-  onRequestCloseFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeFileMenu"])()),
-  onClickEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openEditMenu"])()),
-  onRequestCloseEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeEditMenu"])()),
-  onClickErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openErrorsMenu"])()),
-  onRequestCloseErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeErrorsMenu"])()),
-  onClickLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openLoginMenu"])()),
-  onRequestCloseLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeLoginMenu"])()),
-  onClickMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openModeMenu"])()),
-  onRequestCloseMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeModeMenu"])()),
-  onRequestOpenAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openAboutMenu"])()),
-  onRequestCloseAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeAboutMenu"])()),
+  onClickAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openAccountMenu"])()),
+  onRequestCloseAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeAccountMenu"])()),
+  onClickFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openFileMenu"])()),
+  onRequestCloseFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeFileMenu"])()),
+  onClickEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openEditMenu"])()),
+  onRequestCloseEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeEditMenu"])()),
+  onClickErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openErrorsMenu"])()),
+  onRequestCloseErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeErrorsMenu"])()),
+  onClickLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openLoginMenu"])()),
+  onRequestCloseLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeLoginMenu"])()),
+  onClickMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openModeMenu"])()),
+  onRequestCloseMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeModeMenu"])()),
+  onRequestOpenAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openAboutMenu"])()),
+  onRequestCloseAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeAboutMenu"])()),
   onClickRestorePoints: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_32__["openRestorePointModal"])()),
-  onClickSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["openSettingsMenu"])()),
+  onClickSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["openSettingsMenu"])()),
   onClickSettingsModal: () => {
-    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeEditMenu"])());
+    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeEditMenu"])());
     dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_32__["openSettingsModal"])());
   },
-  onRequestCloseSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_36__["closeSettingsMenu"])()),
+  onRequestCloseSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_37__["closeSettingsMenu"])()),
   onClickNew: needSave => {
-    dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_35__["requestNewProject"])(needSave));
-    dispatch(Object(_reducers_tw_js__WEBPACK_IMPORTED_MODULE_37__["setFileHandle"])(null));
+    dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_36__["requestNewProject"])(needSave));
+    dispatch(Object(_reducers_tw_js__WEBPACK_IMPORTED_MODULE_38__["setFileHandle"])(null));
   },
-  onClickRemix: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_35__["remixProject"])()),
-  onClickSave: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_35__["manualUpdateProject"])()),
-  onClickSaveAsCopy: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_35__["saveProjectAsCopy"])()),
+  onClickRemix: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_36__["remixProject"])()),
+  onClickSave: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_36__["manualUpdateProject"])()),
+  onClickSaveAsCopy: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_36__["saveProjectAsCopy"])()),
   onSeeCommunity: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_33__["setPlayer"])(true)),
   onSetTimeTravelMode: mode => dispatch(Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_34__["setTimeTravel"])(mode))
 });
@@ -13626,12 +13590,10 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"
   }
 });
 const ProjectTitleInput = _ref => {
-  let {
-    className,
-    intl,
-    onSubmit,
-    projectTitle
-  } = _ref;
+  let className = _ref.className,
+    intl = _ref.intl,
+    onSubmit = _ref.onSubmit,
+    projectTitle = _ref.projectTitle;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(BufferedInput, {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_project_title_input_css__WEBPACK_IMPORTED_MODULE_8___default.a.titleField, className),
     maxLength: "100",
@@ -13723,11 +13685,9 @@ __webpack_require__.r(__webpack_exports__);
 // We decided to not use an inline message for "Save Now" because it is a reflection
 // of the project state, rather than an event.
 const SaveStatus = _ref => {
-  let {
-    alertsList,
-    projectChanged,
-    onClickSave
-  } = _ref;
+  let alertsList = _ref.alertsList,
+    projectChanged = _ref.projectChanged,
+    onClickSave = _ref.onClickSave;
   return Object(_reducers_alerts__WEBPACK_IMPORTED_MODULE_6__["filterInlineAlerts"])(alertsList).length > 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_inline_messages_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null) : projectChanged && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: _save_status_css__WEBPACK_IMPORTED_MODULE_7___default.a.saveNow,
     onClick: onClickSave
@@ -13812,6 +13772,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _icon_settings_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./icon--settings.svg */ "./src/components/menu-bar/icon--settings.svg");
 /* harmony import */ var _icon_settings_svg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_icon_settings_svg__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _st_icon_menubar_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./st--icon-menubar.svg */ "./src/components/menu-bar/st--icon-menubar.svg");
+/* harmony import */ var _st_icon_menubar_svg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_st_icon_menubar_svg__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _st_icon_font_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./st--icon-font.svg */ "./src/components/menu-bar/st--icon-font.svg");
+/* harmony import */ var _st_icon_font_svg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_st_icon_font_svg__WEBPACK_IMPORTED_MODULE_16__);
+
+
+
+
+
+// 1. Add MenuItem to your menu imports
 
 
 
@@ -13823,21 +13793,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// 2. Import your new SVG icons (assuming they are in the same folder)
 
 
 
-
+// 3. Destructure the new props
 const SettingsMenu = _ref => {
-  let {
-    canChangeLanguage,
-    canChangeTheme,
-    isRtl,
-    onClickDesktopSettings,
-    onOpenCustomSettings,
-    onRequestClose,
-    onRequestOpen,
-    settingsMenuOpen
-  } = _ref;
+  let canChangeLanguage = _ref.canChangeLanguage,
+    canChangeTheme = _ref.canChangeTheme,
+    isRtl = _ref.isRtl,
+    menuBarAlignment = _ref.menuBarAlignment,
+    onToggleAlignment = _ref.onToggleAlignment,
+    onEditFont = _ref.onEditFont,
+    onClickDesktopSettings = _ref.onClickDesktopSettings,
+    onOpenCustomSettings = _ref.onOpenCustomSettings,
+    onRequestClose = _ref.onRequestClose,
+    onRequestOpen = _ref.onRequestOpen,
+    settingsMenuOpen = _ref.settingsMenuOpen;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_menu_label_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
     open: settingsMenuOpen,
     onOpen: onRequestOpen,
@@ -13867,12 +13839,51 @@ const SettingsMenu = _ref => {
     onOpenCustomSettings: onOpenCustomSettings
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_accent_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null)), onClickDesktopSettings && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_desktop_settings_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
     onClick: onClickDesktopSettings
-  }))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_5__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_5__["MenuItem"], {
+    onClick: onToggleAlignment
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '8px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: _st_icon_menubar_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
+    draggable: false,
+    width: 20,
+    height: 20
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"], {
+    defaultMessage: "Set Menu-bar Align ({align})",
+    id: "tw.menuBar.setAlign",
+    values: {
+      align: menuBarAlignment
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_5__["MenuItem"], {
+    onClick: onEditFont
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '8px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: _st_icon_font_svg__WEBPACK_IMPORTED_MODULE_16___default.a,
+    draggable: false,
+    width: 20,
+    height: 20
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"], {
+    defaultMessage: "User Font",
+    id: "tw.menuBar.userFont"
+  }))))));
 };
 SettingsMenu.propTypes = {
   canChangeLanguage: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
   canChangeTheme: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
   isRtl: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
+  // 5. Add the new prop types
+  menuBarAlignment: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  onToggleAlignment: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onEditFont: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   onClickDesktopSettings: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   onOpenCustomSettings: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   onRequestClose: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
@@ -13939,11 +13950,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ShareButton = _ref => {
-  let {
-    className,
-    isShared,
-    onClick
-  } = _ref;
+  let className = _ref.className,
+    isShared = _ref.isShared,
+    onClick = _ref.onClick;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _share_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.shareButton, {
       [_share_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.shareButtonIsShared]: isShared
@@ -13966,6 +13975,28 @@ ShareButton.defaultProps = {
   onClick: () => {}
 };
 /* harmony default export */ __webpack_exports__["default"] = (ShareButton);
+
+/***/ }),
+
+/***/ "./src/components/menu-bar/st--icon-font.svg":
+/*!***************************************************!*\
+  !*** ./src/components/menu-bar/st--icon-font.svg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMi45NiIgaGVpZ2h0PSIxNC41NCIgdmlld0JveD0iMCwwLDIyLjk2LDE0LjU0Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI3LjcyMDAxLC0xNzEuNDI4NzUpIj48ZyBmaWxsPSIjZjZmOGZmIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTI0MC43ODAwMiwxODUuNzY4NzVoLTIuMjZsLTEuNTIsLTQuMTJoLTUuNTJsLTEuNTIsNC4xMmgtMi4yNGw1LjQyLC0xNC4zNGgyLjI0ek0yMzIuMTIwMDIsMTc5Ljc2ODc1aDQuMjhsLTEuNDQsLTQuMDJjLTAuMDUzMzQsLTAuMTQ2NjcgLTAuMTI2NjcsLTAuMzY2NjYgLTAuMjIsLTAuNjZjLTAuMDkzMzMsLTAuMjkzMzQgLTAuMTg2NjcsLTAuNiAtMC4yOCwtMC45MmMtMC4wOTMzMywtMC4zMiAtMC4xNjY2NiwtMC41OCAtMC4yMiwtMC43OGMtMC4xMDY2NiwwLjQxMzMzIC0wLjIyNjY2LDAuODUzMzQgLTAuMzYsMS4zMmMtMC4xMzMzMywwLjQ2NjY3IC0wLjI0LDAuODEzMzMgLTAuMzIsMS4wNHpNMjQ2LjY0MDAxLDE3NC43ODg3NWMxLjM0NjY3LDAgMi4zNTY2NiwwLjI5NjY3IDMuMDMsMC44OWMwLjY3MzM0LDAuNTkzMzMgMS4wMSwxLjUyMzM0IDEuMDEsMi43OXY3LjNoLTEuNWwtMC40MiwtMS41aC0wLjA4Yy0wLjQ2NjY3LDAuNTg2NjcgLTAuOTU2NjYsMS4wMTY2NiAtMS40NywxLjI5Yy0wLjUxMzM0LDAuMjczMzQgLTEuMjIzMzMsMC40MSAtMi4xMywwLjQxYy0wLjk3MzMzLDAgLTEuNzgsLTAuMjYzMzMgLTIuNDIsLTAuNzljLTAuNjQsLTAuNTI2NjcgLTAuOTYsLTEuMzUgLTAuOTYsLTIuNDdjMCwtMS4xMDY2NiAwLjQxNjY2LC0xLjk0MzM0IDEuMjUsLTIuNTFjMC44MzMzNCwtMC41NjY2NyAyLjEwMzM0LC0wLjg3NjY2IDMuODEsLTAuOTNsMS44NCwtMC4wNnYtMC42YzAsLTAuNzg2NjYgLTAuMTgsLTEuMzQzMzMgLTAuNTQsLTEuNjdjLTAuMzYsLTAuMzI2NjYgLTAuODY2NjYsLTAuNDkgLTEuNTIsLTAuNDljLTAuNTQ2NjYsMCAtMS4wNzMzNCwwLjA4IC0xLjU4LDAuMjRjLTAuNTA2NjYsMC4xNiAtMC45OTMzNCwwLjM1MzM0IC0xLjQ2LDAuNThsLTAuNjgsLTEuNTRjMC41MDY2NiwtMC4yNjY2NiAxLjA5LC0wLjQ5IDEuNzUsLTAuNjdjMC42NiwtMC4xOCAxLjM1LC0wLjI3IDIuMDcsLTAuMjd6TTI0OC41ODAwMSwxODEuNTI4NzV2LTAuOTRsLTEuNDQsMC4wNGMtMS4yMjY2NiwwLjA1MzM0IC0yLjA3NjY3LDAuMjYgLTIuNTUsMC42MmMtMC40NzMzMywwLjM2IC0wLjcxLDAuODUzMzMgLTAuNzEsMS40OGMwLDAuNTYgMC4xNjY2NiwwLjk2NjY3IDAuNSwxLjIyYzAuMzMzMzQsMC4yNTMzMyAwLjc2NjY2LDAuMzggMS4zLDAuMzhjMC44MjY2NiwwIDEuNTE2NjYsLTAuMjMzMzQgMi4wNywtMC43YzAuNTUzMzQsLTAuNDY2NjcgMC44MywtMS4xNjY2NiAwLjgzLC0yLjF6Ii8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTIuMjc5OTg1MDAwMDAwMDM5OjguNTcxMjQ5OTk5OTk5OTkyLS0+"
+
+/***/ }),
+
+/***/ "./src/components/menu-bar/st--icon-menubar.svg":
+/*!******************************************************!*\
+  !*** ./src/components/menu-bar/st--icon-menubar.svg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/588986c158183eecbf01c7dc28311f8b.svg";
 
 /***/ }),
 
@@ -14099,7 +14130,7 @@ TWDesktopSettings.propTypes = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PCEtLSBGcm9tIGh0dHBzOi8vZ2l0aHViLmNvbS9nb29nbGUvbWF0ZXJpYWwtZGVzaWduLWljb25zIC0tPg0KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMSAyMWgyMkwxMiAyIDEgMjF6bTEyLTNoLTJ2LTJoMnYyem0wLTRoLTJ2LTRoMnY0eiIvPjwvc3ZnPg=="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMi41OTA5MSIgaGVpZ2h0PSIxOS43MTQ4OCIgdmlld0JveD0iMCwwLDIyLjU5MDkxLDE5LjcxNDg4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI4LjcwNDU1LC0xNzAuMTQyNTYpIj48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGQ9Ik0yNDAsMTcwLjg5MjU2bDEwLjU0NTQ1LDE4LjIxNDg4aC0yMS4wOTA5MXpNMjQwLjk1ODY4LDE4NC4zMTQwNWgtMS45MTczNnYxLjkxNzM2aDEuOTE3MzZ6TTI0MC45NTg2OCwxNzguNTYxOThoLTEuOTE3MzZ2My44MzQ3MWgxLjkxNzM2eiIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjExLjI5NTQ1NDU0NTQ1NDUzMzo5Ljg1NzQzODAxNjUyODkzMS0tPg=="
 
 /***/ }),
 
@@ -14345,18 +14376,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const TWSaveStatus = _ref => {
-  let {
-    alertsList,
-    fileHandle,
-    projectChanged,
-    showSaveFilePicker
-  } = _ref;
+  let alertsList = _ref.alertsList,
+    fileHandle = _ref.fileHandle,
+    projectChanged = _ref.projectChanged,
+    showSaveFilePicker = _ref.showSaveFilePicker;
   return Object(_reducers_alerts__WEBPACK_IMPORTED_MODULE_6__["filterInlineAlerts"])(alertsList).length > 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_inline_messages_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null) : projectChanged && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
     showSaveFilePicker: showSaveFilePicker
   }, (_className, _downloadProjectCallback, _ref2) => {
-    let {
-      smartSave
-    } = _ref2;
+    let smartSave = _ref2.smartSave;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       onClick: smartSave,
       className: _save_status_css__WEBPACK_IMPORTED_MODULE_7___default.a.saveNow
@@ -14448,10 +14475,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const SeeInsideButton = _ref => {
-  let {
-    className,
-    onClick
-  } = _ref;
+  let className = _ref.className,
+    onClick = _ref.onClick;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _tw_see_inside_css__WEBPACK_IMPORTED_MODULE_6___default.a.seeInsideButton),
     iconClassName: _tw_see_inside_css__WEBPACK_IMPORTED_MODULE_6___default.a.seeInsideButtonIcon,
@@ -14593,13 +14618,11 @@ AccentMenuItem.propTypes = {
   onClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
 };
 const AccentThemeMenu = _ref => {
-  let {
-    isOpen,
-    isRtl,
-    onChangeTheme,
-    onOpen,
-    theme
-  } = _ref;
+  let isOpen = _ref.isOpen,
+    isRtl = _ref.isRtl,
+    onChangeTheme = _ref.onChangeTheme,
+    onOpen = _ref.onOpen,
+    theme = _ref.theme;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["MenuItem"], {
     expanded: isOpen
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -14730,9 +14753,7 @@ const icons = {
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]]: _tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_16___default.a
 };
 const ThemeIcon = _ref => {
-  let {
-    id
-  } = _ref;
+  let id = _ref.id;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
     src: icons[id],
     draggable: false,
@@ -14743,12 +14764,10 @@ ThemeIcon.propTypes = {
   id: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
 };
 const ThemeMenuItem = _ref2 => {
-  let {
-    id,
-    disabled,
-    isSelected,
-    onClick
-  } = _ref2;
+  let id = _ref2.id,
+    disabled = _ref2.disabled,
+    isSelected = _ref2.isSelected,
+    onClick = _ref2.onClick;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["MenuItem"], {
     onClick: disabled ? null : onClick
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -14780,14 +14799,12 @@ ThemeMenuItem.propTypes = {
   disabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
 };
 const BlocksThemeMenu = _ref3 => {
-  let {
-    isOpen,
-    isRtl,
-    onChangeTheme,
-    onOpenCustomSettings,
-    onOpenMenu,
-    theme
-  } = _ref3;
+  let isOpen = _ref3.isOpen,
+    isRtl = _ref3.isRtl,
+    onChangeTheme = _ref3.onChangeTheme,
+    onOpenCustomSettings = _ref3.onOpenCustomSettings,
+    onOpenMenu = _ref3.onOpenMenu,
+    theme = _ref3.theme;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["MenuItem"], {
     expanded: isOpen
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -14880,10 +14897,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const GuiThemeMenu = _ref => {
-  let {
-    onChangeTheme,
-    theme
-  } = _ref;
+  let onChangeTheme = _ref.onChangeTheme,
+    theme = _ref.theme;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_11___default.a.option
     // eslint-disable-next-line react/jsx-no-bind
@@ -14974,10 +14989,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const UserAvatar = _ref => {
-  let {
-    className,
-    imageUrl
-  } = _ref;
+  let className = _ref.className,
+    imageUrl = _ref.imageUrl;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _user_avatar_css__WEBPACK_IMPORTED_MODULE_3___default.a.userThumbnail),
     src: imageUrl,
@@ -15052,12 +15065,12 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const MenuComponent = _ref => {
-  let {
-    className = '',
-    children,
-    componentRef,
-    place = 'right'
-  } = _ref;
+  let _ref$className = _ref.className,
+    className = _ref$className === void 0 ? '' : _ref$className,
+    children = _ref.children,
+    componentRef = _ref.componentRef,
+    _ref$place = _ref.place,
+    place = _ref$place === void 0 ? 'right' : _ref$place;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menu, className, {
       [_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.left]: place === 'left',
@@ -15073,11 +15086,9 @@ MenuComponent.propTypes = {
   place: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['left', 'right'])
 };
 const Submenu = _ref2 => {
-  let {
-      children,
-      className,
-      place
-    } = _ref2,
+  let children = _ref2.children,
+    className = _ref2.className,
+    place = _ref2.place,
     props = _objectWithoutProperties(_ref2, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.submenu, className, {
@@ -15094,12 +15105,11 @@ Submenu.propTypes = {
   place: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['left', 'right'])
 };
 const MenuItem = _ref3 => {
-  let {
-    children,
-    className,
-    expanded = false,
-    onClick
-  } = _ref3;
+  let children = _ref3.children,
+    className = _ref3.className,
+    _ref3$expanded = _ref3.expanded,
+    expanded = _ref3$expanded === void 0 ? false : _ref3$expanded,
+    onClick = _ref3.onClick;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItem, _menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.hoverable, className, {
       [_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.expanded]: expanded
@@ -15120,9 +15130,7 @@ const addDividerClassToFirstChild = (child, id) => child && /*#__PURE__*/react__
   key: id
 });
 const MenuSection = _ref4 => {
-  let {
-    children
-  } = _ref4;
+  let children = _ref4.children;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, addDividerClassToFirstChild));
 };
 MenuSection.propTypes = {
@@ -15181,11 +15189,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Meter = props => {
-  const {
-    level,
-    width,
-    height
-  } = props;
+  const level = props.level,
+    width = props.width,
+    height = props.height;
   const nGreen = 11;
   const nYellow = 5;
   const nRed = 3;
@@ -15311,6 +15317,191 @@ MicIndicatorComponent.propTypes = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/a72a652fdc84dc6983d3cc9596c36a26.svg";
+
+/***/ }),
+
+/***/ "./src/components/mod-manager/mod-manager.jsx":
+/*!****************************************************!*\
+  !*** ./src/components/mod-manager/mod-manager.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jszip__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jszip */ "./node_modules/jszip/dist/jszip.min.js");
+/* harmony import */ var jszip__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jszip__WEBPACK_IMPORTED_MODULE_1__);
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+const ModManagerModal = _ref => {
+  let isOpen = _ref.isOpen,
+    onClose = _ref.onClose;
+  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    mods = _useState2[0],
+    setMods = _useState2[1];
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    // Load existing mods from local storage
+    const savedMods = JSON.parse(localStorage.getItem('installed-mods') || '[]');
+    setMods(savedMods);
+  }, []);
+  const saveMods = newMods => {
+    setMods(newMods);
+    localStorage.setItem('installed-mods', JSON.stringify(newMods));
+  };
+  const handleFileUpload = async event => {
+    const file = event.target.files[0];
+    if (!file) return;
+    try {
+      const zip = new jszip__WEBPACK_IMPORTED_MODULE_1___default.a();
+      const loadedZip = await zip.loadAsync(file);
+      if (!loadedZip.file("content.json")) {
+        alert("Invalid .cwm file: Missing content.json");
+        return;
+      }
+      const contentStr = await loadedZip.file("content.json").async("string");
+      const content = JSON.parse(contentStr);
+
+      // Extract Icon (Base64)
+      let iconData = null;
+      if (content.icon && loadedZip.file(content.icon)) {
+        const base64 = await loadedZip.file(content.icon).async("base64");
+        iconData = "data:image/png;base64,".concat(base64);
+      }
+
+      // Extract Scripts
+      const extractedScripts = [];
+      for (const scriptPath of content.script || []) {
+        if (loadedZip.file(scriptPath)) {
+          const scriptCode = await loadedZip.file(scriptPath).async("string");
+          extractedScripts.push(scriptCode);
+        }
+      }
+      const newMod = {
+        id: Date.now().toString(),
+        name: content.name,
+        description: content.description,
+        author: content.author,
+        version: content.version,
+        icon: iconData,
+        scripts: extractedScripts,
+        enabled: true
+      };
+      saveMods([...mods, newMod]);
+    } catch (error) {
+      console.error("Failed to parse .cwm file:", error);
+    }
+  };
+  const toggleMod = id => {
+    const updatedMods = mods.map(mod => mod.id === id ? _objectSpread(_objectSpread({}, mod), {}, {
+      enabled: !mod.enabled
+    }) : mod);
+    saveMods(updatedMods);
+  };
+  const removeMod = id => {
+    const updatedMods = mods.filter(mod => mod.id !== id);
+    saveMods(updatedMods);
+  };
+  const handleApply = () => {
+    window.location.reload(); // Reload to inject updated scripts
+  };
+  if (!isOpen) return null;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-overlay",
+    style: styles.overlay
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "modal-content",
+    style: styles.modal
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Mod Manager"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "file",
+    accept: ".cwm,.zip",
+    onChange: handleFileUpload
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: styles.list
+  }, mods.map(mod => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    key: mod.id,
+    style: styles.modItem
+  }, mod.icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: mod.icon,
+    alt: "icon",
+    width: "40"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      flex: 1,
+      marginLeft: '10px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, mod.name), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "v", mod.version), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      margin: 0,
+      fontSize: '12px'
+    }
+  }, mod.description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "checkbox",
+    checked: mod.enabled,
+    onChange: () => toggleMod(mod.id),
+    title: "Toggle Mod"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: () => removeMod(mod.id)
+  }, "Remove"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      marginTop: '15px',
+      display: 'flex',
+      justifyContent: 'space-between'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: onClose
+  }, "Close"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: handleApply,
+    style: {
+      fontWeight: 'bold'
+    }
+  }, "Apply & Restart"))));
+};
+const styles = {
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: 'rgba(0,0,0,0.5)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  modal: {
+    background: 'white',
+    padding: '20px',
+    borderRadius: '8px',
+    width: '500px',
+    color: 'black'
+  },
+  list: {
+    marginTop: '15px',
+    maxHeight: '300px',
+    overflowY: 'auto'
+  },
+  modItem: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '10px',
+    borderBottom: '1px solid #ccc'
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (ModManagerModal);
 
 /***/ }),
 
@@ -15564,11 +15755,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DefaultMonitor = _ref => {
-  let {
-    categoryColor,
-    label,
-    value
-  } = _ref;
+  let categoryColor = _ref.categoryColor,
+    label = _ref.label,
+    value = _ref.value;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _monitor_css__WEBPACK_IMPORTED_MODULE_2___default.a.defaultMonitor
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -15614,10 +15803,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const LargeMonitor = _ref => {
-  let {
-    categoryColor,
-    value
-  } = _ref;
+  let categoryColor = _ref.categoryColor,
+    value = _ref.value;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _monitor_css__WEBPACK_IMPORTED_MODULE_2___default.a.largeMonitor
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -15686,11 +15873,9 @@ class ListMonitorScroller extends react__WEBPACK_IMPORTED_MODULE_0___default.a.C
     }));
   }
   rowRenderer(_ref) {
-    let {
-      index,
-      key,
-      style
-    } = _ref;
+    let index = _ref.index,
+      key = _ref.key,
+      style = _ref.style;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: _monitor_css__WEBPACK_IMPORTED_MODULE_5___default.a.listRow,
       key: key,
@@ -15729,13 +15914,12 @@ class ListMonitorScroller extends react__WEBPACK_IMPORTED_MODULE_0___default.a.C
     }, Object(_lib_tw_safe_stringify_js__WEBPACK_IMPORTED_MODULE_7__["safeStringify"])(this.props.values[index]))));
   }
   render() {
-    const {
-      height,
-      values,
-      width,
-      activeIndex,
-      activeValue
-    } = this.props;
+    const _this$props = this.props,
+      height = _this$props.height,
+      values = _this$props.values,
+      width = _this$props.width,
+      activeIndex = _this$props.activeIndex,
+      activeValue = _this$props.activeValue;
     // Keep the active index in view if defined, else must be undefined for List component
     const scrollToIndex = activeIndex === null ? undefined : activeIndex; /* eslint-disable-line no-undefined */
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_virtualized__WEBPACK_IMPORTED_MODULE_6__["List"], {
@@ -15804,15 +15988,13 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const ListMonitor = _ref => {
-  let {
-      draggable,
-      label,
-      width,
-      height,
-      value,
-      onResizeMouseDown,
-      onAdd
-    } = _ref,
+  let draggable = _ref.draggable,
+    label = _ref.label,
+    width = _ref.width,
+    height = _ref.height,
+    value = _ref.value,
+    onResizeMouseDown = _ref.onResizeMouseDown,
+    onAdd = _ref.onAdd,
     rowProps = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _monitor_css__WEBPACK_IMPORTED_MODULE_4___default.a.listMonitor,
@@ -16093,15 +16275,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const SliderMonitor = _ref => {
-  let {
-    categoryColor,
-    isDiscrete,
-    label,
-    min,
-    max,
-    value,
-    onSliderUpdate
-  } = _ref;
+  let categoryColor = _ref.categoryColor,
+    isDiscrete = _ref.isDiscrete,
+    label = _ref.label,
+    min = _ref.min,
+    max = _ref.max,
+    value = _ref.value,
+    onSliderUpdate = _ref.onSliderUpdate;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _monitor_css__WEBPACK_IMPORTED_MODULE_3___default.a.defaultMonitor
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -16244,16 +16424,14 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"
   }
 });
 const PlayButtonComponent = _ref => {
-  let {
-      className,
-      intl,
-      isPlaying,
-      onClick,
-      onMouseDown,
-      onMouseEnter,
-      onMouseLeave,
-      setButtonRef
-    } = _ref,
+  let className = _ref.className,
+    intl = _ref.intl,
+    isPlaying = _ref.isPlaying,
+    onClick = _ref.onClick,
+    onMouseDown = _ref.onMouseDown,
+    onMouseEnter = _ref.onMouseEnter,
+    onMouseLeave = _ref.onMouseLeave,
+    setButtonRef = _ref.setButtonRef,
     props = _objectWithoutProperties(_ref, _excluded);
   const label = isPlaying ? intl.formatMessage(messages.stop) : intl.formatMessage(messages.play);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", _extends({
@@ -16353,13 +16531,12 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const ProgressRingComponent = _ref => {
-  let {
-      className,
-      max = 1,
-      sizePx,
-      strokeWidthPx,
-      value
-    } = _ref,
+  let className = _ref.className,
+    _ref$max = _ref.max,
+    max = _ref$max === void 0 ? 1 : _ref$max,
+    sizePx = _ref.sizePx,
+    strokeWidthPx = _ref.strokeWidthPx,
+    value = _ref.value,
     props = _objectWithoutProperties(_ref, _excluded);
   if (typeof strokeWidthPx === 'undefined') {
     strokeWidthPx = sizePx / 6;
@@ -16687,14 +16864,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const QuestionComponent = props => {
-  const {
-    answer,
-    className,
-    question,
-    onChange,
-    onClick,
-    onKeyPress
-  } = props;
+  const answer = props.answer,
+    className = props.className,
+    question = props.question,
+    onChange = props.onChange,
+    onClick = props.onClick,
+    onKeyPress = props.onKeyPress;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: className
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -17833,12 +18008,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const SpinnerComponent = function SpinnerComponent(props) {
-  const {
-    className,
-    level,
-    small,
-    large
-  } = props;
+  const className = props.className,
+    level = props.level,
+    small = props.small,
+    large = props.large;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _spinner_css__WEBPACK_IMPORTED_MODULE_3___default.a.spinner, _spinner_css__WEBPACK_IMPORTED_MODULE_3___default.a[level], {
       [_spinner_css__WEBPACK_IMPORTED_MODULE_3___default.a.small]: small,
@@ -17985,9 +18158,7 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
     Math.round(this.props.direction) !== Math.round(nextProps.direction) || Math.round(this.props.size) !== Math.round(nextProps.size) || Math.round(this.props.x) !== Math.round(nextProps.x) || Math.round(this.props.y) !== Math.round(nextProps.y);
   }
   render() {
-    const {
-      stageSize
-    } = this.props;
+    const stageSize = this.props.stageSize;
     const sprite = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
       defaultMessage: "Sprite",
       id: "gui.SpriteInfo.sprite"
@@ -18319,23 +18490,21 @@ __webpack_require__.r(__webpack_exports__);
 
 const ThrottledSpriteSelectorItem = Object(_lib_throttled_property_hoc_jsx__WEBPACK_IMPORTED_MODULE_8__["default"])('asset', 500)(_containers_sprite_selector_item_jsx__WEBPACK_IMPORTED_MODULE_5__["default"]);
 const SpriteList = function SpriteList(props) {
-  const {
-    containerRef,
-    editingTarget,
-    draggingIndex,
-    draggingType,
-    hoveredTarget,
-    onDeleteSprite,
-    onDuplicateSprite,
-    onExportSprite,
-    onSelectSprite,
-    onAddSortable,
-    onRemoveSortable,
-    ordering,
-    raised,
-    selectedId,
-    items
-  } = props;
+  const containerRef = props.containerRef,
+    editingTarget = props.editingTarget,
+    draggingIndex = props.draggingIndex,
+    draggingType = props.draggingType,
+    hoveredTarget = props.hoveredTarget,
+    onDeleteSprite = props.onDeleteSprite,
+    onDuplicateSprite = props.onDuplicateSprite,
+    onExportSprite = props.onExportSprite,
+    onSelectSprite = props.onSelectSprite,
+    onAddSortable = props.onAddSortable,
+    onRemoveSortable = props.onRemoveSortable,
+    ordering = props.ordering,
+    raised = props.raised,
+    selectedId = props.selectedId,
+    items = props.items;
   const isSpriteDrag = draggingType === _lib_drag_constants__WEBPACK_IMPORTED_MODULE_3__["default"].SPRITE;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_sprite_selector_css__WEBPACK_IMPORTED_MODULE_9___default.a.scrollWrapper, {
@@ -18520,33 +18689,31 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_2__["defineMessages"
   }
 });
 const SpriteSelectorComponent = function SpriteSelectorComponent(props) {
-  const {
-      editingTarget,
-      hoveredTarget,
-      intl,
-      onChangeSpriteDirection,
-      onChangeSpriteName,
-      onChangeSpriteRotationStyle,
-      onChangeSpriteSize,
-      onChangeSpriteVisibility,
-      onChangeSpriteX,
-      onChangeSpriteY,
-      onDrop,
-      onDeleteSprite,
-      onDuplicateSprite,
-      onExportSprite,
-      onFileUploadClick,
-      onNewSpriteClick,
-      onPaintSpriteClick,
-      onSelectSprite,
-      onSpriteUpload,
-      onSurpriseSpriteClick,
-      raised,
-      selectedId,
-      spriteFileInput,
-      sprites,
-      stageSize
-    } = props,
+  const editingTarget = props.editingTarget,
+    hoveredTarget = props.hoveredTarget,
+    intl = props.intl,
+    onChangeSpriteDirection = props.onChangeSpriteDirection,
+    onChangeSpriteName = props.onChangeSpriteName,
+    onChangeSpriteRotationStyle = props.onChangeSpriteRotationStyle,
+    onChangeSpriteSize = props.onChangeSpriteSize,
+    onChangeSpriteVisibility = props.onChangeSpriteVisibility,
+    onChangeSpriteX = props.onChangeSpriteX,
+    onChangeSpriteY = props.onChangeSpriteY,
+    onDrop = props.onDrop,
+    onDeleteSprite = props.onDeleteSprite,
+    onDuplicateSprite = props.onDuplicateSprite,
+    onExportSprite = props.onExportSprite,
+    onFileUploadClick = props.onFileUploadClick,
+    onNewSpriteClick = props.onNewSpriteClick,
+    onPaintSpriteClick = props.onPaintSpriteClick,
+    onSelectSprite = props.onSelectSprite,
+    onSpriteUpload = props.onSpriteUpload,
+    onSurpriseSpriteClick = props.onSurpriseSpriteClick,
+    raised = props.raised,
+    selectedId = props.selectedId,
+    spriteFileInput = props.spriteFileInput,
+    sprites = props.sprites,
+    stageSize = props.stageSize,
     componentProps = _objectWithoutProperties(props, _excluded);
   let selectedSprite = sprites[selectedId];
   let spriteInfoDisabled = false;
@@ -18811,23 +18978,21 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"
 });
 const enableSettingsButton = new URLSearchParams(location.search).has('settings-button');
 const StageHeaderComponent = function StageHeaderComponent(props) {
-  const {
-    customStageSize,
-    showFixedLargeSize,
-    isFullScreen,
-    isPlayerOnly,
-    onKeyPress,
-    onSetStageFullScreen,
-    onSetStageUnFullScreen,
-    onSetStageLarge,
-    onSetStageSmall,
-    onSetStageFull,
-    onOpenSettings,
-    isEmbedded,
-    stageSize,
-    stageSizeMode,
-    vm
-  } = props;
+  const customStageSize = props.customStageSize,
+    showFixedLargeSize = props.showFixedLargeSize,
+    isFullScreen = props.isFullScreen,
+    isPlayerOnly = props.isPlayerOnly,
+    onKeyPress = props.onKeyPress,
+    onSetStageFullScreen = props.onSetStageFullScreen,
+    onSetStageUnFullScreen = props.onSetStageUnFullScreen,
+    onSetStageLarge = props.onSetStageLarge,
+    onSetStageSmall = props.onSetStageSmall,
+    onSetStageFull = props.onSetStageFull,
+    onOpenSettings = props.onOpenSettings,
+    isEmbedded = props.isEmbedded,
+    stageSize = props.stageSize,
+    stageSizeMode = props.stageSizeMode,
+    vm = props.vm;
   let header = null;
   const stageDimensions = Object(_lib_screen_utils__WEBPACK_IMPORTED_MODULE_10__["getStageDimensions"])(stageSize, customStageSize, isFullScreen || isEmbedded);
   if (isFullScreen || isEmbedded) {
@@ -19063,25 +19228,23 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"
   }
 });
 const StageSelector = props => {
-  const {
-      backdropCount,
-      containerRef,
-      dragOver,
-      fileInputRef,
-      intl,
-      selected,
-      raised,
-      receivedBlocks,
-      url,
-      onBackdropFileUploadClick,
-      onBackdropFileUpload,
-      onClick,
-      onMouseEnter,
-      onMouseLeave,
-      onNewBackdropClick,
-      onSurpriseBackdropClick,
-      onEmptyBackdropClick
-    } = props,
+  const backdropCount = props.backdropCount,
+    containerRef = props.containerRef,
+    dragOver = props.dragOver,
+    fileInputRef = props.fileInputRef,
+    intl = props.intl,
+    selected = props.selected,
+    raised = props.raised,
+    receivedBlocks = props.receivedBlocks,
+    url = props.url,
+    onBackdropFileUploadClick = props.onBackdropFileUploadClick,
+    onBackdropFileUpload = props.onBackdropFileUpload,
+    onClick = props.onClick,
+    onMouseEnter = props.onMouseEnter,
+    onMouseLeave = props.onMouseLeave,
+    onNewBackdropClick = props.onNewBackdropClick,
+    onSurpriseBackdropClick = props.onSurpriseBackdropClick,
+    onEmptyBackdropClick = props.onEmptyBackdropClick,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_stage_selector_css__WEBPACK_IMPORTED_MODULE_6___default.a.stageSelector, {
@@ -19228,15 +19391,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const StageWrapperComponent = function StageWrapperComponent(props) {
-  const {
-    isEmbedded,
-    isFullScreen,
-    isRtl,
-    isRendererSupported,
-    loading,
-    stageSize,
-    vm
-  } = props;
+  const isEmbedded = props.isEmbedded,
+    isFullScreen = props.isFullScreen,
+    isRtl = props.isRtl,
+    isRendererSupported = props.isRendererSupported,
+    loading = props.loading,
+    stageSize = props.stageSize,
+    vm = props.vm;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_stage_wrapper_css__WEBPACK_IMPORTED_MODULE_9___default.a.stageWrapper, {
       [_stage_wrapper_css__WEBPACK_IMPORTED_MODULE_9___default.a.embedded]: isEmbedded,
@@ -19353,24 +19514,22 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const StageComponent = props => {
-  const {
-      canvas,
-      customStageSize,
-      dragRef,
-      isColorPicking,
-      isFullScreen,
-      isPlayerOnly,
-      isStarted,
-      isRtl,
-      colorInfo,
-      micIndicator,
-      question,
-      stageSize,
-      useEditorDragStyle,
-      onDeactivateColorPicker,
-      onDoubleClick,
-      onQuestionAnswered
-    } = props,
+  const canvas = props.canvas,
+    customStageSize = props.customStageSize,
+    dragRef = props.dragRef,
+    isColorPicking = props.isColorPicking,
+    isFullScreen = props.isFullScreen,
+    isPlayerOnly = props.isPlayerOnly,
+    isStarted = props.isStarted,
+    isRtl = props.isRtl,
+    colorInfo = props.colorInfo,
+    micIndicator = props.micIndicator,
+    question = props.question,
+    stageSize = props.stageSize,
+    useEditorDragStyle = props.useEditorDragStyle,
+    onDeactivateColorPicker = props.onDeactivateColorPicker,
+    onDoubleClick = props.onDoubleClick,
+    onQuestionAnswered = props.onQuestionAnswered,
     boxProps = _objectWithoutProperties(props, _excluded);
   const stageDimensions = Object(_lib_screen_utils_js__WEBPACK_IMPORTED_MODULE_12__["getStageDimensions"])(stageSize, customStageSize, isFullScreen);
   const minWidth = Object(_lib_screen_utils_js__WEBPACK_IMPORTED_MODULE_12__["getMinWidth"])(stageSize);
@@ -19551,12 +19710,10 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const StopAllComponent = function StopAllComponent(props) {
-  const {
-      active,
-      className,
-      onClick,
-      title
-    } = props,
+  const active = props.active,
+    className = props.className,
+    onClick = props.onClick,
+    title = props.title,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", _extends({
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _stop_all_css__WEBPACK_IMPORTED_MODULE_4___default.a.stopAll, {
@@ -19647,14 +19804,11 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const TagButtonComponent = _ref => {
-  let {
-      active,
-      iconClassName,
-      className,
-      tag,
-      // eslint-disable-line no-unused-vars
-      intlLabel
-    } = _ref,
+  let active = _ref.active,
+    iconClassName = _ref.iconClassName,
+    className = _ref.className,
+    tag = _ref.tag,
+    intlLabel = _ref.intlLabel,
     props = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.tagButton, className, {
@@ -19750,36 +19904,34 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
  * @returns {React.Component} rendered component
  */
 const TargetPane = _ref => {
-  let {
-      editingTarget,
-      fileInputRef,
-      hoveredTarget,
-      spriteLibraryVisible,
-      onActivateBlocksTab,
-      onChangeSpriteDirection,
-      onChangeSpriteName,
-      onChangeSpriteRotationStyle,
-      onChangeSpriteSize,
-      onChangeSpriteVisibility,
-      onChangeSpriteX,
-      onChangeSpriteY,
-      onDeleteSprite,
-      onDrop,
-      onDuplicateSprite,
-      onExportSprite,
-      onFileUploadClick,
-      onNewSpriteClick,
-      onPaintSpriteClick,
-      onRequestCloseSpriteLibrary,
-      onSelectSprite,
-      onSpriteUpload,
-      onSurpriseSpriteClick,
-      raiseSprites,
-      stage,
-      stageSize,
-      sprites,
-      vm
-    } = _ref,
+  let editingTarget = _ref.editingTarget,
+    fileInputRef = _ref.fileInputRef,
+    hoveredTarget = _ref.hoveredTarget,
+    spriteLibraryVisible = _ref.spriteLibraryVisible,
+    onActivateBlocksTab = _ref.onActivateBlocksTab,
+    onChangeSpriteDirection = _ref.onChangeSpriteDirection,
+    onChangeSpriteName = _ref.onChangeSpriteName,
+    onChangeSpriteRotationStyle = _ref.onChangeSpriteRotationStyle,
+    onChangeSpriteSize = _ref.onChangeSpriteSize,
+    onChangeSpriteVisibility = _ref.onChangeSpriteVisibility,
+    onChangeSpriteX = _ref.onChangeSpriteX,
+    onChangeSpriteY = _ref.onChangeSpriteY,
+    onDeleteSprite = _ref.onDeleteSprite,
+    onDrop = _ref.onDrop,
+    onDuplicateSprite = _ref.onDuplicateSprite,
+    onExportSprite = _ref.onExportSprite,
+    onFileUploadClick = _ref.onFileUploadClick,
+    onNewSpriteClick = _ref.onNewSpriteClick,
+    onPaintSpriteClick = _ref.onPaintSpriteClick,
+    onRequestCloseSpriteLibrary = _ref.onRequestCloseSpriteLibrary,
+    onSelectSprite = _ref.onSelectSprite,
+    onSpriteUpload = _ref.onSpriteUpload,
+    onSurpriseSpriteClick = _ref.onSurpriseSpriteClick,
+    raiseSprites = _ref.raiseSprites,
+    stage = _ref.stage,
+    stageSize = _ref.stageSize,
+    sprites = _ref.sprites,
+    vm = _ref.vm,
     componentProps = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", _extends({
     className: _target_pane_css__WEBPACK_IMPORTED_MODULE_7___default.a.targetPane
@@ -20178,11 +20330,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ToggleButtons = _ref => {
-  let {
-    buttons,
-    className,
-    disabled
-  } = _ref;
+  let buttons = _ref.buttons,
+    className = _ref.className,
+    disabled = _ref.disabled;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, _toggle_buttons_css__WEBPACK_IMPORTED_MODULE_4___default.a.row, {
       [_toggle_buttons_css__WEBPACK_IMPORTED_MODULE_4___default.a.disabled]: disabled
@@ -20285,9 +20435,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const TurboMode = _ref => {
-  let {
-    isSmall
-  } = _ref;
+  let isSmall = _ref.isSmall;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _turbo_mode_css__WEBPACK_IMPORTED_MODULE_4___default.a.turboContainer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -20929,11 +21077,9 @@ const decorate = text => {
   return text;
 };
 const Description = _ref => {
-  let {
-    instructions,
-    credits,
-    projectId
-  } = _ref;
+  let instructions = _ref.instructions,
+    credits = _ref.credits,
+    projectId = _ref.projectId;
   return instructions !== 'unshared' && credits !== 'unshared' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _description_css__WEBPACK_IMPORTED_MODULE_3___default.a.description
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -20984,10 +21130,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DocumentationLink = _ref => {
-  let {
-    slug,
-    children
-  } = _ref;
+  let slug = _ref.slug,
+    children = _ref.children;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://docs.turbowarp.org/".concat(slug),
     target: "_blank",
@@ -21764,14 +21908,10 @@ class FontName extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        name,
-        onChange,
-        fontManager,
-        isCustom
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      name = _this$props.name,
+      onChange = _this$props.onChange,
+      fontManager = _this$props.fontManager,
+      isCustom = _this$props.isCustom,
       props = _objectWithoutProperties(_this$props, _excluded);
     const filteredOptions = this.getFilteredOptions();
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -22259,10 +22399,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const FramerateIndicator = _ref => {
-  let {
-    framerate,
-    interpolation
-  } = _ref;
+  let framerate = _ref.framerate,
+    interpolation = _ref.interpolation;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, framerate !== 30 && framerate !== 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _framerate_indicator_css__WEBPACK_IMPORTED_MODULE_3___default.a.framerateContainer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -24114,9 +24252,7 @@ const MAX_URL_LENGTH = 100;
  */
 const trimURL = url => url.length > MAX_URL_LENGTH ? "".concat(url.substring(0, MAX_URL_LENGTH), "...") : url;
 const URL = _ref => {
-  let {
-    url
-  } = _ref;
+  let url = _ref.url;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: _url_css__WEBPACK_IMPORTED_MODULE_2___default.a.url
   }, trimURL(url));
@@ -24287,11 +24423,9 @@ UnwrappedSetting.propTypes = {
 };
 const Setting = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["injectIntl"])(UnwrappedSetting);
 const BooleanSetting = _ref => {
-  let {
-      value,
-      onChange,
-      label
-    } = _ref,
+  let value = _ref.value,
+    onChange = _ref.onChange,
+    label = _ref.label,
     props = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Setting, _extends({}, props, {
     active: value,
@@ -24429,13 +24563,11 @@ const DisableCompiler = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__
   slug: "disable-compiler"
 }));
 const CustomStageSize = _ref2 => {
-  let {
-    customStageSizeEnabled,
-    stageWidth,
-    onStageWidthChange,
-    stageHeight,
-    onStageHeightChange
-  } = _ref2;
+  let customStageSizeEnabled = _ref2.customStageSizeEnabled,
+    stageWidth = _ref2.stageWidth,
+    onStageWidthChange = _ref2.onStageWidthChange,
+    stageHeight = _ref2.stageHeight,
+    onStageHeightChange = _ref2.onStageHeightChange;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Setting, {
     active: customStageSizeEnabled,
     primary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -24487,9 +24619,7 @@ CustomStageSize.propTypes = {
   onStageHeightChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
 };
 const StoreProjectOptions = _ref3 => {
-  let {
-    onStoreProjectOptions
-  } = _ref3;
+  let onStoreProjectOptions = _ref3.onStoreProjectOptions;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.setting
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
@@ -25461,6 +25591,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _waveform_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./waveform.css */ "./src/components/waveform/waveform.css");
 /* harmony import */ var _waveform_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_waveform_css__WEBPACK_IMPORTED_MODULE_2__);
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
@@ -25470,11 +25606,10 @@ __webpack_require__.r(__webpack_exports__);
 // eslint-disable-next-line react/prefer-stateless-function
 class Waveform extends react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent {
   render() {
-    const {
-      width,
-      height,
-      data
-    } = this.props;
+    const _this$props = this.props,
+      width = _this$props.width,
+      height = _this$props.height,
+      data = _this$props.data;
 
     // Never want a density of points higher than the number of pixels
     // This is very conservative, could be far fewer points because of curve smoothing.
@@ -25490,8 +25625,12 @@ class Waveform extends react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponen
     const maxIndex = filteredData.length - 1;
     const points = [...filteredData.map((v, i) => [width * (i / maxIndex), height * v / 2]), ...filteredData.reverse().map((v, i) => [width * (1 - i / maxIndex), -height * v / 2])];
     const pathComponents = points.map((_ref, i) => {
-      let [x, y] = _ref;
-      const [nx, ny] = points[i < points.length - 1 ? i + 1 : 0];
+      let _ref2 = _slicedToArray(_ref, 2),
+        x = _ref2[0],
+        y = _ref2[1];
+      const _points = _slicedToArray(points[i < points.length - 1 ? i + 1 : 0], 2),
+        nx = _points[0],
+        ny = _points[1];
       return "Q".concat(x, " ").concat(y, " ").concat((x + nx) / 2, " ").concat((y + ny) / 2);
     });
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
@@ -25559,21 +25698,19 @@ class Alert extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     this.handleOnCloseAlert();
   }
   render() {
-    const {
-      closeButton,
-      content,
-      extensionName,
-      index,
-      // eslint-disable-line no-unused-vars
-      level,
-      iconSpinner,
-      iconURL,
-      message,
-      onSaveNow,
-      showDownload,
-      showReconnect,
-      showSaveNow
-    } = this.props;
+    const _this$props = this.props,
+      closeButton = _this$props.closeButton,
+      content = _this$props.content,
+      extensionName = _this$props.extensionName,
+      index = _this$props.index,
+      level = _this$props.level,
+      iconSpinner = _this$props.iconSpinner,
+      iconURL = _this$props.iconURL,
+      message = _this$props.message,
+      onSaveNow = _this$props.onSaveNow,
+      showDownload = _this$props.showDownload,
+      showReconnect = _this$props.showReconnect,
+      showSaveNow = _this$props.showSaveNow;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null, (_, downloadProject) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_alerts_alert_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
       closeButton: closeButton,
       content: content,
@@ -25645,11 +25782,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Alerts = _ref => {
-  let {
-    alertsList,
-    className,
-    onCloseAlert
-  } = _ref;
+  let alertsList = _ref.alertsList,
+    className = _ref.className,
+    onCloseAlert = _ref.onCloseAlert;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_alerts_alerts_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]
   // only display standard and extension alerts here
   , {
@@ -25722,10 +25857,9 @@ class AudioSelector extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compone
     });
   }
   componentWillReceiveProps(newProps) {
-    const {
-      trimStart,
-      trimEnd
-    } = this.props;
+    const _this$props = this.props,
+      trimStart = _this$props.trimStart,
+      trimEnd = _this$props.trimEnd;
     if (newProps.trimStart === trimStart && newProps.trimEnd === trimEnd) return;
     this.setState({
       trimStart: newProps.trimStart,
@@ -25736,10 +25870,9 @@ class AudioSelector extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compone
     this.props.onSetTrim(null, null);
   }
   handleNewSelectionMouseDown(e) {
-    const {
-      width,
-      left
-    } = this.containerElement.getBoundingClientRect();
+    const _this$containerElemen = this.containerElement.getBoundingClientRect(),
+      width = _this$containerElemen.width,
+      left = _this$containerElemen.left;
     this.initialTrimEnd = (Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_4__["getEventXY"])(e).x - left) / width;
     this.initialTrimStart = this.initialTrimEnd;
     this.props.onSetTrim(this.initialTrimStart, this.initialTrimEnd);
@@ -26430,11 +26563,9 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const BalancedFormattedMessage = props => {
-  const {
-      className,
-      resize,
-      style
-    } = props,
+  const className = props.className,
+    resize = props.resize,
+    style = props.style,
     otherProps = _objectWithoutProperties(props, _excluded);
   const balancedTextProps = {
     className,
@@ -26512,9 +26643,7 @@ class BalancedText extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
     }
   }
   balanceText() {
-    const {
-      container
-    } = this;
+    const container = this.container;
     if (container) {
       balance_text__WEBPACK_IMPORTED_MODULE_2___default()(container, {});
     }
@@ -26527,12 +26656,9 @@ class BalancedText extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
   }
   render() {
     let _this$props = this.props,
-      {
-        children,
-        resize,
-        // eslint-disable-line no-unused-vars
-        style
-      } = _this$props,
+      children = _this$props.children,
+      resize = _this$props.resize,
+      style = _this$props.style,
       otherProps = _objectWithoutProperties(_this$props, _excluded);
     if (this.state.forceHide) {
       style = Object.assign({}, style, {
@@ -26964,10 +27090,9 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     // Code inside intentionally ignores several error situations (no stage, etc.)
     // Because they would get caught by this try/catch
     try {
-      let {
-        editingTarget: target,
-        runtime
-      } = this.props.vm;
+      let _this$props$vm = this.props.vm,
+        target = _this$props$vm.editingTarget,
+        runtime = _this$props$vm.runtime;
       const stage = runtime.getTargetForStage();
       if (!target) target = stage; // If no editingTarget, use the stage
 
@@ -27012,11 +27137,10 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     }
     this.workspace.addChangeListener(this.props.vm.blockListener);
     if (this.props.vm.editingTarget && this.props.workspaceMetrics.targets[this.props.vm.editingTarget.id]) {
-      const {
-        scrollX,
-        scrollY,
-        scale
-      } = this.props.workspaceMetrics.targets[this.props.vm.editingTarget.id];
+      const _this$props$workspace = this.props.workspaceMetrics.targets[this.props.vm.editingTarget.id],
+        scrollX = _this$props$workspace.scrollX,
+        scrollY = _this$props$workspace.scrollY,
+        scale = _this$props$workspace.scale;
       this.workspace.scrollX = scrollX;
       this.workspace.scrollY = scrollY;
       this.workspace.scale = scale;
@@ -27152,17 +27276,14 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
       if (topBlock) {
         const metrics = this.props.workspaceMetrics.targets[this.props.vm.editingTarget.id];
         if (metrics) {
-          const {
-            x,
-            y
-          } = dragInfo.currentOffset;
-          const {
-            left,
-            right
-          } = this.workspace.scrollbar.hScroll.outerSvg_.getBoundingClientRect();
-          const {
-            top
-          } = this.workspace.scrollbar.vScroll.outerSvg_.getBoundingClientRect();
+          const _dragInfo$currentOffs = dragInfo.currentOffset,
+            x = _dragInfo$currentOffs.x,
+            y = _dragInfo$currentOffs.y;
+          const _this$workspace$scrol = this.workspace.scrollbar.hScroll.outerSvg_.getBoundingClientRect(),
+            left = _this$workspace$scrol.left,
+            right = _this$workspace$scrol.right;
+          const _this$workspace$scrol2 = this.workspace.scrollbar.vScroll.outerSvg_.getBoundingClientRect(),
+            top = _this$workspace$scrol2.top;
           topBlock.x = (this.props.isRtl ? metrics.scrollX - x + right : -metrics.scrollX + x - left) / metrics.scale;
           topBlock.y = (-metrics.scrollY - top + y) / metrics.scale;
         }
@@ -27180,31 +27301,29 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
   render() {
     /* eslint-disable no-unused-vars */
     const _this$props = this.props,
-      {
-        anyModalVisible,
-        canUseCloud,
-        customStageSize,
-        customProceduresVisible,
-        extensionLibraryVisible,
-        options,
-        stageSize,
-        vm,
-        isRtl,
-        isVisible,
-        onActivateColorPicker,
-        onOpenConnectionModal,
-        onOpenSoundRecorder,
-        onOpenCustomExtensionModal,
-        reduxOnOpenCustomExtensionModal,
-        updateToolboxState,
-        onActivateCustomProcedures,
-        onRequestCloseExtensionLibrary,
-        onRequestCloseCustomProcedures,
-        toolboxXML,
-        updateMetrics: updateMetricsProp,
-        useCatBlocks,
-        workspaceMetrics
-      } = _this$props,
+      anyModalVisible = _this$props.anyModalVisible,
+      canUseCloud = _this$props.canUseCloud,
+      customStageSize = _this$props.customStageSize,
+      customProceduresVisible = _this$props.customProceduresVisible,
+      extensionLibraryVisible = _this$props.extensionLibraryVisible,
+      options = _this$props.options,
+      stageSize = _this$props.stageSize,
+      vm = _this$props.vm,
+      isRtl = _this$props.isRtl,
+      isVisible = _this$props.isVisible,
+      onActivateColorPicker = _this$props.onActivateColorPicker,
+      onOpenConnectionModal = _this$props.onOpenConnectionModal,
+      onOpenSoundRecorder = _this$props.onOpenSoundRecorder,
+      onOpenCustomExtensionModal = _this$props.onOpenCustomExtensionModal,
+      reduxOnOpenCustomExtensionModal = _this$props.reduxOnOpenCustomExtensionModal,
+      updateToolboxState = _this$props.updateToolboxState,
+      onActivateCustomProcedures = _this$props.onActivateCustomProcedures,
+      onRequestCloseExtensionLibrary = _this$props.onRequestCloseExtensionLibrary,
+      onRequestCloseCustomProcedures = _this$props.onRequestCloseCustomProcedures,
+      toolboxXML = _this$props.toolboxXML,
+      updateMetricsProp = _this$props.updateMetrics,
+      useCatBlocks = _this$props.useCatBlocks,
+      workspaceMetrics = _this$props.workspaceMetrics,
       props = _objectWithoutProperties(_this$props, _excluded);
     /* eslint-enable no-unused-vars */
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(DroppableBlocks, _extends({
@@ -27662,14 +27781,10 @@ class Controls extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   }
   render() {
     const _this$props = this.props,
-      {
-        vm,
-        // eslint-disable-line no-unused-vars
-        isStarted,
-        // eslint-disable-line no-unused-vars
-        projectRunning,
-        turbo
-      } = _this$props,
+      vm = _this$props.vm,
+      isStarted = _this$props.isStarted,
+      projectRunning = _this$props.projectRunning,
+      turbo = _this$props.turbo,
       props = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_controls_controls_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], _extends({}, props, {
       active: projectRunning && isStarted,
@@ -27887,11 +28002,9 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
   constructor(props) {
     super(props);
     lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default()(this, ['handleSelectCostume', 'handleDeleteCostume', 'handleDuplicateCostume', 'handleExportCostume', 'handleNewCostume', 'handleNewBlankCostume', 'handleSurpriseCostume', 'handleSurpriseBackdrop', 'handleFileUploadClick', 'handleCostumeUpload', 'handleDrop', 'setFileInput']);
-    const {
-      editingTarget,
-      sprites,
-      stage
-    } = props;
+    const editingTarget = props.editingTarget,
+      sprites = props.sprites,
+      stage = props.stage;
     const target = editingTarget && sprites[editingTarget] ? sprites[editingTarget] : stage;
     if (target && target.currentCostume) {
       this.state = {
@@ -27904,11 +28017,9 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     }
   }
   componentWillReceiveProps(nextProps) {
-    const {
-      editingTarget,
-      sprites,
-      stage
-    } = nextProps;
+    const editingTarget = nextProps.editingTarget,
+      sprites = nextProps.sprites,
+      stage = nextProps.stage;
     const target = editingTarget && sprites[editingTarget] ? sprites[editingTarget] : stage;
     if (!target || !target.costumes) {
       return;
@@ -28053,15 +28164,13 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     return "".concat(Math.ceil(size[0] / resolution), " x ").concat(Math.ceil(size[1] / resolution));
   }
   render() {
-    const {
-      dispatchUpdateRestore,
-      // eslint-disable-line no-unused-vars
-      intl,
-      isRtl,
-      onNewLibraryBackdropClick,
-      onNewLibraryCostumeClick,
-      vm
-    } = this.props;
+    const _this$props = this.props,
+      dispatchUpdateRestore = _this$props.dispatchUpdateRestore,
+      intl = _this$props.intl,
+      isRtl = _this$props.isRtl,
+      onNewLibraryBackdropClick = _this$props.onNewLibraryBackdropClick,
+      onNewLibraryCostumeClick = _this$props.onNewLibraryCostumeClick,
+      vm = _this$props.vm;
     if (!vm.editingTarget) {
       return null;
     }
@@ -28235,10 +28344,9 @@ class CustomProcedures extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Comp
       this.mutationRoot.onChangeFn();
       // Keep the block centered on the workspace
       const metrics = this.workspace.getMetrics();
-      const {
-        x,
-        y
-      } = this.mutationRoot.getRelativeToSurfaceXY();
+      const _this$mutationRoot$ge = this.mutationRoot.getRelativeToSurfaceXY(),
+        x = _this$mutationRoot$ge.x,
+        y = _this$mutationRoot$ge.y;
       const dy = metrics.viewHeight / 2 - this.mutationRoot.height / 2 - y;
       let dx;
       if (this.props.isRtl) {
@@ -28438,12 +28546,8 @@ class DeletionRestorer extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Comp
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        children,
-        dispatchUpdateRestore
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      children = _this$props.children,
+      dispatchUpdateRestore = _this$props.dispatchUpdateRestore,
       props = _objectWithoutProperties(_this$props, _excluded);
     const restorable = typeof this.props.restore === 'function';
     return this.props.children(this.restoreDeletion, _objectSpread(_objectSpread({}, props), {}, {
@@ -29065,11 +29169,10 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 
-const {
-  RequestMetadata,
-  setMetadata,
-  unsetMetadata
-} = _lib_storage__WEBPACK_IMPORTED_MODULE_17__["default"].scratchFetch;
+const _storage$scratchFetch = _lib_storage__WEBPACK_IMPORTED_MODULE_17__["default"].scratchFetch,
+  RequestMetadata = _storage$scratchFetch.RequestMetadata,
+  setMetadata = _storage$scratchFetch.setMetadata,
+  unsetMetadata = _storage$scratchFetch.unsetMetadata;
 const setProjectIdMetadata = projectId => {
   // If project ID is '0' or zero, it's not a real project ID. In that case, remove the project ID metadata.
   // Same if it's null undefined.
@@ -29104,26 +29207,22 @@ class GUI extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       throw this.props.error;
     }
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        assetHost,
-        cloudHost,
-        error,
-        isError,
-        isScratchDesktop,
-        isShowingProject,
-        onProjectLoaded,
-        onStorageInit,
-        onUpdateProjectId,
-        onVmInit,
-        projectHost,
-        projectId,
-        /* eslint-enable no-unused-vars */
-        children,
-        fetchingProject,
-        isLoading,
-        loadingStateVisible
-      } = _this$props,
+      assetHost = _this$props.assetHost,
+      cloudHost = _this$props.cloudHost,
+      error = _this$props.error,
+      isError = _this$props.isError,
+      isScratchDesktop = _this$props.isScratchDesktop,
+      isShowingProject = _this$props.isShowingProject,
+      onProjectLoaded = _this$props.onProjectLoaded,
+      onStorageInit = _this$props.onStorageInit,
+      onUpdateProjectId = _this$props.onUpdateProjectId,
+      onVmInit = _this$props.onVmInit,
+      projectHost = _this$props.projectHost,
+      projectId = _this$props.projectId,
+      children = _this$props.children,
+      fetchingProject = _this$props.fetchingProject,
+      isLoading = _this$props.isLoading,
+      loadingStateVisible = _this$props.loadingStateVisible,
       componentProps = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_gui_gui_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], _extends({
       loading: fetchingProject || isLoading || loadingStateVisible
@@ -29242,10 +29341,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const InlineMessages = _ref => {
-  let {
-    alertsList,
-    className
-  } = _ref;
+  let alertsList = _ref.alertsList,
+    className = _ref.className;
   if (!alertsList) {
     return null;
   }
@@ -29257,11 +29354,9 @@ const InlineMessages = _ref => {
 
   // get first alert
   const firstInlineAlert = inlineAlerts[0];
-  const {
-    content,
-    iconSpinner,
-    level
-  } = firstInlineAlert;
+  const content = firstInlineAlert.content,
+    iconSpinner = firstInlineAlert.iconSpinner,
+    level = firstInlineAlert.level;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_alerts_inline_message_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: className,
     content: content,
@@ -29554,11 +29649,10 @@ class ListMonitor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
     // Submit any in-progress value edits on blur
     if (this.state.activeIndex !== null) {
       if (this.state.inputDidChange) {
-        const {
-          vm,
-          targetId,
-          id: variableId
-        } = this.props;
+        const _this$props = this.props,
+          vm = _this$props.vm,
+          targetId = _this$props.targetId,
+          variableId = _this$props.id;
         const newListValue = Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_6__["getVariableValue"])(vm, targetId, variableId);
         newListValue[this.state.activeIndex] = this.state.activeValue;
         Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_6__["setVariableValue"])(vm, targetId, variableId, newListValue);
@@ -29580,11 +29674,10 @@ class ListMonitor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
     // Arrow down / arrow up navigate down / up the list.
     // Enter / shift+enter insert new blank item below / above.
     const previouslyActiveIndex = this.state.activeIndex;
-    const {
-      vm,
-      targetId,
-      id: variableId
-    } = this.props;
+    const _this$props2 = this.props,
+      vm = _this$props2.vm,
+      targetId = _this$props2.targetId,
+      variableId = _this$props2.id;
     let navigateDirection = 0;
     if (e.key === 'Tab') navigateDirection = e.shiftKey ? -1 : 1;else if (e.key === 'ArrowUp') navigateDirection = -1;else if (e.key === 'ArrowDown') navigateDirection = 1;
     if (navigateDirection) {
@@ -29620,11 +29713,10 @@ class ListMonitor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
   handleRemove(e) {
     e.preventDefault(); // Default would blur input, prevent that.
     e.stopPropagation(); // Bubbling would activate, which will be handled here
-    const {
-      vm,
-      targetId,
-      id: variableId
-    } = this.props;
+    const _this$props3 = this.props,
+      vm = _this$props3.vm,
+      targetId = _this$props3.targetId,
+      variableId = _this$props3.id;
     const listValue = Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_6__["getVariableValue"])(vm, targetId, variableId);
     const newListValue = listValue.slice(0, this.state.activeIndex).concat(listValue.slice(this.state.activeIndex + 1));
     Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_6__["setVariableValue"])(vm, targetId, variableId, newListValue);
@@ -29637,11 +29729,10 @@ class ListMonitor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
   }
   handleAdd() {
     // Add button appends a blank value and switches to it
-    const {
-      vm,
-      targetId,
-      id: variableId
-    } = this.props;
+    const _this$props4 = this.props,
+      vm = _this$props4.vm,
+      targetId = _this$props4.targetId,
+      variableId = _this$props4.id;
     const newListValue = Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_6__["getVariableValue"])(vm, targetId, variableId).concat(['']);
     Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_6__["setVariableValue"])(vm, targetId, variableId, newListValue);
     this.setState({
@@ -29680,11 +29771,9 @@ class ListMonitor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
     return (index + length) % length;
   }
   render() {
-    const _this$props = this.props,
-      {
-        vm // eslint-disable-line no-unused-vars
-      } = _this$props,
-      props = _objectWithoutProperties(_this$props, _excluded);
+    const _this$props5 = this.props,
+      vm = _this$props5.vm,
+      props = _objectWithoutProperties(_this$props5, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_monitor_list_monitor_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], _extends({}, props, {
       activeIndex: this.state.activeIndex,
       activeValue: this.state.activeValue,
@@ -29767,11 +29856,7 @@ const MenuBarHOC = function MenuBarHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          projectChanged
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        projectChanged = _this$props.projectChanged,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
         showSaveFilePicker: this.props.showSaveFilePicker
@@ -29826,10 +29911,8 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 const Menu = _ref => {
-  let {
-      open,
-      children
-    } = _ref,
+  let open = _ref.open,
+    children = _ref.children,
     props = _objectWithoutProperties(_ref, _excluded);
   return open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], props, children) : null;
 };
@@ -29838,6 +29921,45 @@ Menu.propTypes = {
   open: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Menu);
+
+/***/ }),
+
+/***/ "./src/containers/mod-manager.jsx":
+/*!****************************************!*\
+  !*** ./src/containers/mod-manager.jsx ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _components_mod_manager_mod_manager_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/mod-manager/mod-manager.jsx */ "./src/components/mod-manager/mod-manager.jsx");
+/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
+
+
+
+
+
+const ModManager = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_mod_manager_mod_manager_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  isOpen: props.isModalOpen,
+  onClose: props.onClose
+});
+ModManager.propTypes = {
+  isModalOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  onClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+};
+const mapStateToProps = state => ({
+  isModalOpen: state.scratchGui.modals.modManagerModal
+});
+const mapDispatchToProps = dispatch => ({
+  onClose: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_4__["closeModManager"])())
+});
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, mapDispatchToProps)(ModManager));
 
 /***/ }),
 
@@ -30121,10 +30243,8 @@ class Monitor extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     this.props.removeMonitorRect(this.props.id);
   }
   handleDragEnd(e, _ref) {
-    let {
-      x,
-      y
-    } = _ref;
+    let x = _ref.x,
+      y = _ref.y;
     const newX = parseInt(this.element.style.left, 10) + x;
     const newY = parseInt(this.element.style.top, 10) + y;
     this.props.onDragEnd(this.props.id, newX, newY);
@@ -30193,10 +30313,8 @@ class Monitor extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   }
   handleImport() {
     Object(_lib_import_csv__WEBPACK_IMPORTED_MODULE_8__["default"])().then(async _ref2 => {
-      let {
-        rows,
-        text
-      } = _ref2;
+      let rows = _ref2.rows,
+        text = _ref2.text;
       const numberOfColumns = rows[0].length;
       let columnNumber = 1;
       if (numberOfColumns > 1) {
@@ -30212,20 +30330,18 @@ class Monitor extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       } else {
         newListValue = rows.map(row => row[columnNumber - 1]).filter(item => typeof item === 'string'); // CSV importer can leave undefineds
       }
-      const {
-        vm,
-        targetId,
-        id: variableId
-      } = this.props;
+      const _this$props = this.props,
+        vm = _this$props.vm,
+        targetId = _this$props.targetId,
+        variableId = _this$props.id;
       Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_7__["setVariableValue"])(vm, targetId, variableId, newListValue);
     });
   }
   handleExport() {
-    const {
-      vm,
-      targetId,
-      id: variableId
-    } = this.props;
+    const _this$props2 = this.props,
+      vm = _this$props2.vm,
+      targetId = _this$props2.targetId,
+      variableId = _this$props2.id;
     const variable = Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_7__["getVariable"])(vm, targetId, variableId);
     const text = variable.value.join('\r\n');
     const blob = new Blob([text], {
@@ -30398,10 +30514,8 @@ class PaintEditorWrapper extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Co
   render() {
     if (!this.props.imageId) return null;
     const _this$props = this.props,
-      {
-        selectedCostumeIndex,
-        vm
-      } = _this$props,
+      selectedCostumeIndex = _this$props.selectedCostumeIndex,
+      vm = _this$props.vm,
       componentProps = _objectWithoutProperties(_this$props, _excluded);
     const costume = vm.getCostume(selectedCostumeIndex);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_lib_tw_scratch_paint__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({}, componentProps, {
@@ -30433,9 +30547,7 @@ PaintEditorWrapper.propTypes = {
   vm: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_3___default.a)
 };
 const mapStateToProps = (state, _ref) => {
-  let {
-    selectedCostumeIndex
-  } = _ref;
+  let selectedCostumeIndex = _ref.selectedCostumeIndex;
   const targetId = state.scratchGui.vm.editingTarget.id;
   const sprite = state.scratchGui.vm.editingTarget.sprite;
   // Make sure the costume index doesn't go out of range.
@@ -30564,13 +30676,11 @@ class PlayButton extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     this.buttonRef = ref;
   }
   render() {
-    const {
-      className,
-      isPlaying,
-      onPlay,
-      // eslint-disable-line no-unused-vars
-      onStop // eslint-disable-line no-unused-vars
-    } = this.props;
+    const _this$props = this.props,
+      className = _this$props.className,
+      isPlaying = _this$props.isPlaying,
+      onPlay = _this$props.onPlay,
+      onStop = _this$props.onStop;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_play_button_play_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
       className: className,
       isPlaying: isPlaying,
@@ -30644,15 +30754,10 @@ class PlaybackStep extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Componen
   }
   render() {
     const _this$props = this.props,
-      {
-        sampleRate,
-        // eslint-disable-line no-unused-vars
-        onPlay,
-        // eslint-disable-line no-unused-vars
-        onStopPlaying,
-        // eslint-disable-line no-unused-vars
-        onSetPlayhead // eslint-disable-line no-unused-vars
-      } = _this$props,
+      sampleRate = _this$props.sampleRate,
+      onPlay = _this$props.onPlay,
+      onStopPlaying = _this$props.onStopPlaying,
+      onSetPlayhead = _this$props.onSetPlayhead,
       componentProps = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_record_modal_playback_step_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
       onPlay: this.handlePlay,
@@ -31147,22 +31252,18 @@ class RecordingStep extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compone
     this.props.onRecord();
   }
   handleStopRecording() {
-    const {
-      samples,
-      sampleRate,
-      levels,
-      trimStart,
-      trimEnd
-    } = this.audioRecorder.stop();
+    const _this$audioRecorder$s = this.audioRecorder.stop(),
+      samples = _this$audioRecorder$s.samples,
+      sampleRate = _this$audioRecorder$s.sampleRate,
+      levels = _this$audioRecorder$s.levels,
+      trimStart = _this$audioRecorder$s.trimStart,
+      trimEnd = _this$audioRecorder$s.trimEnd;
     this.props.onStopRecording(samples, sampleRate, levels, trimStart, trimEnd);
   }
   render() {
     const _this$props = this.props,
-      {
-        onRecord,
-        // eslint-disable-line no-unused-vars
-        onStopRecording // eslint-disable-line no-unused-vars
-      } = _this$props,
+      onRecord = _this$props.onRecord,
+      onStopRecording = _this$props.onStopRecording,
       componentProps = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_record_modal_recording_step_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
       level: this.state.level,
@@ -31436,9 +31537,7 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     this.props.onShowSaveErrorAlert();
   }
   render() {
-    const {
-      children
-    } = this.props;
+    const children = this.props.children;
     return children(this.props.className, this.downloadProject, this.props.showSaveFilePicker ? {
       available: true,
       name: this.props.fileHandle ? this.props.fileHandle.name : null,
@@ -31640,21 +31739,17 @@ class SliderMonitor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     this.setState({
       value: Number(e.target.value)
     });
-    const {
-      vm,
-      targetId,
-      id: variableId
-    } = this.props;
+    const _this$props = this.props,
+      vm = _this$props.vm,
+      targetId = _this$props.targetId,
+      variableId = _this$props.id;
     Object(_lib_variable_utils__WEBPACK_IMPORTED_MODULE_4__["setVariableValue"])(vm, targetId, variableId, Number(e.target.value));
   }
   render() {
-    const _this$props = this.props,
-      {
-        vm,
-        // eslint-disable-line no-unused-vars
-        value // eslint-disable-line no-unused-vars
-      } = _this$props,
-      props = _objectWithoutProperties(_this$props, _excluded);
+    const _this$props2 = this.props,
+      vm = _this$props2.vm,
+      value = _this$props2.value,
+      props = _objectWithoutProperties(_this$props2, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_monitor_slider_monitor_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], _extends({}, props, {
       value: this.state.value,
       onSliderUpdate: this.handleSliderUpdate
@@ -31698,11 +31793,10 @@ class SliderPrompt extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Componen
   constructor(props) {
     super(props);
     lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default()(this, ['handleOk', 'handleCancel', 'handleChangeMin', 'handleChangeMax', 'handleKeyPress', 'validates', 'shouldBeDiscrete']);
-    const {
-      isDiscrete,
-      minValue,
-      maxValue
-    } = this.props;
+    const _this$props = this.props,
+      isDiscrete = _this$props.isDiscrete,
+      minValue = _this$props.minValue,
+      maxValue = _this$props.maxValue;
     this.state = {
       // For internal use, convert values to strings based on isDiscrete
       // This is because `<input />` always returns values as strings.
@@ -31714,10 +31808,9 @@ class SliderPrompt extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Componen
     if (event.key === 'Enter') this.handleOk();
   }
   handleOk() {
-    const {
-      minValue,
-      maxValue
-    } = this.state;
+    const _this$state = this.state,
+      minValue = _this$state.minValue,
+      maxValue = _this$state.maxValue;
     if (!this.validates(minValue, maxValue)) {
       this.props.onCancel();
       return;
@@ -31915,10 +32008,8 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
       samples,
       sampleRate
     }, this.resampleBufferToRate).then(_ref => {
-      let {
-        samples: newSamples,
-        sampleRate: newSampleRate
-      } = _ref;
+      let newSamples = _ref.samples,
+        newSampleRate = _ref.sampleRate;
       return wav_encoder__WEBPACK_IMPORTED_MODULE_3___default.a.encode({
         sampleRate: newSampleRate,
         channelData: [newSamples]
@@ -31962,10 +32053,9 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
     this.props.vm.renameSound(this.props.soundIndex, name);
   }
   handleDelete() {
-    const {
-      samples,
-      sampleRate
-    } = this.copyCurrentBuffer();
+    const _this$copyCurrentBuff = this.copyCurrentBuffer(),
+      samples = _this$copyCurrentBuff.samples,
+      sampleRate = _this$copyCurrentBuff.sampleRate;
     const sampleCount = samples.length;
     const startIndex = Math.floor(this.state.trimStart * sampleCount);
     const endIndex = Math.floor(this.state.trimEnd * sampleCount);
@@ -31989,10 +32079,9 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
   }
   handleDeleteInverse() {
     // Delete everything outside of the trimmers
-    const {
-      samples,
-      sampleRate
-    } = this.copyCurrentBuffer();
+    const _this$copyCurrentBuff2 = this.copyCurrentBuffer(),
+      samples = _this$copyCurrentBuff2.samples,
+      sampleRate = _this$copyCurrentBuff2.sampleRate;
     const sampleCount = samples.length;
     const startIndex = Math.floor(this.state.trimStart * sampleCount);
     const endIndex = Math.floor(this.state.trimEnd * sampleCount);
@@ -32073,12 +32162,11 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
   }
   handleUndo() {
     this.redoStack.push(this.getUndoItem());
-    const {
-      samples,
-      sampleRate,
-      trimStart,
-      trimEnd
-    } = this.undoStack.pop();
+    const _this$undoStack$pop = this.undoStack.pop(),
+      samples = _this$undoStack$pop.samples,
+      sampleRate = _this$undoStack$pop.sampleRate,
+      trimStart = _this$undoStack$pop.trimStart,
+      trimEnd = _this$undoStack$pop.trimEnd;
     if (samples) {
       return this.submitNewSamples(samples, sampleRate, true).then(success => {
         if (success) {
@@ -32091,12 +32179,11 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
     }
   }
   handleRedo() {
-    const {
-      samples,
-      sampleRate,
-      trimStart,
-      trimEnd
-    } = this.redoStack.pop();
+    const _this$redoStack$pop = this.redoStack.pop(),
+      samples = _this$redoStack$pop.samples,
+      sampleRate = _this$redoStack$pop.sampleRate,
+      trimStart = _this$redoStack$pop.trimStart,
+      trimEnd = _this$redoStack$pop.trimEnd;
     if (samples) {
       this.undoStack.push(this.getUndoItem());
       return this.submitNewSamples(samples, sampleRate, true).then(success => {
@@ -32157,9 +32244,7 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
       source.start();
       offlineContext.startRendering();
       offlineContext.oncomplete = _ref2 => {
-        let {
-          renderedBuffer
-        } = _ref2;
+        let renderedBuffer = _ref2.renderedBuffer;
         resolve({
           samples: renderedBuffer.getChannelData(0),
           sampleRate: newRate
@@ -32169,9 +32254,8 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
   }
   paste() {
     // If there's no selection, paste at the end of the sound
-    const {
-      samples
-    } = this.copyCurrentBuffer();
+    const _this$copyCurrentBuff3 = this.copyCurrentBuffer(),
+      samples = _this$copyCurrentBuff3.samples;
     if (this.state.trimStart === null) {
       const newLength = samples.length + this.state.copyBuffer.samples.length;
       const newSamples = new Float32Array(newLength);
@@ -32230,9 +32314,7 @@ class SoundEditor extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component
     }
   }
   render() {
-    const {
-      effectTypes
-    } = _lib_audio_audio_effects_js__WEBPACK_IMPORTED_MODULE_7__["default"];
+    const effectTypes = _lib_audio_audio_effects_js__WEBPACK_IMPORTED_MODULE_7__["default"].effectTypes;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_sound_editor_sound_editor_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], {
       isStereo: this.props.isStereo,
       duration: this.props.duration,
@@ -32284,9 +32366,7 @@ SoundEditor.propTypes = {
   vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_4___default.a).isRequired
 };
 const mapStateToProps = (state, _ref3) => {
-  let {
-    soundIndex
-  } = _ref3;
+  let soundIndex = _ref3.soundIndex;
   const sprite = state.scratchGui.vm.editingTarget.sprite;
   // Make sure the sound index doesn't go out of range.
   const index = soundIndex < sprite.sounds.length ? soundIndex : sprite.sounds.length - 1;
@@ -32367,9 +32447,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"
 
 // @todo need to use this hack to avoid library using md5 for image
 const getSoundLibraryThumbnailData = (soundLibraryContent, isRtl) => soundLibraryContent.map(sound => {
-  const {
-      md5ext
-    } = sound,
+  const md5ext = sound.md5ext,
     otherData = _objectWithoutProperties(sound, _excluded);
   return _objectSpread({
     _md5: md5ext,
@@ -32619,11 +32697,9 @@ class SoundTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     };
   }
   componentWillReceiveProps(nextProps) {
-    const {
-      editingTarget,
-      sprites,
-      stage
-    } = nextProps;
+    const editingTarget = nextProps.editingTarget,
+      sprites = nextProps.sprites,
+      stage = nextProps.stage;
     const target = editingTarget && sprites[editingTarget] ? sprites[editingTarget] : stage;
     if (!target || !target.sounds) {
       return;
@@ -32738,15 +32814,13 @@ class SoundTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     this.fileInput = input;
   }
   render() {
-    const {
-      dispatchUpdateRestore,
-      // eslint-disable-line no-unused-vars
-      intl,
-      isRtl,
-      vm,
-      onNewSoundFromLibraryClick,
-      onNewSoundFromRecordingClick
-    } = this.props;
+    const _this$props = this.props,
+      dispatchUpdateRestore = _this$props.dispatchUpdateRestore,
+      intl = _this$props.intl,
+      isRtl = _this$props.isRtl,
+      vm = _this$props.vm,
+      onNewSoundFromLibraryClick = _this$props.onNewSoundFromLibraryClick,
+      onNewSoundFromRecordingClick = _this$props.onNewSoundFromRecordingClick;
     if (!vm.editingTarget) {
       return null;
     }
@@ -33106,16 +33180,14 @@ class SpriteSelectorItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pu
     this.noClick = true;
   }
   handleTouchEnd(e) {
-    const {
-      x,
-      y
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_9__["getEventXY"])(e);
-    const {
-      top,
-      left,
-      bottom,
-      right
-    } = this.ref.getBoundingClientRect();
+    const _getEventXY = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_9__["getEventXY"])(e),
+      x = _getEventXY.x,
+      y = _getEventXY.y;
+    const _this$ref$getBounding = this.ref.getBoundingClientRect(),
+      top = _this$ref$getBounding.top,
+      left = _this$ref$getBounding.left,
+      bottom = _this$ref$getBounding.bottom,
+      right = _this$ref$getBounding.right;
     if (x >= left && x <= right && y >= top && y <= bottom) {
       this.handleMouseEnter();
     }
@@ -33157,22 +33229,18 @@ class SpriteSelectorItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pu
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        asset,
-        id,
-        index,
-        onClick,
-        onDeleteButtonClick,
-        onDuplicateButtonClick,
-        onExportButtonClick,
-        onRenameButtonClick,
-        dragPayload,
-        receivedBlocks,
-        costumeURL,
-        vm
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      asset = _this$props.asset,
+      id = _this$props.id,
+      index = _this$props.index,
+      onClick = _this$props.onClick,
+      onDeleteButtonClick = _this$props.onDeleteButtonClick,
+      onDuplicateButtonClick = _this$props.onDuplicateButtonClick,
+      onExportButtonClick = _this$props.onExportButtonClick,
+      onRenameButtonClick = _this$props.onRenameButtonClick,
+      dragPayload = _this$props.dragPayload,
+      receivedBlocks = _this$props.receivedBlocks,
+      costumeURL = _this$props.costumeURL,
+      vm = _this$props.vm,
       props = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_sprite_selector_item_sprite_selector_item_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], _extends({
       componentRef: this.setRef,
@@ -33214,9 +33282,7 @@ SpriteSelectorItem.propTypes = {
   vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_6___default.a).isRequired
 };
 const mapStateToProps = (state, _ref) => {
-  let {
-    id
-  } = _ref;
+  let id = _ref.id;
   return {
     dragging: state.scratchGui.assetDrag.dragging,
     receivedBlocks: state.scratchGui.hoveredTarget.receivedBlocks && state.scratchGui.hoveredTarget.sprite === id,
@@ -33257,6 +33323,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _components_stage_header_stage_header_jsx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/stage-header/stage-header.jsx */ "./src/components/stage-header/stage-header.jsx");
+function _objectDestructuringEmpty(t) { if (null == t) throw new TypeError("Cannot destructure " + t); }
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 
@@ -33306,7 +33373,7 @@ class StageHeader extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component
     return constrainedWidth > largeWidth;
   }
   render() {
-    const props = _extends({}, this.props);
+    const props = _extends({}, (_objectDestructuringEmpty(this.props), this.props));
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_stage_header_stage_header_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], _extends({}, props, {
       onKeyPress: this.handleKeyPress,
       showFixedLargeSize: this.showFixedLargeSize()
@@ -33429,16 +33496,14 @@ class StageSelector extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Compone
     document.removeEventListener('touchend', this.handleTouchEnd);
   }
   handleTouchEnd(e) {
-    const {
-      x,
-      y
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_16__["getEventXY"])(e);
-    const {
-      top,
-      left,
-      bottom,
-      right
-    } = this.ref.getBoundingClientRect();
+    const _getEventXY = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_16__["getEventXY"])(e),
+      x = _getEventXY.x,
+      y = _getEventXY.y;
+    const _this$ref$getBounding = this.ref.getBoundingClientRect(),
+      top = _this$ref$getBounding.top,
+      left = _this$ref$getBounding.left,
+      bottom = _this$ref$getBounding.bottom,
+      right = _this$ref$getBounding.right;
     if (x >= left && x <= right && y >= top && y <= bottom) {
       this.handleMouseEnter();
     }
@@ -33564,10 +33629,8 @@ StageSelector.propTypes = _objectSpread(_objectSpread({}, _components_stage_sele
   })
 });
 const mapStateToProps = (state, _ref) => {
-  let {
-    asset,
-    id
-  } = _ref;
+  let asset = _ref.asset,
+    id = _ref.id;
   return {
     isRtl: state.locales.isRtl,
     url: asset && asset.encodeDataURI(),
@@ -33659,6 +33722,12 @@ const _excluded = ["vm", "onActivateColorPicker", "disableEditingTargetChange"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
@@ -33813,10 +33882,9 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     if (this.props.disableEditingTargetChange) {
       return;
     }
-    const {
-      x,
-      y
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e);
+    const _getEventXY = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e),
+      x = _getEventXY.x,
+      y = _getEventXY.y;
     // Set editing target from cursor position, if clicking on a sprite.
     const mousePosition = [x - this.rect.left, y - this.rect.top];
     const drawableId = this.renderer.pick(mousePosition[0], mousePosition[1]);
@@ -33826,10 +33894,9 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     this.props.vm.setEditingTarget(targetId);
   }
   onMouseMove(e) {
-    const {
-      x,
-      y
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e);
+    const _getEventXY2 = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e),
+      x = _getEventXY2.x,
+      y = _getEventXY2.y;
     const mousePosition = [x - this.rect.left, y - this.rect.top];
     if (this.props.isColorPicking) {
       // Set the pickX/Y for the color picker loop to pick up
@@ -33866,10 +33933,9 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     this.props.vm.postIOData('mouse', coordinates);
   }
   onMouseUp(e) {
-    const {
-      x,
-      y
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e);
+    const _getEventXY3 = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e),
+      x = _getEventXY3.x,
+      y = _getEventXY3.y;
     const mousePosition = [x - this.rect.left, y - this.rect.top];
     this.cancelMouseDownTimeout();
     this.setState({
@@ -33890,11 +33956,10 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     }
     this.props.vm.postIOData('mouse', data);
     if (this.props.isColorPicking && mousePosition[0] > 0 && mousePosition[0] < this.rect.width && mousePosition[1] > 0 && mousePosition[1] < this.rect.height) {
-      const {
-        r,
-        g,
-        b
-      } = this.state.colorInfo.color;
+      const _this$state$colorInfo = this.state.colorInfo.color,
+        r = _this$state$colorInfo.r,
+        g = _this$state$colorInfo.g,
+        b = _this$state$colorInfo.b;
       const componentToString = c => {
         const hex = c.toString(16);
         return hex.length === 1 ? "0".concat(hex) : hex;
@@ -33910,10 +33975,9 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   }
   onMouseDown(e) {
     this.updateRect();
-    const {
-      x,
-      y
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e);
+    const _getEventXY4 = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_7__["getEventXY"])(e),
+      x = _getEventXY4.x,
+      y = _getEventXY4.y;
     const mousePosition = [x - this.rect.left, y - this.rect.top];
     if (this.props.isColorPicking) {
       // Set the pickX/Y for the color picker loop to pick up
@@ -33978,13 +34042,11 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
    * @param {number} y The y position of the initial drag event
    */
   drawDragCanvas(drawableData, x, y) {
-    const {
-      imageData,
-      x: boundsX,
-      y: boundsY,
-      width: boundsWidth,
-      height: boundsHeight
-    } = drawableData;
+    const imageData = drawableData.imageData,
+      boundsX = drawableData.x,
+      boundsY = drawableData.y,
+      boundsWidth = drawableData.width,
+      boundsHeight = drawableData.height;
     this.dragCanvas.width = imageData.width;
     this.dragCanvas.height = imageData.height;
     // On high-DPI devices, the canvas size in layout-pixels is not equal to the size of the extracted data.
@@ -34019,7 +34081,10 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
 
     // Dragging always brings the target to the front
     target.goToFront();
-    const [scratchMouseX, scratchMouseY] = this.getScratchCoords(x, y);
+    const _this$getScratchCoord = this.getScratchCoords(x, y),
+      _this$getScratchCoord2 = _slicedToArray(_this$getScratchCoord, 2),
+      scratchMouseX = _this$getScratchCoord2[0],
+      scratchMouseY = _this$getScratchCoord2[1];
     const offsetX = target.x - scratchMouseX;
     const offsetY = -(target.y + scratchMouseY);
     this.props.vm.startDrag(targetId);
@@ -34075,13 +34140,9 @@ class Stage extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   }
   render() {
     const _this$props = this.props,
-      {
-        vm,
-        // eslint-disable-line no-unused-vars
-        onActivateColorPicker,
-        // eslint-disable-line no-unused-vars
-        disableEditingTargetChange // eslint-disable-line no-unused-vars
-      } = _this$props,
+      vm = _this$props.vm,
+      onActivateColorPicker = _this$props.onActivateColorPicker,
+      disableEditingTargetChange = _this$props.disableEditingTargetChange,
       props = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_stage_stage_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], _extends({
       canvas: this.canvas,
@@ -34209,6 +34270,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
 /* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_4__);
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
@@ -34222,27 +34289,31 @@ class TargetHighlight extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compo
 
   // Transform scratch coordinates into page coordinates
   getPageCoords(x, y) {
-    const {
-      stageWidth,
-      stageHeight,
-      vm
-    } = this.props;
+    const _this$props = this.props,
+      stageWidth = _this$props.stageWidth,
+      stageHeight = _this$props.stageHeight,
+      vm = _this$props.vm;
     // The renderers "nativeSize" is the [width, height] of the stage in scratch-units
     const nativeSize = vm.renderer.getNativeSize();
     return [stageWidth / nativeSize[0] * x + stageWidth / 2, -(stageHeight / nativeSize[1] * y) + stageHeight / 2];
   }
   render() {
-    const {
-      className,
-      highlightedTargetId,
-      highlightedTargetTime,
-      vm
-    } = this.props;
+    const _this$props2 = this.props,
+      className = _this$props2.className,
+      highlightedTargetId = _this$props2.highlightedTargetId,
+      highlightedTargetTime = _this$props2.highlightedTargetTime,
+      vm = _this$props2.vm;
     if (!(highlightedTargetId && vm && vm.renderer && vm.runtime.getTargetById(highlightedTargetId))) return null;
     const target = vm.runtime.getTargetById(highlightedTargetId);
     const bounds = vm.renderer.getBounds(target.drawableID);
-    const [left, top] = this.getPageCoords(bounds.left, bounds.top);
-    const [right, bottom] = this.getPageCoords(bounds.right, bounds.bottom);
+    const _this$getPageCoords = this.getPageCoords(bounds.left, bounds.top),
+      _this$getPageCoords2 = _slicedToArray(_this$getPageCoords, 2),
+      left = _this$getPageCoords2[0],
+      top = _this$getPageCoords2[1];
+    const _this$getPageCoords3 = this.getPageCoords(bounds.right, bounds.bottom),
+      _this$getPageCoords4 = _slicedToArray(_this$getPageCoords3, 2),
+      right = _this$getPageCoords4[0],
+      bottom = _this$getPageCoords4[1];
     const pad = 2; // px
 
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -34472,9 +34543,7 @@ class TargetPane extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     return this.props.vm.shareBlocksToTarget(centered, targetId, optFromTargetId);
   }
   handleDrop(dragInfo) {
-    const {
-      sprite: targetId
-    } = this.props.hoveredTarget;
+    const targetId = this.props.hoveredTarget.sprite;
     if (dragInfo.dragType === _lib_drag_constants__WEBPACK_IMPORTED_MODULE_10__["default"].SPRITE) {
       // Add one to both new and target index because we are not counting/moving the stage
       this.props.vm.reorderTarget(dragInfo.index + 1, dragInfo.newIndex + 1);
@@ -34513,16 +34582,14 @@ class TargetPane extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
   render() {
     /* eslint-disable no-unused-vars */
     const _this$props = this.props,
-      {
-        dispatchUpdateRestore,
-        isRtl,
-        onActivateTab,
-        onCloseImporting,
-        onHighlightTarget,
-        onReceivedBlocks,
-        onShowImporting,
-        workspaceMetrics
-      } = _this$props,
+      dispatchUpdateRestore = _this$props.dispatchUpdateRestore,
+      isRtl = _this$props.isRtl,
+      onActivateTab = _this$props.onActivateTab,
+      onCloseImporting = _this$props.onCloseImporting,
+      onHighlightTarget = _this$props.onHighlightTarget,
+      onReceivedBlocks = _this$props.onReceivedBlocks,
+      onShowImporting = _this$props.onShowImporting,
+      workspaceMetrics = _this$props.workspaceMetrics,
       componentProps = _objectWithoutProperties(_this$props, _excluded);
     /* eslint-enable no-unused-vars */
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_target_pane_target_pane_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], _extends({}, componentProps, {
@@ -34548,11 +34615,8 @@ class TargetPane extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
   }
 }
 const _TargetPaneComponent$ = _components_target_pane_target_pane_jsx__WEBPACK_IMPORTED_MODULE_11__["default"].propTypes,
-  {
-    onSelectSprite,
-    // eslint-disable-line no-unused-vars
-    onActivateBlocksTab // eslint-disable-line no-unused-vars
-  } = _TargetPaneComponent$,
+  onSelectSprite = _TargetPaneComponent$.onSelectSprite,
+  onActivateBlocksTab = _TargetPaneComponent$.onActivateBlocksTab,
   targetPaneProps = _objectWithoutProperties(_TargetPaneComponent$, ["onSelectSprite", "onActivateBlocksTab"]);
 TargetPane.propTypes = _objectSpread({
   intl: react_intl__WEBPACK_IMPORTED_MODULE_4__["intlShape"].isRequired,
@@ -34767,12 +34831,8 @@ class TurboMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        children,
-        vm
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      children = _this$props.children,
+      vm = _this$props.vm,
       props = _objectWithoutProperties(_this$props, _excluded);
     return this.props.children(this.toggleTurboMode, props);
   }
@@ -34914,11 +34974,7 @@ class CloudVariablesToggler extends react__WEBPACK_IMPORTED_MODULE_2___default.a
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        children
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      children = _this$props.children,
       props = _objectWithoutProperties(_this$props, _excluded);
     return this.props.children(this.toggleCloudVariables, props);
   }
@@ -35389,13 +35445,9 @@ class FramerateChanger extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Comp
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        intl,
-        children,
-        vm
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      intl = _this$props.intl,
+      children = _this$props.children,
+      vm = _this$props.vm,
       props = _objectWithoutProperties(_this$props, _excluded);
     return this.props.children(this.changeFramerate, props);
   }
@@ -36033,9 +36085,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       _lib_log__WEBPACK_IMPORTED_MODULE_3__["default"].info("Loading extension ".concat(url, " automatically"));
       return true;
     }
-    const {
-      showModal
-    } = await this.acquireModalLock();
+    const _await$this$acquireMo = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo.showModal;
     if (url.startsWith('data:')) {
       const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].LoadExtension, {
         url,
@@ -36070,10 +36121,9 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       // what the dialog actually does.
       return !isUntrustedPath(parsed);
     }
-    const {
-      showModal,
-      releaseLock
-    } = await this.acquireModalLock();
+    const _await$this$acquireMo2 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo2.showModal,
+      releaseLock = _await$this$acquireMo2.releaseLock;
     const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' || parsed.protocol === 'ws:' || parsed.protocol === 'wss:' ? parsed.host : null;
     if (host && fetchHostsTrustedByUser.has(host)) {
       releaseLock();
@@ -36097,9 +36147,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
     if (!parsed) {
       return false;
     }
-    const {
-      showModal
-    } = await this.acquireModalLock();
+    const _await$this$acquireMo3 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo3.showModal;
     return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].OpenWindow, {
       url
     });
@@ -36114,9 +36163,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
     if (!parsed) {
       return false;
     }
-    const {
-      showModal
-    } = await this.acquireModalLock();
+    const _await$this$acquireMo4 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo4.showModal;
     return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Redirect, {
       url
     });
@@ -36127,9 +36175,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    */
   async canRecordAudio() {
     if (!allowedAudio) {
-      const {
-        showModal
-      } = await this.acquireModalLock();
+      const _await$this$acquireMo5 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo5.showModal;
       allowedAudio = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordAudio);
     }
     return allowedAudio;
@@ -36140,9 +36187,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    */
   async canRecordVideo() {
     if (!allowedVideo) {
-      const {
-        showModal
-      } = await this.acquireModalLock();
+      const _await$this$acquireMo6 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo6.showModal;
       allowedVideo = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordVideo);
     }
     return allowedVideo;
@@ -36153,9 +36199,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    */
   async canReadClipboard() {
     if (!allowedReadClipboard) {
-      const {
-        showModal
-      } = await this.acquireModalLock();
+      const _await$this$acquireMo7 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo7.showModal;
       allowedReadClipboard = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].ReadClipboard);
     }
     return allowedReadClipboard;
@@ -36166,9 +36211,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    */
   async canNotify() {
     if (!allowedNotify) {
-      const {
-        showModal
-      } = await this.acquireModalLock();
+      const _await$this$acquireMo8 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo8.showModal;
       allowedNotify = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Notify);
     }
     return allowedNotify;
@@ -36179,9 +36223,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    */
   async canGeolocate() {
     if (!allowedGeolocation) {
-      const {
-        showModal
-      } = await this.acquireModalLock();
+      const _await$this$acquireMo9 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo9.showModal;
       allowedGeolocation = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Geolocate);
     }
     return allowedGeolocation;
@@ -36197,10 +36240,9 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       return false;
     }
     const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.host : null;
-    const {
-      showModal,
-      releaseLock
-    } = await this.acquireModalLock();
+    const _await$this$acquireMo0 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo0.showModal,
+      releaseLock = _await$this$acquireMo0.releaseLock;
     if (host && embedHostsTrustedByUser.has(host)) {
       releaseLock();
       return true;
@@ -36224,9 +36266,8 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
     if (!parsed) {
       return false;
     }
-    const {
-      showModal
-    } = await this.acquireModalLock();
+    const _await$this$acquireMo1 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo1.showModal;
     return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Download, {
       url,
       name
@@ -36365,12 +36406,8 @@ class UsernameModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compone
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        onClose,
-        vm
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      onClose = _this$props.onClose,
+      vm = _this$props.vm,
       props = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_tw_settings_modal_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], _extends({
       onClose: this.props.onClose,
@@ -36498,12 +36535,8 @@ const TWThemeManagerHOC = function TWThemeManagerHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          reduxTheme,
-          onChangeTheme
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        reduxTheme = _this$props.reduxTheme,
+        onChangeTheme = _this$props.onChangeTheme,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, props);
     }
@@ -37215,17 +37248,14 @@ const AppStateHOC = function AppStateHOC(WrappedComponent, localesOnly) {
         // importing unneeded code that will crash unsupported browsers.
         const guiRedux = __webpack_require__(/*! ../reducers/gui */ "./src/reducers/gui.js");
         const guiReducer = guiRedux.default;
-        const {
-          guiInitialState,
-          guiMiddleware,
-          initFullScreen,
-          initPlayer,
-          initEmbedded,
-          initTelemetryModal
-        } = guiRedux;
-        const {
-          ScratchPaintReducer
-        } = __webpack_require__(/*! ./tw-scratch-paint */ "./src/lib/tw-scratch-paint.js");
+        const guiInitialState = guiRedux.guiInitialState,
+          guiMiddleware = guiRedux.guiMiddleware,
+          initFullScreen = guiRedux.initFullScreen,
+          initPlayer = guiRedux.initPlayer,
+          initEmbedded = guiRedux.initEmbedded,
+          initTelemetryModal = guiRedux.initTelemetryModal;
+        const _require = __webpack_require__(/*! ./tw-scratch-paint */ "./src/lib/tw-scratch-paint.js"),
+          ScratchPaintReducer = _require.ScratchPaintReducer;
         let initializedGui = guiInitialState;
         if (props.isFullScreen || props.isPlayerOnly) {
           if (props.isFullScreen) {
@@ -37272,13 +37302,9 @@ const AppStateHOC = function AppStateHOC(WrappedComponent, localesOnly) {
     }
     render() {
       const _this$props = this.props,
-        {
-          isFullScreen,
-          // eslint-disable-line no-unused-vars
-          isPlayerOnly,
-          // eslint-disable-line no-unused-vars
-          showTelemetryModal // eslint-disable-line no-unused-vars
-        } = _this$props,
+        isFullScreen = _this$props.isFullScreen,
+        isPlayerOnly = _this$props.isPlayerOnly,
+        showTelemetryModal = _this$props.showTelemetryModal,
         componentProps = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
         store: this.store
@@ -37521,46 +37547,39 @@ class AudioEffects {
         this.source.playbackRate.setValueAtTime(1.0, this.adjustedTrimEndSeconds);
         break;
       case effectTypes.LOUDER:
-        ({
-          input,
-          output
-        } = new _effects_volume_effect_js__WEBPACK_IMPORTED_MODULE_2__["default"](this.audioContext, 1.25, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds));
+        var _VolumeEffect = new _effects_volume_effect_js__WEBPACK_IMPORTED_MODULE_2__["default"](this.audioContext, 1.25, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds);
+        input = _VolumeEffect.input;
+        output = _VolumeEffect.output;
         break;
       case effectTypes.SOFTER:
-        ({
-          input,
-          output
-        } = new _effects_volume_effect_js__WEBPACK_IMPORTED_MODULE_2__["default"](this.audioContext, 0.75, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds));
+        var _VolumeEffect2 = new _effects_volume_effect_js__WEBPACK_IMPORTED_MODULE_2__["default"](this.audioContext, 0.75, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds);
+        input = _VolumeEffect2.input;
+        output = _VolumeEffect2.output;
         break;
       case effectTypes.ECHO:
-        ({
-          input,
-          output
-        } = new _effects_echo_effect_js__WEBPACK_IMPORTED_MODULE_0__["default"](this.audioContext, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds));
+        var _EchoEffect = new _effects_echo_effect_js__WEBPACK_IMPORTED_MODULE_0__["default"](this.audioContext, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds);
+        input = _EchoEffect.input;
+        output = _EchoEffect.output;
         break;
       case effectTypes.ROBOT:
-        ({
-          input,
-          output
-        } = new _effects_robot_effect_js__WEBPACK_IMPORTED_MODULE_1__["default"](this.audioContext, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds));
+        var _RobotEffect = new _effects_robot_effect_js__WEBPACK_IMPORTED_MODULE_1__["default"](this.audioContext, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds);
+        input = _RobotEffect.input;
+        output = _RobotEffect.output;
         break;
       case effectTypes.FADEIN:
-        ({
-          input,
-          output
-        } = new _effects_fade_effect_js__WEBPACK_IMPORTED_MODULE_3__["default"](this.audioContext, true, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds));
+        var _FadeEffect = new _effects_fade_effect_js__WEBPACK_IMPORTED_MODULE_3__["default"](this.audioContext, true, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds);
+        input = _FadeEffect.input;
+        output = _FadeEffect.output;
         break;
       case effectTypes.FADEOUT:
-        ({
-          input,
-          output
-        } = new _effects_fade_effect_js__WEBPACK_IMPORTED_MODULE_3__["default"](this.audioContext, false, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds));
+        var _FadeEffect2 = new _effects_fade_effect_js__WEBPACK_IMPORTED_MODULE_3__["default"](this.audioContext, false, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds);
+        input = _FadeEffect2.input;
+        output = _FadeEffect2.output;
         break;
       case effectTypes.MUTE:
-        ({
-          input,
-          output
-        } = new _effects_mute_effect_js__WEBPACK_IMPORTED_MODULE_4__["default"](this.audioContext, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds));
+        var _MuteEffect = new _effects_mute_effect_js__WEBPACK_IMPORTED_MODULE_4__["default"](this.audioContext, this.adjustedTrimStartSeconds, this.adjustedTrimEndSeconds);
+        input = _MuteEffect.input;
+        output = _MuteEffect.output;
         break;
     }
     if (input && output) {
@@ -37573,9 +37592,7 @@ class AudioEffects {
     this.source.start();
     this.audioContext.startRendering();
     this.audioContext.oncomplete = _ref => {
-      let {
-        renderedBuffer
-      } = _ref;
+      let renderedBuffer = _ref.renderedBuffer;
       done(renderedBuffer, this.adjustedTrimStart, this.adjustedTrimEnd);
     };
   }
@@ -37807,10 +37824,8 @@ const encodeAndAddSoundToVM = function encodeAndAddSoundToVM(vm, samples, sample
  * @returns {SoundBuffer} Downsampled buffer with half the sample rate
  */
 const downsampleIfNeeded = (buffer, resampler) => {
-  const {
-    samples,
-    sampleRate
-  } = buffer;
+  const samples = buffer.samples,
+    sampleRate = buffer.sampleRate;
   const encodedByteLength = samples.length * 2; /* bitDepth 16 bit */
   // Resolve immediately if already within byte limit
   if (encodedByteLength < SOUND_BYTE_LIMIT) {
@@ -38185,13 +38200,11 @@ const includeFullUrls = (item, host) => Object.assign({}, item, {
   bodyUrl: "".concat(host, "/").concat(item.body)
 });
 const getBackpackContents = _ref => {
-  let {
-    host,
-    username,
-    token,
-    limit,
-    offset
-  } = _ref;
+  let host = _ref.host,
+    username = _ref.username,
+    token = _ref.token,
+    limit = _ref.limit,
+    offset = _ref.offset;
   return new Promise((resolve, reject) => {
     if (host === LOCAL_API) {
       return resolve(_tw_local_backpack_api__WEBPACK_IMPORTED_MODULE_5__["default"].getBackpackContents({
@@ -38215,20 +38228,14 @@ const getBackpackContents = _ref => {
   });
 };
 const saveBackpackObject = _ref2 => {
-  let {
-    host,
-    username,
-    token,
-    type,
-    // Type of object being saved to the backpack
-    mime,
-    // Mime-type of the object being saved
-    name,
-    // User-facing name of the object being saved
-    body,
-    // Base64-encoded body of the object being saved
-    thumbnail // Base64-encoded JPEG thumbnail of the object being saved
-  } = _ref2;
+  let host = _ref2.host,
+    username = _ref2.username,
+    token = _ref2.token,
+    type = _ref2.type,
+    mime = _ref2.mime,
+    name = _ref2.name,
+    body = _ref2.body,
+    thumbnail = _ref2.thumbnail;
   return new Promise((resolve, reject) => {
     if (host === LOCAL_API) {
       return resolve(_tw_local_backpack_api__WEBPACK_IMPORTED_MODULE_5__["default"].saveBackpackObject({
@@ -38261,12 +38268,10 @@ const saveBackpackObject = _ref2 => {
   });
 };
 const deleteBackpackObject = _ref3 => {
-  let {
-    host,
-    username,
-    token,
-    id
-  } = _ref3;
+  let host = _ref3.host,
+    username = _ref3.username,
+    token = _ref3.token,
+    id = _ref3.id;
   return new Promise((resolve, reject) => {
     if (host === LOCAL_API) {
       return resolve(_tw_local_backpack_api__WEBPACK_IMPORTED_MODULE_5__["default"].deleteBackpackObject({
@@ -38288,11 +38293,9 @@ const deleteBackpackObject = _ref3 => {
   });
 };
 const updateBackpackObject = _ref4 => {
-  let {
-    host,
-    id,
-    name
-  } = _ref4;
+  let host = _ref4.host,
+    id = _ref4.id,
+    name = _ref4.name;
   return new Promise((resolve, reject) => {
     if (host === LOCAL_API) {
       return resolve(_tw_local_backpack_api__WEBPACK_IMPORTED_MODULE_5__["default"].updateBackpackObject({
@@ -38421,10 +38424,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const codePayload = _ref => {
-  let {
-    blockObjects,
-    topBlockId
-  } = _ref;
+  let blockObjects = _ref.blockObjects,
+    topBlockId = _ref.topBlockId;
   const payload = {
     type: 'script',
     // Needs to match backpack-server type name
@@ -38447,15 +38448,14 @@ const findTopBlock = payload => {
 const placeInViewport = (payload, workspaceMetrics, isRtl) => {
   const topBlock = findTopBlock(payload);
   if (topBlock) {
-    const {
-      scrollX,
-      scrollY,
-      scale
-    } = workspaceMetrics || {
-      scrollX: 0,
-      scrollY: 0,
-      scale: _layout_constants__WEBPACK_IMPORTED_MODULE_2__["BLOCKS_DEFAULT_SCALE"]
-    };
+    const _ref2 = workspaceMetrics || {
+        scrollX: 0,
+        scrollY: 0,
+        scale: _layout_constants__WEBPACK_IMPORTED_MODULE_2__["BLOCKS_DEFAULT_SCALE"]
+      },
+      scrollX = _ref2.scrollX,
+      scrollY = _ref2.scrollY,
+      scale = _ref2.scale;
     const posY = -scrollY + 30;
     let posX;
     if (isRtl) {
@@ -39134,22 +39134,18 @@ const cloudManagerHOC = function cloudManagerHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          canModifyCloudData,
-          cloudHost,
-          reduxCloudHost,
-          cloudVariablesDisabledByUser,
-          onSetReduxCloudHost,
-          projectId,
-          username,
-          hasCloudPermission,
-          isShowingWithId,
-          onShowCloudInfo,
-          onInvalidUsername,
-          /* eslint-enable no-unused-vars */
-          vm
-        } = _this$props,
+        canModifyCloudData = _this$props.canModifyCloudData,
+        cloudHost = _this$props.cloudHost,
+        reduxCloudHost = _this$props.reduxCloudHost,
+        cloudVariablesDisabledByUser = _this$props.cloudVariablesDisabledByUser,
+        onSetReduxCloudHost = _this$props.onSetReduxCloudHost,
+        projectId = _this$props.projectId,
+        username = _this$props.username,
+        hasCloudPermission = _this$props.hasCloudPermission,
+        isShowingWithId = _this$props.isShowingWithId,
+        onShowCloudInfo = _this$props.onShowCloudInfo,
+        onInvalidUsername = _this$props.onInvalidUsername,
+        vm = _this$props.vm,
         componentProps = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(WrappedComponent, _extends({
         canUseCloud: this.canUseCloud(this.props),
@@ -39931,13 +39927,14 @@ class DragRecognizer {
     return 'drag';
   }
   constructor(_ref) {
-    let {
-      onDrag = () => {},
-      onDragEnd = () => {},
-      touchDragAngle = 70,
-      // Angle and distance thresholds are the same as scratch-blocks
-      distanceThreshold = 3
-    } = _ref;
+    let _ref$onDrag = _ref.onDrag,
+      onDrag = _ref$onDrag === void 0 ? () => {} : _ref$onDrag,
+      _ref$onDragEnd = _ref.onDragEnd,
+      onDragEnd = _ref$onDragEnd === void 0 ? () => {} : _ref$onDragEnd,
+      _ref$touchDragAngle = _ref.touchDragAngle,
+      touchDragAngle = _ref$touchDragAngle === void 0 ? 70 : _ref$touchDragAngle,
+      _ref$distanceThreshol = _ref.distanceThreshold,
+      distanceThreshold = _ref$distanceThreshol === void 0 ? 3 : _ref$distanceThreshol;
     this._onDrag = onDrag;
     this._onDragEnd = onDragEnd;
     this._touchDragAngle = touchDragAngle;
@@ -40063,10 +40060,8 @@ __webpack_require__.r(__webpack_exports__);
  * @return {?number} index of the corresponding box, or null if one could not be found.
  */
 const indexForPositionOnList = (_ref, boxes, isRtl) => {
-  let {
-    x,
-    y
-  } = _ref;
+  let x = _ref.x,
+    y = _ref.y;
   if (boxes.length === 0) return null;
   let index = null;
   const leftEdge = Math.min.apply(null, boxes.map(b => b.left));
@@ -40183,16 +40178,14 @@ const DropAreaHOC = function DropAreaHOC(dragTypes) {
         // If a drag is in progress (currentOffset) and it matches the relevant drag types,
         // test if the drag is within the drop area rect and set the state accordingly.
         if (this.dropAreaRect && newProps.dragInfo.currentOffset && dragTypes.includes(newProps.dragInfo.dragType)) {
-          const {
-            x,
-            y
-          } = newProps.dragInfo.currentOffset;
-          const {
-            top,
-            right,
-            bottom,
-            left
-          } = this.dropAreaRect;
+          const _newProps$dragInfo$cu = newProps.dragInfo.currentOffset,
+            x = _newProps$dragInfo$cu.x,
+            y = _newProps$dragInfo$cu.y;
+          const _this$dropAreaRect = this.dropAreaRect,
+            top = _this$dropAreaRect.top,
+            right = _this$dropAreaRect.right,
+            bottom = _this$dropAreaRect.bottom,
+            left = _this$dropAreaRect.left;
           if (x > left && x < right && y > top && y < bottom) {
             this.setState({
               dragOver: true
@@ -40778,13 +40771,12 @@ __webpack_require__.r(__webpack_exports__);
   const loadFrame = i => {
     const framePixels = [];
     gifReader.decodeAndBlitFrameRGBA(i, framePixels);
-    const {
-      x,
-      y,
-      width,
-      height,
-      disposal
-    } = gifReader.frameInfo(i);
+    const _gifReader$frameInfo = gifReader.frameInfo(i),
+      x = _gifReader$frameInfo.x,
+      y = _gifReader$frameInfo.y,
+      width = _gifReader$frameInfo.width,
+      height = _gifReader$frameInfo.height,
+      disposal = _gifReader$frameInfo.disposal;
     for (let row = 0; row < height; row++) {
       for (let column = 0; column < width; column++) {
         const indexOffset = 4 * (x + y * canvas.width);
@@ -42301,11 +42293,8 @@ const LocalizationHOC = function LocalizationHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          locale,
-          // eslint-disable-line no-unused-vars
-          onSetLanguage // eslint-disable-line no-unused-vars
-        } = _this$props,
+        locale = _this$props.locale,
+        onSetLanguage = _this$props.onSetLanguage,
         componentProps = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_connected_intl_provider_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, componentProps));
     }
@@ -42355,6 +42344,12 @@ _turbowarp_nanolog__WEBPACK_IMPORTED_MODULE_0___default.a.enable();
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tw-lazy-scratch-blocks */ "./src/lib/tw-lazy-scratch-blocks.js");
 /* harmony import */ var _themes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./themes */ "./src/lib/themes/index.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 const categorySeparator = '<sep gap="36"/>';
@@ -42371,7 +42366,7 @@ const translate = (id, english) => {
 const motion = function motion(isInitialSetup, isStage, targetId, colors) {
   const stageSelected = translate('MOTION_STAGE_SELECTED', 'Stage selected: no motion blocks');
   // Note: the category's secondaryColour matches up with the blocks' tertiary color, both used for border color.
-  return "\n    <category name=\"%{BKY_CATEGORY_MOTION}\" id=\"motion\" colour=\"".concat(colors.primary, "\" secondaryColour=\"").concat(colors.tertiary, "\">\n        ").concat(isStage ? "\n        <label text=\"".concat(stageSelected, "\"></label>\n        ") : "\n        <block type=\"motion_movesteps\">\n            <value name=\"STEPS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnright\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">15</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnleft\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">15</field>\n                </shadow>\n            </value>\n        </block>\n        ".concat(blockSeparator, "\n        <block type=\"motion_goto\">\n            <value name=\"TO\">\n                <shadow type=\"motion_goto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_gotoxy\">\n            <value name=\"X\">\n                <shadow id=\"movex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"movey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glideto\" id=\"motion_glideto\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"TO\">\n                <shadow type=\"motion_glideto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glidesecstoxy\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"X\">\n                <shadow id=\"glidex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"glidey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_pointindirection\">\n            <value name=\"DIRECTION\">\n                <shadow type=\"math_angle\">\n                    <field name=\"NUM\">90</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_pointtowards\">\n            <value name=\"TOWARDS\">\n                <shadow type=\"motion_pointtowards_menu\">\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_changexby\">\n            <value name=\"DX\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_setx\">\n            <value name=\"X\">\n                <shadow id=\"setx\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_changeyby\">\n            <value name=\"DY\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_sety\">\n            <value name=\"Y\">\n                <shadow id=\"sety\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_ifonedgebounce\"/>\n        ").concat(blockSeparator, "\n        <block type=\"motion_setrotationstyle\"/>\n        ").concat(blockSeparator, "\n        <block id=\"").concat(targetId, "_xposition\" type=\"motion_xposition\"/>\n        <block id=\"").concat(targetId, "_yposition\" type=\"motion_yposition\"/>\n        <block id=\"").concat(targetId, "_direction\" type=\"motion_direction\"/>"), "\n        ").concat(categorySeparator, "\n    </category>\n    ");
+  return "\n    <category name=\"%{BKY_CATEGORY_MOTION}\" id=\"motion\" colour=\"".concat(colors.primary, "\" secondaryColour=\"").concat(colors.tertiary, "\">\n        ").concat(isStage ? "\n        <label text=\"".concat(stageSelected, "\"></label>\n        ") : "\n        <block type=\"motion_movesteps\">\n            <value name=\"STEPS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnright\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">15</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_turnleft\">\n            <value name=\"DEGREES\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">15</field>\n                </shadow>\n            </value>\n        </block>\n        ".concat(blockSeparator, "\n        <block type=\"motion_goto\">\n            <value name=\"TO\">\n                <shadow type=\"motion_goto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_gotoxy\">\n            <value name=\"X\">\n                <shadow id=\"movex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"movey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glideto\" id=\"motion_glideto\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"TO\">\n                <shadow type=\"motion_glideto_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_glidesecstoxy\">\n            <value name=\"SECS\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n            <value name=\"X\">\n                <shadow id=\"glidex\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow id=\"glidey\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_pointindirection\">\n            <value name=\"DIRECTION\">\n                <shadow type=\"math_angle\">\n                    <field name=\"NUM\">90</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_pointtowards\">\n            <value name=\"TOWARDS\">\n                <shadow type=\"motion_pointtowards_menu\">\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_pointtowardsxy\">\n            <value name=\"X\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n            <value name=\"Y\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_changexby\">\n            <value name=\"DX\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_setx\">\n            <value name=\"X\">\n                <shadow id=\"setx\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_changeyby\">\n            <value name=\"DY\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"motion_sety\">\n            <value name=\"Y\">\n                <shadow id=\"sety\" type=\"math_number\">\n                    <field name=\"NUM\">0</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"motion_ifonedgebounce\"/>\n        ").concat(blockSeparator, "\n        <block type=\"motion_setrotationstyle\"/>\n        ").concat(blockSeparator, "\n        <block id=\"").concat(targetId, "_xposition\" type=\"motion_xposition\"/>\n        <block id=\"").concat(targetId, "_yposition\" type=\"motion_yposition\"/>\n        <block id=\"").concat(targetId, "_direction\" type=\"motion_direction\"/>"), "\n        ").concat(categorySeparator, "\n    </category>\n    ");
 };
 const xmlEscape = function xmlEscape(unsafe) {
   return unsafe.replace(/[<>&'"]/g, c => {
@@ -42469,7 +42464,9 @@ const makeToolboxXML = function makeToolboxXML(isInitialSetup) {
     const index = categoriesXML.findIndex(categoryInfo => categoryInfo.id === categoryId);
     if (index >= 0) {
       // remove the category from categoriesXML and return its XML
-      const [categoryInfo] = categoriesXML.splice(index, 1);
+      const _categoriesXML$splice = categoriesXML.splice(index, 1),
+        _categoriesXML$splice2 = _slicedToArray(_categoriesXML$splice, 1),
+        categoryInfo = _categoriesXML$splice2[0];
       return categoryInfo.xml;
     }
     // return `undefined`
@@ -42702,22 +42699,19 @@ const isUndefined = a => typeof a === 'undefined';
  * @return {object} The adapted monitor with label and category
  */
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  let {
-    id,
-    mode,
-    spriteName,
-    opcode,
-    params,
-    value,
-    vm
-  } = _ref;
+  let id = _ref.id,
+    mode = _ref.mode,
+    spriteName = _ref.spriteName,
+    opcode = _ref.opcode,
+    params = _ref.params,
+    value = _ref.value,
+    vm = _ref.vm;
   // Extension monitors get their labels from the Runtime through `getLabelForOpcode`.
   // Other monitors' labels are hard-coded in `OpcodeLabels`.
-  let {
-    label,
-    category,
-    labelFn
-  } = vm && vm.runtime.getLabelForOpcode(opcode) || _opcode_labels_js__WEBPACK_IMPORTED_MODULE_0__["default"].getLabel(opcode);
+  let _ref2 = vm && vm.runtime.getLabelForOpcode(opcode) || _opcode_labels_js__WEBPACK_IMPORTED_MODULE_0__["default"].getLabel(opcode),
+    label = _ref2.label,
+    category = _ref2.category,
+    labelFn = _ref2.labelFn;
 
   // Use labelFn if provided for dynamic labelling (e.g. variables)
   if (!isUndefined(labelFn)) label = labelFn(params);
@@ -43208,23 +43202,19 @@ const ProjectFetcherHOC = function ProjectFetcherHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          assetHost,
-          intl,
-          isLoadingProject: isLoadingProjectProp,
-          loadingState,
-          onActivateTab,
-          onError: onErrorProp,
-          onFetchedProjectData: onFetchedProjectDataProp,
-          onProjectUnchanged,
-          projectHost,
-          projectId,
-          reduxProjectId,
-          setProjectId: setProjectIdProp,
-          /* eslint-enable no-unused-vars */
-          isFetchingWithId: isFetchingWithIdProp
-        } = _this$props,
+        assetHost = _this$props.assetHost,
+        intl = _this$props.intl,
+        isLoadingProjectProp = _this$props.isLoadingProject,
+        loadingState = _this$props.loadingState,
+        onActivateTab = _this$props.onActivateTab,
+        onErrorProp = _this$props.onError,
+        onFetchedProjectDataProp = _this$props.onFetchedProjectData,
+        onProjectUnchanged = _this$props.onProjectUnchanged,
+        projectHost = _this$props.projectHost,
+        projectId = _this$props.projectId,
+        reduxProjectId = _this$props.reduxProjectId,
+        setProjectIdProp = _this$props.setProjectId,
+        isFetchingWithIdProp = _this$props.isFetchingWithId,
         componentProps = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, _extends({
         fetchingProject: isFetchingWithIdProp
@@ -43573,45 +43563,41 @@ const ProjectSaverHOC = function ProjectSaverHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          autoSaveTimeoutId,
-          autoSaveIntervalSecs,
-          isCreatingCopy,
-          isCreatingNew,
-          projectChanged,
-          isAnyCreatingNewState,
-          isLoading,
-          isManualUpdating,
-          isRemixing,
-          isShowingSaveable,
-          isShowingWithId,
-          isShowingWithoutId,
-          isUpdating,
-          loadingState,
-          onAutoUpdateProject,
-          onCreatedProject,
-          onCreateProject,
-          onProjectError,
-          onRemixing,
-          onSetProjectUnchanged,
-          onSetProjectThumbnailer,
-          onSetProjectSaver,
-          onShowAlert,
-          onShowCopySuccessAlert,
-          onShowRemixSuccessAlert,
-          onShowCreatingCopyAlert,
-          onShowCreatingRemixAlert,
-          onShowSaveSuccessAlert,
-          onShowSavingAlert,
-          onUpdatedProject,
-          onUpdateProjectData,
-          onUpdateProjectThumbnail,
-          reduxProjectId,
-          reduxProjectTitle,
-          setAutoSaveTimeoutId: setAutoSaveTimeoutIdProp
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        autoSaveTimeoutId = _this$props.autoSaveTimeoutId,
+        autoSaveIntervalSecs = _this$props.autoSaveIntervalSecs,
+        isCreatingCopy = _this$props.isCreatingCopy,
+        isCreatingNew = _this$props.isCreatingNew,
+        projectChanged = _this$props.projectChanged,
+        isAnyCreatingNewState = _this$props.isAnyCreatingNewState,
+        isLoading = _this$props.isLoading,
+        isManualUpdating = _this$props.isManualUpdating,
+        isRemixing = _this$props.isRemixing,
+        isShowingSaveable = _this$props.isShowingSaveable,
+        isShowingWithId = _this$props.isShowingWithId,
+        isShowingWithoutId = _this$props.isShowingWithoutId,
+        isUpdating = _this$props.isUpdating,
+        loadingState = _this$props.loadingState,
+        onAutoUpdateProject = _this$props.onAutoUpdateProject,
+        onCreatedProject = _this$props.onCreatedProject,
+        onCreateProject = _this$props.onCreateProject,
+        onProjectError = _this$props.onProjectError,
+        onRemixing = _this$props.onRemixing,
+        onSetProjectUnchanged = _this$props.onSetProjectUnchanged,
+        onSetProjectThumbnailer = _this$props.onSetProjectThumbnailer,
+        onSetProjectSaver = _this$props.onSetProjectSaver,
+        onShowAlert = _this$props.onShowAlert,
+        onShowCopySuccessAlert = _this$props.onShowCopySuccessAlert,
+        onShowRemixSuccessAlert = _this$props.onShowRemixSuccessAlert,
+        onShowCreatingCopyAlert = _this$props.onShowCreatingCopyAlert,
+        onShowCreatingRemixAlert = _this$props.onShowCreatingRemixAlert,
+        onShowSaveSuccessAlert = _this$props.onShowSaveSuccessAlert,
+        onShowSavingAlert = _this$props.onShowSavingAlert,
+        onUpdatedProject = _this$props.onUpdatedProject,
+        onUpdateProjectData = _this$props.onUpdateProjectData,
+        onUpdateProjectThumbnail = _this$props.onUpdateProjectThumbnail,
+        reduxProjectId = _this$props.reduxProjectId,
+        reduxProjectTitle = _this$props.reduxProjectTitle,
+        setAutoSaveTimeoutIdProp = _this$props.setAutoSaveTimeoutId,
         componentProps = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(WrappedComponent, _extends({
         isCreating: isAnyCreatingNewState
@@ -43843,6 +43829,12 @@ const _excluded = ["cancelFileUpload", "closeFileMenu", "isLoadingUpload", "isSh
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
@@ -43899,22 +43891,24 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
       if (this.props.showOpenFilePicker) {
         (async () => {
           try {
-            const [handle] = await this.props.showOpenFilePicker({
-              multiple: false,
-              types: [{
-                description: 'Scratch Project',
-                accept: {
-                  // Chrome on Android tracks the MIME type of files that get downloaded and
-                  // then actually enforces that the type must match in showOpenFilePicker()
-                  // and does not allow the user to override the filter. As Scratch projects have
-                  // no well-defined and well-adopted MIME types, we can't assume anything about
-                  // what MIME type they are saved with, so we have to use the most broad MIME
-                  // type here. Otherwise some users just won't be able to load files for no
-                  // fault of their own.
-                  '*/*': ['.sb', '.sb2', '.sb3']
-                }
-              }]
-            });
+            const _await$this$props$sho = await this.props.showOpenFilePicker({
+                multiple: false,
+                types: [{
+                  description: 'Scratch Project',
+                  accept: {
+                    // Chrome on Android tracks the MIME type of files that get downloaded and
+                    // then actually enforces that the type must match in showOpenFilePicker()
+                    // and does not allow the user to override the filter. As Scratch projects have
+                    // no well-defined and well-adopted MIME types, we can't assume anything about
+                    // what MIME type they are saved with, so we have to use the most broad MIME
+                    // type here. Otherwise some users just won't be able to load files for no
+                    // fault of their own.
+                    '*/*': ['.sb', '.sb2', '.sb3']
+                  }
+                }]
+              }),
+              _await$this$props$sho2 = _slicedToArray(_await$this$props$sho, 1),
+              handle = _await$this$props$sho2[0];
             const file = await handle.getFile();
             this.handleChange({
               target: {
@@ -43945,13 +43939,12 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
     // step 3: user has picked a file using the file chooser dialog.
     // We don't actually load the file here, we only decide whether to do so.
     handleChange(e) {
-      const {
-        intl,
-        isShowingWithoutId,
-        loadingState,
-        projectChanged,
-        userOwnsProject
-      } = this.props;
+      const _this$props = this.props,
+        intl = _this$props.intl,
+        isShowingWithoutId = _this$props.isShowingWithoutId,
+        loadingState = _this$props.loadingState,
+        projectChanged = _this$props.projectChanged,
+        userOwnsProject = _this$props.userOwnsProject;
       const thisFileInput = e.target;
       if (thisFileInput.files) {
         // Don't attempt to load if no file was selected
@@ -44051,25 +44044,21 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
       this.fileToUpload = null;
     }
     render() {
-      const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          cancelFileUpload,
-          closeFileMenu: closeFileMenuProp,
-          isLoadingUpload,
-          isShowingWithoutId,
-          loadingState,
-          onLoadingFailed,
-          onLoadingFinished,
-          onLoadingStarted,
-          onSetFileHandle,
-          onSetProjectTitle,
-          projectChanged,
-          requestProjectUpload: requestProjectUploadProp,
-          userOwnsProject
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
-        componentProps = _objectWithoutProperties(_this$props, _excluded);
+      const _this$props2 = this.props,
+        cancelFileUpload = _this$props2.cancelFileUpload,
+        closeFileMenuProp = _this$props2.closeFileMenu,
+        isLoadingUpload = _this$props2.isLoadingUpload,
+        isShowingWithoutId = _this$props2.isShowingWithoutId,
+        loadingState = _this$props2.loadingState,
+        onLoadingFailed = _this$props2.onLoadingFailed,
+        onLoadingFinished = _this$props2.onLoadingFinished,
+        onLoadingStarted = _this$props2.onLoadingStarted,
+        onSetFileHandle = _this$props2.onSetFileHandle,
+        onSetProjectTitle = _this$props2.onSetProjectTitle,
+        projectChanged = _this$props2.projectChanged,
+        requestProjectUploadProp = _this$props2.requestProjectUpload,
+        userOwnsProject = _this$props2.userOwnsProject,
+        componentProps = _objectWithoutProperties(_this$props2, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(WrappedComponent, _extends({
         onStartSelectingFileUpload: this.handleStartSelectingFileUpload
       }, componentProps)));
@@ -44265,12 +44254,10 @@ const getMinWidth = stageSize => {
  * @returns {object} the CSS transform
  */
 const stageSizeToTransform = _ref => {
-  let {
-    width,
-    height,
-    widthDefault,
-    heightDefault
-  } = _ref;
+  let width = _ref.width,
+    height = _ref.height,
+    widthDefault = _ref.widthDefault,
+    heightDefault = _ref.heightDefault;
   const scaleX = width / widthDefault;
   const scaleY = height / heightDefault;
   if (scaleX === 1 && scaleY === 1) {
@@ -44411,16 +44398,14 @@ const SortableHOC = function SortableHOC(WrappedComponent) {
       // Return null if outside the container, zero if there are no boxes.
       let mouseOverIndex = null;
       if (this.props.dragInfo.currentOffset) {
-        const {
-          x,
-          y
-        } = this.props.dragInfo.currentOffset;
-        const {
-          top,
-          left,
-          bottom,
-          right
-        } = this.containerBox;
+        const _this$props$dragInfo$ = this.props.dragInfo.currentOffset,
+          x = _this$props$dragInfo$.x,
+          y = _this$props$dragInfo$.y;
+        const _this$containerBox = this.containerBox,
+          top = _this$containerBox.top,
+          left = _this$containerBox.left,
+          bottom = _this$containerBox.bottom,
+          right = _this$containerBox.right;
         if (x >= left && x <= right && y >= top && y <= bottom) {
           if (this.boxes.length === 0) {
             mouseOverIndex = 0;
@@ -44435,13 +44420,11 @@ const SortableHOC = function SortableHOC(WrappedComponent) {
       this.ref = el;
     }
     render() {
-      const {
-        dragInfo: {
-          index: dragIndex,
-          dragType
-        },
-        items
-      } = this.props;
+      const _this$props = this.props,
+        _this$props$dragInfo = _this$props.dragInfo,
+        dragIndex = _this$props$dragInfo.index,
+        dragType = _this$props$dragInfo.dragType,
+        items = _this$props.items;
       const mouseOverIndex = this.getMouseOverIndex();
       const ordering = this.getOrdering(items, dragIndex, mouseOverIndex);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WrappedComponent, _extends({
@@ -44795,10 +44778,9 @@ const TitledHOC = function TitledHOC(WrappedComponent) {
       // if project is a new default project, and has loaded,
       if (this.props.isShowingWithoutId && prevProps.isAnyCreatingNewState) {
         // reset title to default
-        const {
-          title,
-          isDefault
-        } = this.handleReceivedProjectTitle();
+        const _this$handleReceivedP = this.handleReceivedProjectTitle(),
+          title = _this$handleReceivedP.title,
+          isDefault = _this$handleReceivedP.isDefault;
         this.props.onUpdateProjectTitle(title, isDefault);
       }
       // if the projectTitle hasn't changed, but the reduxProjectTitle
@@ -44828,20 +44810,13 @@ const TitledHOC = function TitledHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          intl,
-          isAnyCreatingNewState,
-          isShowingWithoutId,
-          onChangedProjectTitle,
-          // for children, we replace onUpdateProjectTitle with our own
-          onUpdateProjectTitle,
-          // we don't pass projectTitle prop to children -- they must use
-          // redux value
-          projectTitle,
-          reduxProjectTitle
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        intl = _this$props.intl,
+        isAnyCreatingNewState = _this$props.isAnyCreatingNewState,
+        isShowingWithoutId = _this$props.isShowingWithoutId,
+        onChangedProjectTitle = _this$props.onChangedProjectTitle,
+        onUpdateProjectTitle = _this$props.onUpdateProjectTitle,
+        projectTitle = _this$props.projectTitle,
+        reduxProjectTitle = _this$props.reduxProjectTitle,
         componentProps = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(WrappedComponent, componentProps);
     }
@@ -45268,12 +45243,8 @@ const TWFullScreenResizerHOC = function TWFullScreenResizerHOC(WrappedComponent)
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          onSetDimensions,
-          isFullScreen
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        onSetDimensions = _this$props.onSetDimensions,
+        isFullScreen = _this$props.isFullScreen,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(WrappedComponent, props);
     }
@@ -45528,10 +45499,8 @@ const openDB = () => new Promise((resolve, reject) => {
   };
 });
 const getBackpackContents = async _ref => {
-  let {
-    limit,
-    offset
-  } = _ref;
+  let limit = _ref.limit,
+    offset = _ref.offset;
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const transaction = db.transaction(STORE_NAME, 'readonly');
@@ -45561,13 +45530,11 @@ const getBackpackContents = async _ref => {
   });
 };
 const saveBackpackObject = async _ref2 => {
-  let {
-    type,
-    mime,
-    name,
-    body,
-    thumbnail
-  } = _ref2;
+  let type = _ref2.type,
+    mime = _ref2.mime,
+    name = _ref2.name,
+    body = _ref2.body,
+    thumbnail = _ref2.thumbnail;
   // User interaction -- fine to show a permission dialog
   Object(_tw_persistent_storage__WEBPACK_IMPORTED_MODULE_4__["requestPersistentStorage"])();
   const db = await openDB();
@@ -45595,9 +45562,7 @@ const saveBackpackObject = async _ref2 => {
   });
 };
 const deleteBackpackObject = async _ref3 => {
-  let {
-    id
-  } = _ref3;
+  let id = _ref3.id;
   id = +id;
   const db = await openDB();
   return new Promise((resolve, reject) => {
@@ -45614,10 +45579,8 @@ const deleteBackpackObject = async _ref3 => {
   });
 };
 const updateBackpackObject = async _ref4 => {
-  let {
-    id,
-    name
-  } = _ref4;
+  let id = _ref4.id,
+    name = _ref4.name;
   id = +id;
   const db = await openDB();
   return new Promise((resolve, reject) => {
@@ -45778,11 +45741,7 @@ const PackagerIntegrationHOC = function PackagerIntegrationHOC(WrappedComponent)
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          canOpenPackager
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        canOpenPackager = _this$props.canOpenPackager,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, _extends({
         onClickPackager: this.handleClickPackager
@@ -46057,14 +46016,10 @@ const TWProjectMetaFetcherHOC = function TWProjectMetaFetcherHOC(WrappedComponen
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          reduxProjectId,
-          onSetAuthor,
-          onSetDescription,
-          onSetProjectTitle
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        reduxProjectId = _this$props.reduxProjectId,
+        onSetAuthor = _this$props.onSetAuthor,
+        onSetDescription = _this$props.onSetDescription,
+        onSetProjectTitle = _this$props.onSetProjectTitle,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, props);
     }
@@ -46720,9 +46675,7 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 // This is a wrapper around <img> that forces re-render when theme state updates.
 
 const TWRenderRecoloredImage = _ref => {
-  let {
-      src
-    } = _ref,
+  let src = _ref.src,
     props = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", _extends({
     src: typeof src === 'function' ? src() : src
@@ -46751,6 +46704,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _turbowarp_jszip__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @turbowarp/jszip */ "./node_modules/@turbowarp/jszip/dist/jszip.min.js");
 /* harmony import */ var _turbowarp_jszip__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_turbowarp_jszip__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _tw_base64_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tw-base64-utils */ "./src/lib/tw-base64-utils.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 const TYPE_AUTOMATIC = 0;
@@ -46832,7 +46791,10 @@ const parseMetadata = obj => {
   obj.thumbnailWidth = typeof obj.thumbnailWidth === 'number' ? obj.thumbnailWidth : 480;
   obj.thumbnailHeight = typeof obj.thumbnailHeight === 'number' ? obj.thumbnailHeight : 360;
   obj.assets = obj.assets && typeof obj.assets === 'object' ? obj.assets : {};
-  for (const [asestId, size] of Object.entries(obj.assets)) {
+  for (const _ref of Object.entries(obj.assets)) {
+    var _ref2 = _slicedToArray(_ref, 2);
+    const asestId = _ref2[0];
+    const size = _ref2[1];
     if (typeof size !== 'number') {
       delete obj.assets[asestId];
     }
@@ -47327,7 +47289,10 @@ const getAllRestorePoints = () => openDB().then(db => new Promise((resolve, reje
       restorePoints.push(parsed);
       totalSize += parsed.projectSize;
       totalSize += parsed.thumbnailSize;
-      for (const [assetId, assetSize] of Object.entries(parsed.assets)) {
+      for (const _ref3 of Object.entries(parsed.assets)) {
+        var _ref4 = _slicedToArray(_ref3, 2);
+        const assetId = _ref4[0];
+        const assetSize = _ref4[1];
         if (!countedAssets.has(assetId)) {
           countedAssets.add(assetId);
           totalSize += assetSize;
@@ -47781,11 +47746,9 @@ const readHashProjectId = () => {
 };
 class Router {
   constructor(_ref) {
-    let {
-      onSetProjectId,
-      onSetIsPlayerOnly,
-      onSetIsFullScreen
-    } = _ref;
+    let onSetProjectId = _ref.onSetProjectId,
+      onSetIsPlayerOnly = _ref.onSetIsPlayerOnly,
+      onSetIsFullScreen = _ref.onSetIsFullScreen;
     this.onSetProjectId = onSetProjectId;
     this.onSetIsPlayerOnly = onSetIsPlayerOnly;
     this.onSetIsFullScreen = onSetIsFullScreen;
@@ -47801,9 +47764,7 @@ class HashRouter extends Router {
     this.onSetProjectId(readHashProjectId() || _reducers_project_state__WEBPACK_IMPORTED_MODULE_8__["defaultProjectId"]);
   }
   generateURL(_ref2) {
-    let {
-      projectId
-    } = _ref2;
+    let projectId = _ref2.projectId;
     const hashQuery = location.hash.split('?')[1];
     return "".concat(location.pathname).concat(location.search, "#").concat(projectId).concat(hashQuery ? "?".concat(hashQuery) : '');
   }
@@ -47828,11 +47789,9 @@ class FileHashRouter extends HashRouter {
     }
   }
   generateURL(_ref3) {
-    let {
-      projectId,
-      isPlayerOnly,
-      isFullScreen
-    } = _ref3;
+    let projectId = _ref3.projectId,
+      isPlayerOnly = _ref3.isPlayerOnly,
+      isFullScreen = _ref3.isFullScreen;
     let newPathname = '';
     let newHash = '';
     if (projectId !== '0') {
@@ -47915,11 +47874,9 @@ class WildcardRouter extends Router {
     }
   }
   generateURL(_ref4) {
-    let {
-      projectId,
-      isPlayerOnly,
-      isFullScreen
-    } = _ref4;
+    let projectId = _ref4.projectId,
+      isPlayerOnly = _ref4.isPlayerOnly,
+      isFullScreen = _ref4.isFullScreen;
     const parts = [];
     if (projectId !== '0') {
       parts.push(projectId);
@@ -48079,10 +48036,9 @@ const TWStateManager = function TWStateManager(WrappedComponent) {
 
         // Always remove legacy parameter
         searchParams.delete('60fps');
-        const {
-          width,
-          height
-        } = this.props.customStageSize;
+        const _this$props$customSta = this.props.customStageSize,
+          width = _this$props$customSta.width,
+          height = _this$props$customSta.height;
         if (width === _reducers_custom_stage_size__WEBPACK_IMPORTED_MODULE_12__["defaultStageSize"].width && height === _reducers_custom_stage_size__WEBPACK_IMPORTED_MODULE_12__["defaultStageSize"].height) {
           searchParams.delete('size');
         } else {
@@ -48168,30 +48124,26 @@ const TWStateManager = function TWStateManager(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          intl,
-          customStageSize,
-          isFullScreen,
-          isPlayerOnly,
-          isEmbedded,
-          projectChanged,
-          compilerOptions,
-          runtimeOptions,
-          highQualityPen,
-          framerate,
-          interpolation,
-          turbo,
-          onSetIsFullScreen,
-          onSetIsPlayerOnly,
-          onSetProjectId,
-          onSetUsername,
-          reduxProjectId,
-          routingStyle,
-          username,
-          vm
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        intl = _this$props.intl,
+        customStageSize = _this$props.customStageSize,
+        isFullScreen = _this$props.isFullScreen,
+        isPlayerOnly = _this$props.isPlayerOnly,
+        isEmbedded = _this$props.isEmbedded,
+        projectChanged = _this$props.projectChanged,
+        compilerOptions = _this$props.compilerOptions,
+        runtimeOptions = _this$props.runtimeOptions,
+        highQualityPen = _this$props.highQualityPen,
+        framerate = _this$props.framerate,
+        interpolation = _this$props.interpolation,
+        turbo = _this$props.turbo,
+        onSetIsFullScreen = _this$props.onSetIsFullScreen,
+        onSetIsPlayerOnly = _this$props.onSetIsPlayerOnly,
+        onSetProjectId = _this$props.onSetProjectId,
+        onSetUsername = _this$props.onSetUsername,
+        reduxProjectId = _this$props.reduxProjectId,
+        routingStyle = _this$props.routingStyle,
+        username = _this$props.username,
+        vm = _this$props.vm,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, props);
     }
@@ -48461,6 +48413,12 @@ const requestDisableVideo = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _camera_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./camera.js */ "./src/lib/video/camera.js");
 /* harmony import */ var _log_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../log.js */ "./src/lib/log.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
@@ -48581,30 +48539,31 @@ class VideoProvider {
    * @return {ArrayBuffer|Canvas|string|null} Frame data in requested format, null when errors.
    */
   getFrame(_ref) {
-    let {
-      dimensions = VideoProvider.DIMENSIONS,
-      mirror = this.mirror,
-      format = VideoProvider.FORMAT_IMAGE_DATA,
-      cacheTimeout = this._frameCacheTimeout
-    } = _ref;
+    let _ref$dimensions = _ref.dimensions,
+      dimensions = _ref$dimensions === void 0 ? VideoProvider.DIMENSIONS : _ref$dimensions,
+      _ref$mirror = _ref.mirror,
+      mirror = _ref$mirror === void 0 ? this.mirror : _ref$mirror,
+      _ref$format = _ref.format,
+      format = _ref$format === void 0 ? VideoProvider.FORMAT_IMAGE_DATA : _ref$format,
+      _ref$cacheTimeout = _ref.cacheTimeout,
+      cacheTimeout = _ref$cacheTimeout === void 0 ? this._frameCacheTimeout : _ref$cacheTimeout;
     if (!this.videoReady) {
       return null;
     }
-    const [width, height] = dimensions;
+    const _dimensions = _slicedToArray(dimensions, 2),
+      width = _dimensions[0],
+      height = _dimensions[1];
     const workspace = this._getWorkspace({
       dimensions,
       mirror: Boolean(mirror)
     });
-    const {
-      videoWidth,
-      videoHeight
-    } = this._video;
-    const {
-      canvas,
-      context,
-      lastUpdate,
-      cacheData
-    } = workspace;
+    const _this$_video = this._video,
+      videoWidth = _this$_video.videoWidth,
+      videoHeight = _this$_video.videoHeight;
+    const canvas = workspace.canvas,
+      context = workspace.context,
+      lastUpdate = workspace.lastUpdate,
+      cacheData = workspace.cacheData;
     const now = Date.now();
 
     // if the canvas hasn't been updated...
@@ -48714,10 +48673,9 @@ class VideoProvider {
     if (!this._track) {
       return false;
     }
-    const {
-      videoWidth,
-      videoHeight
-    } = this._video;
+    const _this$_video2 = this._video,
+      videoWidth = _this$_video2.videoWidth,
+      videoHeight = _this$_video2.videoHeight;
     if (typeof videoWidth !== 'number' || typeof videoHeight !== 'number') {
       return false;
     }
@@ -48735,10 +48693,8 @@ class VideoProvider {
    * @return {object} A workspace for canvas/data storage.  Internal format not documented intentionally
    */
   _getWorkspace(_ref2) {
-    let {
-      dimensions,
-      mirror
-    } = _ref2;
+    let dimensions = _ref2.dimensions,
+      mirror = _ref2.mirror;
     let workspace = this._workspace.find(space => space.dimensions.join('-') === dimensions.join('-') && space.mirror === mirror);
     if (!workspace) {
       workspace = {
@@ -48987,42 +48943,38 @@ const vmListenerHOC = function vmListenerHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          attachKeyboardEvents,
-          isEditorObscured,
-          isEditorUsable,
-          projectChanged,
-          shouldUpdateTargets,
-          shouldUpdateProjectChanged,
-          onBlockDragUpdate,
-          onGreenFlag,
-          onKeyDown,
-          onKeyUp,
-          onMicListeningUpdate,
-          onMonitorsUpdate,
-          onTargetsUpdate,
-          onProjectChanged,
-          onProjectRunStart,
-          onProjectRunStop,
-          onProjectSaved,
-          onRuntimeStarted,
-          onRuntimeStopped,
-          onTurboModeOff,
-          onTurboModeOn,
-          hasCloudVariables,
-          onHasCloudVariablesChanged,
-          onFramerateChanged,
-          onInterpolationChanged,
-          onCompilerOptionsChanged,
-          onPlatformMismatch,
-          onRuntimeOptionsChanged,
-          onStageSizeChanged,
-          onCompileError,
-          onClearCompileErrors,
-          onShowExtensionAlert
-          /* eslint-enable no-unused-vars */
-        } = _this$props,
+        attachKeyboardEvents = _this$props.attachKeyboardEvents,
+        isEditorObscured = _this$props.isEditorObscured,
+        isEditorUsable = _this$props.isEditorUsable,
+        projectChanged = _this$props.projectChanged,
+        shouldUpdateTargets = _this$props.shouldUpdateTargets,
+        shouldUpdateProjectChanged = _this$props.shouldUpdateProjectChanged,
+        onBlockDragUpdate = _this$props.onBlockDragUpdate,
+        onGreenFlag = _this$props.onGreenFlag,
+        onKeyDown = _this$props.onKeyDown,
+        onKeyUp = _this$props.onKeyUp,
+        onMicListeningUpdate = _this$props.onMicListeningUpdate,
+        onMonitorsUpdate = _this$props.onMonitorsUpdate,
+        onTargetsUpdate = _this$props.onTargetsUpdate,
+        onProjectChanged = _this$props.onProjectChanged,
+        onProjectRunStart = _this$props.onProjectRunStart,
+        onProjectRunStop = _this$props.onProjectRunStop,
+        onProjectSaved = _this$props.onProjectSaved,
+        onRuntimeStarted = _this$props.onRuntimeStarted,
+        onRuntimeStopped = _this$props.onRuntimeStopped,
+        onTurboModeOff = _this$props.onTurboModeOff,
+        onTurboModeOn = _this$props.onTurboModeOn,
+        hasCloudVariables = _this$props.hasCloudVariables,
+        onHasCloudVariablesChanged = _this$props.onHasCloudVariablesChanged,
+        onFramerateChanged = _this$props.onFramerateChanged,
+        onInterpolationChanged = _this$props.onInterpolationChanged,
+        onCompilerOptionsChanged = _this$props.onCompilerOptionsChanged,
+        onPlatformMismatch = _this$props.onPlatformMismatch,
+        onRuntimeOptionsChanged = _this$props.onRuntimeOptionsChanged,
+        onStageSizeChanged = _this$props.onStageSizeChanged,
+        onCompileError = _this$props.onCompileError,
+        onClearCompileErrors = _this$props.onClearCompileErrors,
+        onShowExtensionAlert = _this$props.onShowExtensionAlert,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WrappedComponent, props);
     }
@@ -49231,21 +49183,17 @@ const vmManagerHOC = function vmManagerHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          /* eslint-disable no-unused-vars */
-          fontsLoaded,
-          loadingState,
-          locale,
-          messages,
-          isStarted,
-          onError: onErrorProp,
-          onLoadedProject: onLoadedProjectProp,
-          onSetProjectUnchanged,
-          projectData,
-          /* eslint-enable no-unused-vars */
-          isLoadingWithId: isLoadingWithIdProp,
-          vm
-        } = _this$props,
+        fontsLoaded = _this$props.fontsLoaded,
+        loadingState = _this$props.loadingState,
+        locale = _this$props.locale,
+        messages = _this$props.messages,
+        isStarted = _this$props.isStarted,
+        onErrorProp = _this$props.onError,
+        onLoadedProjectProp = _this$props.onLoadedProject,
+        onSetProjectUnchanged = _this$props.onSetProjectUnchanged,
+        projectData = _this$props.projectData,
+        isLoadingWithIdProp = _this$props.isLoadingWithId,
+        vm = _this$props.vm,
         componentProps = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WrappedComponent, _extends({
         isLoading: isLoadingWithIdProp,
@@ -49677,18 +49625,14 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_invalid_embed_invalid_embed_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null);
     }
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        intl,
-        hasCloudVariables,
-        description,
-        isFullScreen,
-        isLoading,
-        isPlayerOnly,
-        isRtl,
-        projectId
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      intl = _this$props.intl,
+      hasCloudVariables = _this$props.hasCloudVariables,
+      description = _this$props.description,
+      isFullScreen = _this$props.isFullScreen,
+      isLoading = _this$props.isLoading,
+      isPlayerOnly = _this$props.isPlayerOnly,
+      isRtl = _this$props.isRtl,
+      projectId = _this$props.projectId,
       props = _objectWithoutProperties(_this$props, _excluded);
     const isHomepage = isPlayerOnly && !isFullScreen;
     const isEditor = !isPlayerOnly;
@@ -50446,6 +50390,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "customStageSizeInitialState", function() { return initialState; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultStageSize", function() { return defaultStageSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setCustomStageSize", function() { return setCustomStageSize; });
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const SET_CUSTOM_STAGE_SIZE = 'tw/custom-stage-size/SET';
 const getDimensions = () => {
   // Running in node.js
@@ -50463,7 +50413,10 @@ const getDimensions = () => {
     alert('Could not parse custom stage size');
     return null;
   }
-  const [_, widthText, heightText] = match;
+  const _match = _slicedToArray(match, 3),
+    _ = _match[0],
+    widthText = _match[1],
+    heightText = _match[2];
   if (!widthText || !heightText) {
     return null;
   }
@@ -51050,9 +51003,7 @@ const reducer = function reducer(state, action) {
         return _objectSpread(_objectSpread({}, state), {}, {
           [action.menu]: true
         }, Object.fromEntries(toClose.map(_ref => {
-          let {
-            id
-          } = _ref;
+          let id = _ref.id;
           return [id, false];
         })));
       }
@@ -51062,9 +51013,7 @@ const reducer = function reducer(state, action) {
         // Close this menu and any submenus
         const toClose = [menu, ...menu.descendants()];
         return _objectSpread(_objectSpread({}, state), Object.fromEntries(toClose.map(_ref2 => {
-          let {
-            id
-          } = _ref2;
+          let id = _ref2.id;
           return [id, false];
         })));
       }
@@ -51154,7 +51103,7 @@ const updateMicIndicator = function updateMicIndicator(visible) {
 /*!********************************!*\
   !*** ./src/reducers/modals.js ***!
   \********************************/
-/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openRestorePointModal, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal */
+/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openRestorePointModal, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal, openModManager, closeModManager */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51195,6 +51144,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeFontsModal", function() { return closeFontsModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeUnknownPlatformModal", function() { return closeUnknownPlatformModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeInvalidProjectModal", function() { return closeInvalidProjectModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openModManager", function() { return openModManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeModManager", function() { return closeModManager; });
 const OPEN_MODAL = 'scratch-gui/modals/OPEN_MODAL';
 const CLOSE_MODAL = 'scratch-gui/modals/CLOSE_MODAL';
 const MODAL_BACKDROP_LIBRARY = 'backdropLibrary';
@@ -51214,6 +51165,7 @@ const MODAL_RESTORE_POINTS = 'restorePointModal';
 const MODAL_FONTS = 'fontsModal';
 const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 const MODAL_INVALID_PROJECT = 'invalidProjectModal';
+const MODAL_MOD_MANAGER = 'modManager';
 const initialState = {
   [MODAL_BACKDROP_LIBRARY]: false,
   [MODAL_COSTUME_LIBRARY]: false,
@@ -51231,7 +51183,8 @@ const initialState = {
   [MODAL_RESTORE_POINTS]: false,
   [MODAL_FONTS]: false,
   [MODAL_UNKNOWN_PLATFORM]: false,
-  [MODAL_INVALID_PROJECT]: false
+  [MODAL_INVALID_PROJECT]: false,
+  [MODAL_MOD_MANAGER]: false
 };
 const reducer = function reducer(state, action) {
   if (typeof state === 'undefined') state = initialState;
@@ -51361,6 +51314,12 @@ const closeUnknownPlatformModal = function closeUnknownPlatformModal() {
 };
 const closeInvalidProjectModal = function closeInvalidProjectModal() {
   return closeModal(MODAL_INVALID_PROJECT);
+};
+const openModManager = function openModManager() {
+  return openModal(MODAL_MOD_MANAGER);
+};
+const closeModManager = function closeModManager() {
+  return closeModal(MODAL_MOD_MANAGER);
 };
 
 

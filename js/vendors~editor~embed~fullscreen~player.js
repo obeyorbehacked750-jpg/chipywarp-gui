@@ -82803,7 +82803,7 @@ module.exports = exports["default"];
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/*! @license DOMPurify 3.4.5 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.4.5/LICENSE */
+/*! @license DOMPurify 3.4.14 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.4.14/LICENSE */
 
 (function (global, factory) {
    true ? module.exports = factory() :
@@ -83121,7 +83121,7 @@ module.exports = exports["default"];
   const text = freeze(['#text']);
 
   const html = freeze(['accept', 'action', 'align', 'alt', 'autocapitalize', 'autocomplete', 'autopictureinpicture', 'autoplay', 'background', 'bgcolor', 'border', 'capture', 'cellpadding', 'cellspacing', 'checked', 'cite', 'class', 'clear', 'color', 'cols', 'colspan', 'command', 'commandfor', 'controls', 'controlslist', 'coords', 'crossorigin', 'datetime', 'decoding', 'default', 'dir', 'disabled', 'disablepictureinpicture', 'disableremoteplayback', 'download', 'draggable', 'enctype', 'enterkeyhint', 'exportparts', 'face', 'for', 'headers', 'height', 'hidden', 'high', 'href', 'hreflang', 'id', 'inert', 'inputmode', 'integrity', 'ismap', 'kind', 'label', 'lang', 'list', 'loading', 'loop', 'low', 'max', 'maxlength', 'media', 'method', 'min', 'minlength', 'multiple', 'muted', 'name', 'nonce', 'noshade', 'novalidate', 'nowrap', 'open', 'optimum', 'part', 'pattern', 'placeholder', 'playsinline', 'popover', 'popovertarget', 'popovertargetaction', 'poster', 'preload', 'pubdate', 'radiogroup', 'readonly', 'rel', 'required', 'rev', 'reversed', 'role', 'rows', 'rowspan', 'spellcheck', 'scope', 'selected', 'shape', 'size', 'sizes', 'slot', 'span', 'srclang', 'start', 'src', 'srcset', 'step', 'style', 'summary', 'tabindex', 'title', 'translate', 'type', 'usemap', 'valign', 'value', 'width', 'wrap', 'xmlns']);
-  const svg = freeze(['accent-height', 'accumulate', 'additive', 'alignment-baseline', 'amplitude', 'ascent', 'attributename', 'attributetype', 'azimuth', 'basefrequency', 'baseline-shift', 'begin', 'bias', 'by', 'class', 'clip', 'clippathunits', 'clip-path', 'clip-rule', 'color', 'color-interpolation', 'color-interpolation-filters', 'color-profile', 'color-rendering', 'cx', 'cy', 'd', 'dx', 'dy', 'diffuseconstant', 'direction', 'display', 'divisor', 'dur', 'edgemode', 'elevation', 'end', 'exponent', 'fill', 'fill-opacity', 'fill-rule', 'filter', 'filterunits', 'flood-color', 'flood-opacity', 'font-family', 'font-size', 'font-size-adjust', 'font-stretch', 'font-style', 'font-variant', 'font-weight', 'fx', 'fy', 'g1', 'g2', 'glyph-name', 'glyphref', 'gradientunits', 'gradienttransform', 'height', 'href', 'id', 'image-rendering', 'in', 'in2', 'intercept', 'k', 'k1', 'k2', 'k3', 'k4', 'kerning', 'keypoints', 'keysplines', 'keytimes', 'lang', 'lengthadjust', 'letter-spacing', 'kernelmatrix', 'kernelunitlength', 'lighting-color', 'local', 'marker-end', 'marker-mid', 'marker-start', 'markerheight', 'markerunits', 'markerwidth', 'maskcontentunits', 'maskunits', 'max', 'mask', 'mask-type', 'media', 'method', 'mode', 'min', 'name', 'numoctaves', 'offset', 'operator', 'opacity', 'order', 'orient', 'orientation', 'origin', 'overflow', 'paint-order', 'path', 'pathlength', 'patterncontentunits', 'patterntransform', 'patternunits', 'points', 'preservealpha', 'preserveaspectratio', 'primitiveunits', 'r', 'rx', 'ry', 'radius', 'refx', 'refy', 'repeatcount', 'repeatdur', 'restart', 'result', 'rotate', 'scale', 'seed', 'shape-rendering', 'slope', 'specularconstant', 'specularexponent', 'spreadmethod', 'startoffset', 'stddeviation', 'stitchtiles', 'stop-color', 'stop-opacity', 'stroke-dasharray', 'stroke-dashoffset', 'stroke-linecap', 'stroke-linejoin', 'stroke-miterlimit', 'stroke-opacity', 'stroke', 'stroke-width', 'style', 'surfacescale', 'systemlanguage', 'tabindex', 'tablevalues', 'targetx', 'targety', 'transform', 'transform-origin', 'text-anchor', 'text-decoration', 'text-rendering', 'textlength', 'type', 'u1', 'u2', 'unicode', 'values', 'viewbox', 'visibility', 'version', 'vert-adv-y', 'vert-origin-x', 'vert-origin-y', 'width', 'word-spacing', 'wrap', 'writing-mode', 'xchannelselector', 'ychannelselector', 'x', 'x1', 'x2', 'xmlns', 'y', 'y1', 'y2', 'z', 'zoomandpan']);
+  const svg = freeze(['accent-height', 'accumulate', 'additive', 'alignment-baseline', 'amplitude', 'ascent', 'attributename', 'attributetype', 'azimuth', 'basefrequency', 'baseline-shift', 'begin', 'bias', 'by', 'class', 'clip', 'clippathunits', 'clip-path', 'clip-rule', 'color', 'color-interpolation', 'color-interpolation-filters', 'color-profile', 'color-rendering', 'cx', 'cy', 'd', 'dx', 'dy', 'diffuseconstant', 'direction', 'display', 'divisor', 'dominant-baseline', 'dur', 'edgemode', 'elevation', 'end', 'exponent', 'fill', 'fill-opacity', 'fill-rule', 'filter', 'filterunits', 'flood-color', 'flood-opacity', 'font-family', 'font-size', 'font-size-adjust', 'font-stretch', 'font-style', 'font-variant', 'font-weight', 'fx', 'fy', 'g1', 'g2', 'glyph-name', 'glyphref', 'gradientunits', 'gradienttransform', 'height', 'href', 'id', 'image-rendering', 'in', 'in2', 'intercept', 'k', 'k1', 'k2', 'k3', 'k4', 'kerning', 'keypoints', 'keysplines', 'keytimes', 'lang', 'lengthadjust', 'letter-spacing', 'kernelmatrix', 'kernelunitlength', 'lighting-color', 'local', 'marker-end', 'marker-mid', 'marker-start', 'markerheight', 'markerunits', 'markerwidth', 'maskcontentunits', 'maskunits', 'max', 'mask', 'mask-type', 'media', 'method', 'mode', 'min', 'name', 'numoctaves', 'offset', 'operator', 'opacity', 'order', 'orient', 'orientation', 'origin', 'overflow', 'paint-order', 'path', 'pathlength', 'patterncontentunits', 'patterntransform', 'patternunits', 'pointer-events', 'points', 'preservealpha', 'preserveaspectratio', 'primitiveunits', 'r', 'rx', 'ry', 'radius', 'refx', 'refy', 'repeatcount', 'repeatdur', 'restart', 'result', 'rotate', 'scale', 'seed', 'shape-rendering', 'slope', 'specularconstant', 'specularexponent', 'spreadmethod', 'startoffset', 'stddeviation', 'stitchtiles', 'stop-color', 'stop-opacity', 'stroke-dasharray', 'stroke-dashoffset', 'stroke-linecap', 'stroke-linejoin', 'stroke-miterlimit', 'stroke-opacity', 'stroke', 'stroke-width', 'style', 'surfacescale', 'systemlanguage', 'tabindex', 'tablevalues', 'targetx', 'targety', 'transform', 'transform-origin', 'text-anchor', 'text-decoration', 'text-orientation', 'text-rendering', 'textlength', 'type', 'u1', 'u2', 'unicode', 'values', 'vector-effect', 'viewbox', 'visibility', 'version', 'vert-adv-y', 'vert-origin-x', 'vert-origin-y', 'width', 'word-spacing', 'wrap', 'writing-mode', 'xchannelselector', 'ychannelselector', 'x', 'x1', 'x2', 'xmlns', 'y', 'y1', 'y2', 'z', 'zoomandpan']);
   const mathMl = freeze(['accent', 'accentunder', 'align', 'bevelled', 'close', 'columnalign', 'columnlines', 'columnspacing', 'columnspan', 'denomalign', 'depth', 'dir', 'display', 'displaystyle', 'encoding', 'fence', 'frame', 'height', 'href', 'id', 'largeop', 'length', 'linethickness', 'lquote', 'lspace', 'mathbackground', 'mathcolor', 'mathsize', 'mathvariant', 'maxsize', 'minsize', 'movablelimits', 'notation', 'numalign', 'open', 'rowalign', 'rowlines', 'rowspacing', 'rowspan', 'rspace', 'rquote', 'scriptlevel', 'scriptminsize', 'scriptsizemultiplier', 'selection', 'separator', 'separators', 'stretchy', 'subscriptshift', 'supscriptshift', 'symmetric', 'voffset', 'width', 'xmlns']);
   const xml = freeze(['xlink:href', 'xml:id', 'xlink:title', 'xml:space', 'xmlns:xlink']);
 
@@ -83137,16 +83137,62 @@ module.exports = exports["default"];
   );
   const DOCTYPE_NAME = seal(/^html$/i);
   const CUSTOM_ELEMENT = seal(/^[a-z][.\w]*(-[.\w]+)+$/i);
+  // Markup-significant character probes used by _sanitizeElements.
+  // Shared module-level instances are safe despite the sticky /g flags:
+  // unapply() resets lastIndex for RegExp receivers before every call.
+  const ELEMENT_MARKUP_PROBE = seal(/<[/\w!]/g);
+  const COMMENT_MARKUP_PROBE = seal(/<[/\w]/g);
+  const FALLBACK_TAG_CLOSE = seal(/<\/no(script|embed|frames)/i);
+  const SELF_CLOSING_TAG = seal(/\/>/i);
 
-  /* eslint-disable @typescript-eslint/indent */
   // https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
   const NODE_TYPE = {
     element: 1,
+    attribute: 2,
     text: 3,
+    cdataSection: 4,
+    entityReference: 5,
     // Deprecated
-    progressingInstruction: 7,
+    entityNode: 6,
+    // Deprecated
+    processingInstruction: 7,
     comment: 8,
-    document: 9};
+    document: 9,
+    documentType: 10,
+    documentFragment: 11,
+    notation: 12 // Deprecated
+  };
+  /* HTML-namespace elements whose child text nodes are serialized *literally*
+     (unescaped) by the HTML fragment-serialization algorithm. Two reparse-mXSS
+     shapes ride on that literal serialization:
+       (a) an element child - a tree the HTML parser can never build, but the DOM
+           API and an XML/XHTML parse can - after which a `</tag>`-bearing text
+           sibling breaks the element open on reparse; and
+       (b) text-only content that already carries the element's OWN end tag, e.g.
+           `<style>...</style><img onerror=x>` built as a node, which the literal
+           serializer emits verbatim for the HTML parser to re-open.
+     Shape (a) is handled by the firstElementChild branch in _isUnsafeNode; shape
+     (b) by the LITERAL_TEXT_CLOSE probe. Both read textContent (the raw-serialized
+     form for these elements) rather than innerHTML, because an XML/XHTML working
+     document serializes innerHTML with `<` escaped, which silently blinds the
+     innerHTML-based probes (rule 1's second probe and FALLBACK_TAG_CLOSE) there.
+     `script` is never allow-listed, but is kept here so the guard matches the
+     serializer's own literal-text list exactly. */
+  const LITERAL_TEXT_ELEMENT_NAMES = ['style', 'script', 'xmp', 'iframe', 'noembed', 'noframes', 'plaintext', 'noscript'];
+  const LITERAL_TEXT_ELEMENTS = freeze(addToSet({}, LITERAL_TEXT_ELEMENT_NAMES));
+  /* Per-element end-tag matcher. On an HTML reparse the ONLY token that
+     terminates a literal-text element's raw content is its own end tag; a foreign
+     literal-text close (e.g. `</xmp>` sitting inside `<style>`) does not break
+     out, so matching is per-element, not a shared alternation. The lookahead
+     requires an HTML tag-name terminator (whitespace, `/` or `>`) so a longer
+     name such as `</styles` is not mistaken for `</style`. */
+  const LITERAL_TEXT_CLOSE = function () {
+    const map = {};
+    arrayForEach(LITERAL_TEXT_ELEMENT_NAMES, name => {
+      map[name] = seal(new RegExp('</' + name + '(?=[\\t\\n\\f\\r />])', 'i'));
+    });
+    return freeze(map);
+  }();
   const getGlobal = function getGlobal() {
     return typeof window === 'undefined' ? null : window;
   };
@@ -83201,10 +83247,40 @@ module.exports = exports["default"];
       uponSanitizeShadowNode: []
     };
   };
+  /**
+   * Resolve a set-valued configuration option: a fresh set built from
+   * cfg[key] when it is an own array property (seeded with a clone of
+   * options.base when given, case-normalized via options.transform),
+   * the fallback set otherwise.
+   *
+   * @param cfg the cloned, prototype-free configuration object
+   * @param key the configuration property to read
+   * @param fallback the set to use when the option is absent or not an array
+   * @param options transform and optional base set to merge into
+   * @returns the resolved set
+   */
+  const _resolveSetOption = function _resolveSetOption(cfg, key, fallback, options) {
+    return objectHasOwnProperty(cfg, key) && arrayIsArray(cfg[key]) ? addToSet(options.base ? clone(options.base) : {}, cfg[key], options.transform) : fallback;
+  };
+  /**
+   * Resolve an object-valued configuration option: a prototype-free clone
+   * of cfg[key] when it is an own, truthy object property, else a fresh
+   * fallback built by makeFallback (fresh on every parse, so a previous
+   * parse can never leak state into the next one).
+   *
+   * @param cfg the cloned, prototype-free configuration object
+   * @param key the configuration property to read
+   * @param makeFallback builds the fallback value when the option is absent
+   * @returns the resolved object
+   */
+  const _resolveObjectOption = function _resolveObjectOption(cfg, key, makeFallback) {
+    const value = objectHasOwnProperty(cfg, key) ? cfg[key] : undefined;
+    return value && typeof value === 'object' ? clone(value) : makeFallback();
+  };
   function createDOMPurify() {
     let window = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : getGlobal();
     const DOMPurify = root => createDOMPurify(root);
-    DOMPurify.version = '3.4.5';
+    DOMPurify.version = '3.4.14';
     DOMPurify.removed = [];
     if (!window || !window.document || window.document.nodeType !== NODE_TYPE.document || !window.Element) {
       // Not running in a browser, provide a factory function
@@ -83215,15 +83291,15 @@ module.exports = exports["default"];
     let document = window.document;
     const originalDocument = document;
     const currentScript = originalDocument.currentScript;
-    const DocumentFragment = window.DocumentFragment,
-      HTMLTemplateElement = window.HTMLTemplateElement,
+    window.DocumentFragment;
+      const HTMLTemplateElement = window.HTMLTemplateElement,
       Node = window.Node,
       Element = window.Element,
       NodeFilter = window.NodeFilter,
-      _window$NamedNodeMap = window.NamedNodeMap,
-      NamedNodeMap = _window$NamedNodeMap === void 0 ? window.NamedNodeMap || window.MozNamedAttrMap : _window$NamedNodeMap,
-      HTMLFormElement = window.HTMLFormElement,
-      DOMParser = window.DOMParser,
+      _window$NamedNodeMap = window.NamedNodeMap;
+      _window$NamedNodeMap === void 0 ? window.NamedNodeMap || window.MozNamedAttrMap : _window$NamedNodeMap;
+      window.HTMLFormElement;
+      const DOMParser = window.DOMParser,
       trustedTypes = window.trustedTypes;
     const ElementPrototype = Element.prototype;
     const cloneNode = lookupGetter(ElementPrototype, 'cloneNode');
@@ -83231,7 +83307,21 @@ module.exports = exports["default"];
     const getNextSibling = lookupGetter(ElementPrototype, 'nextSibling');
     const getChildNodes = lookupGetter(ElementPrototype, 'childNodes');
     const getParentNode = lookupGetter(ElementPrototype, 'parentNode');
+    const getShadowRoot = lookupGetter(ElementPrototype, 'shadowRoot');
+    const getAttributes = lookupGetter(ElementPrototype, 'attributes');
     const getNodeType = Node && Node.prototype ? lookupGetter(Node.prototype, 'nodeType') : null;
+    const getNodeName = Node && Node.prototype ? lookupGetter(Node.prototype, 'nodeName') : null;
+    const getOwnerDocument = Node && Node.prototype ? lookupGetter(Node.prototype, 'ownerDocument') : null;
+    /* Clobber-safe nodeType / nodeName reads through the cached Node.prototype
+       getters, with a direct-property fallback for environments that lack
+       Node.prototype. Sites that need a different fallback (e.g. _isClobbered
+       returns early on a null name) intentionally keep their own reads. */
+    const _readNodeType = function _readNodeType(node) {
+      return getNodeType ? getNodeType(node) : node.nodeType;
+    };
+    const _readNodeName = function _readNodeName(node) {
+      return getNodeName ? getNodeName(node) : node.nodeName;
+    };
     // As per issue #47, the web-components registry is inherited by a
     // new document created via createHTMLDocument. As per the spec
     // (http://w3c.github.io/webcomponents/spec/custom/#creating-and-passing-registries)
@@ -83246,6 +83336,54 @@ module.exports = exports["default"];
     }
     let trustedTypesPolicy;
     let emptyHTML = '';
+    // The instance's own internal Trusted Types policy. Unlike a caller-supplied
+    // `TRUSTED_TYPES_POLICY`, this is created at most once — Trusted Types throws
+    // on duplicate policy names — and is the only policy allowed to persist
+    // across configurations and survive `clearConfig()`.
+    let defaultTrustedTypesPolicy;
+    let defaultTrustedTypesPolicyResolved = false;
+    // Tracks whether we are already inside a call to the configured Trusted Types
+    // policy (`createHTML` or `createScriptURL`). If a supplied policy callback
+    // itself calls `DOMPurify.sanitize` (the cause of #1422), `sanitize` would
+    // re-enter the policy and recurse until the stack overflows. We detect that
+    // re-entry and throw a clear, actionable error instead. The guard is shared
+    // across both callbacks, because either one re-entering `sanitize` triggers
+    // the same unbounded recursion.
+    let IN_TRUSTED_TYPES_POLICY = 0;
+    const _assertNotInTrustedTypesPolicy = function _assertNotInTrustedTypesPolicy() {
+      if (IN_TRUSTED_TYPES_POLICY > 0) {
+        throw typeErrorCreate('A configured TRUSTED_TYPES_POLICY callback (createHTML or ' + 'createScriptURL) must not call DOMPurify.sanitize, as that causes ' + 'infinite recursion. Do not pass a policy whose callbacks wrap ' + 'DOMPurify as TRUSTED_TYPES_POLICY; see the "DOMPurify and Trusted ' + 'Types" section of the README.');
+      }
+    };
+    const _createTrustedHTML = function _createTrustedHTML(html) {
+      _assertNotInTrustedTypesPolicy();
+      IN_TRUSTED_TYPES_POLICY++;
+      try {
+        return trustedTypesPolicy.createHTML(html);
+      } finally {
+        IN_TRUSTED_TYPES_POLICY--;
+      }
+    };
+    const _createTrustedScriptURL = function _createTrustedScriptURL(scriptUrl) {
+      _assertNotInTrustedTypesPolicy();
+      IN_TRUSTED_TYPES_POLICY++;
+      try {
+        return trustedTypesPolicy.createScriptURL(scriptUrl);
+      } finally {
+        IN_TRUSTED_TYPES_POLICY--;
+      }
+    };
+    // Lazily resolve (and cache) the instance's internal default policy.
+    // Resolution is attempted at most once: a successful `createPolicy` cannot be
+    // repeated (Trusted Types throws on duplicate names), and a failed or
+    // unsupported attempt must not be retried on every parse.
+    const _getDefaultTrustedTypesPolicy = function _getDefaultTrustedTypesPolicy() {
+      if (!defaultTrustedTypesPolicyResolved) {
+        defaultTrustedTypesPolicy = _createTrustedTypesPolicy(trustedTypes, currentScript);
+        defaultTrustedTypesPolicyResolved = true;
+      }
+      return defaultTrustedTypesPolicy;
+    };
     const _document = document,
       implementation = _document.implementation,
       createNodeIterator = _document.createNodeIterator,
@@ -83342,6 +83480,13 @@ module.exports = exports["default"];
     let WHOLE_DOCUMENT = false;
     /* Track whether config is already set on this instance of DOMPurify. */
     let SET_CONFIG = false;
+    /* Pristine allowlist bindings captured at setConfig() time. On the
+     * persistent-config path sanitize() restores the sets from these before
+     * the per-walk hook clone-guard, so a hook's in-call widening cannot
+     * carry across calls. Null until setConfig() is called; reset by
+     * clearConfig(). */
+    let SET_CONFIG_ALLOWED_TAGS = null;
+    let SET_CONFIG_ALLOWED_ATTR = null;
     /* Decide if all elements (e.g. style, script) must be children of
      * document.body. By default, browsers might move them to document.head */
     let FORCE_BODY = false;
@@ -83384,7 +83529,17 @@ module.exports = exports["default"];
     let USE_PROFILES = {};
     /* Tags to ignore content of when KEEP_CONTENT is true */
     let FORBID_CONTENTS = null;
-    const DEFAULT_FORBID_CONTENTS = addToSet({}, ['annotation-xml', 'audio', 'colgroup', 'desc', 'foreignobject', 'head', 'iframe', 'math', 'mi', 'mn', 'mo', 'ms', 'mtext', 'noembed', 'noframes', 'noscript', 'plaintext', 'script', 'style', 'svg', 'template', 'thead', 'title', 'video', 'xmp']);
+    const DEFAULT_FORBID_CONTENTS = addToSet({}, ['annotation-xml', 'audio', 'colgroup', 'desc', 'foreignobject', 'head', 'iframe', 'math', 'mi', 'mn', 'mo', 'ms', 'mtext', 'noembed', 'noframes', 'noscript', 'plaintext', 'script',
+    // <selectedcontent> mirrors the selected <option>'s subtree, cloned by
+    // the UA (customizable <select>) — including any on* handlers — and the
+    // engine re-mirrors synchronously whenever a removal changes which
+    // option/selectedcontent is current, even inside DOMPurify's inert
+    // DOMParser document. Hoisting its children on removal re-inserts a fresh
+    // mirror target ahead of the walk, which the engine refills, looping
+    // forever (DoS) and amplifying output. Dropping its content on removal
+    // (rather than hoisting) breaks that cascade; the content is a duplicate
+    // of the option, which is sanitized on its own. See campaign-3 F1/F6.
+    'selectedcontent', 'style', 'svg', 'template', 'thead', 'title', 'video', 'xmp']);
     /* Tags that are safe for data: URIs */
     let DATA_URI_TAGS = null;
     const DEFAULT_DATA_URI_TAGS = addToSet({}, ['audio', 'video', 'img', 'source', 'image', 'track']);
@@ -83400,8 +83555,10 @@ module.exports = exports["default"];
     /* Allowed XHTML+XML namespaces */
     let ALLOWED_NAMESPACES = null;
     const DEFAULT_ALLOWED_NAMESPACES = addToSet({}, [MATHML_NAMESPACE, SVG_NAMESPACE, HTML_NAMESPACE], stringToString);
-    let MATHML_TEXT_INTEGRATION_POINTS = addToSet({}, ['mi', 'mo', 'mn', 'ms', 'mtext']);
-    let HTML_INTEGRATION_POINTS = addToSet({}, ['annotation-xml']);
+    const DEFAULT_MATHML_TEXT_INTEGRATION_POINTS = freeze(['mi', 'mo', 'mn', 'ms', 'mtext']);
+    let MATHML_TEXT_INTEGRATION_POINTS = addToSet({}, DEFAULT_MATHML_TEXT_INTEGRATION_POINTS);
+    const DEFAULT_HTML_INTEGRATION_POINTS = freeze(['annotation-xml']);
+    let HTML_INTEGRATION_POINTS = addToSet({}, DEFAULT_HTML_INTEGRATION_POINTS);
     // Certain elements are allowed in both SVG and HTML
     // namespace. We need to specify them explicitly
     // so that they don't get erroneously deleted from
@@ -83443,14 +83600,32 @@ module.exports = exports["default"];
       // HTML tags and attributes are not case-sensitive, converting to lowercase. Keeping XHTML as is.
       transformCaseFunc = PARSER_MEDIA_TYPE === 'application/xhtml+xml' ? stringToString : stringToLowerCase;
       /* Set configuration parameters */
-      ALLOWED_TAGS = objectHasOwnProperty(cfg, 'ALLOWED_TAGS') && arrayIsArray(cfg.ALLOWED_TAGS) ? addToSet({}, cfg.ALLOWED_TAGS, transformCaseFunc) : DEFAULT_ALLOWED_TAGS;
-      ALLOWED_ATTR = objectHasOwnProperty(cfg, 'ALLOWED_ATTR') && arrayIsArray(cfg.ALLOWED_ATTR) ? addToSet({}, cfg.ALLOWED_ATTR, transformCaseFunc) : DEFAULT_ALLOWED_ATTR;
-      ALLOWED_NAMESPACES = objectHasOwnProperty(cfg, 'ALLOWED_NAMESPACES') && arrayIsArray(cfg.ALLOWED_NAMESPACES) ? addToSet({}, cfg.ALLOWED_NAMESPACES, stringToString) : DEFAULT_ALLOWED_NAMESPACES;
-      URI_SAFE_ATTRIBUTES = objectHasOwnProperty(cfg, 'ADD_URI_SAFE_ATTR') && arrayIsArray(cfg.ADD_URI_SAFE_ATTR) ? addToSet(clone(DEFAULT_URI_SAFE_ATTRIBUTES), cfg.ADD_URI_SAFE_ATTR, transformCaseFunc) : DEFAULT_URI_SAFE_ATTRIBUTES;
-      DATA_URI_TAGS = objectHasOwnProperty(cfg, 'ADD_DATA_URI_TAGS') && arrayIsArray(cfg.ADD_DATA_URI_TAGS) ? addToSet(clone(DEFAULT_DATA_URI_TAGS), cfg.ADD_DATA_URI_TAGS, transformCaseFunc) : DEFAULT_DATA_URI_TAGS;
-      FORBID_CONTENTS = objectHasOwnProperty(cfg, 'FORBID_CONTENTS') && arrayIsArray(cfg.FORBID_CONTENTS) ? addToSet({}, cfg.FORBID_CONTENTS, transformCaseFunc) : DEFAULT_FORBID_CONTENTS;
-      FORBID_TAGS = objectHasOwnProperty(cfg, 'FORBID_TAGS') && arrayIsArray(cfg.FORBID_TAGS) ? addToSet({}, cfg.FORBID_TAGS, transformCaseFunc) : clone({});
-      FORBID_ATTR = objectHasOwnProperty(cfg, 'FORBID_ATTR') && arrayIsArray(cfg.FORBID_ATTR) ? addToSet({}, cfg.FORBID_ATTR, transformCaseFunc) : clone({});
+      ALLOWED_TAGS = _resolveSetOption(cfg, 'ALLOWED_TAGS', DEFAULT_ALLOWED_TAGS, {
+        transform: transformCaseFunc
+      });
+      ALLOWED_ATTR = _resolveSetOption(cfg, 'ALLOWED_ATTR', DEFAULT_ALLOWED_ATTR, {
+        transform: transformCaseFunc
+      });
+      ALLOWED_NAMESPACES = _resolveSetOption(cfg, 'ALLOWED_NAMESPACES', DEFAULT_ALLOWED_NAMESPACES, {
+        transform: stringToString
+      });
+      URI_SAFE_ATTRIBUTES = _resolveSetOption(cfg, 'ADD_URI_SAFE_ATTR', DEFAULT_URI_SAFE_ATTRIBUTES, {
+        transform: transformCaseFunc,
+        base: DEFAULT_URI_SAFE_ATTRIBUTES
+      });
+      DATA_URI_TAGS = _resolveSetOption(cfg, 'ADD_DATA_URI_TAGS', DEFAULT_DATA_URI_TAGS, {
+        transform: transformCaseFunc,
+        base: DEFAULT_DATA_URI_TAGS
+      });
+      FORBID_CONTENTS = _resolveSetOption(cfg, 'FORBID_CONTENTS', DEFAULT_FORBID_CONTENTS, {
+        transform: transformCaseFunc
+      });
+      FORBID_TAGS = _resolveSetOption(cfg, 'FORBID_TAGS', clone({}), {
+        transform: transformCaseFunc
+      });
+      FORBID_ATTR = _resolveSetOption(cfg, 'FORBID_ATTR', clone({}), {
+        transform: transformCaseFunc
+      });
       USE_PROFILES = objectHasOwnProperty(cfg, 'USE_PROFILES') ? cfg.USE_PROFILES && typeof cfg.USE_PROFILES === 'object' ? clone(cfg.USE_PROFILES) : cfg.USE_PROFILES : false;
       ALLOW_ARIA_ATTR = cfg.ALLOW_ARIA_ATTR !== false; // Default true
       ALLOW_DATA_ATTR = cfg.ALLOW_DATA_ATTR !== false; // Default true
@@ -83469,9 +83644,11 @@ module.exports = exports["default"];
       IN_PLACE = cfg.IN_PLACE || false; // Default false
       IS_ALLOWED_URI$1 = isRegex(cfg.ALLOWED_URI_REGEXP) ? cfg.ALLOWED_URI_REGEXP : IS_ALLOWED_URI; // Default regexp
       NAMESPACE = typeof cfg.NAMESPACE === 'string' ? cfg.NAMESPACE : HTML_NAMESPACE; // Default HTML namespace
-      MATHML_TEXT_INTEGRATION_POINTS = objectHasOwnProperty(cfg, 'MATHML_TEXT_INTEGRATION_POINTS') && cfg.MATHML_TEXT_INTEGRATION_POINTS && typeof cfg.MATHML_TEXT_INTEGRATION_POINTS === 'object' ? clone(cfg.MATHML_TEXT_INTEGRATION_POINTS) : addToSet({}, ['mi', 'mo', 'mn', 'ms', 'mtext']); // Default built-in map
-      HTML_INTEGRATION_POINTS = objectHasOwnProperty(cfg, 'HTML_INTEGRATION_POINTS') && cfg.HTML_INTEGRATION_POINTS && typeof cfg.HTML_INTEGRATION_POINTS === 'object' ? clone(cfg.HTML_INTEGRATION_POINTS) : addToSet({}, ['annotation-xml']); // Default built-in map
-      const customElementHandling = objectHasOwnProperty(cfg, 'CUSTOM_ELEMENT_HANDLING') && cfg.CUSTOM_ELEMENT_HANDLING && typeof cfg.CUSTOM_ELEMENT_HANDLING === 'object' ? clone(cfg.CUSTOM_ELEMENT_HANDLING) : create(null);
+      MATHML_TEXT_INTEGRATION_POINTS = _resolveObjectOption(cfg, 'MATHML_TEXT_INTEGRATION_POINTS', () => addToSet({}, DEFAULT_MATHML_TEXT_INTEGRATION_POINTS) // Default built-in map
+      );
+      HTML_INTEGRATION_POINTS = _resolveObjectOption(cfg, 'HTML_INTEGRATION_POINTS', () => addToSet({}, DEFAULT_HTML_INTEGRATION_POINTS) // Default built-in map
+      );
+      const customElementHandling = _resolveObjectOption(cfg, 'CUSTOM_ELEMENT_HANDLING', () => create(null));
       CUSTOM_ELEMENT_HANDLING = create(null);
       if (objectHasOwnProperty(customElementHandling, 'tagNameCheck') && isRegexOrFunction(customElementHandling.tagNameCheck)) {
         CUSTOM_ELEMENT_HANDLING.tagNameCheck = customElementHandling.tagNameCheck; // Default undefined
@@ -83482,6 +83659,7 @@ module.exports = exports["default"];
       if (objectHasOwnProperty(customElementHandling, 'allowCustomizedBuiltInElements') && typeof customElementHandling.allowCustomizedBuiltInElements === 'boolean') {
         CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements = customElementHandling.allowCustomizedBuiltInElements; // Default undefined
       }
+      seal(CUSTOM_ELEMENT_HANDLING);
       if (SAFE_FOR_TEMPLATES) {
         ALLOW_DATA_ATTR = false;
       }
@@ -83537,15 +83715,6 @@ module.exports = exports["default"];
           addToSet(ALLOWED_ATTR, cfg.ADD_ATTR, transformCaseFunc);
         }
       }
-      if (objectHasOwnProperty(cfg, 'ADD_URI_SAFE_ATTR') && arrayIsArray(cfg.ADD_URI_SAFE_ATTR)) {
-        addToSet(URI_SAFE_ATTRIBUTES, cfg.ADD_URI_SAFE_ATTR, transformCaseFunc);
-      }
-      if (objectHasOwnProperty(cfg, 'FORBID_CONTENTS') && arrayIsArray(cfg.FORBID_CONTENTS)) {
-        if (FORBID_CONTENTS === DEFAULT_FORBID_CONTENTS) {
-          FORBID_CONTENTS = clone(FORBID_CONTENTS);
-        }
-        addToSet(FORBID_CONTENTS, cfg.FORBID_CONTENTS, transformCaseFunc);
-      }
       if (objectHasOwnProperty(cfg, 'ADD_FORBID_CONTENTS') && arrayIsArray(cfg.ADD_FORBID_CONTENTS)) {
         if (FORBID_CONTENTS === DEFAULT_FORBID_CONTENTS) {
           FORBID_CONTENTS = clone(FORBID_CONTENTS);
@@ -83565,6 +83734,13 @@ module.exports = exports["default"];
         addToSet(ALLOWED_TAGS, ['tbody']);
         delete FORBID_TAGS.tbody;
       }
+      // Re-derive the active Trusted Types policy from this configuration on
+      // every parse. The active policy must never be sticky closure state that
+      // outlives the config that set it: a caller-supplied policy left in place
+      // after `clearConfig()` — or after a later call that supplied none, or
+      // `TRUSTED_TYPES_POLICY: null` — could sign a subsequent "default"
+      // `RETURN_TRUSTED_TYPE` result with a foreign, possibly unsafe policy.
+      // See GHSA-vxr8-fq34-vvx9.
       if (cfg.TRUSTED_TYPES_POLICY) {
         if (typeof cfg.TRUSTED_TYPES_POLICY.createHTML !== 'function') {
           throw typeErrorCreate('TRUSTED_TYPES_POLICY configuration option must provide a "createHTML" hook.');
@@ -83572,18 +83748,45 @@ module.exports = exports["default"];
         if (typeof cfg.TRUSTED_TYPES_POLICY.createScriptURL !== 'function') {
           throw typeErrorCreate('TRUSTED_TYPES_POLICY configuration option must provide a "createScriptURL" hook.');
         }
-        // Overwrite existing TrustedTypes policy.
+        // A caller-supplied policy applies to this configuration only.
+        const previousTrustedTypesPolicy = trustedTypesPolicy;
         trustedTypesPolicy = cfg.TRUSTED_TYPES_POLICY;
-        // Sign local variables required by `sanitize`.
-        emptyHTML = trustedTypesPolicy.createHTML('');
-      } else {
-        // Uninitialized policy, attempt to initialize the internal dompurify policy.
-        if (trustedTypesPolicy === undefined) {
-          trustedTypesPolicy = _createTrustedTypesPolicy(trustedTypes, currentScript);
+        // Sign local variables required by `sanitize`. If the supplied policy's
+        // `createHTML` is circular (i.e. it calls `DOMPurify.sanitize`), this
+        // throws via the re-entrancy guard. Restore the previous policy first so
+        // the instance is not left in a poisoned state. See #1422.
+        try {
+          emptyHTML = _createTrustedHTML('');
+        } catch (error) {
+          trustedTypesPolicy = previousTrustedTypesPolicy;
+          throw error;
         }
-        // If creating the internal policy succeeded sign internal variables.
-        if (trustedTypesPolicy !== null && typeof emptyHTML === 'string') {
-          emptyHTML = trustedTypesPolicy.createHTML('');
+      } else if (cfg.TRUSTED_TYPES_POLICY === null) {
+        // Explicit opt-out for this call: perform no Trusted Types signing and
+        // create nothing (so a strict `trusted-types` CSP that disallows a
+        // `dompurify` policy can still call `sanitize` from inside its own
+        // policy — see #1422). Resetting to `undefined` rather than a sticky
+        // `null` also drops any previously retained caller policy, so it cannot
+        // resurface on a later call, while still allowing the next config-less
+        // call to restore the internal default policy. See GHSA-vxr8-fq34-vvx9.
+        trustedTypesPolicy = undefined;
+        emptyHTML = '';
+      } else {
+        // No policy supplied: keep the currently active policy if one is set — a
+        // previously supplied policy is intentionally sticky across config-less
+        // calls — otherwise fall back to the instance's own internal policy,
+        // created at most once. (A policy supplied for a *single* call still
+        // lingers by design; what must not linger is a policy whose configuration
+        // has been torn down via `clearConfig()`, which restores the default.)
+        if (trustedTypesPolicy === undefined) {
+          trustedTypesPolicy = _getDefaultTrustedTypesPolicy();
+        }
+        // Sign internal variables only when a policy is active. A falsy policy
+        // (Trusted Types unsupported, creation failed, or an explicit opt-out)
+        // leaves `emptyHTML` as a plain string, so we never call `.createHTML` on
+        // a non-policy and throw. See #1422.
+        if (trustedTypesPolicy && typeof emptyHTML === 'string') {
+          emptyHTML = _createTrustedHTML('');
         }
       }
       // Prevent further manipulation of configuration.
@@ -83598,6 +83801,77 @@ module.exports = exports["default"];
      * correctly. */
     const ALL_SVG_TAGS = addToSet({}, [...svg$1, ...svgFilters, ...svgDisallowed]);
     const ALL_MATHML_TAGS = addToSet({}, [...mathMl$1, ...mathMlDisallowed]);
+    /**
+     * Namespace rules for an element in the SVG namespace.
+     *
+     * @param tagName the element's lowercase tag name
+     * @param parent the (possibly simulated) parent node
+     * @param parentTagName the parent's lowercase tag name
+     * @returns true if a spec-compliant parser could produce this element
+     */
+    const _checkSvgNamespace = function _checkSvgNamespace(tagName, parent, parentTagName) {
+      // The only way to switch from HTML namespace to SVG
+      // is via <svg>. If it happens via any other tag, then
+      // it should be killed.
+      if (parent.namespaceURI === HTML_NAMESPACE) {
+        return tagName === 'svg';
+      }
+      // The only way to switch from MathML to SVG is via <svg>
+      // if the parent is either <annotation-xml> or a MathML
+      // text integration point.
+      if (parent.namespaceURI === MATHML_NAMESPACE) {
+        return tagName === 'svg' && (parentTagName === 'annotation-xml' || MATHML_TEXT_INTEGRATION_POINTS[parentTagName]);
+      }
+      // We only allow elements that are defined in SVG
+      // spec. All others are disallowed in SVG namespace.
+      return Boolean(ALL_SVG_TAGS[tagName]);
+    };
+    /**
+     * Namespace rules for an element in the MathML namespace.
+     *
+     * @param tagName the element's lowercase tag name
+     * @param parent the (possibly simulated) parent node
+     * @param parentTagName the parent's lowercase tag name
+     * @returns true if a spec-compliant parser could produce this element
+     */
+    const _checkMathMlNamespace = function _checkMathMlNamespace(tagName, parent, parentTagName) {
+      // The only way to switch from HTML namespace to MathML
+      // is via <math>. If it happens via any other tag, then
+      // it should be killed.
+      if (parent.namespaceURI === HTML_NAMESPACE) {
+        return tagName === 'math';
+      }
+      // The only way to switch from SVG to MathML is via
+      // <math> and HTML integration points
+      if (parent.namespaceURI === SVG_NAMESPACE) {
+        return tagName === 'math' && HTML_INTEGRATION_POINTS[parentTagName];
+      }
+      // We only allow elements that are defined in MathML
+      // spec. All others are disallowed in MathML namespace.
+      return Boolean(ALL_MATHML_TAGS[tagName]);
+    };
+    /**
+     * Namespace rules for an element in the HTML namespace.
+     *
+     * @param tagName the element's lowercase tag name
+     * @param parent the (possibly simulated) parent node
+     * @param parentTagName the parent's lowercase tag name
+     * @returns true if a spec-compliant parser could produce this element
+     */
+    const _checkHtmlNamespace = function _checkHtmlNamespace(tagName, parent, parentTagName) {
+      // The only way to switch from SVG to HTML is via
+      // HTML integration points, and from MathML to HTML
+      // is via MathML text integration points
+      if (parent.namespaceURI === SVG_NAMESPACE && !HTML_INTEGRATION_POINTS[parentTagName]) {
+        return false;
+      }
+      if (parent.namespaceURI === MATHML_NAMESPACE && !MATHML_TEXT_INTEGRATION_POINTS[parentTagName]) {
+        return false;
+      }
+      // We disallow tags that are specific for MathML
+      // or SVG and should never appear in HTML namespace
+      return !ALL_MATHML_TAGS[tagName] && (COMMON_SVG_AND_HTML_ELEMENTS[tagName] || !ALL_SVG_TAGS[tagName]);
+    };
     /**
      * @param element a DOM element whose namespace is being checked
      * @returns Return false if the element has a
@@ -83620,51 +83894,13 @@ module.exports = exports["default"];
         return false;
       }
       if (element.namespaceURI === SVG_NAMESPACE) {
-        // The only way to switch from HTML namespace to SVG
-        // is via <svg>. If it happens via any other tag, then
-        // it should be killed.
-        if (parent.namespaceURI === HTML_NAMESPACE) {
-          return tagName === 'svg';
-        }
-        // The only way to switch from MathML to SVG is via`
-        // svg if parent is either <annotation-xml> or MathML
-        // text integration points.
-        if (parent.namespaceURI === MATHML_NAMESPACE) {
-          return tagName === 'svg' && (parentTagName === 'annotation-xml' || MATHML_TEXT_INTEGRATION_POINTS[parentTagName]);
-        }
-        // We only allow elements that are defined in SVG
-        // spec. All others are disallowed in SVG namespace.
-        return Boolean(ALL_SVG_TAGS[tagName]);
+        return _checkSvgNamespace(tagName, parent, parentTagName);
       }
       if (element.namespaceURI === MATHML_NAMESPACE) {
-        // The only way to switch from HTML namespace to MathML
-        // is via <math>. If it happens via any other tag, then
-        // it should be killed.
-        if (parent.namespaceURI === HTML_NAMESPACE) {
-          return tagName === 'math';
-        }
-        // The only way to switch from SVG to MathML is via
-        // <math> and HTML integration points
-        if (parent.namespaceURI === SVG_NAMESPACE) {
-          return tagName === 'math' && HTML_INTEGRATION_POINTS[parentTagName];
-        }
-        // We only allow elements that are defined in MathML
-        // spec. All others are disallowed in MathML namespace.
-        return Boolean(ALL_MATHML_TAGS[tagName]);
+        return _checkMathMlNamespace(tagName, parent, parentTagName);
       }
       if (element.namespaceURI === HTML_NAMESPACE) {
-        // The only way to switch from SVG to HTML is via
-        // HTML integration points, and from MathML to HTML
-        // is via MathML text integration points
-        if (parent.namespaceURI === SVG_NAMESPACE && !HTML_INTEGRATION_POINTS[parentTagName]) {
-          return false;
-        }
-        if (parent.namespaceURI === MATHML_NAMESPACE && !MATHML_TEXT_INTEGRATION_POINTS[parentTagName]) {
-          return false;
-        }
-        // We disallow tags that are specific for MathML
-        // or SVG and should never appear in HTML namespace
-        return !ALL_MATHML_TAGS[tagName] && (COMMON_SVG_AND_HTML_ELEMENTS[tagName] || !ALL_SVG_TAGS[tagName]);
+        return _checkHtmlNamespace(tagName, parent, parentTagName);
       }
       // For XHTML and XML documents that support custom namespaces
       if (PARSER_MEDIA_TYPE === 'application/xhtml+xml' && ALLOWED_NAMESPACES[element.namespaceURI]) {
@@ -83689,28 +83925,148 @@ module.exports = exports["default"];
         // eslint-disable-next-line unicorn/prefer-dom-node-remove
         getParentNode(node).removeChild(node);
       } catch (_) {
+        /* The normal detach failed — this is reached for a parentless node
+           (getParentNode() is null, so .removeChild throws). Element.prototype
+           .remove() is itself a spec no-op on a parentless node, so a recorded
+           "removal" would otherwise hand the caller back an intact,
+           payload-bearing node (e.g. a detached IN_PLACE root the mXSS canary or
+           the style-with-element-child rule decided to kill). Fail closed by
+           throwing — exactly as a clobbered root does at the IN_PLACE entry —
+           rather than trying to "neutralize" the node via its own methods.
+           Neutralizing would mean calling getAttributeNames()/removeAttribute()
+           on the node, both of which a <form> root can clobber via a named child
+           (and _isClobbered does not even probe getAttributeNames), so the
+           neutralize step could itself be silently defeated, leaving the payload
+           intact. A throw touches only the cached, clobber-safe remove() and
+           getParentNode(). Generalizes GHSA-r47g-fvhr-h676 (clobbered-form root)
+           to every root-kill reason. REPORT-3.
+                  This lives inside the catch, so it never fires for a normally-removed
+           in-tree node: those have a parent, removeChild() succeeds, and the
+           catch is not entered. Only a kept (parentless) root reaches here. */
         remove(node);
+        if (!getParentNode(node)) {
+          throw typeErrorCreate('a node selected for removal could not be detached from its tree ' + 'and cannot be safely returned; refusing to sanitize in place');
+        }
+      }
+    };
+    /**
+     * _stripAttributeNode
+     *
+     * Remove a single Attr node case/namespace-exactly on an attribute-teardown
+     * path. Name-based removeAttribute() ASCII-lowercases its lookup key for an
+     * HTML element in an HTML document and so silently misses a case-preserved
+     * handler (e.g. `ONERROR` off an XML/XHTML import) - the same defect
+     * _removeAttribute() was fixed for, which a name-based call would reintroduce
+     * on these IN_PLACE teardown paths. Unlike _removeAttribute this does not
+     * record into DOMPurify.removed: the neutralize passes intentionally do not
+     * book-keep. A clobbered/detached node falls back to best-effort name-based
+     * removal.
+     *
+     * @param element the element to strip the attribute from
+     * @param attribute the Attr node to remove
+     * @param name the attribute's name, for the fallback path
+     */
+    const _stripAttributeNode = function _stripAttributeNode(element, attribute, name) {
+      try {
+        element.removeAttributeNode(attribute);
+      } catch (_) {
+        try {
+          element.removeAttribute(name);
+        } catch (_) {}
+      }
+    };
+    /**
+     * _neutralizeRoot
+     *
+     * Fail-closed teardown of an in-place root after the sanitize walk aborts
+     * (campaign-3 F2). An internal throw mid-walk — e.g. a page-registered
+     * custom element's reaction detaches a node so `_forceRemove`'s deliberate
+     * parentless guard throws, or any other re-entrant engine mutation — would
+     * otherwise leave the caller's *live* tree half-sanitized, with everything
+     * after the abort point still carrying its handlers. There is no safe way
+     * to resume the walk (the tree mutated under us), so we strip the root bare:
+     * remove every child and every attribute, then let the caller's catch see
+     * the original error. Clobber-safe (cached `remove`/`childNodes`/`attributes`
+     * getters; the root was already clobber-pre-flighted at the IN_PLACE entry).
+     *
+     * @param root the in-place root to empty
+     */
+    const _neutralizeRoot = function _neutralizeRoot(root) {
+      /* Strip every disallowed attribute (on* handlers included) off the whole
+         subtree BEFORE detaching anything. Detaching first would hand back
+         handler-bearing originals (e.g. an already-loading `<img onerror>`)
+         whose queued resource event still fires in page scope after we throw.
+         Clobber-safe reads; a doomed clobbered node's own attributes are
+         irrelevant while its non-clobbered descendants are reached and scrubbed. */
+      _neutralizeSubtree(root);
+      const childNodes = getChildNodes(root);
+      if (childNodes) {
+        const snapshot = [];
+        arrayForEach(childNodes, child => {
+          arrayPush(snapshot, child);
+        });
+        arrayForEach(snapshot, child => {
+          try {
+            remove(child);
+          } catch (_) {
+            /* Best-effort teardown; a still-attached child is handled below */
+          }
+        });
+      }
+      const attributes = getAttributes(root);
+      if (attributes) {
+        for (let i = attributes.length - 1; i >= 0; --i) {
+          const attribute = attributes[i];
+          const name = attribute && attribute.name;
+          if (typeof name === 'string') {
+            _stripAttributeNode(root, attribute, name);
+          }
+        }
       }
     };
     /**
      * _removeAttribute
      *
+     * Name-based getAttributeNode()/removeAttribute() ASCII-lowercase their
+     * lookup key for HTML elements in an HTML document, so they silently miss an
+     * attribute whose stored qualified name still contains uppercase ASCII
+     * letters. That happens when the node came from a case-preserving source
+     * (an XML/XHTML document imported via importNode(), or createAttributeNS()),
+     * where e.g. `ONERROR` survives the walk: the policy check lowercases to
+     * `onerror` and rejects it, but `removeAttribute('ONERROR')` looks up
+     * `onerror` and finds nothing. Remove the exact Attr node instead, which is
+     * case- and namespace-exact, and fall back to name-based removal only when
+     * the caller could not supply the node.
+     *
      * @param name an Attribute name
      * @param element a DOM node
+     * @param attr the exact Attr node to remove, when the caller has it
      */
-    const _removeAttribute = function _removeAttribute(name, element) {
-      try {
-        arrayPush(DOMPurify.removed, {
-          attribute: element.getAttributeNode(name),
-          from: element
-        });
-      } catch (_) {
-        arrayPush(DOMPurify.removed, {
-          attribute: null,
-          from: element
-        });
+    const _removeAttribute = function _removeAttribute(name, element, attr) {
+      if (!attr) {
+        try {
+          attr = element.getAttributeNode(name);
+        } catch (_) {
+          attr = null;
+        }
       }
-      element.removeAttribute(name);
+      arrayPush(DOMPurify.removed, {
+        attribute: attr || null,
+        from: element
+      });
+      try {
+        if (attr) {
+          element.removeAttributeNode(attr);
+        } else {
+          element.removeAttribute(name);
+        }
+      } catch (_) {
+        /* Clobbered or already-detached node - best-effort fall back to a
+           name-based removal so the "is" handling below still runs. */
+        try {
+          element.removeAttribute(name);
+        } catch (_) {}
+      }
       // We void attribute values for unremovable "is" attributes
       if (name === 'is') {
         if (RETURN_DOM || RETURN_DOM_FRAGMENT) {
@@ -83721,6 +84077,164 @@ module.exports = exports["default"];
           try {
             element.setAttribute(name, '');
           } catch (_) {}
+        }
+      }
+    };
+    /**
+     * _stripDisallowedAttributes
+     *
+     * Removes every attribute the active configuration does not allow from a
+     * single element, using the same allowlist as the main attribute pass (so
+     * `on*` handlers go, but no `/^on/` blocklist is introduced). Used only to
+     * neutralise nodes that are being discarded from an in-place tree.
+     *
+     * @param element the element to strip
+     */
+    const _stripDisallowedAttributes = function _stripDisallowedAttributes(element) {
+      const attributes = getAttributes(element);
+      if (!attributes) {
+        return;
+      }
+      for (let i = attributes.length - 1; i >= 0; --i) {
+        const attribute = attributes[i];
+        const name = attribute && attribute.name;
+        if (typeof name !== 'string' || ALLOWED_ATTR[transformCaseFunc(name)]) {
+          continue;
+        }
+        _stripAttributeNode(element, attribute, name);
+      }
+    };
+    /**
+     * _neutralizeSubtree
+     *
+     * Completes the audit-5 F1 fix across every removal path. The KEEP_CONTENT
+     * move-hoist neutralises only disallowed-tag removals; clobber, mXSS-canary,
+     * namespace, comment, processing-instruction and KEEP_CONTENT:false removals
+     * all drop their subtree wholesale via `_forceRemove`. On the IN_PLACE path
+     * those dropped nodes are detached from the caller's LIVE tree but a
+     * handler-bearing original among them (an `<img onerror>`/`<video>` that was
+     * loading) keeps its queued resource event, which fires in page scope after
+     * sanitize returns. This walks a removed subtree and strips every attribute
+     * the active configuration does not allow — so `on*` handlers are cancelled
+     * through the SAME allowlist that governs kept nodes, not a separate `/^on/`
+     * blocklist. Run synchronously before sanitize returns, i.e. before any
+     * queued event can fire. Hook-free by design: these nodes leave the output,
+     * so firing attribute hooks for them would be surprising. Clobber-safe reads;
+     * a doomed clobbered node may shadow `removeAttribute` (its own attributes are
+     * irrelevant — it is discarded — while its non-clobbered descendants, e.g.
+     * the `<img>`, are reached and scrubbed).
+     *
+     * @param root the root of a removed subtree to neutralise
+     */
+    const _neutralizeSubtree = function _neutralizeSubtree(root) {
+      const stack = [root];
+      while (stack.length > 0) {
+        const node = stack.pop();
+        const nodeType = _readNodeType(node);
+        if (nodeType === NODE_TYPE.element) {
+          _stripDisallowedAttributes(node);
+        }
+        const childNodes = getChildNodes(node);
+        if (childNodes) {
+          for (let i = childNodes.length - 1; i >= 0; --i) {
+            stack.push(childNodes[i]);
+          }
+        }
+      }
+    };
+    /**
+     * _neutralizePatchLinkage
+     *
+     * IN_PLACE entry pre-pass (declarative-partial-updates / streaming
+     * hardening, https://github.com/WICG/declarative-partial-updates).
+     *
+     * The main walk strips patch linkage (`for`/`patchsrc`) and removes range
+     * markers (PIs / markup comments) node-by-node, in document order, AS it
+     * reaches each node. On a live in-place root that leaves a window: from the
+     * moment the root is connected until the walk arrives at a given node, that
+     * node's linkage is live. A patch applied on connection/stream can fire as
+     * a microtask during the walk and inject or teleport an unsanitized DOM
+     * range into a region the iterator has already passed and will not revisit,
+     * so the post-return "tree is sanitized" contract is violated. Sweep the
+     * whole tree once up front and sever every linkage before the walk begins,
+     * closing that window.
+     *
+     * This CANNOT undo a patch that already fired before sanitize ran — that is
+     * the irreducible "do not IN_PLACE a live-connected attacker tree" caveat —
+     * but it closes everything from sanitize-start onward. Gated on SAFE_FOR_XML
+     * to group with the rest of the declarative-partial-updates handling and
+     * stay overridable, consistent with the codebase.
+     *
+     * Clobber-safe traversal (cached childNodes getter); per-node try/catch so a
+     * clobbered root cannot defeat the sweep of its non-clobbered descendants.
+     *
+     * NOTE (pending real-Chrome confirmation, see test/declarative-patch-probe
+     * .html Q1): this mirrors the existing policy of keeping `for` on
+     * <label>/<output>. If the shipping feature can drive a patch through a
+     * surviving `for`-on-label/output + `id` pair, this pre-pass and the
+     * attribute check at _isBasicCustomElement's caller must additionally drop
+     * that pair on the IN_PLACE path. Left as-is until the taxonomy is verified.
+     *
+     * @param root the in-place root to sweep
+     */
+    /**
+     * Central policy for declarative-partial-updates patch-linkage attributes,
+     * shared by the _neutralizePatchLinkage pre-pass and _isValidAttribute so
+     * the two sites cannot drift: `patchsrc` always links, `for` links
+     * everywhere except on <label>/<output>, and the whole policy is gated on
+     * SAFE_FOR_XML (see the rationale block in _isValidAttribute).
+     *
+     * @param lcName the transformCaseFunc'd attribute name
+     * @param lcTag the transformCaseFunc'd tag name of the carrying element
+     * @return true if the attribute is patch linkage and must be dropped
+     */
+    const _isPatchLinkageAttribute = function _isPatchLinkageAttribute(lcName, lcTag) {
+      if (!SAFE_FOR_XML) {
+        return false;
+      }
+      if (lcName === 'patchsrc') {
+        return true;
+      }
+      return lcName === 'for' && lcTag !== 'label' && lcTag !== 'output';
+    };
+    const _neutralizePatchLinkage = function _neutralizePatchLinkage(root) {
+      if (!SAFE_FOR_XML) {
+        return;
+      }
+      const stack = [root];
+      while (stack.length > 0) {
+        const node = stack.pop();
+        const nodeType = _readNodeType(node);
+        /* Remove range markers (the target side of a patch linkage): every
+           processing instruction, and any markup-bearing comment. */
+        if (nodeType === NODE_TYPE.processingInstruction || nodeType === NODE_TYPE.comment && regExpTest(COMMENT_MARKUP_PROBE, node.data)) {
+          try {
+            remove(node);
+          } catch (_) {
+            /* Best-effort */
+          }
+          continue;
+        }
+        /* Strip patch-source attributes (the source side) off elements. */
+        if (nodeType === NODE_TYPE.element) {
+          const element = node;
+          const lcTag = transformCaseFunc(_readNodeName(node));
+          try {
+            if (element.hasAttribute && element.hasAttribute('patchsrc')) {
+              element.removeAttribute('patchsrc');
+            }
+            if (element.hasAttribute && element.hasAttribute('for') && _isPatchLinkageAttribute('for', lcTag)) {
+              element.removeAttribute('for');
+            }
+          } catch (_) {
+            /* Clobbered removeAttribute/hasAttribute on a doomed node — ignore */
+          }
+        }
+        const childNodes = getChildNodes(node);
+        if (childNodes) {
+          for (let i = childNodes.length - 1; i >= 0; --i) {
+            stack.push(childNodes[i]);
+          }
         }
       }
     };
@@ -83745,7 +84259,7 @@ module.exports = exports["default"];
         // Root of XHTML doc must contain xmlns declaration (see https://www.w3.org/TR/xhtml1/normative.html#strict)
         dirty = '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' + dirty + '</body></html>';
       }
-      const dirtyPayload = trustedTypesPolicy ? trustedTypesPolicy.createHTML(dirty) : dirty;
+      const dirtyPayload = trustedTypesPolicy ? _createTrustedHTML(dirty) : dirty;
       /*
        * Use the DOMParser API by default, fallback later if needs be
        * DOMParser not work for svg when has multiple root element.
@@ -83781,9 +84295,33 @@ module.exports = exports["default"];
      * @return The created NodeIterator
      */
     const _createNodeIterator = function _createNodeIterator(root) {
-      return createNodeIterator.call(root.ownerDocument || root, root,
+      /* Read ownerDocument through the cached Node.prototype getter, never the
+         direct property. HTMLFormElement has [LegacyOverrideBuiltIns], so a
+         clobbering child (<input name="ownerDocument"> or a form-associated
+         external input) shadows the prototype getter and makes a direct read
+         return that <input>. createNodeIterator.call(<input>, ...) then throws
+         "Illegal invocation", and on the IN_PLACE path that throw lands before
+         the walk's fail-closed barrier - leaving the caller's live tree, with
+         any already-armed handler in it, un-neutralized. The cached getter
+         returns the real Document regardless of the clobber. */
+      const doc = getOwnerDocument ? getOwnerDocument(root) : root.ownerDocument;
+      return createNodeIterator.call(doc || root, root,
       // eslint-disable-next-line no-bitwise
       NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_COMMENT | NodeFilter.SHOW_TEXT | NodeFilter.SHOW_PROCESSING_INSTRUCTION | NodeFilter.SHOW_CDATA_SECTION, null);
+    };
+    /**
+     * Replace template expression syntax (mustache, ERB, template
+     * literal) with a space; shared by all SAFE_FOR_TEMPLATES scrub
+     * sites. Order matters: mustache, then ERB, then template literal.
+     *
+     * @param value the string to scrub
+     * @returns the scrubbed string
+     */
+    const _stripTemplateExpressions = function _stripTemplateExpressions(value) {
+      value = stringReplace(value, MUSTACHE_EXPR$1, ' ');
+      value = stringReplace(value, ERB_EXPR$1, ' ');
+      value = stringReplace(value, TMPLIT_EXPR$1, ' ');
+      return value;
     };
     /**
      * Strip template-engine expressions ({{...}}, ${...}, <%...%>) from the
@@ -83804,29 +84342,104 @@ module.exports = exports["default"];
      *
      * @param node The root element whose character data should be scrubbed.
      */
-    const _scrubTemplateExpressions = function _scrubTemplateExpressions(node) {
+    const _scrubTemplateExpressions2 = function _scrubTemplateExpressions(node) {
+      var _node$querySelectorAl;
       node.normalize();
-      const walker = createNodeIterator.call(node.ownerDocument || node, node,
+      /* Clobber-safe ownerDocument read, same reasoning as _createNodeIterator:
+         under SAFE_FOR_TEMPLATES this runs on the live IN_PLACE root, which may
+         carry a form-named-getter override of ownerDocument. */
+      const doc = getOwnerDocument ? getOwnerDocument(node) : node.ownerDocument;
+      const walker = createNodeIterator.call(doc || node, node,
       // eslint-disable-next-line no-bitwise
       NodeFilter.SHOW_TEXT | NodeFilter.SHOW_COMMENT | NodeFilter.SHOW_CDATA_SECTION | NodeFilter.SHOW_PROCESSING_INSTRUCTION, null);
       let currentNode = walker.nextNode();
       while (currentNode) {
-        let data = currentNode.data;
-        arrayForEach([MUSTACHE_EXPR$1, ERB_EXPR$1, TMPLIT_EXPR$1], expr => {
-          data = stringReplace(data, expr, ' ');
-        });
-        currentNode.data = data;
+        currentNode.data = _stripTemplateExpressions(currentNode.data);
         currentNode = walker.nextNode();
+      }
+      // NodeIterator does not descend into <template>.content per the DOM spec,
+      // so we must explicitly recurse into each template's content fragment,
+      // mirroring the approach used by _sanitizeShadowDOM.
+      const templates = (_node$querySelectorAl = node.querySelectorAll) === null || _node$querySelectorAl === void 0 ? void 0 : _node$querySelectorAl.call(node, 'template');
+      if (templates) {
+        arrayForEach(templates, tmpl => {
+          if (_isDocumentFragment(tmpl.content)) {
+            _scrubTemplateExpressions2(tmpl.content);
+          }
+        });
       }
     };
     /**
      * _isClobbered
      *
+     * Detect DOM-clobbering on HTMLFormElement nodes. Form is the only HTML
+     * interface with [LegacyOverrideBuiltIns]; a descendant element with a
+     * `name` attribute matching a prototype property shadows that property
+     * on direct reads. We use this check at the IN_PLACE entry-point and
+     * during attribute sanitization to refuse clobbered forms.
+     *
      * @param element element to check for clobbering attacks
      * @return true if clobbered, false if safe
      */
     const _isClobbered = function _isClobbered(element) {
-      return element instanceof HTMLFormElement && (typeof element.nodeName !== 'string' || typeof element.textContent !== 'string' || typeof element.removeChild !== 'function' || !(element.attributes instanceof NamedNodeMap) || typeof element.removeAttribute !== 'function' || typeof element.setAttribute !== 'function' || typeof element.namespaceURI !== 'string' || typeof element.insertBefore !== 'function' || typeof element.hasChildNodes !== 'function');
+      // Realm-independent tag-name probe. If we can't determine the tag
+      // name at all, we can't reason about clobbering — return false
+      // (the caller's other defences still apply).
+      const realTagName = getNodeName ? getNodeName(element) : null;
+      if (typeof realTagName !== 'string') {
+        return false;
+      }
+      if (transformCaseFunc(realTagName) !== 'form') {
+        return false;
+      }
+      return typeof element.nodeName !== 'string' || typeof element.textContent !== 'string' || typeof element.removeChild !== 'function' ||
+      // Realm-safe NamedNodeMap detection: equality against the cached
+      // prototype getter. Clobbered .attributes (e.g. <input name="attributes">)
+      // makes the direct read diverge from the cached read; a clean form
+      // (same-realm OR foreign-realm) has both reads pointing at the same
+      // canonical NamedNodeMap.
+      element.attributes !== getAttributes(element) || typeof element.removeAttribute !== 'function' || typeof element.setAttribute !== 'function' || typeof element.namespaceURI !== 'string' || typeof element.insertBefore !== 'function' || typeof element.hasChildNodes !== 'function' ||
+      // NodeType clobbering probe. Cached Node.prototype.nodeType getter
+      // returns the integer 1 for any Element regardless of realm; direct
+      // read on a clobbered form (e.g. <input name="nodeType">) returns
+      // the named child element. Cheap addition — nodeType is read from
+      // an internal slot, no serialization cost — and removes a residual
+      // clobbering surface used by several mXSS / PI / comment branches
+      // in _sanitizeElements that compare currentNode.nodeType directly.
+      element.nodeType !== getNodeType(element) ||
+      // HTMLFormElement has [LegacyOverrideBuiltIns]: a descendant named
+      // "childNodes" shadows the prototype getter. Direct reads of
+      // form.childNodes from a clobbered form return the named child
+      // instead of the real NodeList, so any walk that reads it directly
+      // skips the form's real children. Compare the direct read to the
+      // cached Node.prototype getter — when the form's named-property
+      // getter intercepts the read, the two values differ and we flag
+      // the form. This catches every clobbering child type (input,
+      // select, etc.) regardless of whether the named child happens to
+      // carry a numeric .length, which a typeof-based probe would miss
+      // (e.g. HTMLSelectElement.length is a defined unsigned-long).
+      element.childNodes !== getChildNodes(element);
+    };
+    /**
+     * Checks whether the given value is a DocumentFragment from any realm.
+     *
+     * The realm-independent replacement reads `nodeType` through the cached
+     * Node.prototype getter and compares to the DOCUMENT_FRAGMENT_NODE
+     * constant (11). nodeType is a numeric value resolved from the node's
+     * internal slot, identical across realms for the same kind of node.
+     *
+     * @param value object to check
+     * @return true if value is a DocumentFragment-shaped node from any realm
+     */
+    const _isDocumentFragment = function _isDocumentFragment(value) {
+      if (!getNodeType || typeof value !== 'object' || value === null) {
+        return false;
+      }
+      try {
+        return getNodeType(value) === NODE_TYPE.documentFragment;
+      } catch (_) {
+        return false;
+      }
     };
     /**
      * Checks whether the given object is a DOM node, including nodes that
@@ -83835,12 +84448,6 @@ module.exports = exports["default"];
      * realm-bound: nodes from a different window failed it, causing
      * sanitize() to silently stringify them and reset IN_PLACE to false,
      * returning the original node unsanitized. See GHSA-4w3q-35jp-p934.
-     *
-     * Implementation: call the cached `nodeType` getter from Node.prototype
-     * directly on the value. This bypasses any clobbered instance property
-     * (e.g. a child element named "nodeType") and works across realms
-     * because the WebIDL `nodeType` getter reads an internal slot that
-     * every real Node has, regardless of which window minted it.
      *
      * @param value object to check whether it's a DOM node
      * @return true if value is a DOM node from any realm
@@ -83856,10 +84463,196 @@ module.exports = exports["default"];
       }
     };
     function _executeHooks(hooks, currentNode, data) {
+      if (hooks.length === 0) {
+        return;
+      }
       arrayForEach(hooks, hook => {
         hook.call(DOMPurify, currentNode, data, CONFIG);
       });
     }
+    /**
+     * Structural-threat checks that condemn a node regardless of the
+     * allowlists: mXSS via namespace confusion, risky CSS construction,
+     * processing instructions, markup-bearing comments. Pure predicate;
+     * the caller removes. Check order is load-bearing.
+     *
+     * @param currentNode the node to inspect
+     * @param tagName the node's transformCaseFunc'd tag name
+     * @return true if the node must be removed
+     */
+    const _isUnsafeNode = function _isUnsafeNode(currentNode, tagName) {
+      /* Detect mXSS attempts abusing namespace confusion */
+      if (SAFE_FOR_XML && currentNode.hasChildNodes() && !_isNode(currentNode.firstElementChild) && regExpTest(ELEMENT_MARKUP_PROBE, currentNode.textContent) && regExpTest(ELEMENT_MARKUP_PROBE, currentNode.innerHTML)) {
+        return true;
+      }
+      /* Remove rawtext/literal-text elements whose literal serialization
+         re-opens markup on an HTML reparse - shapes (a) and (b) documented at
+         LITERAL_TEXT_ELEMENTS. Both are invisible to rule 1 above (which
+         self-disables once there is an element child, and whose second probe
+         reads the innerHTML an XML/XHTML document serializes escaped), which
+         is why both probes here read textContent instead. Previously only
+         `style`-with-element-child was covered; every element in
+         LITERAL_TEXT_ELEMENTS shares this literal serialization and is
+         equally affected. */
+      if (SAFE_FOR_XML && currentNode.namespaceURI === HTML_NAMESPACE && LITERAL_TEXT_ELEMENTS[tagName] && (_isNode(currentNode.firstElementChild) || typeof currentNode.textContent === 'string' && regExpTest(LITERAL_TEXT_CLOSE[tagName], currentNode.textContent))) {
+        return true;
+      }
+      /* Remove any occurrence of processing instructions */
+      if (currentNode.nodeType === NODE_TYPE.processingInstruction) {
+        return true;
+      }
+      /* Remove any kind of possibly harmful comments */
+      if (SAFE_FOR_XML && currentNode.nodeType === NODE_TYPE.comment && regExpTest(COMMENT_MARKUP_PROBE, currentNode.data)) {
+        return true;
+      }
+      return false;
+    };
+    /**
+     * Evaluate a CUSTOM_ELEMENT_HANDLING check (a RegExp or a predicate
+     * function, per the validation in _parseConfig) against a name.
+     * Additional arguments are forwarded to predicate functions - the
+     * attributeNameCheck predicate receives the tag name as its second
+     * argument. A null/absent check never matches.
+     *
+     * @param check the configured tagNameCheck / attributeNameCheck value
+     * @param name the name to test
+     * @param args extra arguments forwarded to a predicate function
+     * @return true if the check matches the name
+     */
+    const _matchesNameCheck = function _matchesNameCheck(check, name) {
+      if (check instanceof RegExp) {
+        return regExpTest(check, name);
+      }
+      if (check instanceof Function) {
+        for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+          args[_key - 2] = arguments[_key];
+        }
+        return Boolean(check(name, ...args));
+      }
+      return false;
+    };
+    /**
+     * Handle a node whose tag is forbidden or not allowlisted: keep
+     * allowed custom elements (false return exits _sanitizeElements
+     * early - the namespace and fallback-tag removal checks are
+     * intentionally skipped for kept custom elements), else hoist
+     * content per KEEP_CONTENT and remove.
+     *
+     * A kept custom element is the ONLY case in which this function
+     * returns false, so the caller uses that return value to run the
+     * afterSanitizeElements hook on the kept element and keep the
+     * element-hook lifecycle consistent with normal allowlisted
+     * elements (GHSA-c2j3-45gr-mqc4).
+     *
+     * @param currentNode the disallowed node
+     * @param tagName the node's transformCaseFunc'd tag name
+     * @return true if the node was removed, false if kept
+     */
+    const _sanitizeDisallowedNode = function _sanitizeDisallowedNode(currentNode, tagName, root) {
+      /* Check if we have a custom element to handle */
+      if (!FORBID_TAGS[tagName] && _isBasicCustomElement(tagName) && _matchesNameCheck(CUSTOM_ELEMENT_HANDLING.tagNameCheck, tagName)) {
+        return false;
+      }
+      /* Keep content except for bad-listed elements.
+           Use the cached prototype getters exclusively — the previous code
+           had `|| currentNode.parentNode` / `|| currentNode.childNodes`
+           fallbacks, but the cached getters always return the canonical
+           value (or null for a real parent-less node), so the fallback
+           path was dead in safe cases and a clobbering surface in unsafe
+           ones. Falsy cached results stay falsy; the `if (childNodes &&
+           parentNode)` check already gates correctly. */
+      if (KEEP_CONTENT && !FORBID_CONTENTS[tagName]) {
+        const parentNode = getParentNode(currentNode);
+        const childNodes = getChildNodes(currentNode);
+        if (childNodes && parentNode) {
+          const childCount = childNodes.length;
+          /* Hoist by moving each child up one level rather than deep-cloning
+               it. Moving transfers every descendant exactly once, so a chain of
+               nested disallowed elements costs O(n) instead of the O(n^2) that
+               re-cloning the shrinking subtree at each level produced; it also
+               empties the removed original, so `DOMPurify.removed` no longer
+               pins whole subtrees. Moving preserves the in-place guarantee too:
+               an original carrying already-queued resource events (`<img
+               onerror>`, `<video>`/`<audio>` error, lazy/`onload`, …) is
+               relocated and sanitised rather than left detached but still armed.
+                        The sole case that must clone is removing the walk root itself.
+               The result is serialised from the root's subtree, so a restrictive
+               ALLOWED_TAGS that strips the root (`body` on the string path) must
+               leave the content inside it, which only cloning does. In IN_PLACE
+               the root is pre-validated as an allowed tag and so is never removed
+               here, so that path always takes the move branch.
+                        `childNodes` is live; a tail-to-head walk keeps `childNodes[i]`
+               valid whether we move (drops the trailing entry) or clone (leaves
+               the list intact). */
+          for (let i = childCount - 1; i >= 0; --i) {
+            const hoisted = currentNode === root ? cloneNode(childNodes[i], true) : childNodes[i];
+            parentNode.insertBefore(hoisted, getNextSibling(currentNode));
+          }
+        }
+      }
+      _forceRemove(currentNode);
+      return true;
+    };
+    /**
+     * Fork a hook-mutable allowlist off its shared binding the first time a
+     * (possibly lazily-installed) uponSanitize* hook is about to see it, so the
+     * hook cannot widen the per-instance default or the setConfig binding by
+     * reference and leak past the call. Returns the set unchanged once it is
+     * already call-local, so repeated calls across elements are idempotent.
+     *
+     * @param hookList the uponSanitize* hook array for this event
+     * @param set the current ALLOWED_TAGS / ALLOWED_ATTR binding
+     * @param defaultSet the per-instance DEFAULT_ALLOWED_* constant
+     * @param setConfigSet the captured setConfig() binding, or null
+     * @return a call-local clone if a hook is present and set is still shared,
+     *   else set unchanged
+     */
+    const _forkSharedAllowlist = function _forkSharedAllowlist(hookList, set, defaultSet, setConfigSet) {
+      if (hookList.length === 0) {
+        return set;
+      }
+      return set === defaultSet || set === setConfigSet ? clone(set) : set;
+    };
+    /**
+     * Shared guard for a node that a hook has detached from the walk tree,
+     * used after each element-hook site in _sanitizeElements. Detaching is a
+     * long-standing user pattern (issue #469; draw.io-style foreignObject
+     * filtering). Per the cached, unclobberable parentNode getter the node is
+     * genuinely out of the tree, so it can reach neither the serialized
+     * output nor an IN_PLACE live tree; treat it as removed and stop
+     * processing it. Without this guard, the unsafe-node / namespace checks
+     * would call _forceRemove on a parentless node and hit the REPORT-3
+     * fail-closed throw — which exists for nodes DOMPurify wants gone but
+     * *cannot* detach (clobbered / parentless roots), the opposite of a node
+     * that is already safely gone. The walk root is exempt: a detached
+     * IN_PLACE root is legitimate input and must still be fully sanitized,
+     * and a kill-decision on it must keep hitting the REPORT-3 throw.
+     *
+     * Nodes detached by hooks stay the hook's responsibility for placement:
+     * they are not recorded in DOMPurify.removed, so the post-walk IN_PLACE
+     * pass (which iterates DOMPurify.removed) does not reach them. But a
+     * hook-detached subtree can still hold a queued resource-event handler -
+     * e.g. an <img onload> that began loading when the caller built the live
+     * tree - which fires in page scope after sanitize returns even though the
+     * handler never reached the returned tree. That is the audit-5 F1 hazard,
+     * and the documented node.remove() hook pattern walks straight into it.
+     * So on the IN_PLACE path we neutralize the detached subtree inline,
+     * stripping its non-allow-listed attributes before returning, exactly as
+     * the post-walk pass does for _forceRemove'd subtrees.
+     *
+     * @param currentNode the node a hook may have detached
+     * @param root the current walk root
+     * @return true if the node is detached and now handled, false otherwise
+     */
+    const _handleHookDetachedNode = function _handleHookDetachedNode(currentNode, root) {
+      if (currentNode === root || getParentNode(currentNode) !== null) {
+        return false;
+      }
+      if (IN_PLACE) {
+        _neutralizeSubtree(currentNode);
+      }
+      return true;
+    };
     /**
      * _sanitizeElements
      *
@@ -83869,85 +84662,81 @@ module.exports = exports["default"];
      * @param currentNode to check for permission to exist
      * @return true if node was killed, false if left alive
      */
-    const _sanitizeElements = function _sanitizeElements(currentNode) {
-      let content = null;
+    const _sanitizeElements = function _sanitizeElements(currentNode, root) {
       /* Execute a hook if present */
       _executeHooks(hooks.beforeSanitizeElements, currentNode, null);
+      /* A hook may have detached the node - treat it as removed (see
+         _handleHookDetachedNode for the full rationale). */
+      if (_handleHookDetachedNode(currentNode, root)) {
+        return true;
+      }
       /* Check if element is clobbered or can clobber */
       if (_isClobbered(currentNode)) {
         _forceRemove(currentNode);
         return true;
       }
       /* Now let's check the element's type and name */
-      const tagName = transformCaseFunc(currentNode.nodeName);
+      const tagName = transformCaseFunc(_readNodeName(currentNode));
+      /* Close the pre-walk clone-guard's timing gap: an uponSanitizeElement
+         hook may have been installed after that guard sampled the hook arrays
+         (e.g. lazily from beforeSanitizeElements), leaving ALLOWED_TAGS still
+         aliasing a shared binding that a widening hook would mutate by
+         reference. Fork it before exposing it to the hook. */
+      ALLOWED_TAGS = _forkSharedAllowlist(hooks.uponSanitizeElement, ALLOWED_TAGS, DEFAULT_ALLOWED_TAGS, SET_CONFIG_ALLOWED_TAGS);
       /* Execute a hook if present */
       _executeHooks(hooks.uponSanitizeElement, currentNode, {
         tagName,
         allowedTags: ALLOWED_TAGS
       });
-      /* Detect mXSS attempts abusing namespace confusion */
-      if (SAFE_FOR_XML && currentNode.hasChildNodes() && !_isNode(currentNode.firstElementChild) && regExpTest(/<[/\w!]/g, currentNode.innerHTML) && regExpTest(/<[/\w!]/g, currentNode.textContent)) {
-        _forceRemove(currentNode);
+      /* The uponSanitizeElement hook may have detached the node, exactly as
+         above (see _handleHookDetachedNode for the full rationale). */
+      if (_handleHookDetachedNode(currentNode, root)) {
         return true;
       }
-      /* Remove risky CSS construction leading to mXSS */
-      if (SAFE_FOR_XML && currentNode.namespaceURI === HTML_NAMESPACE && tagName === 'style' && _isNode(currentNode.firstElementChild)) {
-        _forceRemove(currentNode);
-        return true;
-      }
-      /* Remove any occurrence of processing instructions */
-      if (currentNode.nodeType === NODE_TYPE.progressingInstruction) {
-        _forceRemove(currentNode);
-        return true;
-      }
-      /* Remove any kind of possibly harmful comments */
-      if (SAFE_FOR_XML && currentNode.nodeType === NODE_TYPE.comment && regExpTest(/<[/\w]/g, currentNode.data)) {
+      /* Remove mXSS vectors, processing instructions and risky comments */
+      if (_isUnsafeNode(currentNode, tagName)) {
         _forceRemove(currentNode);
         return true;
       }
       /* Remove element if anything forbids its presence */
       if (FORBID_TAGS[tagName] || !(EXTRA_ELEMENT_HANDLING.tagCheck instanceof Function && EXTRA_ELEMENT_HANDLING.tagCheck(tagName)) && !ALLOWED_TAGS[tagName]) {
-        /* Check if we have a custom element to handle */
-        if (!FORBID_TAGS[tagName] && _isBasicCustomElement(tagName)) {
-          if (CUSTOM_ELEMENT_HANDLING.tagNameCheck instanceof RegExp && regExpTest(CUSTOM_ELEMENT_HANDLING.tagNameCheck, tagName)) {
-            return false;
-          }
-          if (CUSTOM_ELEMENT_HANDLING.tagNameCheck instanceof Function && CUSTOM_ELEMENT_HANDLING.tagNameCheck(tagName)) {
-            return false;
-          }
+        const removed = _sanitizeDisallowedNode(currentNode, tagName, root);
+        /* A false return means the node is a custom element kept via
+           CUSTOM_ELEMENT_HANDLING - the only keep path through
+           _sanitizeDisallowedNode. Run afterSanitizeElements on it so the
+           element-hook lifecycle matches normal allowlisted elements: a
+           security policy applied in this hook (e.g. stripping an attribute
+           from every surviving element) must not silently skip kept custom
+           elements (GHSA-c2j3-45gr-mqc4). This mirrors the normal-element
+           tail below - the hook runs, then the walker's subsequent
+           _sanitizeAttributes pass sanitizes the element's attributes. The
+           deliberately skipped namespace and fallback-tag removal checks stay
+           skipped; they are removal decisions, not the hook contract. */
+        if (removed === false) {
+          _executeHooks(hooks.afterSanitizeElements, currentNode, null);
         }
-        /* Keep content except for bad-listed elements */
-        if (KEEP_CONTENT && !FORBID_CONTENTS[tagName]) {
-          const parentNode = getParentNode(currentNode) || currentNode.parentNode;
-          const childNodes = getChildNodes(currentNode) || currentNode.childNodes;
-          if (childNodes && parentNode) {
-            const childCount = childNodes.length;
-            for (let i = childCount - 1; i >= 0; --i) {
-              const childClone = cloneNode(childNodes[i], true);
-              parentNode.insertBefore(childClone, getNextSibling(currentNode));
-            }
-          }
-        }
-        _forceRemove(currentNode);
-        return true;
+        return removed;
       }
-      /* Check whether element has a valid namespace */
-      if (currentNode instanceof Element && !_checkValidNamespace(currentNode)) {
+      /* Check whether element has a valid namespace.
+         Realm-safe check (GHSA-hpcv-96wg-7vj8): use the cached Node.prototype
+         nodeType getter rather than `instanceof Element`, which is realm-
+         bound and short-circuits to false for any node minted in a different
+         realm — letting a foreign-realm element with a forbidden namespace
+         slip past the namespace check entirely. */
+      const nt = _readNodeType(currentNode);
+      if (nt === NODE_TYPE.element && !_checkValidNamespace(currentNode)) {
         _forceRemove(currentNode);
         return true;
       }
       /* Make sure that older browsers don't get fallback-tag mXSS */
-      if ((tagName === 'noscript' || tagName === 'noembed' || tagName === 'noframes') && regExpTest(/<\/no(script|embed|frames)/i, currentNode.innerHTML)) {
+      if ((tagName === 'noscript' || tagName === 'noembed' || tagName === 'noframes') && regExpTest(FALLBACK_TAG_CLOSE, currentNode.innerHTML)) {
         _forceRemove(currentNode);
         return true;
       }
       /* Sanitize element content to be template-safe */
       if (SAFE_FOR_TEMPLATES && currentNode.nodeType === NODE_TYPE.text) {
         /* Get the element's text content */
-        content = currentNode.textContent;
-        arrayForEach([MUSTACHE_EXPR$1, ERB_EXPR$1, TMPLIT_EXPR$1], expr => {
-          content = stringReplace(content, expr, ' ');
-        });
+        const content = _stripTemplateExpressions(currentNode.textContent);
         if (currentNode.textContent !== content) {
           arrayPush(DOMPurify.removed, {
             element: currentNode.cloneNode()
@@ -83973,6 +84762,30 @@ module.exports = exports["default"];
       if (FORBID_ATTR[lcName]) {
         return false;
       }
+      /* Reject declarative-partial-updates patch-linkage attributes
+         (https://github.com/WICG/declarative-partial-updates).
+              Empirical note (Chrome 150, verified — see
+         test/declarative-patch-probe-v3.html): expansion is NOT applied after
+         sanitization. For the string path it fires during sanitize()'s own
+         parse, so the walk sees and sanitizes the fully materialized expanded
+         tree — teleports into MathML/SVG integration points included; a
+         weaponized `<template for>`->`<img onerror>` comes back with the handler
+         stripped. For the IN_PLACE path it fires on connection, before the walk.
+         Either way DOMPurify is NOT blind to the patch.
+              This removal is therefore defense-in-depth rather than the sole barrier:
+         it prevents live linkage from surviving into the OUTPUT and re-expanding
+         in the caller's context, and keeps behaviour deterministic if a future
+         engine defers expansion. `for` is legitimate only on <label>/<output>;
+         anywhere else (notably <template for>) it links the element to a patch
+         target and teleports or removes an arbitrary DOM range by id/marker name.
+         `patchsrc` fetches remote markup and is treated as a script-loading
+         mechanism (CSP). Gated on SAFE_FOR_XML so the removal groups with the
+         other structural-threat checks and stays overridable, consistent with
+         the rest of the codebase. PI range markers are already removed by
+         _isUnsafeNode. */
+      if (_isPatchLinkageAttribute(lcName, lcTag)) {
+        return false;
+      }
       /* Make sure attribute cannot clobber */
       if (SANITIZE_DOM && (lcName === 'id' || lcName === 'name') && (value in document || value in formElement)) {
         return false;
@@ -83982,22 +84795,54 @@ module.exports = exports["default"];
           (https://html.spec.whatwg.org/multipage/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes)
           XML-compatible (https://html.spec.whatwg.org/multipage/infrastructure.html#xml-compatible and http://www.w3.org/TR/xml/#d0e804)
           We don't need to check the value; it's always URI safe. */
-      if (ALLOW_DATA_ATTR && !FORBID_ATTR[lcName] && regExpTest(DATA_ATTR$1, lcName)) ; else if (ALLOW_ARIA_ATTR && regExpTest(ARIA_ATTR$1, lcName)) ; else if (!nameIsPermitted || FORBID_ATTR[lcName]) {
-        if (
-        // First condition does a very basic check if a) it's basically a valid custom element tagname AND
-        // b) if the tagName passes whatever the user has configured for CUSTOM_ELEMENT_HANDLING.tagNameCheck
-        // and c) if the attribute name passes whatever the user has configured for CUSTOM_ELEMENT_HANDLING.attributeNameCheck
-        _isBasicCustomElement(lcTag) && (CUSTOM_ELEMENT_HANDLING.tagNameCheck instanceof RegExp && regExpTest(CUSTOM_ELEMENT_HANDLING.tagNameCheck, lcTag) || CUSTOM_ELEMENT_HANDLING.tagNameCheck instanceof Function && CUSTOM_ELEMENT_HANDLING.tagNameCheck(lcTag)) && (CUSTOM_ELEMENT_HANDLING.attributeNameCheck instanceof RegExp && regExpTest(CUSTOM_ELEMENT_HANDLING.attributeNameCheck, lcName) || CUSTOM_ELEMENT_HANDLING.attributeNameCheck instanceof Function && CUSTOM_ELEMENT_HANDLING.attributeNameCheck(lcName, lcTag)) ||
-        // Alternative, second condition checks if it's an `is`-attribute, AND
-        // the value passes whatever the user has configured for CUSTOM_ELEMENT_HANDLING.tagNameCheck
-        lcName === 'is' && CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && (CUSTOM_ELEMENT_HANDLING.tagNameCheck instanceof RegExp && regExpTest(CUSTOM_ELEMENT_HANDLING.tagNameCheck, value) || CUSTOM_ELEMENT_HANDLING.tagNameCheck instanceof Function && CUSTOM_ELEMENT_HANDLING.tagNameCheck(value))) ; else {
-          return false;
-        }
-        /* Check value is safe. First, is attr inert? If so, is safe */
-      } else if (URI_SAFE_ATTRIBUTES[lcName]) ; else if (regExpTest(IS_ALLOWED_URI$1, stringReplace(value, ATTR_WHITESPACE$1, ''))) ; else if ((lcName === 'src' || lcName === 'xlink:href' || lcName === 'href') && lcTag !== 'script' && stringIndexOf(value, 'data:') === 0 && DATA_URI_TAGS[lcTag]) ; else if (ALLOW_UNKNOWN_PROTOCOLS && !regExpTest(IS_SCRIPT_OR_DATA$1, stringReplace(value, ATTR_WHITESPACE$1, ''))) ; else if (value) {
-        return false;
-      } else ;
-      return true;
+      if (ALLOW_DATA_ATTR && regExpTest(DATA_ATTR$1, lcName)) {
+        return true;
+      }
+      /* Allow valid aria-* attributes, the value is always URI safe */
+      if (ALLOW_ARIA_ATTR && regExpTest(ARIA_ATTR$1, lcName)) {
+        return true;
+      }
+      /* A name outside the allowlist is acceptable on custom-element terms
+         only. The value checks below are intentionally skipped in that case:
+         if the user supplied a tagNameCheck we also allow derived custom
+         elements using the same test, and attributes passing the configured
+         attributeNameCheck are allowed as custom elements define these at
+         their own discretion. */
+      if (!nameIsPermitted) {
+        return (
+          // Condition a) covers a basically valid custom element tag name whose
+          // tag passes the configured tagNameCheck and whose attribute name
+          // passes the configured attributeNameCheck ...
+          _isBasicCustomElement(lcTag) && _matchesNameCheck(CUSTOM_ELEMENT_HANDLING.tagNameCheck, lcTag) && _matchesNameCheck(CUSTOM_ELEMENT_HANDLING.attributeNameCheck, lcName, lcTag) ||
+          // Condition b) covers an `is` attribute whose value passes the
+          // configured tagNameCheck while customized built-in elements are
+          // allowed.
+          lcName === 'is' && CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && _matchesNameCheck(CUSTOM_ELEMENT_HANDLING.tagNameCheck, value)
+        );
+      }
+      /* Check value is safe. First, is attr inert? If so, is safe */
+      if (URI_SAFE_ATTRIBUTES[lcName]) {
+        return true;
+      }
+      /* Check no script, data or unknown possibly unsafe URI
+          unless we know URI values are safe for that attribute */
+      if (regExpTest(IS_ALLOWED_URI$1, stringReplace(value, ATTR_WHITESPACE$1, ''))) {
+        return true;
+      }
+      /* Keep image data URIs alive if src/xlink:href is allowed */
+      /* Further prevent gadget XSS for dynamically built script tags */
+      if ((lcName === 'src' || lcName === 'xlink:href' || lcName === 'href') && lcTag !== 'script' && stringIndexOf(value, 'data:') === 0 && DATA_URI_TAGS[lcTag]) {
+        return true;
+      }
+      /* Allow unknown protocols: This provides support for links that
+          are handled by protocol handlers which may be unknown ahead of
+          time, e.g. fb:, spotify: */
+      if (ALLOW_UNKNOWN_PROTOCOLS && !regExpTest(IS_SCRIPT_OR_DATA$1, stringReplace(value, ATTR_WHITESPACE$1, ''))) {
+        return true;
+      }
+      /* Only an empty (binary) value remains safe at this point;
+         anything else is presumed unsafe, do not add it back */
+      return !value;
     };
     /* Names the HTML spec reserves from valid-custom-element-name; these must
      * never be treated as basic custom elements even when a permissive
@@ -84013,6 +84858,63 @@ module.exports = exports["default"];
      */
     const _isBasicCustomElement = function _isBasicCustomElement(tagName) {
       return !RESERVED_CUSTOM_ELEMENT_NAMES[stringToLowerCase(tagName)] && regExpTest(CUSTOM_ELEMENT$1, tagName);
+    };
+    /**
+     * Wrap an attribute value in the matching Trusted Types object when
+     * the active policy requires it. Namespaced attributes pass through
+     * unchanged (no TT support yet, see
+     * https://bugs.chromium.org/p/chromium/issues/detail?id=1305293).
+     *
+     * @param lcTag lowercase tag name of the containing element
+     * @param lcName lowercase attribute name
+     * @param namespaceURI the attribute's namespace, if any
+     * @param value the attribute value to wrap
+     * @return the value, wrapped when Trusted Types demand it
+     */
+    const _applyTrustedTypesToAttribute = function _applyTrustedTypesToAttribute(lcTag, lcName, namespaceURI, value) {
+      if (trustedTypesPolicy && typeof trustedTypes === 'object' && typeof trustedTypes.getAttributeType === 'function' && !namespaceURI) {
+        switch (trustedTypes.getAttributeType(lcTag, lcName)) {
+          case 'TrustedHTML':
+            {
+              return _createTrustedHTML(value);
+            }
+          case 'TrustedScriptURL':
+            {
+              return _createTrustedScriptURL(value);
+            }
+        }
+      }
+      return value;
+    };
+    /**
+     * Write a modified attribute value back onto the element. On
+     * success, re-probe for clobbering introduced by the new value and
+     * remove the element when found; otherwise pop the removal entry
+     * recorded by the earlier _removeAttribute (long-standing pairing
+     * with the SANITIZE_NAMED_PROPS path - do not "fix" casually). On
+     * failure, remove the attribute instead.
+     *
+     * @param currentNode the element carrying the attribute
+     * @param name the attribute name as present on the element
+     * @param namespaceURI the attribute's namespace, if any
+     * @param value the new attribute value
+     */
+    const _setAttributeValue = function _setAttributeValue(currentNode, name, namespaceURI, value) {
+      try {
+        if (namespaceURI) {
+          currentNode.setAttributeNS(namespaceURI, name, value);
+        } else {
+          /* Fallback to setAttribute() for browser-unrecognized namespaces e.g. "x-schema". */
+          currentNode.setAttribute(name, value);
+        }
+        if (_isClobbered(currentNode)) {
+          _forceRemove(currentNode);
+        } else {
+          arrayPop(DOMPurify.removed);
+        }
+      } catch (_) {
+        _removeAttribute(name, currentNode);
+      }
     };
     /**
      * _sanitizeAttributes
@@ -84032,6 +84934,9 @@ module.exports = exports["default"];
       if (!attributes || _isClobbered(currentNode)) {
         return;
       }
+      /* Same lazy-install guard as uponSanitizeElement (see there): fork the
+         attribute allowlist off its shared binding before a hook can see it. */
+      ALLOWED_ATTR = _forkSharedAllowlist(hooks.uponSanitizeAttribute, ALLOWED_ATTR, DEFAULT_ALLOWED_ATTR, SET_CONFIG_ALLOWED_ATTR);
       const hookEvent = {
         attrName: '',
         attrValue: '',
@@ -84040,6 +84945,7 @@ module.exports = exports["default"];
         forceKeepAttr: undefined
       };
       let l = attributes.length;
+      const lcTag = transformCaseFunc(currentNode.nodeName);
       /* Go backwards over all attributes; safely remove bad ones */
       while (l--) {
         const attr = attributes[l];
@@ -84061,7 +84967,7 @@ module.exports = exports["default"];
          */
         if (SANITIZE_NAMED_PROPS && (lcName === 'id' || lcName === 'name') && stringIndexOf(value, SANITIZE_NAMED_PROPS_PREFIX) !== 0) {
           // Remove the attribute with this value
-          _removeAttribute(name, currentNode);
+          _removeAttribute(name, currentNode, attr);
           // Prefix the value and later re-create the attribute with the sanitized value
           value = SANITIZE_NAMED_PROPS_PREFIX + value;
         }
@@ -84069,74 +84975,42 @@ module.exports = exports["default"];
         // itself the clobbering protection, and re-applying it is incorrect.
         /* Work around a security issue with comments inside attributes */
         if (SAFE_FOR_XML && regExpTest(/((--!?|])>)|<\/(style|script|title|xmp|textarea|noscript|iframe|noembed|noframes)/i, value)) {
-          _removeAttribute(name, currentNode);
+          _removeAttribute(name, currentNode, attr);
           continue;
         }
         /* Make sure we cannot easily use animated hrefs, even if animations are allowed */
         if (lcName === 'attributename' && stringMatch(value, 'href')) {
-          _removeAttribute(name, currentNode);
+          _removeAttribute(name, currentNode, attr);
           continue;
         }
-        /* Did the hooks approve of the attribute? */
+        /* Did the hooks force-keep the attribute? */
         if (hookEvent.forceKeepAttr) {
           continue;
         }
         /* Did the hooks approve of the attribute? */
         if (!hookEvent.keepAttr) {
-          _removeAttribute(name, currentNode);
+          _removeAttribute(name, currentNode, attr);
           continue;
         }
         /* Work around a security issue in jQuery 3.0 */
-        if (!ALLOW_SELF_CLOSE_IN_ATTR && regExpTest(/\/>/i, value)) {
-          _removeAttribute(name, currentNode);
+        if (!ALLOW_SELF_CLOSE_IN_ATTR && regExpTest(SELF_CLOSING_TAG, value)) {
+          _removeAttribute(name, currentNode, attr);
           continue;
         }
         /* Sanitize attribute content to be template-safe */
         if (SAFE_FOR_TEMPLATES) {
-          arrayForEach([MUSTACHE_EXPR$1, ERB_EXPR$1, TMPLIT_EXPR$1], expr => {
-            value = stringReplace(value, expr, ' ');
-          });
+          value = _stripTemplateExpressions(value);
         }
         /* Is `value` valid for this attribute? */
-        const lcTag = transformCaseFunc(currentNode.nodeName);
         if (!_isValidAttribute(lcTag, lcName, value)) {
-          _removeAttribute(name, currentNode);
+          _removeAttribute(name, currentNode, attr);
           continue;
         }
         /* Handle attributes that require Trusted Types */
-        if (trustedTypesPolicy && typeof trustedTypes === 'object' && typeof trustedTypes.getAttributeType === 'function') {
-          if (namespaceURI) ; else {
-            switch (trustedTypes.getAttributeType(lcTag, lcName)) {
-              case 'TrustedHTML':
-                {
-                  value = trustedTypesPolicy.createHTML(value);
-                  break;
-                }
-              case 'TrustedScriptURL':
-                {
-                  value = trustedTypesPolicy.createScriptURL(value);
-                  break;
-                }
-            }
-          }
-        }
+        value = _applyTrustedTypesToAttribute(lcTag, lcName, namespaceURI, value);
         /* Handle invalid data-* attribute set by try-catching it */
         if (value !== initValue) {
-          try {
-            if (namespaceURI) {
-              currentNode.setAttributeNS(namespaceURI, name, value);
-            } else {
-              /* Fallback to setAttribute() for browser-unrecognized namespaces e.g. "x-schema". */
-              currentNode.setAttribute(name, value);
-            }
-            if (_isClobbered(currentNode)) {
-              _forceRemove(currentNode);
-            } else {
-              arrayPop(DOMPurify.removed);
-            }
-          } catch (_) {
-            _removeAttribute(name, currentNode);
-          }
+          _setAttributeValue(currentNode, name, namespaceURI, value);
         }
       }
       /* Execute a hook if present */
@@ -84156,12 +85030,32 @@ module.exports = exports["default"];
         /* Execute a hook if present */
         _executeHooks(hooks.uponSanitizeShadowNode, shadowNode, null);
         /* Sanitize tags and elements */
-        _sanitizeElements(shadowNode);
+        _sanitizeElements(shadowNode, fragment);
         /* Check attributes next */
         _sanitizeAttributes(shadowNode);
-        /* Deep shadow DOM detected */
-        if (shadowNode.content instanceof DocumentFragment) {
+        /* Deep shadow DOM detected.
+           Realm-safe check (GHSA-hpcv-96wg-7vj8): use nodeType against the
+           DOCUMENT_FRAGMENT_NODE constant rather than instanceof, so we
+           recurse into <template>.content from foreign realms too. */
+        if (_isDocumentFragment(shadowNode.content)) {
           _sanitizeShadowDOM2(shadowNode.content);
+        }
+        /* An element iterated here may itself host an attached
+           shadow root. The default NodeIterator does not enter shadow
+           trees, so a shadow root nested inside template.content was
+           previously reached by no walk at all (the pre-pass at
+           _sanitizeAttachedShadowRoots descends via childNodes, which
+           doesn't enter template.content; the template-content recursion
+           above iterates the content but never inspected shadowRoot).
+           Walk it explicitly. The nodeType guard avoids reading
+           shadowRoot off text / comment / CDATA / PI nodes that the
+           iterator also surfaces. */
+        if (_readNodeType(shadowNode) === NODE_TYPE.element) {
+          const innerSr = getShadowRoot(shadowNode);
+          if (_isDocumentFragment(innerSr)) {
+            _sanitizeAttachedShadowRoots(innerSr);
+            _sanitizeShadowDOM2(innerSr);
+          }
         }
       }
       /* Execute a hook if present */
@@ -84186,28 +85080,83 @@ module.exports = exports["default"];
      *
      * @param root the subtree root to walk for attached shadow roots
      */
-    const _sanitizeAttachedShadowRoots2 = function _sanitizeAttachedShadowRoots(root) {
-      if (root.nodeType === NODE_TYPE.element && root.shadowRoot instanceof DocumentFragment) {
-        const sr = root.shadowRoot;
-        // Recurse first so that nested shadow roots are reached even if
-        // _sanitizeShadowDOM removes hosts at this level.
-        _sanitizeAttachedShadowRoots2(sr);
-        _sanitizeShadowDOM2(sr);
-      }
-      // Snapshot children before recursing. Sanitization of one subtree
-      // (e.g. via an uponSanitizeShadowNode hook) may detach siblings,
-      // and naive nextSibling traversal would silently skip the rest of
-      // the list once a node is detached.
-      const childNodes = root.childNodes;
-      if (!childNodes) {
-        return;
-      }
-      const snapshot = [];
-      arrayForEach(childNodes, child => {
-        arrayPush(snapshot, child);
-      });
-      for (const child of snapshot) {
-        _sanitizeAttachedShadowRoots2(child);
+    const _sanitizeAttachedShadowRoots = function _sanitizeAttachedShadowRoots(root) {
+      /* Iterative (explicit stack) rather than per-child recursion. DOM APIs
+         impose no depth cap, so an attacker-shaped tree (JSON/CRDT/editor data
+         built straight into the DOM — the IN_PLACE surface) deeper than the JS
+         call-stack budget would otherwise overflow native recursion here and
+         throw at the IN_PLACE entry pre-pass, before a single node is
+         sanitized, leaving the caller's live tree untouched (fail-open). See
+         campaign-3 F4. A heap stack keeps depth off the call stack.
+              Each work item is either a node to descend into, or a deferred
+         `_sanitizeShadowDOM` for an already-walked shadow root. The deferred
+         form preserves the original post-order discipline: a shadow root's
+         nested shadow roots are discovered before the outer shadow is
+         sanitized (which may remove hosts). Pushes are in reverse of the
+         desired processing order (LIFO): template content, then children, then
+         the shadow-sanitize, then the shadow walk — so the order matches the
+         previous recursion exactly. */
+      const stack = [{
+        node: root,
+        shadow: null
+      }];
+      while (stack.length > 0) {
+        const item = stack.pop();
+        /* Deferred shadow-DOM sanitisation: runs after its subtree was walked. */
+        if (item.shadow) {
+          _sanitizeShadowDOM2(item.shadow);
+          continue;
+        }
+        const node = item.node;
+        const nodeType = _readNodeType(node);
+        const isElement = nodeType === NODE_TYPE.element;
+        /* (pushed last → processed first) Children, snapshotted in reverse so
+           the first child is processed first. Snapshotting matters because a
+           hook may detach siblings mid-walk. */
+        const childNodes = getChildNodes(node);
+        if (childNodes) {
+          for (let i = childNodes.length - 1; i >= 0; --i) {
+            stack.push({
+              node: childNodes[i],
+              shadow: null
+            });
+          }
+        }
+        /* (pushed before children → processed after them, matching the old
+           "template content last" order) When the node is a <template>,
+           descend into its content. */
+        if (isElement) {
+          const rootName = getNodeName ? getNodeName(node) : null;
+          if (typeof rootName === 'string' && transformCaseFunc(rootName) === 'template') {
+            const content = node.content;
+            if (_isDocumentFragment(content)) {
+              stack.push({
+                node: content,
+                shadow: null
+              });
+            }
+          }
+        }
+        /* Shadow root (processed first): walk its subtree, then sanitise it.
+           Realm-safe check (GHSA-hpcv-96wg-7vj8): nodeType-based detection
+           rather than `instanceof DocumentFragment`, which is realm-bound and
+           silently skipped foreign-realm shadow roots (e.g.
+           iframe.contentDocument attachShadow). */
+        if (isElement) {
+          const sr = getShadowRoot(node);
+          if (_isDocumentFragment(sr)) {
+            /* Push the deferred sanitise first so it pops after the shadow
+               walk we push next, i.e. nested shadow roots are discovered
+               before this one is sanitised. */
+            stack.push({
+              node: null,
+              shadow: sr
+            }, {
+              node: sr,
+              shadow: null
+            });
+          }
+        }
       }
     };
     // eslint-disable-next-line complexity
@@ -84236,27 +85185,89 @@ module.exports = exports["default"];
         return dirty;
       }
       /* Assign config vars */
-      if (!SET_CONFIG) {
+      if (SET_CONFIG) {
+        /* Persistent setConfig() path: _parseConfig is skipped, so the sets are
+         * not re-derived per call. Restore them from the pristine bindings
+         * captured at setConfig() time so a previous call's hook clone (mutated
+         * below) does not carry over. */
+        ALLOWED_TAGS = SET_CONFIG_ALLOWED_TAGS;
+        ALLOWED_ATTR = SET_CONFIG_ALLOWED_ATTR;
+      } else {
         _parseConfig(cfg);
+      }
+      /* Clone the hook-mutable allowlists before the walk whenever an
+       * uponSanitize* hook is registered. The hook event exposes ALLOWED_TAGS
+       * and ALLOWED_ATTR by reference (as allowedTags / allowedAttributes), so
+       * a hook that widens them would otherwise mutate the shared set
+       * permanently: across later calls and across every element. Cloning per
+       * walk keeps documented in-call widening working while scoping it to the
+       * call. A single guard for both config paths - the per-call path rebinds
+       * the sets in _parseConfig each call, the persistent path restores them
+       * from the captured bindings just above - so the two cannot diverge. */
+      if (hooks.uponSanitizeElement.length > 0 || hooks.uponSanitizeAttribute.length > 0) {
+        ALLOWED_TAGS = clone(ALLOWED_TAGS);
+      }
+      if (hooks.uponSanitizeAttribute.length > 0) {
+        ALLOWED_ATTR = clone(ALLOWED_ATTR);
       }
       /* Clean up removed elements */
       DOMPurify.removed = [];
-      /* Check if dirty is correctly typed for IN_PLACE */
-      if (typeof dirty === 'string') {
-        IN_PLACE = false;
-      }
-      if (IN_PLACE) {
-        /* Do some early pre-sanitization to avoid unsafe root nodes */
-        const nn = dirty.nodeName;
+      /* Resolve IN_PLACE for this call without mutating persistent config.
+         Writing the IN_PLACE closure variable here leaks under setConfig(),
+         where _parseConfig is skipped on later calls: a single string call would
+         disable in-place mode for every subsequent node call, returning a
+         sanitized copy while leaving the caller's node — which in-place callers
+         keep using and whose return value they ignore — unsanitized. REPORT-2. */
+      const inPlace = IN_PLACE && typeof dirty !== 'string' && _isNode(dirty);
+      if (inPlace) {
+        /* Declarative-partial-updates / streaming pre-pass: sever every patch
+           linkage across the live tree BEFORE the walk, so no patch can fire
+           mid-walk and inject into an already-processed region. Runs first, so
+           it also covers the forbidden/clobbered roots that throw below. */
+        _neutralizePatchLinkage(dirty);
+        /* Do some early pre-sanitization to avoid unsafe root nodes.
+           Read nodeName through the cached prototype getter — a clobbering
+           child named "nodeName" on the form root would otherwise shadow
+           the property and let this check skip the root-allowlist
+           validation entirely. */
+        const nn = _readNodeName(dirty);
         if (typeof nn === 'string') {
           const tagName = transformCaseFunc(nn);
           if (!ALLOWED_TAGS[tagName] || FORBID_TAGS[tagName]) {
+            /* Fail closed on a live root: neutralize handlers/children before
+               throwing, exactly as the mid-walk abort path does. */
+            _neutralizeRoot(dirty);
             throw typeErrorCreate('root node is forbidden and cannot be sanitized in-place');
           }
         }
+        /* Pre-flight the root through _isClobbered. The iterator-driven
+           removal path can not detach a parent-less root: _forceRemove
+           falls through to Element.prototype.remove(), which per spec
+           is a no-op on a node with no parent. A clobbered root would
+           then survive the main loop with its attributes uninspected,
+           because _sanitizeAttributes early-returns on _isClobbered. The
+           result would be an attacker-controlled form, complete with any
+           event-handler attributes the caller passed in, handed back to
+           the application unsanitized. Refuse to sanitize such a root
+           the same way we refuse a forbidden tag. GHSA-r47g-fvhr-h676. */
+        if (_isClobbered(dirty)) {
+          /* Fail closed on a live clobbered root before throwing.
+             _neutralizeRoot's reads are clobber-safe (cached getters); the
+             form's non-clobbered descendants, e.g. an armed <img>, are scrubbed. */
+          _neutralizeRoot(dirty);
+          throw typeErrorCreate('root node is clobbered and cannot be sanitized in-place');
+        }
         /* Sanitize attached shadow roots before the main iterator runs.
-           The iterator does not descend into shadow trees. */
-        _sanitizeAttachedShadowRoots2(dirty);
+           The iterator does not descend into shadow trees. Same fail-closed
+           barrier as the main walk (campaign-3 F2): a custom-element reaction
+           inside a shadow root could abort this pre-pass before the walk runs,
+           which would otherwise leave the entire live tree unsanitized. */
+        try {
+          _sanitizeAttachedShadowRoots(dirty);
+        } catch (error) {
+          _neutralizeRoot(dirty);
+          throw error;
+        }
       } else if (_isNode(dirty)) {
         /* If dirty is a DOM element, append to an empty document to avoid
            elements being stripped by the parser */
@@ -84273,14 +85284,16 @@ module.exports = exports["default"];
         }
         /* Clonable shadow roots are deep-cloned by importNode(); sanitize
            them before the main iterator runs, since the iterator does not
-           descend into shadow trees. */
-        _sanitizeAttachedShadowRoots2(importedNode);
+           descend into shadow trees. The walk routes every read through a
+           cached prototype getter so clobbering descendants on a form root
+           cannot hide a shadow host from this pass. */
+        _sanitizeAttachedShadowRoots(importedNode);
       } else {
         /* Exit directly if we have nothing to do */
         if (!RETURN_DOM && !SAFE_FOR_TEMPLATES && !WHOLE_DOCUMENT &&
         // eslint-disable-next-line unicorn/prefer-includes
         dirty.indexOf('<') === -1) {
-          return trustedTypesPolicy && RETURN_TRUSTED_TYPE ? trustedTypesPolicy.createHTML(dirty) : dirty;
+          return trustedTypesPolicy && RETURN_TRUSTED_TYPE ? _createTrustedHTML(dirty) : dirty;
         }
         /* Initialize the document to work on */
         body = _initDocument(dirty);
@@ -84294,29 +85307,71 @@ module.exports = exports["default"];
         _forceRemove(body.firstChild);
       }
       /* Get node iterator */
-      const nodeIterator = _createNodeIterator(IN_PLACE ? dirty : body);
-      /* Now start iterating over the created document */
-      while (currentNode = nodeIterator.nextNode()) {
-        /* Sanitize tags and elements */
-        _sanitizeElements(currentNode);
-        /* Check attributes next */
-        _sanitizeAttributes(currentNode);
-        /* Shadow DOM detected, sanitize it */
-        if (currentNode.content instanceof DocumentFragment) {
-          _sanitizeShadowDOM2(currentNode.content);
+      const walkRoot = inPlace ? dirty : body;
+      /* Now start iterating over the created document.
+         The walk runs inside an exception barrier (campaign-3 F2): a re-entrant
+         engine/custom-element mutation can detach a node mid-walk so
+         `_forceRemove`'s parentless guard throws, aborting the loop. Without the
+         barrier the caller's in-place tree would be left half-sanitized with the
+         unvisited tail still armed. _createNodeIterator itself is inside the
+         barrier too: constructing the iterator dereferences the root's document,
+         and any failure there (e.g. an exotic/clobbered root) must still fail
+         closed rather than skip the neutralize. On any throw we fail closed -
+         strip the in-place root bare - then rethrow so the existing throw
+         contract is preserved. (String/DOM-copy paths never return the partial
+         body, so the propagating throw is already fail-closed there.) */
+      try {
+        const nodeIterator = _createNodeIterator(walkRoot);
+        while (currentNode = nodeIterator.nextNode()) {
+          /* Sanitize tags and elements */
+          _sanitizeElements(currentNode, walkRoot);
+          /* Check attributes next */
+          _sanitizeAttributes(currentNode);
+          /* Shadow DOM detected, sanitize it.
+             Realm-safe check (GHSA-hpcv-96wg-7vj8): nodeType-based detection
+             instead of instanceof, so foreign-realm <template>.content is
+             walked correctly. */
+          if (_isDocumentFragment(currentNode.content)) {
+            _sanitizeShadowDOM2(currentNode.content);
+          }
         }
+      } catch (error) {
+        if (inPlace) {
+          _neutralizeRoot(dirty);
+          /* Nodes _forceRemove'd earlier in the aborted walk are already
+             detached from the root, so _neutralizeRoot's subtree pass does not
+             reach them. Defuse them too, mirroring the success-path loop below. */
+          arrayForEach(DOMPurify.removed, entry => {
+            if (entry.element) {
+              _neutralizeSubtree(entry.element);
+            }
+          });
+        }
+        throw error;
       }
       /* If we sanitized `dirty` in-place, return it. */
-      if (IN_PLACE) {
+      if (inPlace) {
+        /* Fail-closed completion of the audit-5 F1 fix: every node removed from
+           the caller's live tree is detached but may still hold a queued
+           resource-event handler that fires in page scope after we return. The
+           move-hoist covers only disallowed-tag KEEP_CONTENT removals; strip the
+           non-allow-listed attributes off every other removed subtree (clobber,
+           mXSS, namespace, comments, KEEP_CONTENT:false, …) so those handlers are
+           cancelled before any event can fire. Runs synchronously, pre-return. */
+        arrayForEach(DOMPurify.removed, entry => {
+          if (entry.element) {
+            _neutralizeSubtree(entry.element);
+          }
+        });
         if (SAFE_FOR_TEMPLATES) {
-          _scrubTemplateExpressions(dirty);
+          _scrubTemplateExpressions2(dirty);
         }
         return dirty;
       }
       /* Return sanitized string or DOM */
       if (RETURN_DOM) {
         if (SAFE_FOR_TEMPLATES) {
-          _scrubTemplateExpressions(body);
+          _scrubTemplateExpressions2(body);
         }
         if (RETURN_DOM_FRAGMENT) {
           returnNode = createDocumentFragment.call(body.ownerDocument);
@@ -84346,20 +85401,28 @@ module.exports = exports["default"];
       }
       /* Sanitize final string template-safe */
       if (SAFE_FOR_TEMPLATES) {
-        arrayForEach([MUSTACHE_EXPR$1, ERB_EXPR$1, TMPLIT_EXPR$1], expr => {
-          serializedHTML = stringReplace(serializedHTML, expr, ' ');
-        });
+        serializedHTML = _stripTemplateExpressions(serializedHTML);
       }
-      return trustedTypesPolicy && RETURN_TRUSTED_TYPE ? trustedTypesPolicy.createHTML(serializedHTML) : serializedHTML;
+      return trustedTypesPolicy && RETURN_TRUSTED_TYPE ? _createTrustedHTML(serializedHTML) : serializedHTML;
     };
     DOMPurify.setConfig = function () {
       let cfg = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
       _parseConfig(cfg);
       SET_CONFIG = true;
+      SET_CONFIG_ALLOWED_TAGS = ALLOWED_TAGS;
+      SET_CONFIG_ALLOWED_ATTR = ALLOWED_ATTR;
     };
     DOMPurify.clearConfig = function () {
       CONFIG = null;
       SET_CONFIG = false;
+      SET_CONFIG_ALLOWED_TAGS = null;
+      SET_CONFIG_ALLOWED_ATTR = null;
+      // Drop any caller-supplied Trusted Types policy so it cannot poison later
+      // `RETURN_TRUSTED_TYPE` output. The internal default policy (cached, and
+      // never recreated — Trusted Types throws on duplicate names) is restored by
+      // the next `_parseConfig`. See GHSA-vxr8-fq34-vvx9.
+      trustedTypesPolicy = defaultTrustedTypesPolicy;
+      emptyHTML = '';
     };
     DOMPurify.isValidAttribute = function (tag, attr, value) {
       /* Initialize shared config vars if necessary. */
@@ -84374,9 +85437,19 @@ module.exports = exports["default"];
       if (typeof hookFunction !== 'function') {
         return;
       }
+      /* Reject unknown entry points. Without this, a non-hook key (e.g.
+       * '__proto__') indexes off the prototype chain rather than a real
+       * hook array, and arrayPush then writes to Object.prototype. Guard
+       * with an own-property check against the known hook names. */
+      if (!objectHasOwnProperty(hooks, entryPoint)) {
+        return;
+      }
       arrayPush(hooks[entryPoint], hookFunction);
     };
     DOMPurify.removeHook = function (entryPoint, hookFunction) {
+      if (!objectHasOwnProperty(hooks, entryPoint)) {
+        return undefined;
+      }
       if (hookFunction !== undefined) {
         const index = arrayLastIndexOf(hooks[entryPoint], hookFunction);
         return index === -1 ? undefined : arraySplice(hooks[entryPoint], index, 1)[0];
@@ -84384,6 +85457,9 @@ module.exports = exports["default"];
       return arrayPop(hooks[entryPoint]);
     };
     DOMPurify.removeHooks = function (entryPoint) {
+      if (!objectHasOwnProperty(hooks, entryPoint)) {
+        return;
+      }
       hooks[entryPoint] = [];
     };
     DOMPurify.removeAllHooks = function () {
@@ -92019,6 +93095,30 @@ module.exports = Array.isArray || function (arr) {
 })();
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js"), __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/jszip/dist/jszip.min.js":
+/*!**********************************************!*\
+  !*** ./node_modules/jszip/dist/jszip.min.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(Buffer, setImmediate, global, process) {var require;var require;/*!
+
+JSZip v3.10.1 - A JavaScript class for generating and reading zip files
+<http://stuartk.com/jszip>
+
+(c) 2009-2016 Stuart Knightley <stuart [at] stuartk.com>
+Dual licenced under the MIT license or GPLv3. See https://raw.github.com/Stuk/jszip/main/LICENSE.markdown.
+
+JSZip uses the library pako released under the MIT license :
+https://github.com/nodeca/pako/blob/main/LICENSE
+*/
+
+!function(e){if(true)module.exports=e();else {}}(function(){return function s(a,o,h){function u(r,e){if(!o[r]){if(!a[r]){var t="function"==typeof require&&require;if(!e&&t)return require(r,!0);if(l)return l(r,!0);var n=new Error("Cannot find module '"+r+"'");throw n.code="MODULE_NOT_FOUND",n}var i=o[r]={exports:{}};a[r][0].call(i.exports,function(e){var t=a[r][1][e];return u(t||e)},i,i.exports,s,a,o,h)}return o[r].exports}for(var l="function"==typeof require&&require,e=0;e<h.length;e++)u(h[e]);return u}({1:[function(e,t,r){"use strict";var d=e("./utils"),c=e("./support"),p="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";r.encode=function(e){for(var t,r,n,i,s,a,o,h=[],u=0,l=e.length,f=l,c="string"!==d.getTypeOf(e);u<e.length;)f=l-u,n=c?(t=e[u++],r=u<l?e[u++]:0,u<l?e[u++]:0):(t=e.charCodeAt(u++),r=u<l?e.charCodeAt(u++):0,u<l?e.charCodeAt(u++):0),i=t>>2,s=(3&t)<<4|r>>4,a=1<f?(15&r)<<2|n>>6:64,o=2<f?63&n:64,h.push(p.charAt(i)+p.charAt(s)+p.charAt(a)+p.charAt(o));return h.join("")},r.decode=function(e){var t,r,n,i,s,a,o=0,h=0,u="data:";if(e.substr(0,u.length)===u)throw new Error("Invalid base64 input, it looks like a data url.");var l,f=3*(e=e.replace(/[^A-Za-z0-9+/=]/g,"")).length/4;if(e.charAt(e.length-1)===p.charAt(64)&&f--,e.charAt(e.length-2)===p.charAt(64)&&f--,f%1!=0)throw new Error("Invalid base64 input, bad content length.");for(l=c.uint8array?new Uint8Array(0|f):new Array(0|f);o<e.length;)t=p.indexOf(e.charAt(o++))<<2|(i=p.indexOf(e.charAt(o++)))>>4,r=(15&i)<<4|(s=p.indexOf(e.charAt(o++)))>>2,n=(3&s)<<6|(a=p.indexOf(e.charAt(o++))),l[h++]=t,64!==s&&(l[h++]=r),64!==a&&(l[h++]=n);return l}},{"./support":30,"./utils":32}],2:[function(e,t,r){"use strict";var n=e("./external"),i=e("./stream/DataWorker"),s=e("./stream/Crc32Probe"),a=e("./stream/DataLengthProbe");function o(e,t,r,n,i){this.compressedSize=e,this.uncompressedSize=t,this.crc32=r,this.compression=n,this.compressedContent=i}o.prototype={getContentWorker:function(){var e=new i(n.Promise.resolve(this.compressedContent)).pipe(this.compression.uncompressWorker()).pipe(new a("data_length")),t=this;return e.on("end",function(){if(this.streamInfo.data_length!==t.uncompressedSize)throw new Error("Bug : uncompressed data size mismatch")}),e},getCompressedWorker:function(){return new i(n.Promise.resolve(this.compressedContent)).withStreamInfo("compressedSize",this.compressedSize).withStreamInfo("uncompressedSize",this.uncompressedSize).withStreamInfo("crc32",this.crc32).withStreamInfo("compression",this.compression)}},o.createWorkerFrom=function(e,t,r){return e.pipe(new s).pipe(new a("uncompressedSize")).pipe(t.compressWorker(r)).pipe(new a("compressedSize")).withStreamInfo("compression",t)},t.exports=o},{"./external":6,"./stream/Crc32Probe":25,"./stream/DataLengthProbe":26,"./stream/DataWorker":27}],3:[function(e,t,r){"use strict";var n=e("./stream/GenericWorker");r.STORE={magic:"\0\0",compressWorker:function(){return new n("STORE compression")},uncompressWorker:function(){return new n("STORE decompression")}},r.DEFLATE=e("./flate")},{"./flate":7,"./stream/GenericWorker":28}],4:[function(e,t,r){"use strict";var n=e("./utils");var o=function(){for(var e,t=[],r=0;r<256;r++){e=r;for(var n=0;n<8;n++)e=1&e?3988292384^e>>>1:e>>>1;t[r]=e}return t}();t.exports=function(e,t){return void 0!==e&&e.length?"string"!==n.getTypeOf(e)?function(e,t,r,n){var i=o,s=n+r;e^=-1;for(var a=n;a<s;a++)e=e>>>8^i[255&(e^t[a])];return-1^e}(0|t,e,e.length,0):function(e,t,r,n){var i=o,s=n+r;e^=-1;for(var a=n;a<s;a++)e=e>>>8^i[255&(e^t.charCodeAt(a))];return-1^e}(0|t,e,e.length,0):0}},{"./utils":32}],5:[function(e,t,r){"use strict";r.base64=!1,r.binary=!1,r.dir=!1,r.createFolders=!0,r.date=null,r.compression=null,r.compressionOptions=null,r.comment=null,r.unixPermissions=null,r.dosPermissions=null},{}],6:[function(e,t,r){"use strict";var n=null;n="undefined"!=typeof Promise?Promise:e("lie"),t.exports={Promise:n}},{lie:37}],7:[function(e,t,r){"use strict";var n="undefined"!=typeof Uint8Array&&"undefined"!=typeof Uint16Array&&"undefined"!=typeof Uint32Array,i=e("pako"),s=e("./utils"),a=e("./stream/GenericWorker"),o=n?"uint8array":"array";function h(e,t){a.call(this,"FlateWorker/"+e),this._pako=null,this._pakoAction=e,this._pakoOptions=t,this.meta={}}r.magic="\b\0",s.inherits(h,a),h.prototype.processChunk=function(e){this.meta=e.meta,null===this._pako&&this._createPako(),this._pako.push(s.transformTo(o,e.data),!1)},h.prototype.flush=function(){a.prototype.flush.call(this),null===this._pako&&this._createPako(),this._pako.push([],!0)},h.prototype.cleanUp=function(){a.prototype.cleanUp.call(this),this._pako=null},h.prototype._createPako=function(){this._pako=new i[this._pakoAction]({raw:!0,level:this._pakoOptions.level||-1});var t=this;this._pako.onData=function(e){t.push({data:e,meta:t.meta})}},r.compressWorker=function(e){return new h("Deflate",e)},r.uncompressWorker=function(){return new h("Inflate",{})}},{"./stream/GenericWorker":28,"./utils":32,pako:38}],8:[function(e,t,r){"use strict";function A(e,t){var r,n="";for(r=0;r<t;r++)n+=String.fromCharCode(255&e),e>>>=8;return n}function n(e,t,r,n,i,s){var a,o,h=e.file,u=e.compression,l=s!==O.utf8encode,f=I.transformTo("string",s(h.name)),c=I.transformTo("string",O.utf8encode(h.name)),d=h.comment,p=I.transformTo("string",s(d)),m=I.transformTo("string",O.utf8encode(d)),_=c.length!==h.name.length,g=m.length!==d.length,b="",v="",y="",w=h.dir,k=h.date,x={crc32:0,compressedSize:0,uncompressedSize:0};t&&!r||(x.crc32=e.crc32,x.compressedSize=e.compressedSize,x.uncompressedSize=e.uncompressedSize);var S=0;t&&(S|=8),l||!_&&!g||(S|=2048);var z=0,C=0;w&&(z|=16),"UNIX"===i?(C=798,z|=function(e,t){var r=e;return e||(r=t?16893:33204),(65535&r)<<16}(h.unixPermissions,w)):(C=20,z|=function(e){return 63&(e||0)}(h.dosPermissions)),a=k.getUTCHours(),a<<=6,a|=k.getUTCMinutes(),a<<=5,a|=k.getUTCSeconds()/2,o=k.getUTCFullYear()-1980,o<<=4,o|=k.getUTCMonth()+1,o<<=5,o|=k.getUTCDate(),_&&(v=A(1,1)+A(B(f),4)+c,b+="up"+A(v.length,2)+v),g&&(y=A(1,1)+A(B(p),4)+m,b+="uc"+A(y.length,2)+y);var E="";return E+="\n\0",E+=A(S,2),E+=u.magic,E+=A(a,2),E+=A(o,2),E+=A(x.crc32,4),E+=A(x.compressedSize,4),E+=A(x.uncompressedSize,4),E+=A(f.length,2),E+=A(b.length,2),{fileRecord:R.LOCAL_FILE_HEADER+E+f+b,dirRecord:R.CENTRAL_FILE_HEADER+A(C,2)+E+A(p.length,2)+"\0\0\0\0"+A(z,4)+A(n,4)+f+b+p}}var I=e("../utils"),i=e("../stream/GenericWorker"),O=e("../utf8"),B=e("../crc32"),R=e("../signature");function s(e,t,r,n){i.call(this,"ZipFileWorker"),this.bytesWritten=0,this.zipComment=t,this.zipPlatform=r,this.encodeFileName=n,this.streamFiles=e,this.accumulate=!1,this.contentBuffer=[],this.dirRecords=[],this.currentSourceOffset=0,this.entriesCount=0,this.currentFile=null,this._sources=[]}I.inherits(s,i),s.prototype.push=function(e){var t=e.meta.percent||0,r=this.entriesCount,n=this._sources.length;this.accumulate?this.contentBuffer.push(e):(this.bytesWritten+=e.data.length,i.prototype.push.call(this,{data:e.data,meta:{currentFile:this.currentFile,percent:r?(t+100*(r-n-1))/r:100}}))},s.prototype.openedSource=function(e){this.currentSourceOffset=this.bytesWritten,this.currentFile=e.file.name;var t=this.streamFiles&&!e.file.dir;if(t){var r=n(e,t,!1,this.currentSourceOffset,this.zipPlatform,this.encodeFileName);this.push({data:r.fileRecord,meta:{percent:0}})}else this.accumulate=!0},s.prototype.closedSource=function(e){this.accumulate=!1;var t=this.streamFiles&&!e.file.dir,r=n(e,t,!0,this.currentSourceOffset,this.zipPlatform,this.encodeFileName);if(this.dirRecords.push(r.dirRecord),t)this.push({data:function(e){return R.DATA_DESCRIPTOR+A(e.crc32,4)+A(e.compressedSize,4)+A(e.uncompressedSize,4)}(e),meta:{percent:100}});else for(this.push({data:r.fileRecord,meta:{percent:0}});this.contentBuffer.length;)this.push(this.contentBuffer.shift());this.currentFile=null},s.prototype.flush=function(){for(var e=this.bytesWritten,t=0;t<this.dirRecords.length;t++)this.push({data:this.dirRecords[t],meta:{percent:100}});var r=this.bytesWritten-e,n=function(e,t,r,n,i){var s=I.transformTo("string",i(n));return R.CENTRAL_DIRECTORY_END+"\0\0\0\0"+A(e,2)+A(e,2)+A(t,4)+A(r,4)+A(s.length,2)+s}(this.dirRecords.length,r,e,this.zipComment,this.encodeFileName);this.push({data:n,meta:{percent:100}})},s.prototype.prepareNextSource=function(){this.previous=this._sources.shift(),this.openedSource(this.previous.streamInfo),this.isPaused?this.previous.pause():this.previous.resume()},s.prototype.registerPrevious=function(e){this._sources.push(e);var t=this;return e.on("data",function(e){t.processChunk(e)}),e.on("end",function(){t.closedSource(t.previous.streamInfo),t._sources.length?t.prepareNextSource():t.end()}),e.on("error",function(e){t.error(e)}),this},s.prototype.resume=function(){return!!i.prototype.resume.call(this)&&(!this.previous&&this._sources.length?(this.prepareNextSource(),!0):this.previous||this._sources.length||this.generatedError?void 0:(this.end(),!0))},s.prototype.error=function(e){var t=this._sources;if(!i.prototype.error.call(this,e))return!1;for(var r=0;r<t.length;r++)try{t[r].error(e)}catch(e){}return!0},s.prototype.lock=function(){i.prototype.lock.call(this);for(var e=this._sources,t=0;t<e.length;t++)e[t].lock()},t.exports=s},{"../crc32":4,"../signature":23,"../stream/GenericWorker":28,"../utf8":31,"../utils":32}],9:[function(e,t,r){"use strict";var u=e("../compressions"),n=e("./ZipFileWorker");r.generateWorker=function(e,a,t){var o=new n(a.streamFiles,t,a.platform,a.encodeFileName),h=0;try{e.forEach(function(e,t){h++;var r=function(e,t){var r=e||t,n=u[r];if(!n)throw new Error(r+" is not a valid compression method !");return n}(t.options.compression,a.compression),n=t.options.compressionOptions||a.compressionOptions||{},i=t.dir,s=t.date;t._compressWorker(r,n).withStreamInfo("file",{name:e,dir:i,date:s,comment:t.comment||"",unixPermissions:t.unixPermissions,dosPermissions:t.dosPermissions}).pipe(o)}),o.entriesCount=h}catch(e){o.error(e)}return o}},{"../compressions":3,"./ZipFileWorker":8}],10:[function(e,t,r){"use strict";function n(){if(!(this instanceof n))return new n;if(arguments.length)throw new Error("The constructor with parameters has been removed in JSZip 3.0, please check the upgrade guide.");this.files=Object.create(null),this.comment=null,this.root="",this.clone=function(){var e=new n;for(var t in this)"function"!=typeof this[t]&&(e[t]=this[t]);return e}}(n.prototype=e("./object")).loadAsync=e("./load"),n.support=e("./support"),n.defaults=e("./defaults"),n.version="3.10.1",n.loadAsync=function(e,t){return(new n).loadAsync(e,t)},n.external=e("./external"),t.exports=n},{"./defaults":5,"./external":6,"./load":11,"./object":15,"./support":30}],11:[function(e,t,r){"use strict";var u=e("./utils"),i=e("./external"),n=e("./utf8"),s=e("./zipEntries"),a=e("./stream/Crc32Probe"),l=e("./nodejsUtils");function f(n){return new i.Promise(function(e,t){var r=n.decompressed.getContentWorker().pipe(new a);r.on("error",function(e){t(e)}).on("end",function(){r.streamInfo.crc32!==n.decompressed.crc32?t(new Error("Corrupted zip : CRC32 mismatch")):e()}).resume()})}t.exports=function(e,o){var h=this;return o=u.extend(o||{},{base64:!1,checkCRC32:!1,optimizedBinaryString:!1,createFolders:!1,decodeFileName:n.utf8decode}),l.isNode&&l.isStream(e)?i.Promise.reject(new Error("JSZip can't accept a stream when loading a zip file.")):u.prepareContent("the loaded zip file",e,!0,o.optimizedBinaryString,o.base64).then(function(e){var t=new s(o);return t.load(e),t}).then(function(e){var t=[i.Promise.resolve(e)],r=e.files;if(o.checkCRC32)for(var n=0;n<r.length;n++)t.push(f(r[n]));return i.Promise.all(t)}).then(function(e){for(var t=e.shift(),r=t.files,n=0;n<r.length;n++){var i=r[n],s=i.fileNameStr,a=u.resolve(i.fileNameStr);h.file(a,i.decompressed,{binary:!0,optimizedBinaryString:!0,date:i.date,dir:i.dir,comment:i.fileCommentStr.length?i.fileCommentStr:null,unixPermissions:i.unixPermissions,dosPermissions:i.dosPermissions,createFolders:o.createFolders}),i.dir||(h.file(a).unsafeOriginalName=s)}return t.zipComment.length&&(h.comment=t.zipComment),h})}},{"./external":6,"./nodejsUtils":14,"./stream/Crc32Probe":25,"./utf8":31,"./utils":32,"./zipEntries":33}],12:[function(e,t,r){"use strict";var n=e("../utils"),i=e("../stream/GenericWorker");function s(e,t){i.call(this,"Nodejs stream input adapter for "+e),this._upstreamEnded=!1,this._bindStream(t)}n.inherits(s,i),s.prototype._bindStream=function(e){var t=this;(this._stream=e).pause(),e.on("data",function(e){t.push({data:e,meta:{percent:0}})}).on("error",function(e){t.isPaused?this.generatedError=e:t.error(e)}).on("end",function(){t.isPaused?t._upstreamEnded=!0:t.end()})},s.prototype.pause=function(){return!!i.prototype.pause.call(this)&&(this._stream.pause(),!0)},s.prototype.resume=function(){return!!i.prototype.resume.call(this)&&(this._upstreamEnded?this.end():this._stream.resume(),!0)},t.exports=s},{"../stream/GenericWorker":28,"../utils":32}],13:[function(e,t,r){"use strict";var i=e("readable-stream").Readable;function n(e,t,r){i.call(this,t),this._helper=e;var n=this;e.on("data",function(e,t){n.push(e)||n._helper.pause(),r&&r(t)}).on("error",function(e){n.emit("error",e)}).on("end",function(){n.push(null)})}e("../utils").inherits(n,i),n.prototype._read=function(){this._helper.resume()},t.exports=n},{"../utils":32,"readable-stream":16}],14:[function(e,t,r){"use strict";t.exports={isNode:"undefined"!=typeof Buffer,newBufferFrom:function(e,t){if(Buffer.from&&Buffer.from!==Uint8Array.from)return Buffer.from(e,t);if("number"==typeof e)throw new Error('The "data" argument must not be a number');return new Buffer(e,t)},allocBuffer:function(e){if(Buffer.alloc)return Buffer.alloc(e);var t=new Buffer(e);return t.fill(0),t},isBuffer:function(e){return Buffer.isBuffer(e)},isStream:function(e){return e&&"function"==typeof e.on&&"function"==typeof e.pause&&"function"==typeof e.resume}}},{}],15:[function(e,t,r){"use strict";function s(e,t,r){var n,i=u.getTypeOf(t),s=u.extend(r||{},f);s.date=s.date||new Date,null!==s.compression&&(s.compression=s.compression.toUpperCase()),"string"==typeof s.unixPermissions&&(s.unixPermissions=parseInt(s.unixPermissions,8)),s.unixPermissions&&16384&s.unixPermissions&&(s.dir=!0),s.dosPermissions&&16&s.dosPermissions&&(s.dir=!0),s.dir&&(e=g(e)),s.createFolders&&(n=_(e))&&b.call(this,n,!0);var a="string"===i&&!1===s.binary&&!1===s.base64;r&&void 0!==r.binary||(s.binary=!a),(t instanceof c&&0===t.uncompressedSize||s.dir||!t||0===t.length)&&(s.base64=!1,s.binary=!0,t="",s.compression="STORE",i="string");var o=null;o=t instanceof c||t instanceof l?t:p.isNode&&p.isStream(t)?new m(e,t):u.prepareContent(e,t,s.binary,s.optimizedBinaryString,s.base64);var h=new d(e,o,s);this.files[e]=h}var i=e("./utf8"),u=e("./utils"),l=e("./stream/GenericWorker"),a=e("./stream/StreamHelper"),f=e("./defaults"),c=e("./compressedObject"),d=e("./zipObject"),o=e("./generate"),p=e("./nodejsUtils"),m=e("./nodejs/NodejsStreamInputAdapter"),_=function(e){"/"===e.slice(-1)&&(e=e.substring(0,e.length-1));var t=e.lastIndexOf("/");return 0<t?e.substring(0,t):""},g=function(e){return"/"!==e.slice(-1)&&(e+="/"),e},b=function(e,t){return t=void 0!==t?t:f.createFolders,e=g(e),this.files[e]||s.call(this,e,null,{dir:!0,createFolders:t}),this.files[e]};function h(e){return"[object RegExp]"===Object.prototype.toString.call(e)}var n={load:function(){throw new Error("This method has been removed in JSZip 3.0, please check the upgrade guide.")},forEach:function(e){var t,r,n;for(t in this.files)n=this.files[t],(r=t.slice(this.root.length,t.length))&&t.slice(0,this.root.length)===this.root&&e(r,n)},filter:function(r){var n=[];return this.forEach(function(e,t){r(e,t)&&n.push(t)}),n},file:function(e,t,r){if(1!==arguments.length)return e=this.root+e,s.call(this,e,t,r),this;if(h(e)){var n=e;return this.filter(function(e,t){return!t.dir&&n.test(e)})}var i=this.files[this.root+e];return i&&!i.dir?i:null},folder:function(r){if(!r)return this;if(h(r))return this.filter(function(e,t){return t.dir&&r.test(e)});var e=this.root+r,t=b.call(this,e),n=this.clone();return n.root=t.name,n},remove:function(r){r=this.root+r;var e=this.files[r];if(e||("/"!==r.slice(-1)&&(r+="/"),e=this.files[r]),e&&!e.dir)delete this.files[r];else for(var t=this.filter(function(e,t){return t.name.slice(0,r.length)===r}),n=0;n<t.length;n++)delete this.files[t[n].name];return this},generate:function(){throw new Error("This method has been removed in JSZip 3.0, please check the upgrade guide.")},generateInternalStream:function(e){var t,r={};try{if((r=u.extend(e||{},{streamFiles:!1,compression:"STORE",compressionOptions:null,type:"",platform:"DOS",comment:null,mimeType:"application/zip",encodeFileName:i.utf8encode})).type=r.type.toLowerCase(),r.compression=r.compression.toUpperCase(),"binarystring"===r.type&&(r.type="string"),!r.type)throw new Error("No output type specified.");u.checkSupport(r.type),"darwin"!==r.platform&&"freebsd"!==r.platform&&"linux"!==r.platform&&"sunos"!==r.platform||(r.platform="UNIX"),"win32"===r.platform&&(r.platform="DOS");var n=r.comment||this.comment||"";t=o.generateWorker(this,r,n)}catch(e){(t=new l("error")).error(e)}return new a(t,r.type||"string",r.mimeType)},generateAsync:function(e,t){return this.generateInternalStream(e).accumulate(t)},generateNodeStream:function(e,t){return(e=e||{}).type||(e.type="nodebuffer"),this.generateInternalStream(e).toNodejsStream(t)}};t.exports=n},{"./compressedObject":2,"./defaults":5,"./generate":9,"./nodejs/NodejsStreamInputAdapter":12,"./nodejsUtils":14,"./stream/GenericWorker":28,"./stream/StreamHelper":29,"./utf8":31,"./utils":32,"./zipObject":35}],16:[function(e,t,r){"use strict";t.exports=e("stream")},{stream:void 0}],17:[function(e,t,r){"use strict";var n=e("./DataReader");function i(e){n.call(this,e);for(var t=0;t<this.data.length;t++)e[t]=255&e[t]}e("../utils").inherits(i,n),i.prototype.byteAt=function(e){return this.data[this.zero+e]},i.prototype.lastIndexOfSignature=function(e){for(var t=e.charCodeAt(0),r=e.charCodeAt(1),n=e.charCodeAt(2),i=e.charCodeAt(3),s=this.length-4;0<=s;--s)if(this.data[s]===t&&this.data[s+1]===r&&this.data[s+2]===n&&this.data[s+3]===i)return s-this.zero;return-1},i.prototype.readAndCheckSignature=function(e){var t=e.charCodeAt(0),r=e.charCodeAt(1),n=e.charCodeAt(2),i=e.charCodeAt(3),s=this.readData(4);return t===s[0]&&r===s[1]&&n===s[2]&&i===s[3]},i.prototype.readData=function(e){if(this.checkOffset(e),0===e)return[];var t=this.data.slice(this.zero+this.index,this.zero+this.index+e);return this.index+=e,t},t.exports=i},{"../utils":32,"./DataReader":18}],18:[function(e,t,r){"use strict";var n=e("../utils");function i(e){this.data=e,this.length=e.length,this.index=0,this.zero=0}i.prototype={checkOffset:function(e){this.checkIndex(this.index+e)},checkIndex:function(e){if(this.length<this.zero+e||e<0)throw new Error("End of data reached (data length = "+this.length+", asked index = "+e+"). Corrupted zip ?")},setIndex:function(e){this.checkIndex(e),this.index=e},skip:function(e){this.setIndex(this.index+e)},byteAt:function(){},readInt:function(e){var t,r=0;for(this.checkOffset(e),t=this.index+e-1;t>=this.index;t--)r=(r<<8)+this.byteAt(t);return this.index+=e,r},readString:function(e){return n.transformTo("string",this.readData(e))},readData:function(){},lastIndexOfSignature:function(){},readAndCheckSignature:function(){},readDate:function(){var e=this.readInt(4);return new Date(Date.UTC(1980+(e>>25&127),(e>>21&15)-1,e>>16&31,e>>11&31,e>>5&63,(31&e)<<1))}},t.exports=i},{"../utils":32}],19:[function(e,t,r){"use strict";var n=e("./Uint8ArrayReader");function i(e){n.call(this,e)}e("../utils").inherits(i,n),i.prototype.readData=function(e){this.checkOffset(e);var t=this.data.slice(this.zero+this.index,this.zero+this.index+e);return this.index+=e,t},t.exports=i},{"../utils":32,"./Uint8ArrayReader":21}],20:[function(e,t,r){"use strict";var n=e("./DataReader");function i(e){n.call(this,e)}e("../utils").inherits(i,n),i.prototype.byteAt=function(e){return this.data.charCodeAt(this.zero+e)},i.prototype.lastIndexOfSignature=function(e){return this.data.lastIndexOf(e)-this.zero},i.prototype.readAndCheckSignature=function(e){return e===this.readData(4)},i.prototype.readData=function(e){this.checkOffset(e);var t=this.data.slice(this.zero+this.index,this.zero+this.index+e);return this.index+=e,t},t.exports=i},{"../utils":32,"./DataReader":18}],21:[function(e,t,r){"use strict";var n=e("./ArrayReader");function i(e){n.call(this,e)}e("../utils").inherits(i,n),i.prototype.readData=function(e){if(this.checkOffset(e),0===e)return new Uint8Array(0);var t=this.data.subarray(this.zero+this.index,this.zero+this.index+e);return this.index+=e,t},t.exports=i},{"../utils":32,"./ArrayReader":17}],22:[function(e,t,r){"use strict";var n=e("../utils"),i=e("../support"),s=e("./ArrayReader"),a=e("./StringReader"),o=e("./NodeBufferReader"),h=e("./Uint8ArrayReader");t.exports=function(e){var t=n.getTypeOf(e);return n.checkSupport(t),"string"!==t||i.uint8array?"nodebuffer"===t?new o(e):i.uint8array?new h(n.transformTo("uint8array",e)):new s(n.transformTo("array",e)):new a(e)}},{"../support":30,"../utils":32,"./ArrayReader":17,"./NodeBufferReader":19,"./StringReader":20,"./Uint8ArrayReader":21}],23:[function(e,t,r){"use strict";r.LOCAL_FILE_HEADER="PK",r.CENTRAL_FILE_HEADER="PK",r.CENTRAL_DIRECTORY_END="PK",r.ZIP64_CENTRAL_DIRECTORY_LOCATOR="PK",r.ZIP64_CENTRAL_DIRECTORY_END="PK",r.DATA_DESCRIPTOR="PK\b"},{}],24:[function(e,t,r){"use strict";var n=e("./GenericWorker"),i=e("../utils");function s(e){n.call(this,"ConvertWorker to "+e),this.destType=e}i.inherits(s,n),s.prototype.processChunk=function(e){this.push({data:i.transformTo(this.destType,e.data),meta:e.meta})},t.exports=s},{"../utils":32,"./GenericWorker":28}],25:[function(e,t,r){"use strict";var n=e("./GenericWorker"),i=e("../crc32");function s(){n.call(this,"Crc32Probe"),this.withStreamInfo("crc32",0)}e("../utils").inherits(s,n),s.prototype.processChunk=function(e){this.streamInfo.crc32=i(e.data,this.streamInfo.crc32||0),this.push(e)},t.exports=s},{"../crc32":4,"../utils":32,"./GenericWorker":28}],26:[function(e,t,r){"use strict";var n=e("../utils"),i=e("./GenericWorker");function s(e){i.call(this,"DataLengthProbe for "+e),this.propName=e,this.withStreamInfo(e,0)}n.inherits(s,i),s.prototype.processChunk=function(e){if(e){var t=this.streamInfo[this.propName]||0;this.streamInfo[this.propName]=t+e.data.length}i.prototype.processChunk.call(this,e)},t.exports=s},{"../utils":32,"./GenericWorker":28}],27:[function(e,t,r){"use strict";var n=e("../utils"),i=e("./GenericWorker");function s(e){i.call(this,"DataWorker");var t=this;this.dataIsReady=!1,this.index=0,this.max=0,this.data=null,this.type="",this._tickScheduled=!1,e.then(function(e){t.dataIsReady=!0,t.data=e,t.max=e&&e.length||0,t.type=n.getTypeOf(e),t.isPaused||t._tickAndRepeat()},function(e){t.error(e)})}n.inherits(s,i),s.prototype.cleanUp=function(){i.prototype.cleanUp.call(this),this.data=null},s.prototype.resume=function(){return!!i.prototype.resume.call(this)&&(!this._tickScheduled&&this.dataIsReady&&(this._tickScheduled=!0,n.delay(this._tickAndRepeat,[],this)),!0)},s.prototype._tickAndRepeat=function(){this._tickScheduled=!1,this.isPaused||this.isFinished||(this._tick(),this.isFinished||(n.delay(this._tickAndRepeat,[],this),this._tickScheduled=!0))},s.prototype._tick=function(){if(this.isPaused||this.isFinished)return!1;var e=null,t=Math.min(this.max,this.index+16384);if(this.index>=this.max)return this.end();switch(this.type){case"string":e=this.data.substring(this.index,t);break;case"uint8array":e=this.data.subarray(this.index,t);break;case"array":case"nodebuffer":e=this.data.slice(this.index,t)}return this.index=t,this.push({data:e,meta:{percent:this.max?this.index/this.max*100:0}})},t.exports=s},{"../utils":32,"./GenericWorker":28}],28:[function(e,t,r){"use strict";function n(e){this.name=e||"default",this.streamInfo={},this.generatedError=null,this.extraStreamInfo={},this.isPaused=!0,this.isFinished=!1,this.isLocked=!1,this._listeners={data:[],end:[],error:[]},this.previous=null}n.prototype={push:function(e){this.emit("data",e)},end:function(){if(this.isFinished)return!1;this.flush();try{this.emit("end"),this.cleanUp(),this.isFinished=!0}catch(e){this.emit("error",e)}return!0},error:function(e){return!this.isFinished&&(this.isPaused?this.generatedError=e:(this.isFinished=!0,this.emit("error",e),this.previous&&this.previous.error(e),this.cleanUp()),!0)},on:function(e,t){return this._listeners[e].push(t),this},cleanUp:function(){this.streamInfo=this.generatedError=this.extraStreamInfo=null,this._listeners=[]},emit:function(e,t){if(this._listeners[e])for(var r=0;r<this._listeners[e].length;r++)this._listeners[e][r].call(this,t)},pipe:function(e){return e.registerPrevious(this)},registerPrevious:function(e){if(this.isLocked)throw new Error("The stream '"+this+"' has already been used.");this.streamInfo=e.streamInfo,this.mergeStreamInfo(),this.previous=e;var t=this;return e.on("data",function(e){t.processChunk(e)}),e.on("end",function(){t.end()}),e.on("error",function(e){t.error(e)}),this},pause:function(){return!this.isPaused&&!this.isFinished&&(this.isPaused=!0,this.previous&&this.previous.pause(),!0)},resume:function(){if(!this.isPaused||this.isFinished)return!1;var e=this.isPaused=!1;return this.generatedError&&(this.error(this.generatedError),e=!0),this.previous&&this.previous.resume(),!e},flush:function(){},processChunk:function(e){this.push(e)},withStreamInfo:function(e,t){return this.extraStreamInfo[e]=t,this.mergeStreamInfo(),this},mergeStreamInfo:function(){for(var e in this.extraStreamInfo)Object.prototype.hasOwnProperty.call(this.extraStreamInfo,e)&&(this.streamInfo[e]=this.extraStreamInfo[e])},lock:function(){if(this.isLocked)throw new Error("The stream '"+this+"' has already been used.");this.isLocked=!0,this.previous&&this.previous.lock()},toString:function(){var e="Worker "+this.name;return this.previous?this.previous+" -> "+e:e}},t.exports=n},{}],29:[function(e,t,r){"use strict";var h=e("../utils"),i=e("./ConvertWorker"),s=e("./GenericWorker"),u=e("../base64"),n=e("../support"),a=e("../external"),o=null;if(n.nodestream)try{o=e("../nodejs/NodejsStreamOutputAdapter")}catch(e){}function l(e,o){return new a.Promise(function(t,r){var n=[],i=e._internalType,s=e._outputType,a=e._mimeType;e.on("data",function(e,t){n.push(e),o&&o(t)}).on("error",function(e){n=[],r(e)}).on("end",function(){try{var e=function(e,t,r){switch(e){case"blob":return h.newBlob(h.transformTo("arraybuffer",t),r);case"base64":return u.encode(t);default:return h.transformTo(e,t)}}(s,function(e,t){var r,n=0,i=null,s=0;for(r=0;r<t.length;r++)s+=t[r].length;switch(e){case"string":return t.join("");case"array":return Array.prototype.concat.apply([],t);case"uint8array":for(i=new Uint8Array(s),r=0;r<t.length;r++)i.set(t[r],n),n+=t[r].length;return i;case"nodebuffer":return Buffer.concat(t);default:throw new Error("concat : unsupported type '"+e+"'")}}(i,n),a);t(e)}catch(e){r(e)}n=[]}).resume()})}function f(e,t,r){var n=t;switch(t){case"blob":case"arraybuffer":n="uint8array";break;case"base64":n="string"}try{this._internalType=n,this._outputType=t,this._mimeType=r,h.checkSupport(n),this._worker=e.pipe(new i(n)),e.lock()}catch(e){this._worker=new s("error"),this._worker.error(e)}}f.prototype={accumulate:function(e){return l(this,e)},on:function(e,t){var r=this;return"data"===e?this._worker.on(e,function(e){t.call(r,e.data,e.meta)}):this._worker.on(e,function(){h.delay(t,arguments,r)}),this},resume:function(){return h.delay(this._worker.resume,[],this._worker),this},pause:function(){return this._worker.pause(),this},toNodejsStream:function(e){if(h.checkSupport("nodestream"),"nodebuffer"!==this._outputType)throw new Error(this._outputType+" is not supported by this method");return new o(this,{objectMode:"nodebuffer"!==this._outputType},e)}},t.exports=f},{"../base64":1,"../external":6,"../nodejs/NodejsStreamOutputAdapter":13,"../support":30,"../utils":32,"./ConvertWorker":24,"./GenericWorker":28}],30:[function(e,t,r){"use strict";if(r.base64=!0,r.array=!0,r.string=!0,r.arraybuffer="undefined"!=typeof ArrayBuffer&&"undefined"!=typeof Uint8Array,r.nodebuffer="undefined"!=typeof Buffer,r.uint8array="undefined"!=typeof Uint8Array,"undefined"==typeof ArrayBuffer)r.blob=!1;else{var n=new ArrayBuffer(0);try{r.blob=0===new Blob([n],{type:"application/zip"}).size}catch(e){try{var i=new(self.BlobBuilder||self.WebKitBlobBuilder||self.MozBlobBuilder||self.MSBlobBuilder);i.append(n),r.blob=0===i.getBlob("application/zip").size}catch(e){r.blob=!1}}}try{r.nodestream=!!e("readable-stream").Readable}catch(e){r.nodestream=!1}},{"readable-stream":16}],31:[function(e,t,s){"use strict";for(var o=e("./utils"),h=e("./support"),r=e("./nodejsUtils"),n=e("./stream/GenericWorker"),u=new Array(256),i=0;i<256;i++)u[i]=252<=i?6:248<=i?5:240<=i?4:224<=i?3:192<=i?2:1;u[254]=u[254]=1;function a(){n.call(this,"utf-8 decode"),this.leftOver=null}function l(){n.call(this,"utf-8 encode")}s.utf8encode=function(e){return h.nodebuffer?r.newBufferFrom(e,"utf-8"):function(e){var t,r,n,i,s,a=e.length,o=0;for(i=0;i<a;i++)55296==(64512&(r=e.charCodeAt(i)))&&i+1<a&&56320==(64512&(n=e.charCodeAt(i+1)))&&(r=65536+(r-55296<<10)+(n-56320),i++),o+=r<128?1:r<2048?2:r<65536?3:4;for(t=h.uint8array?new Uint8Array(o):new Array(o),i=s=0;s<o;i++)55296==(64512&(r=e.charCodeAt(i)))&&i+1<a&&56320==(64512&(n=e.charCodeAt(i+1)))&&(r=65536+(r-55296<<10)+(n-56320),i++),r<128?t[s++]=r:(r<2048?t[s++]=192|r>>>6:(r<65536?t[s++]=224|r>>>12:(t[s++]=240|r>>>18,t[s++]=128|r>>>12&63),t[s++]=128|r>>>6&63),t[s++]=128|63&r);return t}(e)},s.utf8decode=function(e){return h.nodebuffer?o.transformTo("nodebuffer",e).toString("utf-8"):function(e){var t,r,n,i,s=e.length,a=new Array(2*s);for(t=r=0;t<s;)if((n=e[t++])<128)a[r++]=n;else if(4<(i=u[n]))a[r++]=65533,t+=i-1;else{for(n&=2===i?31:3===i?15:7;1<i&&t<s;)n=n<<6|63&e[t++],i--;1<i?a[r++]=65533:n<65536?a[r++]=n:(n-=65536,a[r++]=55296|n>>10&1023,a[r++]=56320|1023&n)}return a.length!==r&&(a.subarray?a=a.subarray(0,r):a.length=r),o.applyFromCharCode(a)}(e=o.transformTo(h.uint8array?"uint8array":"array",e))},o.inherits(a,n),a.prototype.processChunk=function(e){var t=o.transformTo(h.uint8array?"uint8array":"array",e.data);if(this.leftOver&&this.leftOver.length){if(h.uint8array){var r=t;(t=new Uint8Array(r.length+this.leftOver.length)).set(this.leftOver,0),t.set(r,this.leftOver.length)}else t=this.leftOver.concat(t);this.leftOver=null}var n=function(e,t){var r;for((t=t||e.length)>e.length&&(t=e.length),r=t-1;0<=r&&128==(192&e[r]);)r--;return r<0?t:0===r?t:r+u[e[r]]>t?r:t}(t),i=t;n!==t.length&&(h.uint8array?(i=t.subarray(0,n),this.leftOver=t.subarray(n,t.length)):(i=t.slice(0,n),this.leftOver=t.slice(n,t.length))),this.push({data:s.utf8decode(i),meta:e.meta})},a.prototype.flush=function(){this.leftOver&&this.leftOver.length&&(this.push({data:s.utf8decode(this.leftOver),meta:{}}),this.leftOver=null)},s.Utf8DecodeWorker=a,o.inherits(l,n),l.prototype.processChunk=function(e){this.push({data:s.utf8encode(e.data),meta:e.meta})},s.Utf8EncodeWorker=l},{"./nodejsUtils":14,"./stream/GenericWorker":28,"./support":30,"./utils":32}],32:[function(e,t,a){"use strict";var o=e("./support"),h=e("./base64"),r=e("./nodejsUtils"),u=e("./external");function n(e){return e}function l(e,t){for(var r=0;r<e.length;++r)t[r]=255&e.charCodeAt(r);return t}e("setimmediate"),a.newBlob=function(t,r){a.checkSupport("blob");try{return new Blob([t],{type:r})}catch(e){try{var n=new(self.BlobBuilder||self.WebKitBlobBuilder||self.MozBlobBuilder||self.MSBlobBuilder);return n.append(t),n.getBlob(r)}catch(e){throw new Error("Bug : can't construct the Blob.")}}};var i={stringifyByChunk:function(e,t,r){var n=[],i=0,s=e.length;if(s<=r)return String.fromCharCode.apply(null,e);for(;i<s;)"array"===t||"nodebuffer"===t?n.push(String.fromCharCode.apply(null,e.slice(i,Math.min(i+r,s)))):n.push(String.fromCharCode.apply(null,e.subarray(i,Math.min(i+r,s)))),i+=r;return n.join("")},stringifyByChar:function(e){for(var t="",r=0;r<e.length;r++)t+=String.fromCharCode(e[r]);return t},applyCanBeUsed:{uint8array:function(){try{return o.uint8array&&1===String.fromCharCode.apply(null,new Uint8Array(1)).length}catch(e){return!1}}(),nodebuffer:function(){try{return o.nodebuffer&&1===String.fromCharCode.apply(null,r.allocBuffer(1)).length}catch(e){return!1}}()}};function s(e){var t=65536,r=a.getTypeOf(e),n=!0;if("uint8array"===r?n=i.applyCanBeUsed.uint8array:"nodebuffer"===r&&(n=i.applyCanBeUsed.nodebuffer),n)for(;1<t;)try{return i.stringifyByChunk(e,r,t)}catch(e){t=Math.floor(t/2)}return i.stringifyByChar(e)}function f(e,t){for(var r=0;r<e.length;r++)t[r]=e[r];return t}a.applyFromCharCode=s;var c={};c.string={string:n,array:function(e){return l(e,new Array(e.length))},arraybuffer:function(e){return c.string.uint8array(e).buffer},uint8array:function(e){return l(e,new Uint8Array(e.length))},nodebuffer:function(e){return l(e,r.allocBuffer(e.length))}},c.array={string:s,array:n,arraybuffer:function(e){return new Uint8Array(e).buffer},uint8array:function(e){return new Uint8Array(e)},nodebuffer:function(e){return r.newBufferFrom(e)}},c.arraybuffer={string:function(e){return s(new Uint8Array(e))},array:function(e){return f(new Uint8Array(e),new Array(e.byteLength))},arraybuffer:n,uint8array:function(e){return new Uint8Array(e)},nodebuffer:function(e){return r.newBufferFrom(new Uint8Array(e))}},c.uint8array={string:s,array:function(e){return f(e,new Array(e.length))},arraybuffer:function(e){return e.buffer},uint8array:n,nodebuffer:function(e){return r.newBufferFrom(e)}},c.nodebuffer={string:s,array:function(e){return f(e,new Array(e.length))},arraybuffer:function(e){return c.nodebuffer.uint8array(e).buffer},uint8array:function(e){return f(e,new Uint8Array(e.length))},nodebuffer:n},a.transformTo=function(e,t){if(t=t||"",!e)return t;a.checkSupport(e);var r=a.getTypeOf(t);return c[r][e](t)},a.resolve=function(e){for(var t=e.split("/"),r=[],n=0;n<t.length;n++){var i=t[n];"."===i||""===i&&0!==n&&n!==t.length-1||(".."===i?r.pop():r.push(i))}return r.join("/")},a.getTypeOf=function(e){return"string"==typeof e?"string":"[object Array]"===Object.prototype.toString.call(e)?"array":o.nodebuffer&&r.isBuffer(e)?"nodebuffer":o.uint8array&&e instanceof Uint8Array?"uint8array":o.arraybuffer&&e instanceof ArrayBuffer?"arraybuffer":void 0},a.checkSupport=function(e){if(!o[e.toLowerCase()])throw new Error(e+" is not supported by this platform")},a.MAX_VALUE_16BITS=65535,a.MAX_VALUE_32BITS=-1,a.pretty=function(e){var t,r,n="";for(r=0;r<(e||"").length;r++)n+="\\x"+((t=e.charCodeAt(r))<16?"0":"")+t.toString(16).toUpperCase();return n},a.delay=function(e,t,r){setImmediate(function(){e.apply(r||null,t||[])})},a.inherits=function(e,t){function r(){}r.prototype=t.prototype,e.prototype=new r},a.extend=function(){var e,t,r={};for(e=0;e<arguments.length;e++)for(t in arguments[e])Object.prototype.hasOwnProperty.call(arguments[e],t)&&void 0===r[t]&&(r[t]=arguments[e][t]);return r},a.prepareContent=function(r,e,n,i,s){return u.Promise.resolve(e).then(function(n){return o.blob&&(n instanceof Blob||-1!==["[object File]","[object Blob]"].indexOf(Object.prototype.toString.call(n)))&&"undefined"!=typeof FileReader?new u.Promise(function(t,r){var e=new FileReader;e.onload=function(e){t(e.target.result)},e.onerror=function(e){r(e.target.error)},e.readAsArrayBuffer(n)}):n}).then(function(e){var t=a.getTypeOf(e);return t?("arraybuffer"===t?e=a.transformTo("uint8array",e):"string"===t&&(s?e=h.decode(e):n&&!0!==i&&(e=function(e){return l(e,o.uint8array?new Uint8Array(e.length):new Array(e.length))}(e))),e):u.Promise.reject(new Error("Can't read the data of '"+r+"'. Is it in a supported JavaScript type (String, Blob, ArrayBuffer, etc) ?"))})}},{"./base64":1,"./external":6,"./nodejsUtils":14,"./support":30,setimmediate:54}],33:[function(e,t,r){"use strict";var n=e("./reader/readerFor"),i=e("./utils"),s=e("./signature"),a=e("./zipEntry"),o=e("./support");function h(e){this.files=[],this.loadOptions=e}h.prototype={checkSignature:function(e){if(!this.reader.readAndCheckSignature(e)){this.reader.index-=4;var t=this.reader.readString(4);throw new Error("Corrupted zip or bug: unexpected signature ("+i.pretty(t)+", expected "+i.pretty(e)+")")}},isSignature:function(e,t){var r=this.reader.index;this.reader.setIndex(e);var n=this.reader.readString(4)===t;return this.reader.setIndex(r),n},readBlockEndOfCentral:function(){this.diskNumber=this.reader.readInt(2),this.diskWithCentralDirStart=this.reader.readInt(2),this.centralDirRecordsOnThisDisk=this.reader.readInt(2),this.centralDirRecords=this.reader.readInt(2),this.centralDirSize=this.reader.readInt(4),this.centralDirOffset=this.reader.readInt(4),this.zipCommentLength=this.reader.readInt(2);var e=this.reader.readData(this.zipCommentLength),t=o.uint8array?"uint8array":"array",r=i.transformTo(t,e);this.zipComment=this.loadOptions.decodeFileName(r)},readBlockZip64EndOfCentral:function(){this.zip64EndOfCentralSize=this.reader.readInt(8),this.reader.skip(4),this.diskNumber=this.reader.readInt(4),this.diskWithCentralDirStart=this.reader.readInt(4),this.centralDirRecordsOnThisDisk=this.reader.readInt(8),this.centralDirRecords=this.reader.readInt(8),this.centralDirSize=this.reader.readInt(8),this.centralDirOffset=this.reader.readInt(8),this.zip64ExtensibleData={};for(var e,t,r,n=this.zip64EndOfCentralSize-44;0<n;)e=this.reader.readInt(2),t=this.reader.readInt(4),r=this.reader.readData(t),this.zip64ExtensibleData[e]={id:e,length:t,value:r}},readBlockZip64EndOfCentralLocator:function(){if(this.diskWithZip64CentralDirStart=this.reader.readInt(4),this.relativeOffsetEndOfZip64CentralDir=this.reader.readInt(8),this.disksCount=this.reader.readInt(4),1<this.disksCount)throw new Error("Multi-volumes zip are not supported")},readLocalFiles:function(){var e,t;for(e=0;e<this.files.length;e++)t=this.files[e],this.reader.setIndex(t.localHeaderOffset),this.checkSignature(s.LOCAL_FILE_HEADER),t.readLocalPart(this.reader),t.handleUTF8(),t.processAttributes()},readCentralDir:function(){var e;for(this.reader.setIndex(this.centralDirOffset);this.reader.readAndCheckSignature(s.CENTRAL_FILE_HEADER);)(e=new a({zip64:this.zip64},this.loadOptions)).readCentralPart(this.reader),this.files.push(e);if(this.centralDirRecords!==this.files.length&&0!==this.centralDirRecords&&0===this.files.length)throw new Error("Corrupted zip or bug: expected "+this.centralDirRecords+" records in central dir, got "+this.files.length)},readEndOfCentral:function(){var e=this.reader.lastIndexOfSignature(s.CENTRAL_DIRECTORY_END);if(e<0)throw!this.isSignature(0,s.LOCAL_FILE_HEADER)?new Error("Can't find end of central directory : is this a zip file ? If it is, see https://stuk.github.io/jszip/documentation/howto/read_zip.html"):new Error("Corrupted zip: can't find end of central directory");this.reader.setIndex(e);var t=e;if(this.checkSignature(s.CENTRAL_DIRECTORY_END),this.readBlockEndOfCentral(),this.diskNumber===i.MAX_VALUE_16BITS||this.diskWithCentralDirStart===i.MAX_VALUE_16BITS||this.centralDirRecordsOnThisDisk===i.MAX_VALUE_16BITS||this.centralDirRecords===i.MAX_VALUE_16BITS||this.centralDirSize===i.MAX_VALUE_32BITS||this.centralDirOffset===i.MAX_VALUE_32BITS){if(this.zip64=!0,(e=this.reader.lastIndexOfSignature(s.ZIP64_CENTRAL_DIRECTORY_LOCATOR))<0)throw new Error("Corrupted zip: can't find the ZIP64 end of central directory locator");if(this.reader.setIndex(e),this.checkSignature(s.ZIP64_CENTRAL_DIRECTORY_LOCATOR),this.readBlockZip64EndOfCentralLocator(),!this.isSignature(this.relativeOffsetEndOfZip64CentralDir,s.ZIP64_CENTRAL_DIRECTORY_END)&&(this.relativeOffsetEndOfZip64CentralDir=this.reader.lastIndexOfSignature(s.ZIP64_CENTRAL_DIRECTORY_END),this.relativeOffsetEndOfZip64CentralDir<0))throw new Error("Corrupted zip: can't find the ZIP64 end of central directory");this.reader.setIndex(this.relativeOffsetEndOfZip64CentralDir),this.checkSignature(s.ZIP64_CENTRAL_DIRECTORY_END),this.readBlockZip64EndOfCentral()}var r=this.centralDirOffset+this.centralDirSize;this.zip64&&(r+=20,r+=12+this.zip64EndOfCentralSize);var n=t-r;if(0<n)this.isSignature(t,s.CENTRAL_FILE_HEADER)||(this.reader.zero=n);else if(n<0)throw new Error("Corrupted zip: missing "+Math.abs(n)+" bytes.")},prepareReader:function(e){this.reader=n(e)},load:function(e){this.prepareReader(e),this.readEndOfCentral(),this.readCentralDir(),this.readLocalFiles()}},t.exports=h},{"./reader/readerFor":22,"./signature":23,"./support":30,"./utils":32,"./zipEntry":34}],34:[function(e,t,r){"use strict";var n=e("./reader/readerFor"),s=e("./utils"),i=e("./compressedObject"),a=e("./crc32"),o=e("./utf8"),h=e("./compressions"),u=e("./support");function l(e,t){this.options=e,this.loadOptions=t}l.prototype={isEncrypted:function(){return 1==(1&this.bitFlag)},useUTF8:function(){return 2048==(2048&this.bitFlag)},readLocalPart:function(e){var t,r;if(e.skip(22),this.fileNameLength=e.readInt(2),r=e.readInt(2),this.fileName=e.readData(this.fileNameLength),e.skip(r),-1===this.compressedSize||-1===this.uncompressedSize)throw new Error("Bug or corrupted zip : didn't get enough information from the central directory (compressedSize === -1 || uncompressedSize === -1)");if(null===(t=function(e){for(var t in h)if(Object.prototype.hasOwnProperty.call(h,t)&&h[t].magic===e)return h[t];return null}(this.compressionMethod)))throw new Error("Corrupted zip : compression "+s.pretty(this.compressionMethod)+" unknown (inner file : "+s.transformTo("string",this.fileName)+")");this.decompressed=new i(this.compressedSize,this.uncompressedSize,this.crc32,t,e.readData(this.compressedSize))},readCentralPart:function(e){this.versionMadeBy=e.readInt(2),e.skip(2),this.bitFlag=e.readInt(2),this.compressionMethod=e.readString(2),this.date=e.readDate(),this.crc32=e.readInt(4),this.compressedSize=e.readInt(4),this.uncompressedSize=e.readInt(4);var t=e.readInt(2);if(this.extraFieldsLength=e.readInt(2),this.fileCommentLength=e.readInt(2),this.diskNumberStart=e.readInt(2),this.internalFileAttributes=e.readInt(2),this.externalFileAttributes=e.readInt(4),this.localHeaderOffset=e.readInt(4),this.isEncrypted())throw new Error("Encrypted zip are not supported");e.skip(t),this.readExtraFields(e),this.parseZIP64ExtraField(e),this.fileComment=e.readData(this.fileCommentLength)},processAttributes:function(){this.unixPermissions=null,this.dosPermissions=null;var e=this.versionMadeBy>>8;this.dir=!!(16&this.externalFileAttributes),0==e&&(this.dosPermissions=63&this.externalFileAttributes),3==e&&(this.unixPermissions=this.externalFileAttributes>>16&65535),this.dir||"/"!==this.fileNameStr.slice(-1)||(this.dir=!0)},parseZIP64ExtraField:function(){if(this.extraFields[1]){var e=n(this.extraFields[1].value);this.uncompressedSize===s.MAX_VALUE_32BITS&&(this.uncompressedSize=e.readInt(8)),this.compressedSize===s.MAX_VALUE_32BITS&&(this.compressedSize=e.readInt(8)),this.localHeaderOffset===s.MAX_VALUE_32BITS&&(this.localHeaderOffset=e.readInt(8)),this.diskNumberStart===s.MAX_VALUE_32BITS&&(this.diskNumberStart=e.readInt(4))}},readExtraFields:function(e){var t,r,n,i=e.index+this.extraFieldsLength;for(this.extraFields||(this.extraFields={});e.index+4<i;)t=e.readInt(2),r=e.readInt(2),n=e.readData(r),this.extraFields[t]={id:t,length:r,value:n};e.setIndex(i)},handleUTF8:function(){var e=u.uint8array?"uint8array":"array";if(this.useUTF8())this.fileNameStr=o.utf8decode(this.fileName),this.fileCommentStr=o.utf8decode(this.fileComment);else{var t=this.findExtraFieldUnicodePath();if(null!==t)this.fileNameStr=t;else{var r=s.transformTo(e,this.fileName);this.fileNameStr=this.loadOptions.decodeFileName(r)}var n=this.findExtraFieldUnicodeComment();if(null!==n)this.fileCommentStr=n;else{var i=s.transformTo(e,this.fileComment);this.fileCommentStr=this.loadOptions.decodeFileName(i)}}},findExtraFieldUnicodePath:function(){var e=this.extraFields[28789];if(e){var t=n(e.value);return 1!==t.readInt(1)?null:a(this.fileName)!==t.readInt(4)?null:o.utf8decode(t.readData(e.length-5))}return null},findExtraFieldUnicodeComment:function(){var e=this.extraFields[25461];if(e){var t=n(e.value);return 1!==t.readInt(1)?null:a(this.fileComment)!==t.readInt(4)?null:o.utf8decode(t.readData(e.length-5))}return null}},t.exports=l},{"./compressedObject":2,"./compressions":3,"./crc32":4,"./reader/readerFor":22,"./support":30,"./utf8":31,"./utils":32}],35:[function(e,t,r){"use strict";function n(e,t,r){this.name=e,this.dir=r.dir,this.date=r.date,this.comment=r.comment,this.unixPermissions=r.unixPermissions,this.dosPermissions=r.dosPermissions,this._data=t,this._dataBinary=r.binary,this.options={compression:r.compression,compressionOptions:r.compressionOptions}}var s=e("./stream/StreamHelper"),i=e("./stream/DataWorker"),a=e("./utf8"),o=e("./compressedObject"),h=e("./stream/GenericWorker");n.prototype={internalStream:function(e){var t=null,r="string";try{if(!e)throw new Error("No output type specified.");var n="string"===(r=e.toLowerCase())||"text"===r;"binarystring"!==r&&"text"!==r||(r="string"),t=this._decompressWorker();var i=!this._dataBinary;i&&!n&&(t=t.pipe(new a.Utf8EncodeWorker)),!i&&n&&(t=t.pipe(new a.Utf8DecodeWorker))}catch(e){(t=new h("error")).error(e)}return new s(t,r,"")},async:function(e,t){return this.internalStream(e).accumulate(t)},nodeStream:function(e,t){return this.internalStream(e||"nodebuffer").toNodejsStream(t)},_compressWorker:function(e,t){if(this._data instanceof o&&this._data.compression.magic===e.magic)return this._data.getCompressedWorker();var r=this._decompressWorker();return this._dataBinary||(r=r.pipe(new a.Utf8EncodeWorker)),o.createWorkerFrom(r,e,t)},_decompressWorker:function(){return this._data instanceof o?this._data.getContentWorker():this._data instanceof h?this._data:new i(this._data)}};for(var u=["asText","asBinary","asNodeBuffer","asUint8Array","asArrayBuffer"],l=function(){throw new Error("This method has been removed in JSZip 3.0, please check the upgrade guide.")},f=0;f<u.length;f++)n.prototype[u[f]]=l;t.exports=n},{"./compressedObject":2,"./stream/DataWorker":27,"./stream/GenericWorker":28,"./stream/StreamHelper":29,"./utf8":31}],36:[function(e,l,t){(function(t){"use strict";var r,n,e=t.MutationObserver||t.WebKitMutationObserver;if(e){var i=0,s=new e(u),a=t.document.createTextNode("");s.observe(a,{characterData:!0}),r=function(){a.data=i=++i%2}}else if(t.setImmediate||void 0===t.MessageChannel)r="document"in t&&"onreadystatechange"in t.document.createElement("script")?function(){var e=t.document.createElement("script");e.onreadystatechange=function(){u(),e.onreadystatechange=null,e.parentNode.removeChild(e),e=null},t.document.documentElement.appendChild(e)}:function(){setTimeout(u,0)};else{var o=new t.MessageChannel;o.port1.onmessage=u,r=function(){o.port2.postMessage(0)}}var h=[];function u(){var e,t;n=!0;for(var r=h.length;r;){for(t=h,h=[],e=-1;++e<r;)t[e]();r=h.length}n=!1}l.exports=function(e){1!==h.push(e)||n||r()}}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}],37:[function(e,t,r){"use strict";var i=e("immediate");function u(){}var l={},s=["REJECTED"],a=["FULFILLED"],n=["PENDING"];function o(e){if("function"!=typeof e)throw new TypeError("resolver must be a function");this.state=n,this.queue=[],this.outcome=void 0,e!==u&&d(this,e)}function h(e,t,r){this.promise=e,"function"==typeof t&&(this.onFulfilled=t,this.callFulfilled=this.otherCallFulfilled),"function"==typeof r&&(this.onRejected=r,this.callRejected=this.otherCallRejected)}function f(t,r,n){i(function(){var e;try{e=r(n)}catch(e){return l.reject(t,e)}e===t?l.reject(t,new TypeError("Cannot resolve promise with itself")):l.resolve(t,e)})}function c(e){var t=e&&e.then;if(e&&("object"==typeof e||"function"==typeof e)&&"function"==typeof t)return function(){t.apply(e,arguments)}}function d(t,e){var r=!1;function n(e){r||(r=!0,l.reject(t,e))}function i(e){r||(r=!0,l.resolve(t,e))}var s=p(function(){e(i,n)});"error"===s.status&&n(s.value)}function p(e,t){var r={};try{r.value=e(t),r.status="success"}catch(e){r.status="error",r.value=e}return r}(t.exports=o).prototype.finally=function(t){if("function"!=typeof t)return this;var r=this.constructor;return this.then(function(e){return r.resolve(t()).then(function(){return e})},function(e){return r.resolve(t()).then(function(){throw e})})},o.prototype.catch=function(e){return this.then(null,e)},o.prototype.then=function(e,t){if("function"!=typeof e&&this.state===a||"function"!=typeof t&&this.state===s)return this;var r=new this.constructor(u);this.state!==n?f(r,this.state===a?e:t,this.outcome):this.queue.push(new h(r,e,t));return r},h.prototype.callFulfilled=function(e){l.resolve(this.promise,e)},h.prototype.otherCallFulfilled=function(e){f(this.promise,this.onFulfilled,e)},h.prototype.callRejected=function(e){l.reject(this.promise,e)},h.prototype.otherCallRejected=function(e){f(this.promise,this.onRejected,e)},l.resolve=function(e,t){var r=p(c,t);if("error"===r.status)return l.reject(e,r.value);var n=r.value;if(n)d(e,n);else{e.state=a,e.outcome=t;for(var i=-1,s=e.queue.length;++i<s;)e.queue[i].callFulfilled(t)}return e},l.reject=function(e,t){e.state=s,e.outcome=t;for(var r=-1,n=e.queue.length;++r<n;)e.queue[r].callRejected(t);return e},o.resolve=function(e){if(e instanceof this)return e;return l.resolve(new this(u),e)},o.reject=function(e){var t=new this(u);return l.reject(t,e)},o.all=function(e){var r=this;if("[object Array]"!==Object.prototype.toString.call(e))return this.reject(new TypeError("must be an array"));var n=e.length,i=!1;if(!n)return this.resolve([]);var s=new Array(n),a=0,t=-1,o=new this(u);for(;++t<n;)h(e[t],t);return o;function h(e,t){r.resolve(e).then(function(e){s[t]=e,++a!==n||i||(i=!0,l.resolve(o,s))},function(e){i||(i=!0,l.reject(o,e))})}},o.race=function(e){var t=this;if("[object Array]"!==Object.prototype.toString.call(e))return this.reject(new TypeError("must be an array"));var r=e.length,n=!1;if(!r)return this.resolve([]);var i=-1,s=new this(u);for(;++i<r;)a=e[i],t.resolve(a).then(function(e){n||(n=!0,l.resolve(s,e))},function(e){n||(n=!0,l.reject(s,e))});var a;return s}},{immediate:36}],38:[function(e,t,r){"use strict";var n={};(0,e("./lib/utils/common").assign)(n,e("./lib/deflate"),e("./lib/inflate"),e("./lib/zlib/constants")),t.exports=n},{"./lib/deflate":39,"./lib/inflate":40,"./lib/utils/common":41,"./lib/zlib/constants":44}],39:[function(e,t,r){"use strict";var a=e("./zlib/deflate"),o=e("./utils/common"),h=e("./utils/strings"),i=e("./zlib/messages"),s=e("./zlib/zstream"),u=Object.prototype.toString,l=0,f=-1,c=0,d=8;function p(e){if(!(this instanceof p))return new p(e);this.options=o.assign({level:f,method:d,chunkSize:16384,windowBits:15,memLevel:8,strategy:c,to:""},e||{});var t=this.options;t.raw&&0<t.windowBits?t.windowBits=-t.windowBits:t.gzip&&0<t.windowBits&&t.windowBits<16&&(t.windowBits+=16),this.err=0,this.msg="",this.ended=!1,this.chunks=[],this.strm=new s,this.strm.avail_out=0;var r=a.deflateInit2(this.strm,t.level,t.method,t.windowBits,t.memLevel,t.strategy);if(r!==l)throw new Error(i[r]);if(t.header&&a.deflateSetHeader(this.strm,t.header),t.dictionary){var n;if(n="string"==typeof t.dictionary?h.string2buf(t.dictionary):"[object ArrayBuffer]"===u.call(t.dictionary)?new Uint8Array(t.dictionary):t.dictionary,(r=a.deflateSetDictionary(this.strm,n))!==l)throw new Error(i[r]);this._dict_set=!0}}function n(e,t){var r=new p(t);if(r.push(e,!0),r.err)throw r.msg||i[r.err];return r.result}p.prototype.push=function(e,t){var r,n,i=this.strm,s=this.options.chunkSize;if(this.ended)return!1;n=t===~~t?t:!0===t?4:0,"string"==typeof e?i.input=h.string2buf(e):"[object ArrayBuffer]"===u.call(e)?i.input=new Uint8Array(e):i.input=e,i.next_in=0,i.avail_in=i.input.length;do{if(0===i.avail_out&&(i.output=new o.Buf8(s),i.next_out=0,i.avail_out=s),1!==(r=a.deflate(i,n))&&r!==l)return this.onEnd(r),!(this.ended=!0);0!==i.avail_out&&(0!==i.avail_in||4!==n&&2!==n)||("string"===this.options.to?this.onData(h.buf2binstring(o.shrinkBuf(i.output,i.next_out))):this.onData(o.shrinkBuf(i.output,i.next_out)))}while((0<i.avail_in||0===i.avail_out)&&1!==r);return 4===n?(r=a.deflateEnd(this.strm),this.onEnd(r),this.ended=!0,r===l):2!==n||(this.onEnd(l),!(i.avail_out=0))},p.prototype.onData=function(e){this.chunks.push(e)},p.prototype.onEnd=function(e){e===l&&("string"===this.options.to?this.result=this.chunks.join(""):this.result=o.flattenChunks(this.chunks)),this.chunks=[],this.err=e,this.msg=this.strm.msg},r.Deflate=p,r.deflate=n,r.deflateRaw=function(e,t){return(t=t||{}).raw=!0,n(e,t)},r.gzip=function(e,t){return(t=t||{}).gzip=!0,n(e,t)}},{"./utils/common":41,"./utils/strings":42,"./zlib/deflate":46,"./zlib/messages":51,"./zlib/zstream":53}],40:[function(e,t,r){"use strict";var c=e("./zlib/inflate"),d=e("./utils/common"),p=e("./utils/strings"),m=e("./zlib/constants"),n=e("./zlib/messages"),i=e("./zlib/zstream"),s=e("./zlib/gzheader"),_=Object.prototype.toString;function a(e){if(!(this instanceof a))return new a(e);this.options=d.assign({chunkSize:16384,windowBits:0,to:""},e||{});var t=this.options;t.raw&&0<=t.windowBits&&t.windowBits<16&&(t.windowBits=-t.windowBits,0===t.windowBits&&(t.windowBits=-15)),!(0<=t.windowBits&&t.windowBits<16)||e&&e.windowBits||(t.windowBits+=32),15<t.windowBits&&t.windowBits<48&&0==(15&t.windowBits)&&(t.windowBits|=15),this.err=0,this.msg="",this.ended=!1,this.chunks=[],this.strm=new i,this.strm.avail_out=0;var r=c.inflateInit2(this.strm,t.windowBits);if(r!==m.Z_OK)throw new Error(n[r]);this.header=new s,c.inflateGetHeader(this.strm,this.header)}function o(e,t){var r=new a(t);if(r.push(e,!0),r.err)throw r.msg||n[r.err];return r.result}a.prototype.push=function(e,t){var r,n,i,s,a,o,h=this.strm,u=this.options.chunkSize,l=this.options.dictionary,f=!1;if(this.ended)return!1;n=t===~~t?t:!0===t?m.Z_FINISH:m.Z_NO_FLUSH,"string"==typeof e?h.input=p.binstring2buf(e):"[object ArrayBuffer]"===_.call(e)?h.input=new Uint8Array(e):h.input=e,h.next_in=0,h.avail_in=h.input.length;do{if(0===h.avail_out&&(h.output=new d.Buf8(u),h.next_out=0,h.avail_out=u),(r=c.inflate(h,m.Z_NO_FLUSH))===m.Z_NEED_DICT&&l&&(o="string"==typeof l?p.string2buf(l):"[object ArrayBuffer]"===_.call(l)?new Uint8Array(l):l,r=c.inflateSetDictionary(this.strm,o)),r===m.Z_BUF_ERROR&&!0===f&&(r=m.Z_OK,f=!1),r!==m.Z_STREAM_END&&r!==m.Z_OK)return this.onEnd(r),!(this.ended=!0);h.next_out&&(0!==h.avail_out&&r!==m.Z_STREAM_END&&(0!==h.avail_in||n!==m.Z_FINISH&&n!==m.Z_SYNC_FLUSH)||("string"===this.options.to?(i=p.utf8border(h.output,h.next_out),s=h.next_out-i,a=p.buf2string(h.output,i),h.next_out=s,h.avail_out=u-s,s&&d.arraySet(h.output,h.output,i,s,0),this.onData(a)):this.onData(d.shrinkBuf(h.output,h.next_out)))),0===h.avail_in&&0===h.avail_out&&(f=!0)}while((0<h.avail_in||0===h.avail_out)&&r!==m.Z_STREAM_END);return r===m.Z_STREAM_END&&(n=m.Z_FINISH),n===m.Z_FINISH?(r=c.inflateEnd(this.strm),this.onEnd(r),this.ended=!0,r===m.Z_OK):n!==m.Z_SYNC_FLUSH||(this.onEnd(m.Z_OK),!(h.avail_out=0))},a.prototype.onData=function(e){this.chunks.push(e)},a.prototype.onEnd=function(e){e===m.Z_OK&&("string"===this.options.to?this.result=this.chunks.join(""):this.result=d.flattenChunks(this.chunks)),this.chunks=[],this.err=e,this.msg=this.strm.msg},r.Inflate=a,r.inflate=o,r.inflateRaw=function(e,t){return(t=t||{}).raw=!0,o(e,t)},r.ungzip=o},{"./utils/common":41,"./utils/strings":42,"./zlib/constants":44,"./zlib/gzheader":47,"./zlib/inflate":49,"./zlib/messages":51,"./zlib/zstream":53}],41:[function(e,t,r){"use strict";var n="undefined"!=typeof Uint8Array&&"undefined"!=typeof Uint16Array&&"undefined"!=typeof Int32Array;r.assign=function(e){for(var t=Array.prototype.slice.call(arguments,1);t.length;){var r=t.shift();if(r){if("object"!=typeof r)throw new TypeError(r+"must be non-object");for(var n in r)r.hasOwnProperty(n)&&(e[n]=r[n])}}return e},r.shrinkBuf=function(e,t){return e.length===t?e:e.subarray?e.subarray(0,t):(e.length=t,e)};var i={arraySet:function(e,t,r,n,i){if(t.subarray&&e.subarray)e.set(t.subarray(r,r+n),i);else for(var s=0;s<n;s++)e[i+s]=t[r+s]},flattenChunks:function(e){var t,r,n,i,s,a;for(t=n=0,r=e.length;t<r;t++)n+=e[t].length;for(a=new Uint8Array(n),t=i=0,r=e.length;t<r;t++)s=e[t],a.set(s,i),i+=s.length;return a}},s={arraySet:function(e,t,r,n,i){for(var s=0;s<n;s++)e[i+s]=t[r+s]},flattenChunks:function(e){return[].concat.apply([],e)}};r.setTyped=function(e){e?(r.Buf8=Uint8Array,r.Buf16=Uint16Array,r.Buf32=Int32Array,r.assign(r,i)):(r.Buf8=Array,r.Buf16=Array,r.Buf32=Array,r.assign(r,s))},r.setTyped(n)},{}],42:[function(e,t,r){"use strict";var h=e("./common"),i=!0,s=!0;try{String.fromCharCode.apply(null,[0])}catch(e){i=!1}try{String.fromCharCode.apply(null,new Uint8Array(1))}catch(e){s=!1}for(var u=new h.Buf8(256),n=0;n<256;n++)u[n]=252<=n?6:248<=n?5:240<=n?4:224<=n?3:192<=n?2:1;function l(e,t){if(t<65537&&(e.subarray&&s||!e.subarray&&i))return String.fromCharCode.apply(null,h.shrinkBuf(e,t));for(var r="",n=0;n<t;n++)r+=String.fromCharCode(e[n]);return r}u[254]=u[254]=1,r.string2buf=function(e){var t,r,n,i,s,a=e.length,o=0;for(i=0;i<a;i++)55296==(64512&(r=e.charCodeAt(i)))&&i+1<a&&56320==(64512&(n=e.charCodeAt(i+1)))&&(r=65536+(r-55296<<10)+(n-56320),i++),o+=r<128?1:r<2048?2:r<65536?3:4;for(t=new h.Buf8(o),i=s=0;s<o;i++)55296==(64512&(r=e.charCodeAt(i)))&&i+1<a&&56320==(64512&(n=e.charCodeAt(i+1)))&&(r=65536+(r-55296<<10)+(n-56320),i++),r<128?t[s++]=r:(r<2048?t[s++]=192|r>>>6:(r<65536?t[s++]=224|r>>>12:(t[s++]=240|r>>>18,t[s++]=128|r>>>12&63),t[s++]=128|r>>>6&63),t[s++]=128|63&r);return t},r.buf2binstring=function(e){return l(e,e.length)},r.binstring2buf=function(e){for(var t=new h.Buf8(e.length),r=0,n=t.length;r<n;r++)t[r]=e.charCodeAt(r);return t},r.buf2string=function(e,t){var r,n,i,s,a=t||e.length,o=new Array(2*a);for(r=n=0;r<a;)if((i=e[r++])<128)o[n++]=i;else if(4<(s=u[i]))o[n++]=65533,r+=s-1;else{for(i&=2===s?31:3===s?15:7;1<s&&r<a;)i=i<<6|63&e[r++],s--;1<s?o[n++]=65533:i<65536?o[n++]=i:(i-=65536,o[n++]=55296|i>>10&1023,o[n++]=56320|1023&i)}return l(o,n)},r.utf8border=function(e,t){var r;for((t=t||e.length)>e.length&&(t=e.length),r=t-1;0<=r&&128==(192&e[r]);)r--;return r<0?t:0===r?t:r+u[e[r]]>t?r:t}},{"./common":41}],43:[function(e,t,r){"use strict";t.exports=function(e,t,r,n){for(var i=65535&e|0,s=e>>>16&65535|0,a=0;0!==r;){for(r-=a=2e3<r?2e3:r;s=s+(i=i+t[n++]|0)|0,--a;);i%=65521,s%=65521}return i|s<<16|0}},{}],44:[function(e,t,r){"use strict";t.exports={Z_NO_FLUSH:0,Z_PARTIAL_FLUSH:1,Z_SYNC_FLUSH:2,Z_FULL_FLUSH:3,Z_FINISH:4,Z_BLOCK:5,Z_TREES:6,Z_OK:0,Z_STREAM_END:1,Z_NEED_DICT:2,Z_ERRNO:-1,Z_STREAM_ERROR:-2,Z_DATA_ERROR:-3,Z_BUF_ERROR:-5,Z_NO_COMPRESSION:0,Z_BEST_SPEED:1,Z_BEST_COMPRESSION:9,Z_DEFAULT_COMPRESSION:-1,Z_FILTERED:1,Z_HUFFMAN_ONLY:2,Z_RLE:3,Z_FIXED:4,Z_DEFAULT_STRATEGY:0,Z_BINARY:0,Z_TEXT:1,Z_UNKNOWN:2,Z_DEFLATED:8}},{}],45:[function(e,t,r){"use strict";var o=function(){for(var e,t=[],r=0;r<256;r++){e=r;for(var n=0;n<8;n++)e=1&e?3988292384^e>>>1:e>>>1;t[r]=e}return t}();t.exports=function(e,t,r,n){var i=o,s=n+r;e^=-1;for(var a=n;a<s;a++)e=e>>>8^i[255&(e^t[a])];return-1^e}},{}],46:[function(e,t,r){"use strict";var h,c=e("../utils/common"),u=e("./trees"),d=e("./adler32"),p=e("./crc32"),n=e("./messages"),l=0,f=4,m=0,_=-2,g=-1,b=4,i=2,v=8,y=9,s=286,a=30,o=19,w=2*s+1,k=15,x=3,S=258,z=S+x+1,C=42,E=113,A=1,I=2,O=3,B=4;function R(e,t){return e.msg=n[t],t}function T(e){return(e<<1)-(4<e?9:0)}function D(e){for(var t=e.length;0<=--t;)e[t]=0}function F(e){var t=e.state,r=t.pending;r>e.avail_out&&(r=e.avail_out),0!==r&&(c.arraySet(e.output,t.pending_buf,t.pending_out,r,e.next_out),e.next_out+=r,t.pending_out+=r,e.total_out+=r,e.avail_out-=r,t.pending-=r,0===t.pending&&(t.pending_out=0))}function N(e,t){u._tr_flush_block(e,0<=e.block_start?e.block_start:-1,e.strstart-e.block_start,t),e.block_start=e.strstart,F(e.strm)}function U(e,t){e.pending_buf[e.pending++]=t}function P(e,t){e.pending_buf[e.pending++]=t>>>8&255,e.pending_buf[e.pending++]=255&t}function L(e,t){var r,n,i=e.max_chain_length,s=e.strstart,a=e.prev_length,o=e.nice_match,h=e.strstart>e.w_size-z?e.strstart-(e.w_size-z):0,u=e.window,l=e.w_mask,f=e.prev,c=e.strstart+S,d=u[s+a-1],p=u[s+a];e.prev_length>=e.good_match&&(i>>=2),o>e.lookahead&&(o=e.lookahead);do{if(u[(r=t)+a]===p&&u[r+a-1]===d&&u[r]===u[s]&&u[++r]===u[s+1]){s+=2,r++;do{}while(u[++s]===u[++r]&&u[++s]===u[++r]&&u[++s]===u[++r]&&u[++s]===u[++r]&&u[++s]===u[++r]&&u[++s]===u[++r]&&u[++s]===u[++r]&&u[++s]===u[++r]&&s<c);if(n=S-(c-s),s=c-S,a<n){if(e.match_start=t,o<=(a=n))break;d=u[s+a-1],p=u[s+a]}}}while((t=f[t&l])>h&&0!=--i);return a<=e.lookahead?a:e.lookahead}function j(e){var t,r,n,i,s,a,o,h,u,l,f=e.w_size;do{if(i=e.window_size-e.lookahead-e.strstart,e.strstart>=f+(f-z)){for(c.arraySet(e.window,e.window,f,f,0),e.match_start-=f,e.strstart-=f,e.block_start-=f,t=r=e.hash_size;n=e.head[--t],e.head[t]=f<=n?n-f:0,--r;);for(t=r=f;n=e.prev[--t],e.prev[t]=f<=n?n-f:0,--r;);i+=f}if(0===e.strm.avail_in)break;if(a=e.strm,o=e.window,h=e.strstart+e.lookahead,u=i,l=void 0,l=a.avail_in,u<l&&(l=u),r=0===l?0:(a.avail_in-=l,c.arraySet(o,a.input,a.next_in,l,h),1===a.state.wrap?a.adler=d(a.adler,o,l,h):2===a.state.wrap&&(a.adler=p(a.adler,o,l,h)),a.next_in+=l,a.total_in+=l,l),e.lookahead+=r,e.lookahead+e.insert>=x)for(s=e.strstart-e.insert,e.ins_h=e.window[s],e.ins_h=(e.ins_h<<e.hash_shift^e.window[s+1])&e.hash_mask;e.insert&&(e.ins_h=(e.ins_h<<e.hash_shift^e.window[s+x-1])&e.hash_mask,e.prev[s&e.w_mask]=e.head[e.ins_h],e.head[e.ins_h]=s,s++,e.insert--,!(e.lookahead+e.insert<x)););}while(e.lookahead<z&&0!==e.strm.avail_in)}function Z(e,t){for(var r,n;;){if(e.lookahead<z){if(j(e),e.lookahead<z&&t===l)return A;if(0===e.lookahead)break}if(r=0,e.lookahead>=x&&(e.ins_h=(e.ins_h<<e.hash_shift^e.window[e.strstart+x-1])&e.hash_mask,r=e.prev[e.strstart&e.w_mask]=e.head[e.ins_h],e.head[e.ins_h]=e.strstart),0!==r&&e.strstart-r<=e.w_size-z&&(e.match_length=L(e,r)),e.match_length>=x)if(n=u._tr_tally(e,e.strstart-e.match_start,e.match_length-x),e.lookahead-=e.match_length,e.match_length<=e.max_lazy_match&&e.lookahead>=x){for(e.match_length--;e.strstart++,e.ins_h=(e.ins_h<<e.hash_shift^e.window[e.strstart+x-1])&e.hash_mask,r=e.prev[e.strstart&e.w_mask]=e.head[e.ins_h],e.head[e.ins_h]=e.strstart,0!=--e.match_length;);e.strstart++}else e.strstart+=e.match_length,e.match_length=0,e.ins_h=e.window[e.strstart],e.ins_h=(e.ins_h<<e.hash_shift^e.window[e.strstart+1])&e.hash_mask;else n=u._tr_tally(e,0,e.window[e.strstart]),e.lookahead--,e.strstart++;if(n&&(N(e,!1),0===e.strm.avail_out))return A}return e.insert=e.strstart<x-1?e.strstart:x-1,t===f?(N(e,!0),0===e.strm.avail_out?O:B):e.last_lit&&(N(e,!1),0===e.strm.avail_out)?A:I}function W(e,t){for(var r,n,i;;){if(e.lookahead<z){if(j(e),e.lookahead<z&&t===l)return A;if(0===e.lookahead)break}if(r=0,e.lookahead>=x&&(e.ins_h=(e.ins_h<<e.hash_shift^e.window[e.strstart+x-1])&e.hash_mask,r=e.prev[e.strstart&e.w_mask]=e.head[e.ins_h],e.head[e.ins_h]=e.strstart),e.prev_length=e.match_length,e.prev_match=e.match_start,e.match_length=x-1,0!==r&&e.prev_length<e.max_lazy_match&&e.strstart-r<=e.w_size-z&&(e.match_length=L(e,r),e.match_length<=5&&(1===e.strategy||e.match_length===x&&4096<e.strstart-e.match_start)&&(e.match_length=x-1)),e.prev_length>=x&&e.match_length<=e.prev_length){for(i=e.strstart+e.lookahead-x,n=u._tr_tally(e,e.strstart-1-e.prev_match,e.prev_length-x),e.lookahead-=e.prev_length-1,e.prev_length-=2;++e.strstart<=i&&(e.ins_h=(e.ins_h<<e.hash_shift^e.window[e.strstart+x-1])&e.hash_mask,r=e.prev[e.strstart&e.w_mask]=e.head[e.ins_h],e.head[e.ins_h]=e.strstart),0!=--e.prev_length;);if(e.match_available=0,e.match_length=x-1,e.strstart++,n&&(N(e,!1),0===e.strm.avail_out))return A}else if(e.match_available){if((n=u._tr_tally(e,0,e.window[e.strstart-1]))&&N(e,!1),e.strstart++,e.lookahead--,0===e.strm.avail_out)return A}else e.match_available=1,e.strstart++,e.lookahead--}return e.match_available&&(n=u._tr_tally(e,0,e.window[e.strstart-1]),e.match_available=0),e.insert=e.strstart<x-1?e.strstart:x-1,t===f?(N(e,!0),0===e.strm.avail_out?O:B):e.last_lit&&(N(e,!1),0===e.strm.avail_out)?A:I}function M(e,t,r,n,i){this.good_length=e,this.max_lazy=t,this.nice_length=r,this.max_chain=n,this.func=i}function H(){this.strm=null,this.status=0,this.pending_buf=null,this.pending_buf_size=0,this.pending_out=0,this.pending=0,this.wrap=0,this.gzhead=null,this.gzindex=0,this.method=v,this.last_flush=-1,this.w_size=0,this.w_bits=0,this.w_mask=0,this.window=null,this.window_size=0,this.prev=null,this.head=null,this.ins_h=0,this.hash_size=0,this.hash_bits=0,this.hash_mask=0,this.hash_shift=0,this.block_start=0,this.match_length=0,this.prev_match=0,this.match_available=0,this.strstart=0,this.match_start=0,this.lookahead=0,this.prev_length=0,this.max_chain_length=0,this.max_lazy_match=0,this.level=0,this.strategy=0,this.good_match=0,this.nice_match=0,this.dyn_ltree=new c.Buf16(2*w),this.dyn_dtree=new c.Buf16(2*(2*a+1)),this.bl_tree=new c.Buf16(2*(2*o+1)),D(this.dyn_ltree),D(this.dyn_dtree),D(this.bl_tree),this.l_desc=null,this.d_desc=null,this.bl_desc=null,this.bl_count=new c.Buf16(k+1),this.heap=new c.Buf16(2*s+1),D(this.heap),this.heap_len=0,this.heap_max=0,this.depth=new c.Buf16(2*s+1),D(this.depth),this.l_buf=0,this.lit_bufsize=0,this.last_lit=0,this.d_buf=0,this.opt_len=0,this.static_len=0,this.matches=0,this.insert=0,this.bi_buf=0,this.bi_valid=0}function G(e){var t;return e&&e.state?(e.total_in=e.total_out=0,e.data_type=i,(t=e.state).pending=0,t.pending_out=0,t.wrap<0&&(t.wrap=-t.wrap),t.status=t.wrap?C:E,e.adler=2===t.wrap?0:1,t.last_flush=l,u._tr_init(t),m):R(e,_)}function K(e){var t=G(e);return t===m&&function(e){e.window_size=2*e.w_size,D(e.head),e.max_lazy_match=h[e.level].max_lazy,e.good_match=h[e.level].good_length,e.nice_match=h[e.level].nice_length,e.max_chain_length=h[e.level].max_chain,e.strstart=0,e.block_start=0,e.lookahead=0,e.insert=0,e.match_length=e.prev_length=x-1,e.match_available=0,e.ins_h=0}(e.state),t}function Y(e,t,r,n,i,s){if(!e)return _;var a=1;if(t===g&&(t=6),n<0?(a=0,n=-n):15<n&&(a=2,n-=16),i<1||y<i||r!==v||n<8||15<n||t<0||9<t||s<0||b<s)return R(e,_);8===n&&(n=9);var o=new H;return(e.state=o).strm=e,o.wrap=a,o.gzhead=null,o.w_bits=n,o.w_size=1<<o.w_bits,o.w_mask=o.w_size-1,o.hash_bits=i+7,o.hash_size=1<<o.hash_bits,o.hash_mask=o.hash_size-1,o.hash_shift=~~((o.hash_bits+x-1)/x),o.window=new c.Buf8(2*o.w_size),o.head=new c.Buf16(o.hash_size),o.prev=new c.Buf16(o.w_size),o.lit_bufsize=1<<i+6,o.pending_buf_size=4*o.lit_bufsize,o.pending_buf=new c.Buf8(o.pending_buf_size),o.d_buf=1*o.lit_bufsize,o.l_buf=3*o.lit_bufsize,o.level=t,o.strategy=s,o.method=r,K(e)}h=[new M(0,0,0,0,function(e,t){var r=65535;for(r>e.pending_buf_size-5&&(r=e.pending_buf_size-5);;){if(e.lookahead<=1){if(j(e),0===e.lookahead&&t===l)return A;if(0===e.lookahead)break}e.strstart+=e.lookahead,e.lookahead=0;var n=e.block_start+r;if((0===e.strstart||e.strstart>=n)&&(e.lookahead=e.strstart-n,e.strstart=n,N(e,!1),0===e.strm.avail_out))return A;if(e.strstart-e.block_start>=e.w_size-z&&(N(e,!1),0===e.strm.avail_out))return A}return e.insert=0,t===f?(N(e,!0),0===e.strm.avail_out?O:B):(e.strstart>e.block_start&&(N(e,!1),e.strm.avail_out),A)}),new M(4,4,8,4,Z),new M(4,5,16,8,Z),new M(4,6,32,32,Z),new M(4,4,16,16,W),new M(8,16,32,32,W),new M(8,16,128,128,W),new M(8,32,128,256,W),new M(32,128,258,1024,W),new M(32,258,258,4096,W)],r.deflateInit=function(e,t){return Y(e,t,v,15,8,0)},r.deflateInit2=Y,r.deflateReset=K,r.deflateResetKeep=G,r.deflateSetHeader=function(e,t){return e&&e.state?2!==e.state.wrap?_:(e.state.gzhead=t,m):_},r.deflate=function(e,t){var r,n,i,s;if(!e||!e.state||5<t||t<0)return e?R(e,_):_;if(n=e.state,!e.output||!e.input&&0!==e.avail_in||666===n.status&&t!==f)return R(e,0===e.avail_out?-5:_);if(n.strm=e,r=n.last_flush,n.last_flush=t,n.status===C)if(2===n.wrap)e.adler=0,U(n,31),U(n,139),U(n,8),n.gzhead?(U(n,(n.gzhead.text?1:0)+(n.gzhead.hcrc?2:0)+(n.gzhead.extra?4:0)+(n.gzhead.name?8:0)+(n.gzhead.comment?16:0)),U(n,255&n.gzhead.time),U(n,n.gzhead.time>>8&255),U(n,n.gzhead.time>>16&255),U(n,n.gzhead.time>>24&255),U(n,9===n.level?2:2<=n.strategy||n.level<2?4:0),U(n,255&n.gzhead.os),n.gzhead.extra&&n.gzhead.extra.length&&(U(n,255&n.gzhead.extra.length),U(n,n.gzhead.extra.length>>8&255)),n.gzhead.hcrc&&(e.adler=p(e.adler,n.pending_buf,n.pending,0)),n.gzindex=0,n.status=69):(U(n,0),U(n,0),U(n,0),U(n,0),U(n,0),U(n,9===n.level?2:2<=n.strategy||n.level<2?4:0),U(n,3),n.status=E);else{var a=v+(n.w_bits-8<<4)<<8;a|=(2<=n.strategy||n.level<2?0:n.level<6?1:6===n.level?2:3)<<6,0!==n.strstart&&(a|=32),a+=31-a%31,n.status=E,P(n,a),0!==n.strstart&&(P(n,e.adler>>>16),P(n,65535&e.adler)),e.adler=1}if(69===n.status)if(n.gzhead.extra){for(i=n.pending;n.gzindex<(65535&n.gzhead.extra.length)&&(n.pending!==n.pending_buf_size||(n.gzhead.hcrc&&n.pending>i&&(e.adler=p(e.adler,n.pending_buf,n.pending-i,i)),F(e),i=n.pending,n.pending!==n.pending_buf_size));)U(n,255&n.gzhead.extra[n.gzindex]),n.gzindex++;n.gzhead.hcrc&&n.pending>i&&(e.adler=p(e.adler,n.pending_buf,n.pending-i,i)),n.gzindex===n.gzhead.extra.length&&(n.gzindex=0,n.status=73)}else n.status=73;if(73===n.status)if(n.gzhead.name){i=n.pending;do{if(n.pending===n.pending_buf_size&&(n.gzhead.hcrc&&n.pending>i&&(e.adler=p(e.adler,n.pending_buf,n.pending-i,i)),F(e),i=n.pending,n.pending===n.pending_buf_size)){s=1;break}s=n.gzindex<n.gzhead.name.length?255&n.gzhead.name.charCodeAt(n.gzindex++):0,U(n,s)}while(0!==s);n.gzhead.hcrc&&n.pending>i&&(e.adler=p(e.adler,n.pending_buf,n.pending-i,i)),0===s&&(n.gzindex=0,n.status=91)}else n.status=91;if(91===n.status)if(n.gzhead.comment){i=n.pending;do{if(n.pending===n.pending_buf_size&&(n.gzhead.hcrc&&n.pending>i&&(e.adler=p(e.adler,n.pending_buf,n.pending-i,i)),F(e),i=n.pending,n.pending===n.pending_buf_size)){s=1;break}s=n.gzindex<n.gzhead.comment.length?255&n.gzhead.comment.charCodeAt(n.gzindex++):0,U(n,s)}while(0!==s);n.gzhead.hcrc&&n.pending>i&&(e.adler=p(e.adler,n.pending_buf,n.pending-i,i)),0===s&&(n.status=103)}else n.status=103;if(103===n.status&&(n.gzhead.hcrc?(n.pending+2>n.pending_buf_size&&F(e),n.pending+2<=n.pending_buf_size&&(U(n,255&e.adler),U(n,e.adler>>8&255),e.adler=0,n.status=E)):n.status=E),0!==n.pending){if(F(e),0===e.avail_out)return n.last_flush=-1,m}else if(0===e.avail_in&&T(t)<=T(r)&&t!==f)return R(e,-5);if(666===n.status&&0!==e.avail_in)return R(e,-5);if(0!==e.avail_in||0!==n.lookahead||t!==l&&666!==n.status){var o=2===n.strategy?function(e,t){for(var r;;){if(0===e.lookahead&&(j(e),0===e.lookahead)){if(t===l)return A;break}if(e.match_length=0,r=u._tr_tally(e,0,e.window[e.strstart]),e.lookahead--,e.strstart++,r&&(N(e,!1),0===e.strm.avail_out))return A}return e.insert=0,t===f?(N(e,!0),0===e.strm.avail_out?O:B):e.last_lit&&(N(e,!1),0===e.strm.avail_out)?A:I}(n,t):3===n.strategy?function(e,t){for(var r,n,i,s,a=e.window;;){if(e.lookahead<=S){if(j(e),e.lookahead<=S&&t===l)return A;if(0===e.lookahead)break}if(e.match_length=0,e.lookahead>=x&&0<e.strstart&&(n=a[i=e.strstart-1])===a[++i]&&n===a[++i]&&n===a[++i]){s=e.strstart+S;do{}while(n===a[++i]&&n===a[++i]&&n===a[++i]&&n===a[++i]&&n===a[++i]&&n===a[++i]&&n===a[++i]&&n===a[++i]&&i<s);e.match_length=S-(s-i),e.match_length>e.lookahead&&(e.match_length=e.lookahead)}if(e.match_length>=x?(r=u._tr_tally(e,1,e.match_length-x),e.lookahead-=e.match_length,e.strstart+=e.match_length,e.match_length=0):(r=u._tr_tally(e,0,e.window[e.strstart]),e.lookahead--,e.strstart++),r&&(N(e,!1),0===e.strm.avail_out))return A}return e.insert=0,t===f?(N(e,!0),0===e.strm.avail_out?O:B):e.last_lit&&(N(e,!1),0===e.strm.avail_out)?A:I}(n,t):h[n.level].func(n,t);if(o!==O&&o!==B||(n.status=666),o===A||o===O)return 0===e.avail_out&&(n.last_flush=-1),m;if(o===I&&(1===t?u._tr_align(n):5!==t&&(u._tr_stored_block(n,0,0,!1),3===t&&(D(n.head),0===n.lookahead&&(n.strstart=0,n.block_start=0,n.insert=0))),F(e),0===e.avail_out))return n.last_flush=-1,m}return t!==f?m:n.wrap<=0?1:(2===n.wrap?(U(n,255&e.adler),U(n,e.adler>>8&255),U(n,e.adler>>16&255),U(n,e.adler>>24&255),U(n,255&e.total_in),U(n,e.total_in>>8&255),U(n,e.total_in>>16&255),U(n,e.total_in>>24&255)):(P(n,e.adler>>>16),P(n,65535&e.adler)),F(e),0<n.wrap&&(n.wrap=-n.wrap),0!==n.pending?m:1)},r.deflateEnd=function(e){var t;return e&&e.state?(t=e.state.status)!==C&&69!==t&&73!==t&&91!==t&&103!==t&&t!==E&&666!==t?R(e,_):(e.state=null,t===E?R(e,-3):m):_},r.deflateSetDictionary=function(e,t){var r,n,i,s,a,o,h,u,l=t.length;if(!e||!e.state)return _;if(2===(s=(r=e.state).wrap)||1===s&&r.status!==C||r.lookahead)return _;for(1===s&&(e.adler=d(e.adler,t,l,0)),r.wrap=0,l>=r.w_size&&(0===s&&(D(r.head),r.strstart=0,r.block_start=0,r.insert=0),u=new c.Buf8(r.w_size),c.arraySet(u,t,l-r.w_size,r.w_size,0),t=u,l=r.w_size),a=e.avail_in,o=e.next_in,h=e.input,e.avail_in=l,e.next_in=0,e.input=t,j(r);r.lookahead>=x;){for(n=r.strstart,i=r.lookahead-(x-1);r.ins_h=(r.ins_h<<r.hash_shift^r.window[n+x-1])&r.hash_mask,r.prev[n&r.w_mask]=r.head[r.ins_h],r.head[r.ins_h]=n,n++,--i;);r.strstart=n,r.lookahead=x-1,j(r)}return r.strstart+=r.lookahead,r.block_start=r.strstart,r.insert=r.lookahead,r.lookahead=0,r.match_length=r.prev_length=x-1,r.match_available=0,e.next_in=o,e.input=h,e.avail_in=a,r.wrap=s,m},r.deflateInfo="pako deflate (from Nodeca project)"},{"../utils/common":41,"./adler32":43,"./crc32":45,"./messages":51,"./trees":52}],47:[function(e,t,r){"use strict";t.exports=function(){this.text=0,this.time=0,this.xflags=0,this.os=0,this.extra=null,this.extra_len=0,this.name="",this.comment="",this.hcrc=0,this.done=!1}},{}],48:[function(e,t,r){"use strict";t.exports=function(e,t){var r,n,i,s,a,o,h,u,l,f,c,d,p,m,_,g,b,v,y,w,k,x,S,z,C;r=e.state,n=e.next_in,z=e.input,i=n+(e.avail_in-5),s=e.next_out,C=e.output,a=s-(t-e.avail_out),o=s+(e.avail_out-257),h=r.dmax,u=r.wsize,l=r.whave,f=r.wnext,c=r.window,d=r.hold,p=r.bits,m=r.lencode,_=r.distcode,g=(1<<r.lenbits)-1,b=(1<<r.distbits)-1;e:do{p<15&&(d+=z[n++]<<p,p+=8,d+=z[n++]<<p,p+=8),v=m[d&g];t:for(;;){if(d>>>=y=v>>>24,p-=y,0===(y=v>>>16&255))C[s++]=65535&v;else{if(!(16&y)){if(0==(64&y)){v=m[(65535&v)+(d&(1<<y)-1)];continue t}if(32&y){r.mode=12;break e}e.msg="invalid literal/length code",r.mode=30;break e}w=65535&v,(y&=15)&&(p<y&&(d+=z[n++]<<p,p+=8),w+=d&(1<<y)-1,d>>>=y,p-=y),p<15&&(d+=z[n++]<<p,p+=8,d+=z[n++]<<p,p+=8),v=_[d&b];r:for(;;){if(d>>>=y=v>>>24,p-=y,!(16&(y=v>>>16&255))){if(0==(64&y)){v=_[(65535&v)+(d&(1<<y)-1)];continue r}e.msg="invalid distance code",r.mode=30;break e}if(k=65535&v,p<(y&=15)&&(d+=z[n++]<<p,(p+=8)<y&&(d+=z[n++]<<p,p+=8)),h<(k+=d&(1<<y)-1)){e.msg="invalid distance too far back",r.mode=30;break e}if(d>>>=y,p-=y,(y=s-a)<k){if(l<(y=k-y)&&r.sane){e.msg="invalid distance too far back",r.mode=30;break e}if(S=c,(x=0)===f){if(x+=u-y,y<w){for(w-=y;C[s++]=c[x++],--y;);x=s-k,S=C}}else if(f<y){if(x+=u+f-y,(y-=f)<w){for(w-=y;C[s++]=c[x++],--y;);if(x=0,f<w){for(w-=y=f;C[s++]=c[x++],--y;);x=s-k,S=C}}}else if(x+=f-y,y<w){for(w-=y;C[s++]=c[x++],--y;);x=s-k,S=C}for(;2<w;)C[s++]=S[x++],C[s++]=S[x++],C[s++]=S[x++],w-=3;w&&(C[s++]=S[x++],1<w&&(C[s++]=S[x++]))}else{for(x=s-k;C[s++]=C[x++],C[s++]=C[x++],C[s++]=C[x++],2<(w-=3););w&&(C[s++]=C[x++],1<w&&(C[s++]=C[x++]))}break}}break}}while(n<i&&s<o);n-=w=p>>3,d&=(1<<(p-=w<<3))-1,e.next_in=n,e.next_out=s,e.avail_in=n<i?i-n+5:5-(n-i),e.avail_out=s<o?o-s+257:257-(s-o),r.hold=d,r.bits=p}},{}],49:[function(e,t,r){"use strict";var I=e("../utils/common"),O=e("./adler32"),B=e("./crc32"),R=e("./inffast"),T=e("./inftrees"),D=1,F=2,N=0,U=-2,P=1,n=852,i=592;function L(e){return(e>>>24&255)+(e>>>8&65280)+((65280&e)<<8)+((255&e)<<24)}function s(){this.mode=0,this.last=!1,this.wrap=0,this.havedict=!1,this.flags=0,this.dmax=0,this.check=0,this.total=0,this.head=null,this.wbits=0,this.wsize=0,this.whave=0,this.wnext=0,this.window=null,this.hold=0,this.bits=0,this.length=0,this.offset=0,this.extra=0,this.lencode=null,this.distcode=null,this.lenbits=0,this.distbits=0,this.ncode=0,this.nlen=0,this.ndist=0,this.have=0,this.next=null,this.lens=new I.Buf16(320),this.work=new I.Buf16(288),this.lendyn=null,this.distdyn=null,this.sane=0,this.back=0,this.was=0}function a(e){var t;return e&&e.state?(t=e.state,e.total_in=e.total_out=t.total=0,e.msg="",t.wrap&&(e.adler=1&t.wrap),t.mode=P,t.last=0,t.havedict=0,t.dmax=32768,t.head=null,t.hold=0,t.bits=0,t.lencode=t.lendyn=new I.Buf32(n),t.distcode=t.distdyn=new I.Buf32(i),t.sane=1,t.back=-1,N):U}function o(e){var t;return e&&e.state?((t=e.state).wsize=0,t.whave=0,t.wnext=0,a(e)):U}function h(e,t){var r,n;return e&&e.state?(n=e.state,t<0?(r=0,t=-t):(r=1+(t>>4),t<48&&(t&=15)),t&&(t<8||15<t)?U:(null!==n.window&&n.wbits!==t&&(n.window=null),n.wrap=r,n.wbits=t,o(e))):U}function u(e,t){var r,n;return e?(n=new s,(e.state=n).window=null,(r=h(e,t))!==N&&(e.state=null),r):U}var l,f,c=!0;function j(e){if(c){var t;for(l=new I.Buf32(512),f=new I.Buf32(32),t=0;t<144;)e.lens[t++]=8;for(;t<256;)e.lens[t++]=9;for(;t<280;)e.lens[t++]=7;for(;t<288;)e.lens[t++]=8;for(T(D,e.lens,0,288,l,0,e.work,{bits:9}),t=0;t<32;)e.lens[t++]=5;T(F,e.lens,0,32,f,0,e.work,{bits:5}),c=!1}e.lencode=l,e.lenbits=9,e.distcode=f,e.distbits=5}function Z(e,t,r,n){var i,s=e.state;return null===s.window&&(s.wsize=1<<s.wbits,s.wnext=0,s.whave=0,s.window=new I.Buf8(s.wsize)),n>=s.wsize?(I.arraySet(s.window,t,r-s.wsize,s.wsize,0),s.wnext=0,s.whave=s.wsize):(n<(i=s.wsize-s.wnext)&&(i=n),I.arraySet(s.window,t,r-n,i,s.wnext),(n-=i)?(I.arraySet(s.window,t,r-n,n,0),s.wnext=n,s.whave=s.wsize):(s.wnext+=i,s.wnext===s.wsize&&(s.wnext=0),s.whave<s.wsize&&(s.whave+=i))),0}r.inflateReset=o,r.inflateReset2=h,r.inflateResetKeep=a,r.inflateInit=function(e){return u(e,15)},r.inflateInit2=u,r.inflate=function(e,t){var r,n,i,s,a,o,h,u,l,f,c,d,p,m,_,g,b,v,y,w,k,x,S,z,C=0,E=new I.Buf8(4),A=[16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15];if(!e||!e.state||!e.output||!e.input&&0!==e.avail_in)return U;12===(r=e.state).mode&&(r.mode=13),a=e.next_out,i=e.output,h=e.avail_out,s=e.next_in,n=e.input,o=e.avail_in,u=r.hold,l=r.bits,f=o,c=h,x=N;e:for(;;)switch(r.mode){case P:if(0===r.wrap){r.mode=13;break}for(;l<16;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(2&r.wrap&&35615===u){E[r.check=0]=255&u,E[1]=u>>>8&255,r.check=B(r.check,E,2,0),l=u=0,r.mode=2;break}if(r.flags=0,r.head&&(r.head.done=!1),!(1&r.wrap)||(((255&u)<<8)+(u>>8))%31){e.msg="incorrect header check",r.mode=30;break}if(8!=(15&u)){e.msg="unknown compression method",r.mode=30;break}if(l-=4,k=8+(15&(u>>>=4)),0===r.wbits)r.wbits=k;else if(k>r.wbits){e.msg="invalid window size",r.mode=30;break}r.dmax=1<<k,e.adler=r.check=1,r.mode=512&u?10:12,l=u=0;break;case 2:for(;l<16;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(r.flags=u,8!=(255&r.flags)){e.msg="unknown compression method",r.mode=30;break}if(57344&r.flags){e.msg="unknown header flags set",r.mode=30;break}r.head&&(r.head.text=u>>8&1),512&r.flags&&(E[0]=255&u,E[1]=u>>>8&255,r.check=B(r.check,E,2,0)),l=u=0,r.mode=3;case 3:for(;l<32;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}r.head&&(r.head.time=u),512&r.flags&&(E[0]=255&u,E[1]=u>>>8&255,E[2]=u>>>16&255,E[3]=u>>>24&255,r.check=B(r.check,E,4,0)),l=u=0,r.mode=4;case 4:for(;l<16;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}r.head&&(r.head.xflags=255&u,r.head.os=u>>8),512&r.flags&&(E[0]=255&u,E[1]=u>>>8&255,r.check=B(r.check,E,2,0)),l=u=0,r.mode=5;case 5:if(1024&r.flags){for(;l<16;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}r.length=u,r.head&&(r.head.extra_len=u),512&r.flags&&(E[0]=255&u,E[1]=u>>>8&255,r.check=B(r.check,E,2,0)),l=u=0}else r.head&&(r.head.extra=null);r.mode=6;case 6:if(1024&r.flags&&(o<(d=r.length)&&(d=o),d&&(r.head&&(k=r.head.extra_len-r.length,r.head.extra||(r.head.extra=new Array(r.head.extra_len)),I.arraySet(r.head.extra,n,s,d,k)),512&r.flags&&(r.check=B(r.check,n,d,s)),o-=d,s+=d,r.length-=d),r.length))break e;r.length=0,r.mode=7;case 7:if(2048&r.flags){if(0===o)break e;for(d=0;k=n[s+d++],r.head&&k&&r.length<65536&&(r.head.name+=String.fromCharCode(k)),k&&d<o;);if(512&r.flags&&(r.check=B(r.check,n,d,s)),o-=d,s+=d,k)break e}else r.head&&(r.head.name=null);r.length=0,r.mode=8;case 8:if(4096&r.flags){if(0===o)break e;for(d=0;k=n[s+d++],r.head&&k&&r.length<65536&&(r.head.comment+=String.fromCharCode(k)),k&&d<o;);if(512&r.flags&&(r.check=B(r.check,n,d,s)),o-=d,s+=d,k)break e}else r.head&&(r.head.comment=null);r.mode=9;case 9:if(512&r.flags){for(;l<16;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(u!==(65535&r.check)){e.msg="header crc mismatch",r.mode=30;break}l=u=0}r.head&&(r.head.hcrc=r.flags>>9&1,r.head.done=!0),e.adler=r.check=0,r.mode=12;break;case 10:for(;l<32;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}e.adler=r.check=L(u),l=u=0,r.mode=11;case 11:if(0===r.havedict)return e.next_out=a,e.avail_out=h,e.next_in=s,e.avail_in=o,r.hold=u,r.bits=l,2;e.adler=r.check=1,r.mode=12;case 12:if(5===t||6===t)break e;case 13:if(r.last){u>>>=7&l,l-=7&l,r.mode=27;break}for(;l<3;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}switch(r.last=1&u,l-=1,3&(u>>>=1)){case 0:r.mode=14;break;case 1:if(j(r),r.mode=20,6!==t)break;u>>>=2,l-=2;break e;case 2:r.mode=17;break;case 3:e.msg="invalid block type",r.mode=30}u>>>=2,l-=2;break;case 14:for(u>>>=7&l,l-=7&l;l<32;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if((65535&u)!=(u>>>16^65535)){e.msg="invalid stored block lengths",r.mode=30;break}if(r.length=65535&u,l=u=0,r.mode=15,6===t)break e;case 15:r.mode=16;case 16:if(d=r.length){if(o<d&&(d=o),h<d&&(d=h),0===d)break e;I.arraySet(i,n,s,d,a),o-=d,s+=d,h-=d,a+=d,r.length-=d;break}r.mode=12;break;case 17:for(;l<14;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(r.nlen=257+(31&u),u>>>=5,l-=5,r.ndist=1+(31&u),u>>>=5,l-=5,r.ncode=4+(15&u),u>>>=4,l-=4,286<r.nlen||30<r.ndist){e.msg="too many length or distance symbols",r.mode=30;break}r.have=0,r.mode=18;case 18:for(;r.have<r.ncode;){for(;l<3;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}r.lens[A[r.have++]]=7&u,u>>>=3,l-=3}for(;r.have<19;)r.lens[A[r.have++]]=0;if(r.lencode=r.lendyn,r.lenbits=7,S={bits:r.lenbits},x=T(0,r.lens,0,19,r.lencode,0,r.work,S),r.lenbits=S.bits,x){e.msg="invalid code lengths set",r.mode=30;break}r.have=0,r.mode=19;case 19:for(;r.have<r.nlen+r.ndist;){for(;g=(C=r.lencode[u&(1<<r.lenbits)-1])>>>16&255,b=65535&C,!((_=C>>>24)<=l);){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(b<16)u>>>=_,l-=_,r.lens[r.have++]=b;else{if(16===b){for(z=_+2;l<z;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(u>>>=_,l-=_,0===r.have){e.msg="invalid bit length repeat",r.mode=30;break}k=r.lens[r.have-1],d=3+(3&u),u>>>=2,l-=2}else if(17===b){for(z=_+3;l<z;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}l-=_,k=0,d=3+(7&(u>>>=_)),u>>>=3,l-=3}else{for(z=_+7;l<z;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}l-=_,k=0,d=11+(127&(u>>>=_)),u>>>=7,l-=7}if(r.have+d>r.nlen+r.ndist){e.msg="invalid bit length repeat",r.mode=30;break}for(;d--;)r.lens[r.have++]=k}}if(30===r.mode)break;if(0===r.lens[256]){e.msg="invalid code -- missing end-of-block",r.mode=30;break}if(r.lenbits=9,S={bits:r.lenbits},x=T(D,r.lens,0,r.nlen,r.lencode,0,r.work,S),r.lenbits=S.bits,x){e.msg="invalid literal/lengths set",r.mode=30;break}if(r.distbits=6,r.distcode=r.distdyn,S={bits:r.distbits},x=T(F,r.lens,r.nlen,r.ndist,r.distcode,0,r.work,S),r.distbits=S.bits,x){e.msg="invalid distances set",r.mode=30;break}if(r.mode=20,6===t)break e;case 20:r.mode=21;case 21:if(6<=o&&258<=h){e.next_out=a,e.avail_out=h,e.next_in=s,e.avail_in=o,r.hold=u,r.bits=l,R(e,c),a=e.next_out,i=e.output,h=e.avail_out,s=e.next_in,n=e.input,o=e.avail_in,u=r.hold,l=r.bits,12===r.mode&&(r.back=-1);break}for(r.back=0;g=(C=r.lencode[u&(1<<r.lenbits)-1])>>>16&255,b=65535&C,!((_=C>>>24)<=l);){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(g&&0==(240&g)){for(v=_,y=g,w=b;g=(C=r.lencode[w+((u&(1<<v+y)-1)>>v)])>>>16&255,b=65535&C,!(v+(_=C>>>24)<=l);){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}u>>>=v,l-=v,r.back+=v}if(u>>>=_,l-=_,r.back+=_,r.length=b,0===g){r.mode=26;break}if(32&g){r.back=-1,r.mode=12;break}if(64&g){e.msg="invalid literal/length code",r.mode=30;break}r.extra=15&g,r.mode=22;case 22:if(r.extra){for(z=r.extra;l<z;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}r.length+=u&(1<<r.extra)-1,u>>>=r.extra,l-=r.extra,r.back+=r.extra}r.was=r.length,r.mode=23;case 23:for(;g=(C=r.distcode[u&(1<<r.distbits)-1])>>>16&255,b=65535&C,!((_=C>>>24)<=l);){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(0==(240&g)){for(v=_,y=g,w=b;g=(C=r.distcode[w+((u&(1<<v+y)-1)>>v)])>>>16&255,b=65535&C,!(v+(_=C>>>24)<=l);){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}u>>>=v,l-=v,r.back+=v}if(u>>>=_,l-=_,r.back+=_,64&g){e.msg="invalid distance code",r.mode=30;break}r.offset=b,r.extra=15&g,r.mode=24;case 24:if(r.extra){for(z=r.extra;l<z;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}r.offset+=u&(1<<r.extra)-1,u>>>=r.extra,l-=r.extra,r.back+=r.extra}if(r.offset>r.dmax){e.msg="invalid distance too far back",r.mode=30;break}r.mode=25;case 25:if(0===h)break e;if(d=c-h,r.offset>d){if((d=r.offset-d)>r.whave&&r.sane){e.msg="invalid distance too far back",r.mode=30;break}p=d>r.wnext?(d-=r.wnext,r.wsize-d):r.wnext-d,d>r.length&&(d=r.length),m=r.window}else m=i,p=a-r.offset,d=r.length;for(h<d&&(d=h),h-=d,r.length-=d;i[a++]=m[p++],--d;);0===r.length&&(r.mode=21);break;case 26:if(0===h)break e;i[a++]=r.length,h--,r.mode=21;break;case 27:if(r.wrap){for(;l<32;){if(0===o)break e;o--,u|=n[s++]<<l,l+=8}if(c-=h,e.total_out+=c,r.total+=c,c&&(e.adler=r.check=r.flags?B(r.check,i,c,a-c):O(r.check,i,c,a-c)),c=h,(r.flags?u:L(u))!==r.check){e.msg="incorrect data check",r.mode=30;break}l=u=0}r.mode=28;case 28:if(r.wrap&&r.flags){for(;l<32;){if(0===o)break e;o--,u+=n[s++]<<l,l+=8}if(u!==(4294967295&r.total)){e.msg="incorrect length check",r.mode=30;break}l=u=0}r.mode=29;case 29:x=1;break e;case 30:x=-3;break e;case 31:return-4;case 32:default:return U}return e.next_out=a,e.avail_out=h,e.next_in=s,e.avail_in=o,r.hold=u,r.bits=l,(r.wsize||c!==e.avail_out&&r.mode<30&&(r.mode<27||4!==t))&&Z(e,e.output,e.next_out,c-e.avail_out)?(r.mode=31,-4):(f-=e.avail_in,c-=e.avail_out,e.total_in+=f,e.total_out+=c,r.total+=c,r.wrap&&c&&(e.adler=r.check=r.flags?B(r.check,i,c,e.next_out-c):O(r.check,i,c,e.next_out-c)),e.data_type=r.bits+(r.last?64:0)+(12===r.mode?128:0)+(20===r.mode||15===r.mode?256:0),(0==f&&0===c||4===t)&&x===N&&(x=-5),x)},r.inflateEnd=function(e){if(!e||!e.state)return U;var t=e.state;return t.window&&(t.window=null),e.state=null,N},r.inflateGetHeader=function(e,t){var r;return e&&e.state?0==(2&(r=e.state).wrap)?U:((r.head=t).done=!1,N):U},r.inflateSetDictionary=function(e,t){var r,n=t.length;return e&&e.state?0!==(r=e.state).wrap&&11!==r.mode?U:11===r.mode&&O(1,t,n,0)!==r.check?-3:Z(e,t,n,n)?(r.mode=31,-4):(r.havedict=1,N):U},r.inflateInfo="pako inflate (from Nodeca project)"},{"../utils/common":41,"./adler32":43,"./crc32":45,"./inffast":48,"./inftrees":50}],50:[function(e,t,r){"use strict";var D=e("../utils/common"),F=[3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258,0,0],N=[16,16,16,16,16,16,16,16,17,17,17,17,18,18,18,18,19,19,19,19,20,20,20,20,21,21,21,21,16,72,78],U=[1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,257,385,513,769,1025,1537,2049,3073,4097,6145,8193,12289,16385,24577,0,0],P=[16,16,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23,23,24,24,25,25,26,26,27,27,28,28,29,29,64,64];t.exports=function(e,t,r,n,i,s,a,o){var h,u,l,f,c,d,p,m,_,g=o.bits,b=0,v=0,y=0,w=0,k=0,x=0,S=0,z=0,C=0,E=0,A=null,I=0,O=new D.Buf16(16),B=new D.Buf16(16),R=null,T=0;for(b=0;b<=15;b++)O[b]=0;for(v=0;v<n;v++)O[t[r+v]]++;for(k=g,w=15;1<=w&&0===O[w];w--);if(w<k&&(k=w),0===w)return i[s++]=20971520,i[s++]=20971520,o.bits=1,0;for(y=1;y<w&&0===O[y];y++);for(k<y&&(k=y),b=z=1;b<=15;b++)if(z<<=1,(z-=O[b])<0)return-1;if(0<z&&(0===e||1!==w))return-1;for(B[1]=0,b=1;b<15;b++)B[b+1]=B[b]+O[b];for(v=0;v<n;v++)0!==t[r+v]&&(a[B[t[r+v]]++]=v);if(d=0===e?(A=R=a,19):1===e?(A=F,I-=257,R=N,T-=257,256):(A=U,R=P,-1),b=y,c=s,S=v=E=0,l=-1,f=(C=1<<(x=k))-1,1===e&&852<C||2===e&&592<C)return 1;for(;;){for(p=b-S,_=a[v]<d?(m=0,a[v]):a[v]>d?(m=R[T+a[v]],A[I+a[v]]):(m=96,0),h=1<<b-S,y=u=1<<x;i[c+(E>>S)+(u-=h)]=p<<24|m<<16|_|0,0!==u;);for(h=1<<b-1;E&h;)h>>=1;if(0!==h?(E&=h-1,E+=h):E=0,v++,0==--O[b]){if(b===w)break;b=t[r+a[v]]}if(k<b&&(E&f)!==l){for(0===S&&(S=k),c+=y,z=1<<(x=b-S);x+S<w&&!((z-=O[x+S])<=0);)x++,z<<=1;if(C+=1<<x,1===e&&852<C||2===e&&592<C)return 1;i[l=E&f]=k<<24|x<<16|c-s|0}}return 0!==E&&(i[c+E]=b-S<<24|64<<16|0),o.bits=k,0}},{"../utils/common":41}],51:[function(e,t,r){"use strict";t.exports={2:"need dictionary",1:"stream end",0:"","-1":"file error","-2":"stream error","-3":"data error","-4":"insufficient memory","-5":"buffer error","-6":"incompatible version"}},{}],52:[function(e,t,r){"use strict";var i=e("../utils/common"),o=0,h=1;function n(e){for(var t=e.length;0<=--t;)e[t]=0}var s=0,a=29,u=256,l=u+1+a,f=30,c=19,_=2*l+1,g=15,d=16,p=7,m=256,b=16,v=17,y=18,w=[0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,0],k=[0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13],x=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,7],S=[16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15],z=new Array(2*(l+2));n(z);var C=new Array(2*f);n(C);var E=new Array(512);n(E);var A=new Array(256);n(A);var I=new Array(a);n(I);var O,B,R,T=new Array(f);function D(e,t,r,n,i){this.static_tree=e,this.extra_bits=t,this.extra_base=r,this.elems=n,this.max_length=i,this.has_stree=e&&e.length}function F(e,t){this.dyn_tree=e,this.max_code=0,this.stat_desc=t}function N(e){return e<256?E[e]:E[256+(e>>>7)]}function U(e,t){e.pending_buf[e.pending++]=255&t,e.pending_buf[e.pending++]=t>>>8&255}function P(e,t,r){e.bi_valid>d-r?(e.bi_buf|=t<<e.bi_valid&65535,U(e,e.bi_buf),e.bi_buf=t>>d-e.bi_valid,e.bi_valid+=r-d):(e.bi_buf|=t<<e.bi_valid&65535,e.bi_valid+=r)}function L(e,t,r){P(e,r[2*t],r[2*t+1])}function j(e,t){for(var r=0;r|=1&e,e>>>=1,r<<=1,0<--t;);return r>>>1}function Z(e,t,r){var n,i,s=new Array(g+1),a=0;for(n=1;n<=g;n++)s[n]=a=a+r[n-1]<<1;for(i=0;i<=t;i++){var o=e[2*i+1];0!==o&&(e[2*i]=j(s[o]++,o))}}function W(e){var t;for(t=0;t<l;t++)e.dyn_ltree[2*t]=0;for(t=0;t<f;t++)e.dyn_dtree[2*t]=0;for(t=0;t<c;t++)e.bl_tree[2*t]=0;e.dyn_ltree[2*m]=1,e.opt_len=e.static_len=0,e.last_lit=e.matches=0}function M(e){8<e.bi_valid?U(e,e.bi_buf):0<e.bi_valid&&(e.pending_buf[e.pending++]=e.bi_buf),e.bi_buf=0,e.bi_valid=0}function H(e,t,r,n){var i=2*t,s=2*r;return e[i]<e[s]||e[i]===e[s]&&n[t]<=n[r]}function G(e,t,r){for(var n=e.heap[r],i=r<<1;i<=e.heap_len&&(i<e.heap_len&&H(t,e.heap[i+1],e.heap[i],e.depth)&&i++,!H(t,n,e.heap[i],e.depth));)e.heap[r]=e.heap[i],r=i,i<<=1;e.heap[r]=n}function K(e,t,r){var n,i,s,a,o=0;if(0!==e.last_lit)for(;n=e.pending_buf[e.d_buf+2*o]<<8|e.pending_buf[e.d_buf+2*o+1],i=e.pending_buf[e.l_buf+o],o++,0===n?L(e,i,t):(L(e,(s=A[i])+u+1,t),0!==(a=w[s])&&P(e,i-=I[s],a),L(e,s=N(--n),r),0!==(a=k[s])&&P(e,n-=T[s],a)),o<e.last_lit;);L(e,m,t)}function Y(e,t){var r,n,i,s=t.dyn_tree,a=t.stat_desc.static_tree,o=t.stat_desc.has_stree,h=t.stat_desc.elems,u=-1;for(e.heap_len=0,e.heap_max=_,r=0;r<h;r++)0!==s[2*r]?(e.heap[++e.heap_len]=u=r,e.depth[r]=0):s[2*r+1]=0;for(;e.heap_len<2;)s[2*(i=e.heap[++e.heap_len]=u<2?++u:0)]=1,e.depth[i]=0,e.opt_len--,o&&(e.static_len-=a[2*i+1]);for(t.max_code=u,r=e.heap_len>>1;1<=r;r--)G(e,s,r);for(i=h;r=e.heap[1],e.heap[1]=e.heap[e.heap_len--],G(e,s,1),n=e.heap[1],e.heap[--e.heap_max]=r,e.heap[--e.heap_max]=n,s[2*i]=s[2*r]+s[2*n],e.depth[i]=(e.depth[r]>=e.depth[n]?e.depth[r]:e.depth[n])+1,s[2*r+1]=s[2*n+1]=i,e.heap[1]=i++,G(e,s,1),2<=e.heap_len;);e.heap[--e.heap_max]=e.heap[1],function(e,t){var r,n,i,s,a,o,h=t.dyn_tree,u=t.max_code,l=t.stat_desc.static_tree,f=t.stat_desc.has_stree,c=t.stat_desc.extra_bits,d=t.stat_desc.extra_base,p=t.stat_desc.max_length,m=0;for(s=0;s<=g;s++)e.bl_count[s]=0;for(h[2*e.heap[e.heap_max]+1]=0,r=e.heap_max+1;r<_;r++)p<(s=h[2*h[2*(n=e.heap[r])+1]+1]+1)&&(s=p,m++),h[2*n+1]=s,u<n||(e.bl_count[s]++,a=0,d<=n&&(a=c[n-d]),o=h[2*n],e.opt_len+=o*(s+a),f&&(e.static_len+=o*(l[2*n+1]+a)));if(0!==m){do{for(s=p-1;0===e.bl_count[s];)s--;e.bl_count[s]--,e.bl_count[s+1]+=2,e.bl_count[p]--,m-=2}while(0<m);for(s=p;0!==s;s--)for(n=e.bl_count[s];0!==n;)u<(i=e.heap[--r])||(h[2*i+1]!==s&&(e.opt_len+=(s-h[2*i+1])*h[2*i],h[2*i+1]=s),n--)}}(e,t),Z(s,u,e.bl_count)}function X(e,t,r){var n,i,s=-1,a=t[1],o=0,h=7,u=4;for(0===a&&(h=138,u=3),t[2*(r+1)+1]=65535,n=0;n<=r;n++)i=a,a=t[2*(n+1)+1],++o<h&&i===a||(o<u?e.bl_tree[2*i]+=o:0!==i?(i!==s&&e.bl_tree[2*i]++,e.bl_tree[2*b]++):o<=10?e.bl_tree[2*v]++:e.bl_tree[2*y]++,s=i,u=(o=0)===a?(h=138,3):i===a?(h=6,3):(h=7,4))}function V(e,t,r){var n,i,s=-1,a=t[1],o=0,h=7,u=4;for(0===a&&(h=138,u=3),n=0;n<=r;n++)if(i=a,a=t[2*(n+1)+1],!(++o<h&&i===a)){if(o<u)for(;L(e,i,e.bl_tree),0!=--o;);else 0!==i?(i!==s&&(L(e,i,e.bl_tree),o--),L(e,b,e.bl_tree),P(e,o-3,2)):o<=10?(L(e,v,e.bl_tree),P(e,o-3,3)):(L(e,y,e.bl_tree),P(e,o-11,7));s=i,u=(o=0)===a?(h=138,3):i===a?(h=6,3):(h=7,4)}}n(T);var q=!1;function J(e,t,r,n){P(e,(s<<1)+(n?1:0),3),function(e,t,r,n){M(e),n&&(U(e,r),U(e,~r)),i.arraySet(e.pending_buf,e.window,t,r,e.pending),e.pending+=r}(e,t,r,!0)}r._tr_init=function(e){q||(function(){var e,t,r,n,i,s=new Array(g+1);for(n=r=0;n<a-1;n++)for(I[n]=r,e=0;e<1<<w[n];e++)A[r++]=n;for(A[r-1]=n,n=i=0;n<16;n++)for(T[n]=i,e=0;e<1<<k[n];e++)E[i++]=n;for(i>>=7;n<f;n++)for(T[n]=i<<7,e=0;e<1<<k[n]-7;e++)E[256+i++]=n;for(t=0;t<=g;t++)s[t]=0;for(e=0;e<=143;)z[2*e+1]=8,e++,s[8]++;for(;e<=255;)z[2*e+1]=9,e++,s[9]++;for(;e<=279;)z[2*e+1]=7,e++,s[7]++;for(;e<=287;)z[2*e+1]=8,e++,s[8]++;for(Z(z,l+1,s),e=0;e<f;e++)C[2*e+1]=5,C[2*e]=j(e,5);O=new D(z,w,u+1,l,g),B=new D(C,k,0,f,g),R=new D(new Array(0),x,0,c,p)}(),q=!0),e.l_desc=new F(e.dyn_ltree,O),e.d_desc=new F(e.dyn_dtree,B),e.bl_desc=new F(e.bl_tree,R),e.bi_buf=0,e.bi_valid=0,W(e)},r._tr_stored_block=J,r._tr_flush_block=function(e,t,r,n){var i,s,a=0;0<e.level?(2===e.strm.data_type&&(e.strm.data_type=function(e){var t,r=4093624447;for(t=0;t<=31;t++,r>>>=1)if(1&r&&0!==e.dyn_ltree[2*t])return o;if(0!==e.dyn_ltree[18]||0!==e.dyn_ltree[20]||0!==e.dyn_ltree[26])return h;for(t=32;t<u;t++)if(0!==e.dyn_ltree[2*t])return h;return o}(e)),Y(e,e.l_desc),Y(e,e.d_desc),a=function(e){var t;for(X(e,e.dyn_ltree,e.l_desc.max_code),X(e,e.dyn_dtree,e.d_desc.max_code),Y(e,e.bl_desc),t=c-1;3<=t&&0===e.bl_tree[2*S[t]+1];t--);return e.opt_len+=3*(t+1)+5+5+4,t}(e),i=e.opt_len+3+7>>>3,(s=e.static_len+3+7>>>3)<=i&&(i=s)):i=s=r+5,r+4<=i&&-1!==t?J(e,t,r,n):4===e.strategy||s===i?(P(e,2+(n?1:0),3),K(e,z,C)):(P(e,4+(n?1:0),3),function(e,t,r,n){var i;for(P(e,t-257,5),P(e,r-1,5),P(e,n-4,4),i=0;i<n;i++)P(e,e.bl_tree[2*S[i]+1],3);V(e,e.dyn_ltree,t-1),V(e,e.dyn_dtree,r-1)}(e,e.l_desc.max_code+1,e.d_desc.max_code+1,a+1),K(e,e.dyn_ltree,e.dyn_dtree)),W(e),n&&M(e)},r._tr_tally=function(e,t,r){return e.pending_buf[e.d_buf+2*e.last_lit]=t>>>8&255,e.pending_buf[e.d_buf+2*e.last_lit+1]=255&t,e.pending_buf[e.l_buf+e.last_lit]=255&r,e.last_lit++,0===t?e.dyn_ltree[2*r]++:(e.matches++,t--,e.dyn_ltree[2*(A[r]+u+1)]++,e.dyn_dtree[2*N(t)]++),e.last_lit===e.lit_bufsize-1},r._tr_align=function(e){P(e,2,3),L(e,m,z),function(e){16===e.bi_valid?(U(e,e.bi_buf),e.bi_buf=0,e.bi_valid=0):8<=e.bi_valid&&(e.pending_buf[e.pending++]=255&e.bi_buf,e.bi_buf>>=8,e.bi_valid-=8)}(e)}},{"../utils/common":41}],53:[function(e,t,r){"use strict";t.exports=function(){this.input=null,this.next_in=0,this.avail_in=0,this.total_in=0,this.output=null,this.next_out=0,this.avail_out=0,this.total_out=0,this.msg="",this.state=null,this.data_type=2,this.adler=0}},{}],54:[function(e,t,r){(function(e){!function(r,n){"use strict";if(!r.setImmediate){var i,s,t,a,o=1,h={},u=!1,l=r.document,e=Object.getPrototypeOf&&Object.getPrototypeOf(r);e=e&&e.setTimeout?e:r,i="[object process]"==={}.toString.call(r.process)?function(e){process.nextTick(function(){c(e)})}:function(){if(r.postMessage&&!r.importScripts){var e=!0,t=r.onmessage;return r.onmessage=function(){e=!1},r.postMessage("","*"),r.onmessage=t,e}}()?(a="setImmediate$"+Math.random()+"$",r.addEventListener?r.addEventListener("message",d,!1):r.attachEvent("onmessage",d),function(e){r.postMessage(a+e,"*")}):r.MessageChannel?((t=new MessageChannel).port1.onmessage=function(e){c(e.data)},function(e){t.port2.postMessage(e)}):l&&"onreadystatechange"in l.createElement("script")?(s=l.documentElement,function(e){var t=l.createElement("script");t.onreadystatechange=function(){c(e),t.onreadystatechange=null,s.removeChild(t),t=null},s.appendChild(t)}):function(e){setTimeout(c,0,e)},e.setImmediate=function(e){"function"!=typeof e&&(e=new Function(""+e));for(var t=new Array(arguments.length-1),r=0;r<t.length;r++)t[r]=arguments[r+1];var n={callback:e,args:t};return h[o]=n,i(o),o++},e.clearImmediate=f}function f(e){delete h[e]}function c(e){if(u)setTimeout(c,0,e);else{var t=h[e];if(t){u=!0;try{!function(e){var t=e.callback,r=e.args;switch(r.length){case 0:t();break;case 1:t(r[0]);break;case 2:t(r[0],r[1]);break;case 3:t(r[0],r[1],r[2]);break;default:t.apply(n,r)}}(t)}finally{f(e),u=!1}}}}function d(e){e.source===r&&"string"==typeof e.data&&0===e.data.indexOf(a)&&c(+e.data.slice(a.length))}}("undefined"==typeof self?void 0===e?this:e:self)}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}]},{},[10])(10)});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../buffer/index.js */ "./node_modules/buffer/index.js").Buffer, __webpack_require__(/*! ./../../timers-browserify/main.js */ "./node_modules/timers-browserify/main.js").setImmediate, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -141424,9 +142524,9 @@ class ArrayBufferStream {
   constructor(arrayBuffer) {
     let start = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
     let end = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : arrayBuffer.byteLength;
-    let {
-      _uint8View = new Uint8Array(arrayBuffer)
-    } = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+    let _ref = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {},
+      _ref$_uint8View = _ref._uint8View,
+      _uint8View = _ref$_uint8View === void 0 ? new Uint8Array(arrayBuffer) : _ref$_uint8View;
     /**
      * Raw data buffer for stream to read.
      * @type {ArrayBufferStream}
@@ -141588,6 +142688,12 @@ module.exports = ArrayBufferStream;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const StartAudioContext = __webpack_require__(/*! ./StartAudioContext */ "./node_modules/scratch-audio/src/StartAudioContext.js");
 const log = __webpack_require__(/*! ./log */ "./node_modules/scratch-audio/src/log.js");
 const uid = __webpack_require__(/*! ./uid */ "./node_modules/scratch-audio/src/uid.js");
@@ -141786,7 +142892,9 @@ class AudioEngine {
    */
   decodeSound(sound) {
     return this._decodeSound(sound).then(_ref => {
-      let [id, buffer] = _ref;
+      let _ref2 = _slicedToArray(_ref, 2),
+        id = _ref2[0],
+        buffer = _ref2[1];
       this.audioBuffers[id] = buffer;
       return id;
     });
@@ -141804,8 +142912,10 @@ class AudioEngine {
    * @returns {?Promise} - a promise which will resolve to the buffer
    */
   decodeSoundPlayer(sound) {
-    return this._decodeSound(sound).then(_ref2 => {
-      let [id, buffer] = _ref2;
+    return this._decodeSound(sound).then(_ref3 => {
+      let _ref4 = _slicedToArray(_ref3, 2),
+        id = _ref4[0],
+        buffer = _ref4[1];
       return new SoundPlayer(this, {
         id,
         buffer
@@ -142111,9 +143221,8 @@ module.exports = SoundBank;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-const {
-  EventEmitter
-} = __webpack_require__(/*! events */ "./node_modules/events/events.js");
+const _require = __webpack_require__(/*! events */ "./node_modules/events/events.js"),
+  EventEmitter = _require.EventEmitter;
 const VolumeEffect = __webpack_require__(/*! ./effects/VolumeEffect */ "./node_modules/scratch-audio/src/effects/VolumeEffect.js");
 
 /**
@@ -142132,10 +143241,8 @@ class SoundPlayer extends EventEmitter {
    * @constructor
    */
   constructor(audioEngine, _ref) {
-    let {
-      id,
-      buffer
-    } = _ref;
+    let id = _ref.id,
+      buffer = _ref.buffer;
     super();
 
     /**
@@ -142364,10 +143471,9 @@ class SoundPlayer extends EventEmitter {
     }
     this.outputNode.start();
     this.isPlaying = true;
-    const {
-      currentTime,
-      DECAY_DURATION
-    } = this.audioEngine;
+    const _this$audioEngine = this.audioEngine,
+      currentTime = _this$audioEngine.currentTime,
+      DECAY_DURATION = _this$audioEngine.DECAY_DURATION;
     this.startingUntil = currentTime + DECAY_DURATION;
     this.emit('play');
   }
@@ -142392,10 +143498,9 @@ class SoundPlayer extends EventEmitter {
 
     taken.finished().then(() => taken.dispose());
     taken.volumeEffect.set(0);
-    const {
-      currentTime,
-      DECAY_DURATION
-    } = this.audioEngine;
+    const _this$audioEngine2 = this.audioEngine,
+      currentTime = _this$audioEngine2.currentTime,
+      DECAY_DURATION = _this$audioEngine2.DECAY_DURATION;
     taken.outputNode.stop(currentTime + DECAY_DURATION);
   }
 
@@ -142739,10 +143844,8 @@ class EffectChain {
    * @param {object} target - target whose node to should be connected
    */
   connect(target) {
-    const {
-      firstEffect,
-      lastEffect
-    } = this;
+    const firstEffect = this.firstEffect,
+      lastEffect = this.lastEffect;
     if (target === lastEffect) {
       this.inputNode.disconnect();
       this.inputNode.connect(lastEffect.getInputNode());
@@ -142886,11 +143989,10 @@ class PanEffect extends Effect {
     // See e.g. https://docs.cycling74.com/max7/tutorials/13_panningchapter01
     const leftVal = Math.cos(p * Math.PI / 2);
     const rightVal = Math.sin(p * Math.PI / 2);
-    const {
-      currentTime,
-      DECAY_WAIT,
-      DECAY_DURATION
-    } = this.audioEngine;
+    const _this$audioEngine = this.audioEngine,
+      currentTime = _this$audioEngine.currentTime,
+      DECAY_WAIT = _this$audioEngine.DECAY_WAIT,
+      DECAY_DURATION = _this$audioEngine.DECAY_DURATION;
     this.leftGain.gain.setTargetAtTime(leftVal, currentTime + DECAY_WAIT, DECAY_DURATION);
     this.rightGain.gain.setTargetAtTime(rightVal, currentTime + DECAY_WAIT, DECAY_DURATION);
   }
@@ -143103,13 +144205,10 @@ class VolumeEffect extends Effect {
    */
   _set(value) {
     this.value = value;
-    const {
-      gain
-    } = this.outputNode;
-    const {
-      currentTime,
-      DECAY_DURATION
-    } = this.audioEngine;
+    const gain = this.outputNode.gain;
+    const _this$audioEngine = this.audioEngine,
+      currentTime = _this$audioEngine.currentTime,
+      DECAY_DURATION = _this$audioEngine.DECAY_DURATION;
     gain.linearRampToValueAtTime(value / 100, currentTime + DECAY_DURATION);
   }
 
@@ -143764,24 +144863,22 @@ const getRandomColor = function () {
   };
 }();
 const Box = props => {
-  const {
-      alignContent,
-      alignItems,
-      alignSelf,
-      basis,
-      children,
-      className,
-      componentRef,
-      direction,
-      element,
-      grow,
-      height,
-      justifyContent,
-      width,
-      wrap,
-      shrink,
-      style
-    } = props,
+  const alignContent = props.alignContent,
+    alignItems = props.alignItems,
+    alignSelf = props.alignSelf,
+    basis = props.basis,
+    children = props.children,
+    className = props.className,
+    componentRef = props.componentRef,
+    direction = props.direction,
+    element = props.element,
+    grow = props.grow,
+    height = props.height,
+    justifyContent = props.justifyContent,
+    width = props.width,
+    wrap = props.wrap,
+    shrink = props.shrink,
+    style = props.style,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(element, _objectSpread({
     className: className,
@@ -144019,12 +145116,10 @@ THIS WAS CHANGED ON 10/25/2017 BY @mewtaylor TO ADD HANDLING FOR DISABLED STATES
 
 
 const ButtonComponent = _ref => {
-  let {
-      className,
-      highlighted,
-      onClick,
-      children
-    } = _ref,
+  let className = _ref.className,
+    highlighted = _ref.highlighted,
+    onClick = _ref.onClick,
+    children = _ref.children,
     props = _objectWithoutProperties(_ref, _excluded);
   const disabled = props.disabled || false;
   if (disabled === false) {
@@ -145456,10 +146551,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DisplayFont = _ref => {
-  let {
-    font,
-    getFontName
-  } = _ref;
+  let font = _ref.font,
+    getFontName = _ref.getFontName;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
     style: {
       fontFamily: font
@@ -145806,10 +146899,8 @@ Edited to add range prop
 
 
 const Input = props => {
-  const {
-      small,
-      range
-    } = props,
+  const small = props.small,
+    range = props.range,
     componentProps = _objectWithoutProperties(props, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", _extends({}, componentProps, {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_input_css__WEBPACK_IMPORTED_MODULE_3___default.a.inputForm, props.className, {
@@ -146085,9 +147176,8 @@ class SliderComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Compo
     this.props.onChange(this.scaleMouseToSliderPosition(event));
   }
   scaleMouseToSliderPosition(event) {
-    const {
-      x
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_4__["getEventXY"])(event);
+    const _getEventXY = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_4__["getEventXY"])(event),
+      x = _getEventXY.x;
     const backgroundBBox = this.background.getBoundingClientRect();
     const scaledX = x - backgroundBBox.left - this.handleClickOffset;
     return Math.max(0, Math.min(100, 100 * scaledX / (backgroundBBox.width - HANDLE_WIDTH)));
@@ -146267,14 +147357,12 @@ See #13 */
 
 
 const LabeledIconButton = _ref => {
-  let {
-      className,
-      hideLabel,
-      imgAlt,
-      imgSrc,
-      onClick,
-      title
-    } = _ref,
+  let className = _ref.className,
+    hideLabel = _ref.hideLabel,
+    imgAlt = _ref.imgAlt,
+    imgSrc = _ref.imgSrc,
+    onClick = _ref.onClick,
+    title = _ref.title,
     props = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, _labeled_icon_button_css__WEBPACK_IMPORTED_MODULE_4___default.a.modEditField),
@@ -146458,10 +147546,8 @@ class LoupeComponent extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compon
   }
   render() {
     const _this$props = this.props,
-      {
-        colorInfo,
-        pixelRatio
-      } = _this$props,
+      colorInfo = _this$props.colorInfo,
+      pixelRatio = _this$props.pixelRatio,
       boxProps = _objectWithoutProperties(_this$props, _excluded);
     const loupeDiameter = _helper_tools_eye_dropper__WEBPACK_IMPORTED_MODULE_4__["ZOOM_SCALE"] * _helper_tools_eye_dropper__WEBPACK_IMPORTED_MODULE_4__["LOUPE_RADIUS"] * 2;
     const x = colorInfo.x / pixelRatio - loupeDiameter / 2;
@@ -148676,7 +149762,7 @@ TextModeComponent.propTypes = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0My4yICgzOTA2OSkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+dGV4dDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJ0ZXh0IiBmaWxsPSIjNTc1RTc1Ij4KICAgICAgICAgICAgPHBhdGggZD0iTTE2LDQuMzUyOTQxMTggTDE2LDYuODUxNzY0NzEgQzE2LDcuMDQ5NDExNzYgMTUuODQ0NzA1OSw3LjIwNDcwNTg4IDE1LjY0NzA1ODgsNy4yMDQ3MDU4OCBMMTQuODk4ODIzNSw3LjIwNDcwNTg4IEMxNC43NTc2NDcxLDcuMjA0NzA1ODggMTQuNjE2NDcwNiw3LjEyIDE0LjU3NDExNzYsNi45OTI5NDExOCBMMTQuMjA3MDU4OCw2LjExNzY0NzA2IEwxMS4wNTg4MjM1LDYuMTE3NjQ3MDYgTDExLjA1ODgyMzUsMTQuMjkxNzY0NyBMMTEuOTIsMTQuNjE2NDcwNiBDMTIuMDYxMTc2NSwxNC42NzI5NDEyIDEyLjE2LDE0LjggMTIuMTYsMTQuOTU1Mjk0MSBMMTIuMTYsMTUuNjQ3MDU4OCBDMTIuMTYsMTUuODQ0NzA1OSAxMS45OTA1ODgyLDE2IDExLjgwNzA1ODgsMTYgTDguMjA3MDU4ODIsMTYgQzguMDIzNTI5NDEsMTYgNy44NTQxMTc2NSwxNS44NDQ3MDU5IDcuODU0MTE3NjUsMTUuNjQ3MDU4OCBMNy44NTQxMTc2NSwxNC45NTUyOTQxIEM3Ljg1NDExNzY1LDE0LjggNy45NTI5NDExOCwxNC42NzI5NDEyIDguMDgsMTQuNjE2NDcwNiBMOC45NDExNzY0NywxNC4yOTE3NjQ3IEw4Ljk0MTE3NjQ3LDYuMTE3NjQ3MDYgTDUuODA3MDU4ODIsNi4xMTc2NDcwNiBMNS40NCw2Ljk5Mjk0MTE4IEM1LjM4MzUyOTQxLDcuMTIgNS4yNTY0NzA1OSw3LjIwNDcwNTg4IDUuMTE1Mjk0MTIsNy4yMDQ3MDU4OCBMNC4zNTI5NDExOCw3LjIwNDcwNTg4IEM0LjE2OTQxMTc2LDcuMjA0NzA1ODggNCw3LjA0OTQxMTc2IDQsNi44NTE3NjQ3MSBMNCw0LjM1Mjk0MTE4IEM0LDQuMTU1Mjk0MTIgNC4xNjk0MTE3Niw0IDQuMzUyOTQxMTgsNCBMMTUuNjQ3MDU4OCw0IEMxNS44NDQ3MDU5LDQgMTYsNC4xNTUyOTQxMiAxNiw0LjM1Mjk0MTE4IiBpZD0idGV4dC1pY29uIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMi45NiIgaGVpZ2h0PSIxNC41NCIgdmlld0JveD0iMCwwLDIyLjk2LDE0LjU0Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI3LjcyLC0xNzEuNDI4NzUpIj48ZyBmaWxsPSIjNDk0ZjYzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTI0MC43ODAwMSwxODUuNzY4NzVoLTIuMjZsLTEuNTIsLTQuMTJoLTUuNTJsLTEuNTIsNC4xMmgtMi4yNGw1LjQyLC0xNC4zNGgyLjI0ek0yMzIuMTIwMDEsMTc5Ljc2ODc1aDQuMjhsLTEuNDQsLTQuMDJjLTAuMDUzMzQsLTAuMTQ2NjcgLTAuMTI2NjcsLTAuMzY2NjYgLTAuMjIsLTAuNjZjLTAuMDkzMzMsLTAuMjkzMzQgLTAuMTg2NjcsLTAuNiAtMC4yOCwtMC45MmMtMC4wOTMzMywtMC4zMiAtMC4xNjY2NiwtMC41OCAtMC4yMiwtMC43OHYwYy0wLjEwNjY2LDAuNDEzMzMgLTAuMjI2NjYsMC44NTMzNCAtMC4zNiwxLjMyYy0wLjEzMzMzLDAuNDY2NjcgLTAuMjQsMC44MTMzMyAtMC4zMiwxLjA0djB6TTI0Ni42NDAwMSwxNzQuNzg4NzV2MGMxLjM0NjY3LDAgMi4zNTY2NiwwLjI5NjY3IDMuMDMsMC44OWMwLjY3MzM0LDAuNTkzMzMgMS4wMSwxLjUyMzM0IDEuMDEsMi43OXYwdjcuM2gtMS41bC0wLjQyLC0xLjVoLTAuMDhjLTAuNDY2NjcsMC41ODY2NyAtMC45NTY2NiwxLjAxNjY2IC0xLjQ3LDEuMjljLTAuNTEzMzQsMC4yNzMzNCAtMS4yMjMzMywwLjQxIC0yLjEzLDAuNDF2MGMtMC45NzMzMywwIC0xLjc4LC0wLjI2MzMzIC0yLjQyLC0wLjc5Yy0wLjY0LC0wLjUyNjY3IC0wLjk2LC0xLjM1IC0wLjk2LC0yLjQ3djBjMCwtMS4xMDY2NiAwLjQxNjY2LC0xLjk0MzM0IDEuMjUsLTIuNTFjMC44MzMzNCwtMC41NjY2NyAyLjEwMzM0LC0wLjg3NjY2IDMuODEsLTAuOTN2MGwxLjg0LC0wLjA2di0wLjZjMCwtMC43ODY2NiAtMC4xOCwtMS4zNDMzMyAtMC41NCwtMS42N2MtMC4zNiwtMC4zMjY2NiAtMC44NjY2NiwtMC40OSAtMS41MiwtMC40OXYwYy0wLjU0NjY2LDAgLTEuMDczMzQsMC4wOCAtMS41OCwwLjI0Yy0wLjUwNjY2LDAuMTYgLTAuOTkzMzQsMC4zNTMzNCAtMS40NiwwLjU4djBsLTAuNjgsLTEuNTRjMC41MDY2NiwtMC4yNjY2NiAxLjA5LC0wLjQ5IDEuNzUsLTAuNjdjMC42NiwtMC4xOCAxLjM1LC0wLjI3IDIuMDcsLTAuMjd6TTI0OC41ODAwMSwxODEuNTI4NzV2LTAuOTRsLTEuNDQsMC4wNGMtMS4yMjY2NiwwLjA1MzM0IC0yLjA3NjY3LDAuMjYgLTIuNTUsMC42MmMtMC40NzMzMywwLjM2IC0wLjcxLDAuODUzMzMgLTAuNzEsMS40OHYwYzAsMC41NiAwLjE2NjY2LDAuOTY2NjcgMC41LDEuMjJjMC4zMzMzNCwwLjI1MzMzIDAuNzY2NjYsMC4zOCAxLjMsMC4zOHYwYzAuODI2NjYsMCAxLjUxNjY2LC0wLjIzMzM0IDIuMDcsLTAuN2MwLjU1MzM0LC0wLjQ2NjY3IDAuODMsLTEuMTY2NjYgMC44MywtMi4xeiIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjEyLjI3OTk5NTAwMDAwMDAxNDo4LjU3MTI0OTk5OTk5OTk5Mi0tPg=="
 
 /***/ }),
 
@@ -148995,9 +150081,7 @@ class ArrowMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     // Make sure that at least one of fill/stroke is set, and that MIXED is not one of the colors.
     // If fill and stroke color are both missing, set fill to default and stroke to transparent.
     // If exactly one of fill or stroke color is set, set the other one to transparent.
-    const {
-      strokeWidth
-    } = this.props.colorState;
+    const strokeWidth = this.props.colorState.strokeWidth;
     const fillColor1 = this.props.colorState.fillColor.primary;
     let fillColor2 = this.props.colorState.fillColor.secondary;
     let fillGradient = this.props.colorState.fillColor.gradientType;
@@ -150084,11 +151168,10 @@ class BrushMode extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     } else if (!nextProps.isBrushModeActive && this.props.isBrushModeActive) {
       this.deactivateTool();
     } else if (nextProps.isBrushModeActive && this.props.isBrushModeActive) {
-      const {
-        fillColor,
-        strokeColor,
-        strokeWidth
-      } = nextProps.colorState;
+      const _nextProps$colorState = nextProps.colorState,
+        fillColor = _nextProps$colorState.fillColor,
+        strokeColor = _nextProps$colorState.strokeColor,
+        strokeWidth = _nextProps$colorState.strokeWidth;
       this.blob.setOptions(_objectSpread({
         isEraser: false,
         fillColor: fillColor.primary,
@@ -150213,10 +151296,9 @@ const makeColorIndicator = (label, isStroke) => {
       this._hasChanged = false;
     }
     componentWillReceiveProps(newProps) {
-      const {
-        colorModalVisible,
-        onUpdateImage
-      } = this.props;
+      const _this$props = this.props,
+        colorModalVisible = _this$props.colorModalVisible,
+        onUpdateImage = _this$props.onUpdateImage;
       if (colorModalVisible && !newProps.colorModalVisible) {
         // Submit the new SVG, which also stores a single undo/redo action.
         if (this._hasChanged) onUpdateImage();
@@ -152478,9 +153560,7 @@ class OvalMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     // Make sure that at least one of fill/stroke is set, and that MIXED is not one of the colors.
     // If fill and stroke color are both missing, set fill to default and stroke to transparent.
     // If exactly one of fill or stroke color is set, set the other one to transparent.
-    const {
-      strokeWidth
-    } = this.props.colorState;
+    const strokeWidth = this.props.colorState.strokeWidth;
     const fillColor1 = this.props.colorState.fillColor.primary;
     let fillColor2 = this.props.colorState.fillColor.secondary;
     let fillGradient = this.props.colorState.fillColor.gradientType;
@@ -153574,9 +154654,7 @@ class PenMode extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   activateTool() {
     Object(_helper_selection__WEBPACK_IMPORTED_MODULE_12__["clearSelection"])(this.props.clearSelectedItems);
     // Force the default pen color if stroke is MIXED or transparent
-    const {
-      strokeColor
-    } = this.props.colorState;
+    const strokeColor = this.props.colorState.strokeColor;
     if (strokeColor === _helper_style_path__WEBPACK_IMPORTED_MODULE_9__["MIXED"] || strokeColor === null) {
       this.props.onChangeStrokeColor(PenMode.DEFAULT_COLOR);
     }
@@ -153745,9 +154823,7 @@ class RectMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     // Make sure that at least one of fill/stroke is set, and that MIXED is not one of the colors.
     // If fill and stroke color are both missing, set fill to default and stroke to transparent.
     // If exactly one of fill or stroke color is set, set the other one to transparent.
-    const {
-      strokeWidth
-    } = this.props.colorState;
+    const strokeWidth = this.props.colorState.strokeWidth;
     const fillColor1 = this.props.colorState.fillColor.primary;
     let fillColor2 = this.props.colorState.fillColor.secondary;
     let fillGradient = this.props.colorState.fillColor.gradientType;
@@ -154068,9 +155144,7 @@ class RoundedRectMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compo
     // Make sure that at least one of fill/stroke is set, and that MIXED is not one of the colors.
     // If fill and stroke color are both missing, set fill to default and stroke to transparent.
     // If exactly one of fill or stroke color is set, set the other one to transparent.
-    const {
-      strokeWidth
-    } = this.props.colorState;
+    const strokeWidth = this.props.colorState.strokeWidth;
     const fillColor1 = this.props.colorState.fillColor.primary;
     let fillColor2 = this.props.colorState.fillColor.secondary;
     let fillGradient = this.props.colorState.fillColor.gradientType;
@@ -154233,10 +155307,9 @@ class ScrollableCanvas extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Comp
   handleMouseDown(event) {
     if (event.button === 1) {
       event.preventDefault();
-      const {
-        x,
-        y
-      } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_8__["getEventXY"])(event);
+      const _getEventXY = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_8__["getEventXY"])(event),
+        x = _getEventXY.x,
+        y = _getEventXY.y;
       this.initialMouseX = x;
       this.initialMouseY = y;
       this.initialScreenX = _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.view.matrix.tx;
@@ -154249,10 +155322,9 @@ class ScrollableCanvas extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Comp
   }
   handleDragMove(event) {
     event.preventDefault();
-    const {
-      x,
-      y
-    } = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_8__["getEventXY"])(event);
+    const _getEventXY2 = Object(_lib_touch_utils__WEBPACK_IMPORTED_MODULE_8__["getEventXY"])(event),
+      x = _getEventXY2.x,
+      y = _getEventXY2.y;
     _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.view.matrix.ty = this.initialScreenY - (this.initialMouseY - y);
     _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.view.matrix.tx = this.initialScreenX - (this.initialMouseX - x);
     Object(_helper_view__WEBPACK_IMPORTED_MODULE_5__["clampViewBounds"])();
@@ -154367,12 +155439,11 @@ class ScrollableCanvas extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Comp
     let leftPercent = 0;
     if (_turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.project) {
       const bounds = Object(_helper_view__WEBPACK_IMPORTED_MODULE_5__["getWorkspaceBounds"])();
-      const {
-        x,
-        y,
-        width,
-        height
-      } = _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.view.bounds;
+      const _paper$view$bounds = _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.view.bounds,
+        x = _paper$view$bounds.x,
+        y = _paper$view$bounds.y,
+        width = _paper$view$bounds.width,
+        height = _paper$view$bounds.height;
       widthPercent = Math.min(100, 100 * width / bounds.width);
       heightPercent = Math.min(100, 100 * height / bounds.height);
       const centerX = (x + width / 2 - bounds.x) / bounds.width;
@@ -154844,9 +155915,7 @@ class SussyMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     // Make sure that at least one of fill/stroke is set, and that MIXED is not one of the colors.
     // If fill and stroke color are both missing, set fill to default and stroke to transparent.
     // If exactly one of fill or stroke color is set, set the other one to transparent.
-    const {
-      strokeWidth
-    } = this.props.colorState;
+    const strokeWidth = this.props.colorState.strokeWidth;
     const fillColor1 = this.props.colorState.fillColor.primary;
     let fillColor2 = this.props.colorState.fillColor.secondary;
     let fillGradient = this.props.colorState.fillColor.gradientType;
@@ -155061,9 +156130,7 @@ class TextMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     // If fill and stroke color are both mixed/transparent/absent, set fill to default and stroke to transparent.
     // If exactly one of fill or stroke color is set, set the other one to transparent.
     // This way the tool won't draw an invisible state, or be unclear about what will be drawn.
-    const {
-      strokeWidth
-    } = nextProps.colorState;
+    const strokeWidth = nextProps.colorState.strokeWidth;
     const fillColor = nextProps.colorState.fillColor.primary;
     const strokeColor = nextProps.colorState.strokeColor.primary;
     const fillColorPresent = fillColor !== _helper_style_path__WEBPACK_IMPORTED_MODULE_8__["MIXED"] && fillColor !== null;
@@ -155290,9 +156357,7 @@ class TriangleMode extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Componen
     // Make sure that at least one of fill/stroke is set, and that MIXED is not one of the colors.
     // If fill and stroke color are both missing, set fill to default and stroke to transparent.
     // If exactly one of fill or stroke color is set, set the other one to transparent.
-    const {
-      strokeWidth
-    } = this.props.colorState;
+    const strokeWidth = this.props.colorState.strokeWidth;
     const fillColor1 = this.props.colorState.fillColor.primary;
     let fillColor2 = this.props.colorState.fillColor.secondary;
     let fillGradient = this.props.colorState.fillColor.gradientType;
@@ -155448,11 +156513,7 @@ class TWPaintEditorWrapper extends react__WEBPACK_IMPORTED_MODULE_0___default.a.
   }
   render() {
     const _this$props = this.props,
-      {
-        /* eslint-disable no-unused-vars */
-        onResetZoomLevels
-        /* eslint-enable no-unused-vars */
-      } = _this$props,
+      onResetZoomLevels = _this$props.onResetZoomLevels,
       props = _objectWithoutProperties(_this$props, _excluded);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_paint_editor_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({
       key: this.state.key
@@ -155541,10 +156602,9 @@ class BrushTool extends _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.
     }
     if (this.maskTarget) {
       const drawContext = this.drawTarget.getContext('2d');
-      const {
-        width,
-        height
-      } = drawContext.canvas;
+      const _drawContext$canvas = drawContext.canvas,
+        width = _drawContext$canvas.width,
+        height = _drawContext$canvas.height;
       drawContext.globalCompositeOperation = 'source-over';
       drawContext.drawImage(this.maskTarget.canvas, 0, 0);
       drawContext.globalCompositeOperation = 'source-in';
@@ -155828,10 +156888,9 @@ class LineTool extends _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.T
   drawLine(startPoint, endPoint) {
     const roundedUpRadius = Math.ceil(this.size / 2);
     const originalContext = this.drawTarget.getContext('2d');
-    const {
-      context,
-      unmask
-    } = Object(_bitmap__WEBPACK_IMPORTED_MODULE_2__["createMaskingCanvas"])(originalContext, this.color);
+    const _createMaskingCanvas = Object(_bitmap__WEBPACK_IMPORTED_MODULE_2__["createMaskingCanvas"])(originalContext, this.color),
+      context = _createMaskingCanvas.context,
+      unmask = _createMaskingCanvas.unmask;
     Object(_bitmap__WEBPACK_IMPORTED_MODULE_2__["forEachLinePoint"])(startPoint, endPoint, (x, y) => {
       context.drawImage(this.tmpCanvas, ~~x - roundedUpRadius, ~~y - roundedUpRadius);
     });
@@ -156746,12 +157805,11 @@ const getBrushMark = function getBrushMark(size, color, isEraser) {
   const roundedUpRadius = Math.ceil(size / 2);
   canvas.width = roundedUpRadius * 2;
   canvas.height = roundedUpRadius * 2;
-  const {
-    context,
-    unmask
-  } = createMaskingCanvas(canvas.getContext('2d', {
-    willReadFrequently: true
-  }), isEraser ? 'white' : color);
+  const _createMaskingCanvas = createMaskingCanvas(canvas.getContext('2d', {
+      willReadFrequently: true
+    }), isEraser ? 'white' : color),
+    context = _createMaskingCanvas.context,
+    unmask = _createMaskingCanvas.unmask;
   context.imageSmoothingEnabled = false;
   // Small squares for pixel artists
   if (size <= 5) {
@@ -156827,10 +157885,9 @@ const drawEllipse = function drawEllipse(options, context) {
   // Outlines are drawn as a series of brush mark images and as such can't be drawn as gradients in the first place.
   let origContext;
   let tmpCanvas;
-  const {
-    width: canvasWidth,
-    height: canvasHeight
-  } = context.canvas;
+  const _context$canvas = context.canvas,
+    canvasWidth = _context$canvas.width,
+    canvasHeight = _context$canvas.height;
   if (needsMask) {
     tmpCanvas = Object(_layer__WEBPACK_IMPORTED_MODULE_1__["createCanvas"])(canvasWidth, canvasHeight);
     origContext = context;
@@ -157257,10 +158314,9 @@ const outlineRect = function outlineRect(rect, thickness, context) {
   // gradients.
   let origContext;
   let tmpCanvas;
-  const {
-    width: canvasWidth,
-    height: canvasHeight
-  } = context.canvas;
+  const _context$canvas2 = context.canvas,
+    canvasWidth = _context$canvas2.width,
+    canvasHeight = _context$canvas2.height;
   if (needsMask) {
     tmpCanvas = Object(_layer__WEBPACK_IMPORTED_MODULE_1__["createCanvas"])(canvasWidth, canvasHeight);
     origContext = context;
@@ -157396,16 +158452,12 @@ const _paperColorToCanvasStyle = function _paperColorToCanvasStyle(color, contex
   if (!color) return null;
   if (color.type === 'gradient') {
     let canvasGradient;
-    const {
-      origin,
-      destination
-    } = color;
+    const origin = color.origin,
+      destination = color.destination;
     if (color.gradient.radial) {
       // Adapted from:
       // https://github.com/paperjs/paper.js/blob/b081fd72c72cd61331313c3961edb48f3dfaffbd/src/style/Color.js#L926-L935
-      let {
-        highlight
-      } = color;
+      let highlight = color.highlight;
       const start = highlight || origin;
       const radius = destination.getDistance(origin);
       if (highlight) {
@@ -157419,9 +158471,7 @@ const _paperColorToCanvasStyle = function _paperColorToCanvasStyle(color, contex
     } else {
       canvasGradient = context.createLinearGradient(origin.x, origin.y, destination.x, destination.y);
     }
-    const {
-      stops
-    } = color.gradient;
+    const stops = color.gradient.stops;
     // Adapted from:
     // https://github.com/paperjs/paper.js/blob/b081fd72c72cd61331313c3961edb48f3dfaffbd/src/style/Color.js#L940-L950
     for (let i = 0, len = stops.length; i < len; i++) {
@@ -158033,10 +159083,8 @@ class BroadBrushHelper {
   squareHandler(movement, tool, options) {
     // TODO this can technically handle other shapes, which we should add. However we need to implement some
     // cahce or flush system to make this less laggy when you have a large complex brush drawing (same goes for the segment brush)
-    const {
-      delta,
-      point
-    } = movement;
+    const delta = movement.delta,
+      point = movement.point;
     this.steps++;
     const size = options.brushSize / 2;
     const square = new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Path.Rectangle(new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Rectangle(new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Point(point.x - size, point.y - size), new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Point(point.x + size, point.y + size)));
@@ -158049,10 +159097,8 @@ class BroadBrushHelper {
   }
   // round brush
   roundHandler(movement, tool, options) {
-    const {
-      delta,
-      point
-    } = movement;
+    const delta = movement.delta,
+      point = movement.point;
     this.steps++;
     const step = delta.normalize(options.brushSize / 2);
 
@@ -158344,10 +159390,8 @@ class SegmentBrushHelper {
   }
   // square brush
   squareHandler(movement, tool, options) {
-    const {
-      delta,
-      point
-    } = movement;
+    const delta = movement.delta,
+      point = movement.point;
     const size = options.brushSize / 2;
     const square = new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Path.Rectangle(new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Rectangle(new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Point(point.x - size, point.y - size), new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Point(point.x + size, point.y + size)));
     square.fillColor = options.fillColor;
@@ -158361,10 +159405,8 @@ class SegmentBrushHelper {
   }
   // round brush
   roundHandler(movement, tool, options) {
-    const {
-      delta,
-      point
-    } = movement;
+    const delta = movement.delta,
+      point = movement.point;
     const step = delta.normalize(options.brushSize / 2);
     const handleVec = step.clone();
     handleVec.length = options.brushSize / 2;
@@ -159929,10 +160971,9 @@ class BoundingBoxTool {
    */
   onMouseDown(event, clone, multiselect, doubleClicked, hitOptions) {
     if (event.event.button > 0) return; // only first mouse button
-    const {
-      hitResult,
-      mode
-    } = this._determineMode(event, multiselect, hitOptions);
+    const _this$_determineMode = this._determineMode(event, multiselect, hitOptions),
+      hitResult = _this$_determineMode.hitResult,
+      mode = _this$_determineMode.mode;
     if (!hitResult) {
       if (!multiselect) {
         this.removeBoundsPath();
@@ -159964,10 +161005,9 @@ class BoundingBoxTool {
     this._updateCursor(event, hitOptions);
   }
   _updateCursor(event, hitOptions) {
-    const {
-      mode,
-      hitResult
-    } = this._determineMode(event, false, hitOptions);
+    const _this$_determineMode2 = this._determineMode(event, false, hitOptions),
+      mode = _this$_determineMode2.mode,
+      hitResult = _this$_determineMode2.hitResult;
     if (hitResult) {
       if (mode === BoundingBoxModes.MOVE) {
         this.setCursor(_lib_cursors__WEBPACK_IMPORTED_MODULE_5__["default"].DEFAULT);
@@ -162783,11 +163823,10 @@ const getColorsFromSelection = function getColorsFromSelection(selectedItems, bi
         if (Object(_item__WEBPACK_IMPORTED_MODULE_2__["isPointTextItem"])(item) && item.fillColor.alpha === 0) {
           itemFillColorString = null;
         } else if (item.fillColor.type === 'gradient') {
-          const {
-            primary,
-            secondary,
-            gradientType
-          } = _colorStateFromGradient(item.fillColor.gradient);
+          const _colorStateFromGradie = _colorStateFromGradient(item.fillColor.gradient),
+            primary = _colorStateFromGradie.primary,
+            secondary = _colorStateFromGradie.secondary,
+            gradientType = _colorStateFromGradie.gradientType;
           itemFillColorString = primary;
           itemFillColor2String = secondary;
           itemFillGradientType = gradientType;
@@ -162798,11 +163837,10 @@ const getColorsFromSelection = function getColorsFromSelection(selectedItems, bi
       }
       if (item.strokeColor) {
         if (item.strokeColor.type === 'gradient') {
-          const {
-            primary,
-            secondary,
-            gradientType
-          } = _colorStateFromGradient(item.strokeColor.gradient);
+          const _colorStateFromGradie2 = _colorStateFromGradient(item.strokeColor.gradient),
+            primary = _colorStateFromGradie2.primary,
+            secondary = _colorStateFromGradie2.secondary,
+            gradientType = _colorStateFromGradie2.gradientType;
           let strokeColorString = primary;
           const strokeColor2String = secondary;
           let strokeGradientType = gradientType;
@@ -162956,11 +163994,10 @@ const styleShape = function styleShape(path, options) {
     } else if (options[colorKey].gradientType === _lib_gradient_types__WEBPACK_IMPORTED_MODULE_4__["default"].SOLID) {
       path[colorKey] = options[colorKey].primary;
     } else {
-      const {
-        primary,
-        secondary,
-        gradientType
-      } = options[colorKey];
+      const _options$colorKey = options[colorKey],
+        primary = _options$colorKey.primary,
+        secondary = _options$colorKey.secondary,
+        gradientType = _options$colorKey.gradientType;
       path[colorKey] = createGradientObject(primary, secondary, gradientType, path.bounds, null,
       // radialCenter
       options.strokeWidth // minimum gradient size is stroke width
@@ -164442,10 +165479,9 @@ class SussyTool extends _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.
     const shapeRatio = shapeBounds.width / shapeBounds.height;
     let finalBounds = rawBounds;
     if (event.modifiers.shift) {
-      const {
-        width,
-        height
-      } = rawBounds.size;
+      const _rawBounds$size = rawBounds.size,
+        width = _rawBounds$size.width,
+        height = _rawBounds$size.height;
       let w0 = width,
         h0 = height;
 
@@ -165342,12 +166378,11 @@ const setWorkspaceBounds = clipEmpty => {
   _workspaceBounds = new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Rectangle(left, top, right - left, bottom - top);
 };
 const clampViewBounds = () => {
-  const {
-    left,
-    right,
-    top,
-    bottom
-  } = _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.project.view.bounds;
+  const _paper$project$view$b = _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.project.view.bounds,
+    left = _paper$project$view$b.left,
+    right = _paper$project$view$b.right,
+    top = _paper$project$view$b.top,
+    bottom = _paper$project$view$b.bottom;
   if (left < _workspaceBounds.left) {
     _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.project.view.scrollBy(new _turbowarp_paper__WEBPACK_IMPORTED_MODULE_0___default.a.Point(_workspaceBounds.left - left, 0));
   }
@@ -165902,9 +166937,7 @@ const SelectionHOC = function SelectionHOC(WrappedComponent) {
     }
     render() {
       const _this$props = this.props,
-        {
-          hoveredItemId // eslint-disable-line no-unused-vars
-        } = _this$props,
+        hoveredItemId = _this$props.hoveredItemId,
         props = _objectWithoutProperties(_this$props, _excluded);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WrappedComponent, props);
     }
@@ -166446,27 +167479,14 @@ const isValidHexColor = color => {
   return true;
 };
 const makeColorStyleReducer = _ref => {
-  let {
-    // Action name for changing the primary color
-    changePrimaryColorAction,
-    // Action name for changing the secondary color
-    changeSecondaryColorAction,
-    // Action name for changing the gradient type
-    changeGradientTypeAction,
-    // Action name for clearing the gradient
-    clearGradientAction,
-    // Initial color when not set
-    defaultColor,
-    // The name of the property read from getColorsFromSelection to get the primary color.
-    // e.g. `fillColor` or `strokeColor`.
-    selectionPrimaryColorKey,
-    // The name of the property read from getColorsFromSelection to get the secondary color.
-    // e.g. `fillColor2` or `strokeColor2`.
-    selectionSecondaryColorKey,
-    // The name of the property read from getColorsFromSelection to get the gradient type.
-    // e.g. `fillGradientType` or `strokeGradientType`.
-    selectionGradientTypeKey
-  } = _ref;
+  let changePrimaryColorAction = _ref.changePrimaryColorAction,
+    changeSecondaryColorAction = _ref.changeSecondaryColorAction,
+    changeGradientTypeAction = _ref.changeGradientTypeAction,
+    clearGradientAction = _ref.clearGradientAction,
+    defaultColor = _ref.defaultColor,
+    selectionPrimaryColorKey = _ref.selectionPrimaryColorKey,
+    selectionSecondaryColorKey = _ref.selectionSecondaryColorKey,
+    selectionGradientTypeKey = _ref.selectionGradientTypeKey;
   return function colorReducer(state, action) {
     if (typeof state === 'undefined') {
       state = {
@@ -166994,11 +168014,10 @@ const initialState = {
 };
 const reducer = function reducer(state, action) {
   if (typeof state === 'undefined') state = initialState;
-  let {
-    simplifySize,
-    brushSize,
-    brushType
-  } = state;
+  let _state = state,
+    simplifySize = _state.simplifySize,
+    brushSize = _state.brushSize,
+    brushType = _state.brushType;
   switch (action.type) {
     case CHANGE_BRUSH_SIZE:
       if (isNaN(action.brushSize)) {
@@ -167306,10 +168325,9 @@ const initialState = {
 };
 const reducer = function reducer(state, action) {
   if (typeof state === 'undefined') state = initialState;
-  let {
-    simplifySize,
-    brushSize
-  } = state;
+  let _state = state,
+    simplifySize = _state.simplifySize,
+    brushSize = _state.brushSize;
   switch (action.type) {
     case CHANGE_ERASER_SIZE:
       if (isNaN(action.brushSize)) {
@@ -175855,10 +176873,9 @@ module.exports = Drawable;
  */
 
 const twgl = __webpack_require__(/*! twgl.js */ "./node_modules/twgl.js/dist/4.x/twgl-full.js");
-const {
-  rgbToHsv,
-  hsvToRgb
-} = __webpack_require__(/*! ./util/color-conversions */ "./node_modules/scratch-render/src/util/color-conversions.js");
+const _require = __webpack_require__(/*! ./util/color-conversions */ "./node_modules/scratch-render/src/util/color-conversions.js"),
+  rgbToHsv = _require.rgbToHsv,
+  hsvToRgb = _require.hsvToRgb;
 const ShaderManager = __webpack_require__(/*! ./ShaderManager */ "./node_modules/scratch-render/src/ShaderManager.js");
 
 /**
@@ -176045,6 +177062,12 @@ module.exports = EffectTransform;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const twgl = __webpack_require__(/*! twgl.js */ "./node_modules/twgl.js/dist/4.x/twgl-full.js");
 const RenderConstants = __webpack_require__(/*! ./RenderConstants */ "./node_modules/scratch-render/src/RenderConstants.js");
 const Skin = __webpack_require__(/*! ./Skin */ "./node_modules/scratch-render/src/Skin.js");
@@ -176434,7 +177457,9 @@ class PenSkin extends Skin {
    * @private
    */
   _setCanvasSize(canvasSize) {
-    const [width, height] = canvasSize;
+    const _canvasSize = _slicedToArray(canvasSize, 2),
+      width = _canvasSize[0],
+      height = _canvasSize[1];
 
     // tw: do not resize if new size === old size
     if (this._size && this._size[0] === width && this._size[1] === height) {
@@ -176751,6 +177776,12 @@ module.exports = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const EventEmitter = __webpack_require__(/*! events */ "./node_modules/events/events.js");
 const hull = __webpack_require__(/*! @turbowarp/ancient-hull.js */ "./node_modules/@turbowarp/ancient-hull.js/src/hull.js");
 const twgl = __webpack_require__(/*! twgl.js */ "./node_modules/twgl.js/dist/4.x/twgl-full.js");
@@ -177119,9 +178150,7 @@ class RenderWebGL extends EventEmitter {
    * @param {int} pixelsTall The desired height in device-independent pixels.
    */
   resize(pixelsWide, pixelsTall) {
-    const {
-      canvas
-    } = this._gl;
+    const canvas = this._gl.canvas;
     const pixelRatio = window.devicePixelRatio || 1;
     const newWidth = Math.round(pixelsWide * pixelRatio);
     const newHeight = Math.round(pixelsTall * pixelRatio);
@@ -177251,7 +178280,9 @@ class RenderWebGL extends EventEmitter {
     }
   }
   _updateOverlays() {
-    const [nativeWidth, nativeHeight] = this._nativeSize;
+    const _this$_nativeSize = _slicedToArray(this._nativeSize, 2),
+      nativeWidth = _this$_nativeSize[0],
+      nativeHeight = _this$_nativeSize[1];
     const dpiIndependentWidth = this.canvas.width / window.devicePixelRatio;
     const dpiIndependentHeight = this.canvas.height / window.devicePixelRatio;
     this.overlayContainer.style.width = "".concat(dpiIndependentWidth, "px");
@@ -177769,9 +178800,7 @@ class RenderWebGL extends EventEmitter {
     // if there are just too many pixels to CPU render efficiently, we need to let readPixels happen
     if (bounds.width * bounds.height * (candidates.length + 1) >= maxPixelsForCPU) {
       this._isTouchingColorGpuStart(drawableID, candidates.map(_ref => {
-        let {
-          id
-        } = _ref;
+        let id = _ref.id;
         return id;
       }).reverse(), bounds, color3b, mask3b);
     }
@@ -178320,9 +179349,7 @@ class RenderWebGL extends EventEmitter {
    */
   _candidatesBounds(candidates) {
     return candidates.reduce((memo, _ref2) => {
-      let {
-        intersection
-      } = _ref2;
+      let intersection = _ref2.intersection;
       if (!memo) {
         return intersection;
       }
@@ -178590,7 +179617,9 @@ class RenderWebGL extends EventEmitter {
    */
   onNativeSizeChanged(event) {
     this.dirty = true;
-    const [width, height] = event.newSize;
+    const _event$newSize = _slicedToArray(event.newSize, 2),
+      width = _event$newSize[0],
+      height = _event$newSize[1];
     const gl = this._gl;
     const attachments = [{
       format: gl.RGBA
@@ -178736,7 +179765,9 @@ class RenderWebGL extends EventEmitter {
    */
   _getConvexHullPointsForDrawable(drawableID) {
     const drawable = this._allDrawables[drawableID];
-    const [width, height] = drawable.skin.size;
+    const _drawable$skin$size = _slicedToArray(drawable.skin.size, 2),
+      width = _drawable$skin$size[0],
+      height = _drawable$skin$size[1];
     // No points in the hull if invisible or size is 0.
     if (!drawable.getVisible() || width === 0 || height === 0) {
       return [];
@@ -178983,12 +180014,17 @@ module.exports = RenderWebGL;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const twgl = __webpack_require__(/*! twgl.js */ "./node_modules/twgl.js/dist/4.x/twgl-full.js");
 const Skin = __webpack_require__(/*! ./Skin */ "./node_modules/scratch-render/src/Skin.js");
-const {
-  loadSvgString,
-  serializeSvgToString
-} = __webpack_require__(/*! @turbowarp/scratch-svg-renderer */ "./node_modules/@turbowarp/scratch-svg-renderer/src/index.js");
+const _require = __webpack_require__(/*! @turbowarp/scratch-svg-renderer */ "./node_modules/@turbowarp/scratch-svg-renderer/src/index.js"),
+  loadSvgString = _require.loadSvgString,
+  serializeSvgToString = _require.serializeSvgToString;
 const ShaderManager = __webpack_require__(/*! ./ShaderManager */ "./node_modules/scratch-render/src/ShaderManager.js");
 
 /**
@@ -179089,7 +180125,9 @@ class SVGSkin extends Skin {
     if (!isLargestMIP) {
       this._silhouette.unlazy();
     }
-    const [width, height] = this._size;
+    const _this$_size = _slicedToArray(this._size, 2),
+      width = _this$_size[0],
+      height = _this$_size[1];
     this._canvas.width = width * scale;
     this._canvas.height = height * scale;
     if (this._canvas.width <= 0 || this._canvas.height <= 0 ||
@@ -179169,12 +180207,11 @@ class SVGSkin extends Skin {
     const svgTag = loadSvgString(svgData);
     const svgText = serializeSvgToString(svgTag, this._renderer.customFonts);
     this._svgImageLoaded = false;
-    const {
-      x,
-      y,
-      width,
-      height
-    } = svgTag.viewBox.baseVal;
+    const _svgTag$viewBox$baseV = svgTag.viewBox.baseVal,
+      x = _svgTag$viewBox$baseV.x,
+      y = _svgTag$viewBox$baseV.y,
+      width = _svgTag$viewBox$baseV.width,
+      height = _svgTag$viewBox$baseV.height;
     // While we're setting the size before the image is loaded, this doesn't cause the skin to appear with the wrong
     // size for a few frames while the new image is loading, because we don't emit the `WasAltered` event, telling
     // drawables using this skin to update, until the image is loaded.
@@ -179444,11 +180481,9 @@ const intMax = (i, j) => i ^ (i ^ j) & i - j >> 31;
  * @return {number} Alpha value for x/y position
  */
 const getPoint = (_ref, x, y) => {
-  let {
-    _width: width,
-    _height: height,
-    _colorData: data
-  } = _ref;
+  let width = _ref._width,
+    height = _ref._height,
+    data = _ref._colorData;
   // 0 if outside bounds, otherwise read from data.
   if (x >= width || y >= height || x < 0 || y < 0) {
     return 0;
@@ -179471,11 +180506,9 @@ const __cornerWork = [new Uint8ClampedArray(4), new Uint8ClampedArray(4), new Ui
  * @return {Uint8ClampedArray} The dst vector.
  */
 const getColor4b = (_ref2, x, y, dst) => {
-  let {
-    _width: width,
-    _height: height,
-    _colorData: data
-  } = _ref2;
+  let width = _ref2._width,
+    height = _ref2._height,
+    data = _ref2._colorData;
   // Clamp coords to edge, matching GL_CLAMP_TO_EDGE.
   // (See github.com/LLK/scratch-render/blob/954cfff02b08069a082cbedd415c1fecd9b1e4fb/src/BitmapSkin.js#L88)
   x = intMax(0, intMin(x, width - 1));
@@ -179505,11 +180538,9 @@ const getColor4b = (_ref2, x, y, dst) => {
  * @return {Uint8ClampedArray} The dst vector.
  */
 const getPremultipliedColor4b = (_ref3, x, y, dst) => {
-  let {
-    _width: width,
-    _height: height,
-    _colorData: data
-  } = _ref3;
+  let width = _ref3._width,
+    height = _ref3._height,
+    data = _ref3._colorData;
   // Clamp coords to edge, matching GL_CLAMP_TO_EDGE.
   x = intMax(0, intMin(x, width - 1));
   y = intMax(0, intMin(y, height - 1));
@@ -180293,6 +181324,12 @@ module.exports = CanvasMeasurementProvider;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * Converts an RGB color value to HSV. Conversion formula
  * adapted from http://lolengine.net/blog/2013/01/13/fast-rgb-to-hsv.
@@ -180307,7 +181344,10 @@ module.exports = CanvasMeasurementProvider;
  * @return  {Array<number>}       The `dst` array passed in
  */
 const rgbToHsv = (_ref, dst) => {
-  let [r, g, b] = _ref;
+  let _ref2 = _slicedToArray(_ref, 3),
+    r = _ref2[0],
+    g = _ref2[1],
+    b = _ref2[2];
   let K = 0.0;
   r /= 255;
   g /= 255;
@@ -180348,8 +181388,11 @@ const rgbToHsv = (_ref, dst) => {
  * @param   {Uint8Array|Uint8ClampedArray} dst The array to store the RGB values in
  * @return  {Uint8Array|Uint8ClampedArray}     The `dst` array passed in
  */
-const hsvToRgb = (_ref2, dst) => {
-  let [h, s, v] = _ref2;
+const hsvToRgb = (_ref3, dst) => {
+  let _ref4 = _slicedToArray(_ref3, 3),
+    h = _ref4[0],
+    s = _ref4[1],
+    v = _ref4[2];
   if (s === 0) {
     dst[0] = dst[1] = dst[2] = v * 255 + 0.5;
     return dst;
@@ -180804,14 +181847,17 @@ class BytePrimitive {
    * value to the array at the given position.
    */
   constructor(_ref) {
-    let {
-      size = 0,
-      sizeOf = () => size,
-      writeSizeOf = notImplemented,
-      toBytes = new Uint8Array(1),
-      read,
-      write = notImplemented
-    } = _ref;
+    let _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 0 : _ref$size,
+      _ref$sizeOf = _ref.sizeOf,
+      sizeOf = _ref$sizeOf === void 0 ? () => size : _ref$sizeOf,
+      _ref$writeSizeOf = _ref.writeSizeOf,
+      writeSizeOf = _ref$writeSizeOf === void 0 ? notImplemented : _ref$writeSizeOf,
+      _ref$toBytes = _ref.toBytes,
+      toBytes = _ref$toBytes === void 0 ? new Uint8Array(1) : _ref$toBytes,
+      read = _ref.read,
+      _ref$write = _ref.write,
+      write = _ref$write === void 0 ? notImplemented : _ref$write;
     this.size = size;
     this.sizeOf = sizeOf;
     this.writeSizeOf = writeSizeOf;
@@ -181898,10 +182944,11 @@ __webpack_require__.r(__webpack_exports__);
 
 class WAVFile {
   encode(intSamples) {
-    let {
-      channels = 1,
-      sampleRate = 22050
-    } = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    let _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref$channels = _ref.channels,
+      channels = _ref$channels === void 0 ? 1 : _ref$channels,
+      _ref$sampleRate = _ref.sampleRate,
+      sampleRate = _ref$sampleRate === void 0 ? 22050 : _ref$sampleRate;
     const samplesUint8 = new Uint8Array(intSamples.buffer, intSamples.byteOffset, intSamples.byteLength);
     const size = _wav_packets__WEBPACK_IMPORTED_MODULE_1__["WAVESignature"].size + _wav_packets__WEBPACK_IMPORTED_MODULE_1__["WAVEChunkStart"].size + _wav_packets__WEBPACK_IMPORTED_MODULE_1__["WAVEFMTChunkBody"].size + _wav_packets__WEBPACK_IMPORTED_MODULE_1__["WAVEChunkStart"].size + samplesUint8.length;
     const stream = new _byte_stream__WEBPACK_IMPORTED_MODULE_0__["ByteStream"](new ArrayBuffer(size));
@@ -182475,11 +183522,11 @@ class Consumer {
    * stream.read(options.read)`.
    */
   constructor(_ref) {
-    let {
-      type = _fields__WEBPACK_IMPORTED_MODULE_3__["Value"],
-      read,
-      value = read ? stream => stream.read(read) : null
-    } = _ref;
+    let _ref$type = _ref.type,
+      type = _ref$type === void 0 ? _fields__WEBPACK_IMPORTED_MODULE_3__["Value"] : _ref$type,
+      read = _ref.read,
+      _ref$value = _ref.value,
+      value = _ref$value === void 0 ? read ? stream => stream.read(read) : null : _ref$value;
     this.type = type;
     this.value = value;
   }
@@ -182675,9 +183722,16 @@ class FieldIterator {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FieldObject", function() { return FieldObject; });
 /* harmony import */ var _ids__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ids */ "./node_modules/scratch-sb1-converter/src/squeak/ids.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 const toTitleCase = str => str.toLowerCase().replace(/_(\w)/g, _ref => {
-  let [, letter] = _ref;
+  let _ref2 = _slicedToArray(_ref, 2),
+    letter = _ref2[1];
   return letter.toUpperCase();
 });
 
@@ -182694,12 +183748,10 @@ class FieldObject {
    * versions.
    * @param {Array.<Field>} fields - An array of fields in this FieldObject.
    */
-  constructor(_ref2) {
-    let {
-      classId,
-      version,
-      fields
-    } = _ref2;
+  constructor(_ref3) {
+    let classId = _ref3.classId,
+      version = _ref3.version,
+      fields = _ref3.fields;
     /** @type {number} */
     this.classId = classId;
 
@@ -182959,6 +184011,12 @@ class FieldObjectHeader extends Header {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TYPES", function() { return TYPES; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TYPE_NAMES", function() { return TYPE_NAMES; });
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * A numeric identifier for each possible class of {@link Field} that can be in
  * a `.sb` file.
@@ -183084,7 +184142,9 @@ const TYPES = {
  * @type {object.<number, string>}
  */
 const TYPE_NAMES = Object.entries(TYPES).reduce((carry, _ref) => {
-  let [key, value] = _ref;
+  let _ref2 = _slicedToArray(_ref, 2),
+    key = _ref2[0],
+    value = _ref2[1];
   carry[value] = key;
   return carry;
 }, {});
@@ -183167,9 +184227,7 @@ class TypeIterator {
       return nextHeader;
     }
     const header = nextHeader.value;
-    const {
-      classId
-    } = header;
+    const classId = header.classId;
     let value = header;
     if (header instanceof _fields__WEBPACK_IMPORTED_MODULE_0__["Header"]) {
       value = [];
@@ -183709,10 +184767,8 @@ const toSb2ImageMedia = imageMedia => {
 };
 const toSb2SoundMedia = soundMedia => soundMedia.wavEncodedData;
 const toSb2FakeZipApi = _ref => {
-  let {
-    images,
-    sounds
-  } = _ref;
+  let images = _ref.images,
+    sounds = _ref.sounds;
   const files = {};
   let index = 0;
   for (const image of images) {
@@ -183745,6 +184801,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _squeak_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../squeak/types */ "./node_modules/scratch-sb1-converter/src/squeak/types.js");
 /* harmony import */ var js_md5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! js-md5 */ "./node_modules/js-md5/src/md5.js");
 /* harmony import */ var js_md5__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(js_md5__WEBPACK_IMPORTED_MODULE_1__);
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /* eslint no-use-before-define:1 */
 
 
@@ -183766,7 +184828,11 @@ const fixMouseEdgeRef = block => {
 const sb1SpecMap = {
   // https://github.com/LLK/scratch-flash/blob/cb5f42f039ef633710faf9c63b69e8368b280372/src/blocks/BlockIO.as#L197-L199
   'getParam': _ref => {
-    let [a, b, c, d] = _ref;
+    let _ref2 = _slicedToArray(_ref, 4),
+      a = _ref2[0],
+      b = _ref2[1],
+      c = _ref2[2],
+      d = _ref2[3];
     return [a, b, c, d || 'r'];
   },
   // https://github.com/LLK/scratch-flash/blob/cb5f42f039ef633710faf9c63b69e8368b280372/src/blocks/BlockIO.as#L200-L212
@@ -183816,12 +184882,10 @@ const valueOf = obj => {
   return obj;
 };
 const toSb2Json = root => {
-  const {
-    info,
-    stageData,
-    images,
-    sounds
-  } = root;
+  const info = root.info,
+    stageData = root.stageData,
+    images = root.images,
+    sounds = root.sounds;
   const pairs = array => {
     const _pairs = [];
     for (let i = 0; i < array.length; i += 2) {
@@ -183829,24 +184893,26 @@ const toSb2Json = root => {
     }
     return _pairs;
   };
-  const toSb2JsonVariable = _ref2 => {
-    let [name, value] = _ref2;
+  const toSb2JsonVariable = _ref3 => {
+    let _ref4 = _slicedToArray(_ref3, 2),
+      name = _ref4[0],
+      value = _ref4[1];
     return {
       name,
       value,
       isPersistent: false
     };
   };
-  const toSb2JsonList = _ref3 => {
-    let [, {
-      listName,
-      contents,
-      x,
-      y,
-      width,
-      height,
-      hiddenWhenNull
-    }] = _ref3;
+  const toSb2JsonList = _ref5 => {
+    let _ref6 = _slicedToArray(_ref5, 2),
+      _ref6$ = _ref6[1],
+      listName = _ref6$.listName,
+      contents = _ref6$.contents,
+      x = _ref6$.x,
+      y = _ref6$.y,
+      width = _ref6$.width,
+      height = _ref6$.height,
+      hiddenWhenNull = _ref6$.hiddenWhenNull;
     return {
       listName: listName,
       contents: contents,
@@ -187343,7 +188409,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function() {
-  return new Worker(__webpack_require__.p + "js/extension-worker/extension-worker.00dfd6bd5dd1209d4d8b.js");
+  return new Worker(__webpack_require__.p + "js/extension-worker/extension-worker.80eb5ffe9c61e03e14ff.js");
 };
 
 /***/ }),
@@ -187967,6 +189033,12 @@ module.exports = Scratch3EventBlocks;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const Cast = __webpack_require__(/*! ../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
 const Clone = __webpack_require__(/*! ../util/clone */ "./node_modules/scratch-vm/src/util/clone.js");
 const uid = __webpack_require__(/*! ../util/uid */ "./node_modules/scratch-vm/src/util/uid.js");
@@ -188131,7 +189203,10 @@ class Scratch3LooksBlocks {
   _positionBubble(target) {
     if (!target.visible) return;
     const bubbleState = this._getBubbleState(target);
-    const [bubbleWidth, bubbleHeight] = this.runtime.renderer.getCurrentSkinSize(bubbleState.drawableId);
+    const _this$runtime$rendere = this.runtime.renderer.getCurrentSkinSize(bubbleState.drawableId),
+      _this$runtime$rendere2 = _slicedToArray(_this$runtime$rendere, 2),
+      bubbleWidth = _this$runtime$rendere2[0],
+      bubbleHeight = _this$runtime$rendere2[1];
     let targetBounds;
     try {
       targetBounds = target.getBoundsForBubble();
@@ -188184,11 +189259,9 @@ class Scratch3LooksBlocks {
     // used by compiler
     if (!this.runtime.renderer) return;
     const bubbleState = this._getBubbleState(target);
-    const {
-      type,
-      text,
-      onSpriteRight
-    } = bubbleState;
+    const type = bubbleState.type,
+      text = bubbleState.text,
+      onSpriteRight = bubbleState.onSpriteRight;
 
     // Remove the bubble if target is not visible, or text is being set to blank.
     if (!target.visible || text === '') {
@@ -188578,6 +189651,7 @@ class Scratch3MotionBlocks {
       motion_turnleft: this.turnLeft,
       motion_pointindirection: this.pointInDirection,
       motion_pointtowards: this.pointTowards,
+      motion_pointtowardsxy: this.pointTowardsXY,
       motion_glidesecstoxy: this.glide,
       motion_glideto: this.glideTo,
       motion_ifonedgebounce: this.ifOnEdgeBounce,
@@ -188687,6 +189761,17 @@ class Scratch3MotionBlocks {
     const dy = targetY - util.target.y;
     const direction = 90 - MathUtil.radToDeg(Math.atan2(dy, dx));
     util.target.setDirection(direction);
+  }
+  pointTowardsXY(args, util) {
+    const x = Cast.toNumber(args.X);
+    const y = Cast.toNumber(args.Y);
+    const dx = x - util.target.x;
+    const dy = y - util.target.y;
+    if (dx === 0 && dy === 0) return;
+
+    // Calculate Scratch angle (0° = Up, 90° = Right)
+    const degrees = Math.atan2(dx, dy) * (180 / Math.PI);
+    util.target.setDirection(degrees);
   }
   glide(args, util) {
     if (util.stackFrame.timer) {
@@ -189005,6 +190090,12 @@ module.exports = Scratch3OperatorsBlocks;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 class Scratch3ProcedureBlocks {
   constructor(runtime) {
     /**
@@ -189058,7 +190149,10 @@ class Scratch3ProcedureBlocks {
       }
       return;
     }
-    const [paramNames, paramIds, paramDefaults] = paramNamesIdsAndDefaults;
+    const _paramNamesIdsAndDefa = _slicedToArray(paramNamesIdsAndDefaults, 3),
+      paramNames = _paramNamesIdsAndDefa[0],
+      paramIds = _paramNamesIdsAndDefa[1],
+      paramDefaults = _paramNamesIdsAndDefa[2];
 
     // Initialize params for the current stackFrame to {}, even if the procedure does
     // not take any arguments. This is so that `getParam` down the line does not look
@@ -189138,6 +190232,12 @@ module.exports = Scratch3ProcedureBlocks;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const Cast = __webpack_require__(/*! ../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
 const Timer = __webpack_require__(/*! ../util/timer */ "./node_modules/scratch-vm/src/util/timer.js");
 const getMonitorIdForBlockWithArgs = __webpack_require__(/*! ../util/get-monitor-id */ "./node_modules/scratch-vm/src/util/get-monitor-id.js");
@@ -189253,7 +190353,12 @@ class Scratch3SensingBlocks {
     this._answer = answer;
     const questionObj = this._questionList.shift();
     if (questionObj) {
-      const [_question, resolve, target, wasVisible, wasStage] = questionObj;
+      const _questionObj = _slicedToArray(questionObj, 5),
+        _question = _questionObj[0],
+        resolve = _questionObj[1],
+        target = _questionObj[2],
+        wasVisible = _questionObj[3],
+        wasStage = _questionObj[4];
       // If the target was visible when asked, hide the say bubble unless the target was the stage.
       if (wasVisible && !wasStage) {
         this.runtime.emit('SAY', target, 'say', '');
@@ -189270,7 +190375,12 @@ class Scratch3SensingBlocks {
   }
   _askNextQuestion() {
     if (this._questionList.length > 0) {
-      const [question, _resolve, target, wasVisible, wasStage] = this._questionList[0];
+      const _this$_questionList$ = _slicedToArray(this._questionList[0], 5),
+        question = _this$_questionList$[0],
+        _resolve = _this$_questionList$[1],
+        target = _this$_questionList$[2],
+        wasVisible = _this$_questionList$[3],
+        wasStage = _this$_questionList$[4];
       // If the target is visible, emit a blank question and use the
       // say event to trigger a bubble unless the target was the stage.
       if (wasVisible && !wasStage) {
@@ -189679,15 +190789,9 @@ class Scratch3SoundBlocks {
   _playSound(args, util, storeWaiting) {
     const index = this._getSoundIndex(args.SOUND_MENU, util);
     if (index >= 0) {
-      const {
-        target
-      } = util;
-      const {
-        sprite
-      } = target;
-      const {
-        soundId
-      } = sprite.sounds[index];
+      const target = util.target;
+      const sprite = target.sprite;
+      const soundId = sprite.sounds[index].soundId;
       if (sprite.soundBank) {
         if (storeWaiting === STORE_WAITING) {
           this._addWaitingSound(target.id, soundId);
@@ -189784,10 +190888,9 @@ class Scratch3SoundBlocks {
       soundState.effects[effect] = value;
     }
     const miscLimits = this.runtime.runtimeOptions.miscLimits;
-    const {
-      min,
-      max
-    } = miscLimits ? Scratch3SoundBlocks.EFFECT_RANGE[effect] : Scratch3SoundBlocks.LARGER_EFFECT_RANGE[effect];
+    const _ref = miscLimits ? Scratch3SoundBlocks.EFFECT_RANGE[effect] : Scratch3SoundBlocks.LARGER_EFFECT_RANGE[effect],
+      min = _ref.min,
+      max = _ref.max;
     soundState.effects[effect] = MathUtil.clamp(soundState.effects[effect], min, max);
     this._syncEffectsForTarget(util.target);
     if (miscLimits) {
@@ -189942,12 +191045,10 @@ module.exports = {
 
 // @ts-check
 
-const {
-  IRGenerator
-} = __webpack_require__(/*! ./irgen */ "./node_modules/scratch-vm/src/compiler/irgen.js");
-const {
-  IROptimizer
-} = __webpack_require__(/*! ./iroptimizer */ "./node_modules/scratch-vm/src/compiler/iroptimizer.js");
+const _require = __webpack_require__(/*! ./irgen */ "./node_modules/scratch-vm/src/compiler/irgen.js"),
+  IRGenerator = _require.IRGenerator;
+const _require2 = __webpack_require__(/*! ./iroptimizer */ "./node_modules/scratch-vm/src/compiler/iroptimizer.js"),
+  IROptimizer = _require2.IROptimizer;
 const JSGenerator = __webpack_require__(/*! ./jsgen */ "./node_modules/scratch-vm/src/compiler/jsgen.js");
 const compile = (/** @type {import("../engine/thread")} */thread) => {
   const irGenerator = new IRGenerator(thread);
@@ -190300,10 +191401,9 @@ module.exports = {
 // @ts-check
 
 const Cast = __webpack_require__(/*! ../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
-const {
-  InputOpcode,
-  InputType
-} = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js");
+const _require = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js"),
+  InputOpcode = _require.InputOpcode,
+  InputType = _require.InputType;
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
 
 /**
@@ -190698,6 +191798,12 @@ module.exports = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 // @ts-check
 
 const Cast = __webpack_require__(/*! ../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
@@ -190706,18 +191812,16 @@ const BlockType = __webpack_require__(/*! ../extension-support/block-type */ "./
 const Variable = __webpack_require__(/*! ../engine/variable */ "./node_modules/scratch-vm/src/engine/variable.js");
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
 const compatBlocks = __webpack_require__(/*! ./compat-blocks */ "./node_modules/scratch-vm/src/compiler/compat-blocks.js");
-const {
-  StackOpcode,
-  InputOpcode,
-  InputType
-} = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js");
-const {
-  IntermediateStackBlock,
-  IntermediateInput,
-  IntermediateStack,
-  IntermediateScript,
-  IntermediateRepresentation
-} = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js");
+const _require = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js"),
+  StackOpcode = _require.StackOpcode,
+  InputOpcode = _require.InputOpcode,
+  InputType = _require.InputType;
+const _require2 = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js"),
+  IntermediateStackBlock = _require2.IntermediateStackBlock,
+  IntermediateInput = _require2.IntermediateInput,
+  IntermediateStack = _require2.IntermediateStack,
+  IntermediateScript = _require2.IntermediateScript,
+  IntermediateRepresentation = _require2.IntermediateRepresentation;
 const oldCompilerCompatiblity = __webpack_require__(/*! ./old-compiler-compatibility.js */ "./node_modules/scratch-vm/src/compiler/old-compiler-compatibility.js");
 
 /**
@@ -190810,7 +191914,10 @@ class ScriptTreeGenerator {
     if (paramNamesIdsAndDefaults === null) {
       throw new Error("IR: cannot find procedure: ".concat(procedureVariant));
     }
-    const [paramNames, _paramIds, _paramDefaults] = paramNamesIdsAndDefaults;
+    const _paramNamesIdsAndDefa = _slicedToArray(paramNamesIdsAndDefaults, 3),
+      paramNames = _paramNamesIdsAndDefa[0],
+      _paramIds = _paramNamesIdsAndDefa[1],
+      _paramDefaults = _paramNamesIdsAndDefa[2];
     this.script.arguments = paramNames;
   }
   enableWarp() {
@@ -190821,7 +191928,10 @@ class ScriptTreeGenerator {
     return this.blocks.getBlock(blockId) || this.blocks.runtime.flyoutBlocks.getBlock(blockId);
   }
   getBlockInfo(fullOpcode) {
-    const [category, opcode] = StringUtil.splitFirst(fullOpcode, '_');
+    const _StringUtil$splitFirs = StringUtil.splitFirst(fullOpcode, '_'),
+      _StringUtil$splitFirs2 = _slicedToArray(_StringUtil$splitFirs, 2),
+      category = _StringUtil$splitFirs2[0],
+      opcode = _StringUtil$splitFirs2[1];
     if (!category || !opcode) {
       return null;
     }
@@ -191797,7 +192907,10 @@ class ScriptTreeGenerator {
         yields: false
       };
     }
-    const [paramNames, paramIds, paramDefaults] = paramNamesIdsAndDefaults;
+    const _paramNamesIdsAndDefa2 = _slicedToArray(paramNamesIdsAndDefaults, 3),
+      paramNames = _paramNamesIdsAndDefa2[0],
+      paramIds = _paramNamesIdsAndDefa2[1],
+      paramDefaults = _paramNamesIdsAndDefa2[2];
     const addonBlock = this.runtime.getAddonBlock(procedureCode);
     if (addonBlock) {
       const args = {};
@@ -192242,7 +193355,10 @@ class IRGenerator {
     while (this.proceduresToCompile.size > 0) {
       this.compilingProcedures = this.proceduresToCompile;
       this.proceduresToCompile = new Map();
-      for (const [procedureVariant, definitionId] of this.compilingProcedures.entries()) {
+      for (const _ref of this.compilingProcedures.entries()) {
+        var _ref2 = _slicedToArray(_ref, 2);
+        const procedureVariant = _ref2[0];
+        const definitionId = _ref2[1];
         if (procedureTreeCache[procedureVariant]) {
           const result = procedureTreeCache[procedureVariant];
           this.procedures[procedureVariant] = result;
@@ -192283,22 +193399,20 @@ module.exports = {
 
 // @ts-check
 
-const {
-  StackOpcode,
-  InputOpcode,
-  InputType
-} = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js");
+const _require = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js"),
+  StackOpcode = _require.StackOpcode,
+  InputOpcode = _require.InputOpcode,
+  InputType = _require.InputType;
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
 
 // These imports are used by jsdoc comments but eslint doesn't know that
 /* eslint-disable no-unused-vars */
-const {
-  IntermediateStack,
-  IntermediateInput,
-  IntermediateScript,
-  IntermediateRepresentation,
-  IntermediateStackBlock
-} = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js");
+const _require2 = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js"),
+  IntermediateStack = _require2.IntermediateStack,
+  IntermediateInput = _require2.IntermediateInput,
+  IntermediateScript = _require2.IntermediateScript,
+  IntermediateRepresentation = _require2.IntermediateRepresentation,
+  IntermediateStackBlock = _require2.IntermediateStackBlock;
 /* eslint-enable no-unused-vars */
 
 class TypeState {
@@ -193403,22 +194517,20 @@ const BlockType = __webpack_require__(/*! ../extension-support/block-type */ "./
 const VariablePool = __webpack_require__(/*! ./variable-pool */ "./node_modules/scratch-vm/src/compiler/variable-pool.js");
 const jsexecute = __webpack_require__(/*! ./jsexecute */ "./node_modules/scratch-vm/src/compiler/jsexecute.js");
 const environment = __webpack_require__(/*! ./environment */ "./node_modules/scratch-vm/src/compiler/environment.js");
-const {
-  StackOpcode,
-  InputOpcode,
-  InputType
-} = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js");
+const _require = __webpack_require__(/*! ./enums.js */ "./node_modules/scratch-vm/src/compiler/enums.js"),
+  StackOpcode = _require.StackOpcode,
+  InputOpcode = _require.InputOpcode,
+  InputType = _require.InputType;
 const oldCompilerCompatibility = __webpack_require__(/*! ./old-compiler-compatibility.js */ "./node_modules/scratch-vm/src/compiler/old-compiler-compatibility.js");
 
 // These imports are used by jsdoc comments but eslint doesn't know that
 /* eslint-disable no-unused-vars */
-const {
-  IntermediateStackBlock,
-  IntermediateInput,
-  IntermediateStack,
-  IntermediateScript,
-  IntermediateRepresentation
-} = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js");
+const _require2 = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js"),
+  IntermediateStackBlock = _require2.IntermediateStackBlock,
+  IntermediateInput = _require2.IntermediateInput,
+  IntermediateStack = _require2.IntermediateStack,
+  IntermediateScript = _require2.IntermediateScript,
+  IntermediateRepresentation = _require2.IntermediateRepresentation;
 /* eslint-enable no-unused-vars */
 
 /**
@@ -194615,16 +195727,14 @@ module.exports = JSGenerator;
  *    they use. Can not rely on the default JS generator.
  */
 
-const {
-  InputOpcode,
-  InputType
-} = __webpack_require__(/*! ./enums */ "./node_modules/scratch-vm/src/compiler/enums.js");
+const _require = __webpack_require__(/*! ./enums */ "./node_modules/scratch-vm/src/compiler/enums.js"),
+  InputOpcode = _require.InputOpcode,
+  InputType = _require.InputType;
 // eslint-disable-next-line no-unused-vars
-const {
-  IntermediateInput,
-  IntermediateStackBlock,
-  IntermediateStack
-} = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js");
+const _require2 = __webpack_require__(/*! ./intermediate */ "./node_modules/scratch-vm/src/compiler/intermediate.js"),
+  IntermediateInput = _require2.IntermediateInput,
+  IntermediateStackBlock = _require2.IntermediateStackBlock,
+  IntermediateStack = _require2.IntermediateStack;
 class IRGeneratorStub {
   // Doesn't seem like extensions override anything, though the class may
   // still need to exist to avoid type errors.
@@ -195012,10 +196122,9 @@ class CentralDispatch extends SharedDispatch {
    * @returns {*} - the return value of the service method.
    */
   callSync(service, method) {
-    const {
-      provider,
-      isRemote
-    } = this._getServiceProvider(service);
+    const _this$_getServiceProv = this._getServiceProvider(service),
+      provider = _this$_getServiceProv.provider,
+      isRemote = _this$_getServiceProv.isRemote;
     if (provider) {
       if (isRemote) {
         throw new Error("Cannot use 'callSync' on remote provider for service ".concat(service, "."));
@@ -195124,6 +196233,12 @@ module.exports = new CentralDispatch();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
 
 /**
@@ -195205,10 +196320,9 @@ class SharedDispatch {
    */
   transferCall(service, method, transfer) {
     try {
-      const {
-        provider,
-        isRemote
-      } = this._getServiceProvider(service);
+      const _this$_getServiceProv = this._getServiceProvider(service),
+        provider = _this$_getServiceProv.provider,
+        isRemote = _this$_getServiceProv.isRemote;
       if (provider) {
         for (var _len2 = arguments.length, args = new Array(_len2 > 3 ? _len2 - 3 : 0), _key2 = 3; _key2 < _len2; _key2++) {
           args[_key2 - 3] = arguments[_key2];
@@ -195316,7 +196430,9 @@ class SharedDispatch {
    */
   _deliverResponse(responseId, message) {
     try {
-      const [resolve, reject] = this.callbacks[responseId];
+      const _this$callbacks$respo = _slicedToArray(this.callbacks[responseId], 2),
+        resolve = _this$callbacks$respo[0],
+        reject = _this$callbacks$respo[1];
       delete this.callbacks[responseId];
       if (message.error) {
         reject(message.error);
@@ -196804,10 +197920,9 @@ class Blocks {
     }
     const monitored = this._cache._monitored;
     for (let i = 0; i < monitored.length; i++) {
-      const {
-        blockId,
-        target
-      } = monitored[i];
+      const _monitored$i = monitored[i],
+        blockId = _monitored$i.blockId,
+        target = _monitored$i.target;
       runtime.addMonitorScript(blockId, target);
     }
   }
@@ -197649,14 +198764,10 @@ class BlockCached {
      * @type {Array<BlockCached>}
      */
     this._ops = [];
-    const {
-      runtime
-    } = blockUtility.sequencer;
-    const {
-      opcode,
-      fields,
-      inputs
-    } = this;
+    const runtime = blockUtility.sequencer.runtime;
+    const opcode = this.opcode,
+      fields = this.fields,
+      inputs = this.inputs;
 
     // Assign opcode isHat and blockFunction data to avoid dynamic lookups.
     this._isHat = runtime.getIsHat(opcode);
@@ -197793,10 +198904,9 @@ const execute = function execute(sequencer, thread) {
     const reported = currentStackFrame.reported;
     // Reinstate all the previous values.
     for (; i < reported.length; i++) {
-      const {
-        opCached: oldOpCached,
-        inputValue
-      } = reported[i];
+      const _reported$i = reported[i],
+        oldOpCached = _reported$i.opCached,
+        inputValue = _reported$i.inputValue;
       const opCached = ops.find(op => op.id === oldOpCached);
       if (opCached) {
         const inputName = opCached._parentKey;
@@ -198599,6 +199709,12 @@ module.exports = Profiler;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
@@ -200233,11 +201349,9 @@ class Runtime extends EventEmitter {
    */
   getBlocksXML(target) {
     return this._blockInfo.map(categoryInfo => {
-      const {
-        name,
-        color1,
-        color2
-      } = categoryInfo;
+      const name = categoryInfo.name,
+        color1 = categoryInfo.color1,
+        color2 = categoryInfo.color2;
       // Filter out blocks that aren't supposed to be shown on this target, as determined by the block info's
       // `hideFromPalette` and `filter` properties.
       const paletteBlocks = categoryInfo.blocks.filter(block => {
@@ -200690,10 +201804,8 @@ class Runtime extends EventEmitter {
 
     // Consider all scripts, looking for hats with opcode `requestedHatOpcode`.
     this.allScriptsByOpcodeDo(requestedHatOpcode, (script, target) => {
-      const {
-        blockId: topBlockId,
-        fieldsOfInputs: hatFields
-      } = script;
+      const topBlockId = script.blockId,
+        hatFields = script.fieldsOfInputs;
 
       // Match any requested fields.
       // For example: ensures that broadcasts match.
@@ -201740,7 +202852,10 @@ class Runtime extends EventEmitter {
    * @property {string} [label] - the label for this opcode if `labelFn` is absent
    */
   getLabelForOpcode(extendedOpcode) {
-    const [category, opcode] = StringUtil.splitFirst(extendedOpcode, '_');
+    const _StringUtil$splitFirs = StringUtil.splitFirst(extendedOpcode, '_'),
+      _StringUtil$splitFirs2 = _slicedToArray(_StringUtil$splitFirs, 2),
+      category = _StringUtil$splitFirs2[0],
+      opcode = _StringUtil$splitFirs2[1];
     if (!(category && opcode)) return;
     const categoryInfo = this._blockInfo.find(ci => ci.id === category);
     if (!categoryInfo) return;
@@ -203653,6 +204768,12 @@ module.exports = Thread;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const EventEmitter = __webpack_require__(/*! events */ "./node_modules/events/events.js");
 const AssetUtil = __webpack_require__(/*! ../util/tw-asset-util */ "./node_modules/scratch-vm/src/util/tw-asset-util.js");
 const StringUtil = __webpack_require__(/*! ../util/string-util */ "./node_modules/scratch-vm/src/util/string-util.js");
@@ -203834,7 +204955,9 @@ class FontManager extends EventEmitter {
    * @param {number} index Corresponds to index from getFonts()
    */
   deleteFont(index) {
-    const [removed] = this.fonts.splice(index, 1);
+    const _this$fonts$splice = this.fonts.splice(index, 1),
+      _this$fonts$splice2 = _slicedToArray(_this$fonts$splice, 1),
+      removed = _this$fonts$splice2[0];
     if (!removed.system) {
       this.updateRenderer();
     }
@@ -204148,10 +205271,9 @@ const interpolate = (runtime, time) => {
     // Interpolate scale and direction.
     const costumeUnchanged = interpolationData.costume === target.currentCostume;
     if (costumeUnchanged) {
-      let {
-        direction,
-        scale
-      } = target._getRenderedDirectionAndScale();
+      let _target$_getRenderedD = target._getRenderedDirectionAndScale(),
+        direction = _target$_getRenderedD.direction,
+        scale = _target$_getRenderedD.scale;
       let updateDrawableDirectionScale = false;
 
       // Interpolate direction.
@@ -204540,6 +205662,12 @@ module.exports = BlockType;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const dispatch = __webpack_require__(/*! ../dispatch/central-dispatch */ "./node_modules/scratch-vm/src/dispatch/central-dispatch.js");
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
 const maybeFormatMessage = __webpack_require__(/*! ../util/maybe-format-message */ "./node_modules/scratch-vm/src/util/maybe-format-message.js");
@@ -204747,9 +205875,8 @@ class ExtensionManager {
     const sandboxMode = await this.securityManager.getSandboxMode(extensionURL);
     const rewritten = await this.securityManager.rewriteExtensionURL(extensionURL);
     if (sandboxMode === 'unsandboxed') {
-      const {
-        load
-      } = __webpack_require__(/*! ./tw-unsandboxed-extension-runner */ "./node_modules/scratch-vm/src/extension-support/tw-unsandboxed-extension-runner.js");
+      const _require = __webpack_require__(/*! ./tw-unsandboxed-extension-runner */ "./node_modules/scratch-vm/src/extension-support/tw-unsandboxed-extension-runner.js"),
+        load = _require.load;
       const extensionObjects = await load(rewritten, this.vm).catch(error => this._failedLoadingExtensionScript(error));
       const fakeWorkerId = this.nextExtensionWorker++;
       this.workerURLs[fakeWorkerId] = extensionURL;
@@ -205095,7 +206222,10 @@ class ExtensionManager {
   }
   getExtensionURLs() {
     const extensionURLs = {};
-    for (const [extensionId, serviceName] of this._loadedExtensions.entries()) {
+    for (const _ref of this._loadedExtensions.entries()) {
+      var _ref2 = _slicedToArray(_ref, 2);
+      const extensionId = _ref2[0];
+      const serviceName = _ref2[1];
       if (Object.prototype.hasOwnProperty.call(this.builtinExtensions, extensionId)) {
         continue;
       }
@@ -205389,10 +206519,9 @@ module.exports = createTranslate;
 
 const ArgumentType = __webpack_require__(/*! ./argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
 const BlockType = __webpack_require__(/*! ./block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
-const {
-  argumentIndexToId,
-  generateExtensionId
-} = __webpack_require__(/*! ./tw-scratchx-utilities */ "./node_modules/scratch-vm/src/extension-support/tw-scratchx-utilities.js");
+const _require = __webpack_require__(/*! ./tw-scratchx-utilities */ "./node_modules/scratch-vm/src/extension-support/tw-scratchx-utilities.js"),
+  argumentIndexToId = _require.argumentIndexToId,
+  generateExtensionId = _require.generateExtensionId;
 
 /**
  * @typedef ScratchXDescriptor
@@ -210121,11 +211250,9 @@ const Base64Util = __webpack_require__(/*! ../../util/base64-util */ "./node_mod
  */
 class ScratchLinkDeviceAdapter {
   constructor(socket, _ref) {
-    let {
-      service,
-      commandChar,
-      responseChar
-    } = _ref;
+    let service = _ref.service,
+      commandChar = _ref.commandChar,
+      responseChar = _ref.responseChar;
     this.socket = socket;
     this._service = service;
     this._commandChar = commandChar;
@@ -210141,9 +211268,7 @@ class ScratchLinkDeviceAdapter {
     return this.socket.write(this._service, this._commandChar, data, 'base64');
   }
   setup(_ref2) {
-    let {
-      onResponse
-    } = _ref2;
+    let onResponse = _ref2.onResponse;
     this._deviceOnResponse = onResponse;
     return this.socket.startNotifications(this._service, this._responseChar, this._onResponse);
 
@@ -214295,9 +215420,8 @@ const Cast = __webpack_require__(/*! ../../util/cast */ "./node_modules/scratch-
 const MathUtil = __webpack_require__(/*! ../../util/math-util */ "./node_modules/scratch-vm/src/util/math-util.js");
 const Clone = __webpack_require__(/*! ../../util/clone */ "./node_modules/scratch-vm/src/util/clone.js");
 const log = __webpack_require__(/*! ../../util/log */ "./node_modules/scratch-vm/src/util/log.js");
-const {
-  fetchWithTimeout
-} = __webpack_require__(/*! ../../util/fetch-with-timeout */ "./node_modules/scratch-vm/src/util/fetch-with-timeout.js");
+const _require = __webpack_require__(/*! ../../util/fetch-with-timeout */ "./node_modules/scratch-vm/src/util/fetch-with-timeout.js"),
+  fetchWithTimeout = _require.fetchWithTimeout;
 
 /**
  * Icon svg to be displayed in the blocks category menu, encoded as a data URI.
@@ -215045,9 +216169,8 @@ const ArgumentType = __webpack_require__(/*! ../../extension-support/argument-ty
 const BlockType = __webpack_require__(/*! ../../extension-support/block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
 const Cast = __webpack_require__(/*! ../../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
 const log = __webpack_require__(/*! ../../util/log */ "./node_modules/scratch-vm/src/util/log.js");
-const {
-  fetchWithTimeout
-} = __webpack_require__(/*! ../../util/fetch-with-timeout */ "./node_modules/scratch-vm/src/util/fetch-with-timeout.js");
+const _require = __webpack_require__(/*! ../../util/fetch-with-timeout */ "./node_modules/scratch-vm/src/util/fetch-with-timeout.js"),
+  fetchWithTimeout = _require.fetchWithTimeout;
 const languageNames = __webpack_require__(/*! scratch-translate-extension-languages */ "./node_modules/scratch-translate-extension-languages/languages.json");
 const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/format-message/index.js");
 
@@ -215915,10 +217038,9 @@ module.exports = Scratch3VideoSensingBlocks;
  * Video motion sensing primitives.
  */
 
-const {
-  motionVector,
-  scratchAtan2
-} = __webpack_require__(/*! ./math */ "./node_modules/scratch-vm/src/extensions/scratch3_video_sensing/math.js");
+const _require = __webpack_require__(/*! ./math */ "./node_modules/scratch-vm/src/extensions/scratch3_video_sensing/math.js"),
+  motionVector = _require.motionVector,
+  scratchAtan2 = _require.scratchAtan2;
 
 /**
  * The width of the intended resolution to analyze for motion.
@@ -216101,10 +217223,8 @@ class VideoMotion {
       return;
     }
     this.lastAnalyzedFrame = this.frameNumber;
-    const {
-      _curr: curr,
-      _prev: prev
-    } = this;
+    const curr = this._curr,
+      prev = this._prev;
     const winStep = WINSIZE * 2 + 1;
     const wmax = WIDTH - WINSIZE - 1;
     const hmax = HEIGHT - WINSIZE - 1;
@@ -216154,10 +217274,9 @@ class VideoMotion {
 
         // Use the accumalated values from the for loop to determine a
         // motion direction.
-        const {
-          u,
-          v
-        } = motionVector(A2, A1B2, B1, C2, C1);
+        const _motionVector = motionVector(A2, A1B2, B1, C2, C1),
+          u = _motionVector.u,
+          v = _motionVector.v;
 
         // If u and v are within negative winStep to positive winStep,
         // add them to a sum that will later be averaged.
@@ -216196,10 +217315,8 @@ class VideoMotion {
 
     // Skip if the current frame has already been considered for this state.
     if (state.motionFrameNumber !== this.frameNumber) {
-      const {
-        _prev: prev,
-        _curr: curr
-      } = this;
+      const prev = this._prev,
+        curr = this._curr;
 
       // The public APIs for Renderer#isTouching manage keeping the matrix and
       // silhouette up-to-date, which is needed for drawable#isTouching to work (used below)
@@ -216261,10 +217378,9 @@ class VideoMotion {
 
       // Use the accumalated values from the for loop to determine a
       // motion direction.
-      let {
-        u,
-        v
-      } = motionVector(A2, A1B2, B1, C2, C1);
+      let _motionVector2 = motionVector(A2, A1B2, B1, C2, C1),
+        u = _motionVector2.u,
+        v = _motionVector2.v;
       let activePixelNum = 0;
       if (scaleFactor) {
         // Store the area of the sprite in pixels
@@ -217990,16 +219106,20 @@ module.exports = TurboWarpBlocks;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const StringUtil = __webpack_require__(/*! ../util/string-util */ "./node_modules/scratch-vm/src/util/string-util.js");
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
 const AsyncLimiter = __webpack_require__(/*! ../util/async-limiter */ "./node_modules/scratch-vm/src/util/async-limiter.js");
-const {
-  loadSvgString,
-  serializeSvgToString
-} = __webpack_require__(/*! @turbowarp/scratch-svg-renderer */ "./node_modules/@turbowarp/scratch-svg-renderer/src/index.js");
-const {
-  parseVectorMetadata
-} = __webpack_require__(/*! ../serialization/tw-costume-import-export */ "./node_modules/scratch-vm/src/serialization/tw-costume-import-export.js");
+const _require = __webpack_require__(/*! @turbowarp/scratch-svg-renderer */ "./node_modules/@turbowarp/scratch-svg-renderer/src/index.js"),
+  loadSvgString = _require.loadSvgString,
+  serializeSvgToString = _require.serializeSvgToString;
+const _require2 = __webpack_require__(/*! ../serialization/tw-costume-import-export */ "./node_modules/scratch-vm/src/serialization/tw-costume-import-export.js"),
+  parseVectorMetadata = _require2.parseVectorMetadata;
 const loadVector_ = function loadVector_(costume, runtime, rotationCenter, optVersion) {
   return new Promise(resolve => {
     let svgString = costume.asset.decodeText();
@@ -218182,7 +219302,9 @@ const fetchBitmapCanvas_ = function fetchBitmapCanvas_(costume, runtime, rotatio
     }
     return readImage.do(asset);
   })).then(_ref => {
-    let [baseImageElement, textImageElement] = _ref;
+    let _ref2 = _slicedToArray(_ref, 2),
+      baseImageElement = _ref2[0],
+      textImageElement = _ref2[1];
     if (!baseImageElement) {
       throw new Error('Loading bitmap costume base failed.');
     }
@@ -218275,11 +219397,9 @@ const loadBitmap_ = function loadBitmap_(costume, runtime, _rotationCenter) {
       updateCostumeAsset(toDataURL(fetched.image));
     }
     return fetched;
-  }).then(_ref2 => {
-    let {
-      image,
-      rotationCenter
-    } = _ref2;
+  }).then(_ref3 => {
+    let image = _ref3.image,
+      rotationCenter = _ref3.rotationCenter;
     // createBitmapSkin does the right thing if costume.rotationCenter is undefined.
     // That will be the case if you upload a bitmap asset or create one by taking a photo.
     let center;
@@ -219847,12 +220967,14 @@ class Video {
    * @return {ArrayBuffer|Canvas|string|null} Frame data in requested format, null when errors.
    */
   getFrame(_ref) {
-    let {
-      dimensions = Video.DIMENSIONS,
-      mirror = this.mirror,
-      format = Video.FORMAT_IMAGE_DATA,
-      cacheTimeout = this._frameCacheTimeout
-    } = _ref;
+    let _ref$dimensions = _ref.dimensions,
+      dimensions = _ref$dimensions === void 0 ? Video.DIMENSIONS : _ref$dimensions,
+      _ref$mirror = _ref.mirror,
+      mirror = _ref$mirror === void 0 ? this.mirror : _ref$mirror,
+      _ref$format = _ref.format,
+      format = _ref$format === void 0 ? Video.FORMAT_IMAGE_DATA : _ref$format,
+      _ref$cacheTimeout = _ref.cacheTimeout,
+      cacheTimeout = _ref$cacheTimeout === void 0 ? this._frameCacheTimeout : _ref$cacheTimeout;
     if (this.provider) return this.provider.getFrame({
       dimensions,
       mirror,
@@ -219881,9 +221003,7 @@ class Video {
     this._renderPreviewFrame = null;
   }
   _setupPreview() {
-    const {
-      renderer
-    } = this.runtime;
+    const renderer = this.runtime.renderer;
     if (!renderer) return;
     if (this._skinId === -1 && this._drawable === -1) {
       this._skinId = renderer.createBitmapSkin(new ImageData(...Video.DIMENSIONS), 1);
@@ -219936,9 +221056,7 @@ class Video {
    * @property {boolean} forceTransparentPreview - whether the preview should be forced transparent.
    */
   postData(_ref2) {
-    let {
-      forceTransparentPreview
-    } = _ref2;
+    let forceTransparentPreview = _ref2.forceTransparentPreview;
     this._forceTransparentPreview = forceTransparentPreview;
     // Setting the ghost to the current value will pick up the forceTransparentPreview
     // flag and override the current ghost. The complexity is to prevent blocks
@@ -220103,6 +221221,12 @@ module.exports = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * @fileoverview
  * Partial implementation of an SB2 JSON importer.
@@ -220124,16 +221248,13 @@ const Variable = __webpack_require__(/*! ../engine/variable */ "./node_modules/s
 const MonitorRecord = __webpack_require__(/*! ../engine/monitor-record */ "./node_modules/scratch-vm/src/engine/monitor-record.js");
 const StageLayering = __webpack_require__(/*! ../engine/stage-layering */ "./node_modules/scratch-vm/src/engine/stage-layering.js");
 const ScratchXUtilities = __webpack_require__(/*! ../extension-support/tw-scratchx-utilities */ "./node_modules/scratch-vm/src/extension-support/tw-scratchx-utilities.js");
-const {
-  loadCostume
-} = __webpack_require__(/*! ../import/load-costume.js */ "./node_modules/scratch-vm/src/import/load-costume.js");
-const {
-  loadSound
-} = __webpack_require__(/*! ../import/load-sound.js */ "./node_modules/scratch-vm/src/import/load-sound.js");
-const {
-  deserializeCostume,
-  deserializeSound
-} = __webpack_require__(/*! ./deserialize-assets.js */ "./node_modules/scratch-vm/src/serialization/deserialize-assets.js");
+const _require = __webpack_require__(/*! ../import/load-costume.js */ "./node_modules/scratch-vm/src/import/load-costume.js"),
+  loadCostume = _require.loadCostume;
+const _require2 = __webpack_require__(/*! ../import/load-sound.js */ "./node_modules/scratch-vm/src/import/load-sound.js"),
+  loadSound = _require2.loadSound;
+const _require3 = __webpack_require__(/*! ./deserialize-assets.js */ "./node_modules/scratch-vm/src/serialization/deserialize-assets.js"),
+  deserializeCostume = _require3.deserializeCostume,
+  deserializeSound = _require3.deserializeSound;
 
 // Constants used during deserialization of an SB2 file
 const CORE_EXTENSIONS = ['argument', 'control', 'data', 'event', 'looks', 'math', 'motion', 'operator', 'procedures', 'sensing', 'sound'];
@@ -220160,7 +221281,10 @@ const isPossiblyScratchXBlock = opcode => SCRATCHX_OPCODE_SEPARATOR.test(opcode)
  * @returns {string}
  */
 const mapScratchXOpcode = opcode => {
-  const [extensionName, extensionMethod] = opcode.split(SCRATCHX_OPCODE_SEPARATOR);
+  const _opcode$split = opcode.split(SCRATCHX_OPCODE_SEPARATOR),
+    _opcode$split2 = _slicedToArray(_opcode$split, 2),
+    extensionName = _opcode$split2[0],
+    extensionMethod = _opcode$split2[1];
   const newOpcodeBase = ScratchXUtilities.generateExtensionId(extensionName);
   return "".concat(newOpcodeBase, "_").concat(extensionMethod);
 };
@@ -220274,7 +221398,7 @@ const parseBlockList = function parseBlockList(blockList, addBroadcastMsg, getVa
   for (let i = 0; i < blockList.length; i++) {
     const block = blockList[i];
     // eslint-disable-next-line no-use-before-define
-    const parsedBlockAndComments = _parseBlock(block, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex);
+    const parsedBlockAndComments = _parseBlock3(block, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex);
     const parsedBlock = parsedBlockAndComments[0];
     // Update commentIndex
     commentIndex = parsedBlockAndComments[1];
@@ -220309,7 +221433,10 @@ const parseScripts = function parseScripts(scripts, blocks, addBroadcastMsg, get
     const scriptY = script[1];
     const blockList = script[2];
     const parseState = {};
-    const [parsedBlockList, newCommentIndex] = parseBlockList(blockList, addBroadcastMsg, getVariableId, extensions, parseState, comments, scriptIndexForComment);
+    const _parseBlockList = parseBlockList(blockList, addBroadcastMsg, getVariableId, extensions, parseState, comments, scriptIndexForComment),
+      _parseBlockList2 = _slicedToArray(_parseBlockList, 2),
+      parsedBlockList = _parseBlockList2[0],
+      newCommentIndex = _parseBlockList2[1];
     scriptIndexForComment = newCommentIndex;
     if (parsedBlockList[0]) {
       parsedBlockList[0].x = scriptX * WORKSPACE_X_SCALE;
@@ -220440,14 +221567,17 @@ const parseMonitorObject = (object, runtime, targets, extensions) => {
   // Create var id getter to make block naming/parsing easier, variables already created.
   const getVariableId = generateVariableIdGetter(target.id, false);
   // eslint-disable-next-line no-use-before-define
-  const [block, _] = _parseBlock([object.cmd, object.param],
-  // Scratch 2 monitor blocks only have one param.
-  null,
-  // `addBroadcastMsg`, not needed for monitor blocks.
-  getVariableId, extensions, {}, null,
-  // `comments`, not needed for monitor blocks
-  null // `commentIndex`, not needed for monitor blocks
-  );
+  const _parseBlock = _parseBlock3([object.cmd, object.param],
+    // Scratch 2 monitor blocks only have one param.
+    null,
+    // `addBroadcastMsg`, not needed for monitor blocks.
+    getVariableId, extensions, {}, null,
+    // `comments`, not needed for monitor blocks
+    null // `commentIndex`, not needed for monitor blocks
+    ),
+    _parseBlock2 = _slicedToArray(_parseBlock, 2),
+    block = _parseBlock2[0],
+    _ = _parseBlock2[1];
 
   // Monitor blocks have special IDs to match the toolbox obtained from the getId
   // function in the runtime.monitorBlocksInfo. Variable monitors, however,
@@ -220589,10 +221719,8 @@ const _parseScratchAssets = function parseScratchAssets(object, runtime, topLeve
     }
   }
   // Sounds from JSON
-  const {
-    soundBank,
-    soundPromises
-  } = assets;
+  const soundBank = assets.soundBank,
+    soundPromises = assets.soundPromises;
   if (Object.prototype.hasOwnProperty.call(object, 'sounds')) {
     for (let s = 0; s < object.sounds.length; s++) {
       const soundSource = object.sounds[s];
@@ -220679,10 +221807,8 @@ const _parseScratchObject = function parseScratchObject(object, runtime, extensi
   // Costumes from JSON.
   const costumePromises = assets.costumePromises;
   // Sounds from JSON
-  const {
-    soundBank,
-    soundPromises
-  } = assets;
+  const soundBank = assets.soundBank,
+    soundPromises = assets.soundPromises;
 
   // Create the first clone, and load its run-state from JSON.
   const target = sprite.createClone(topLevel ? StageLayering.BACKGROUND_LAYER : StageLayering.SPRITE_LAYER);
@@ -220711,7 +221837,14 @@ const _parseScratchObject = function parseScratchObject(object, runtime, extensi
   const blockComments = {};
   if (Object.prototype.hasOwnProperty.call(object, 'scriptComments')) {
     const comments = object.scriptComments.map(commentDesc => {
-      const [commentX, commentY, commentWidth, commentHeight, commentFullSize, flattenedBlockIndex, commentText] = commentDesc;
+      const _commentDesc = _slicedToArray(commentDesc, 7),
+        commentX = _commentDesc[0],
+        commentY = _commentDesc[1],
+        commentWidth = _commentDesc[2],
+        commentHeight = _commentDesc[3],
+        commentFullSize = _commentDesc[4],
+        flattenedBlockIndex = _commentDesc[5],
+        commentText = _commentDesc[6];
       const isBlockComment = commentDesc[5] >= 0;
       const newComment = new Comment(null,
       // generate a new id for this comment
@@ -221002,7 +222135,7 @@ const specMapBlock = function specMapBlock(block) {
  * @return {Array.<object|int>} Tuple where first item is the Scratch VM-format block (or null if unsupported object),
  * and second item is the updated comment index (after this block and its children are parsed)
  */
-const _parseBlock = function parseBlock(sb2block, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex) {
+const _parseBlock3 = function parseBlock(sb2block, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex) {
   const commentsForParsedBlock = comments && typeof commentIndex === 'number' && !isNaN(commentIndex) ? comments[commentIndex] : null;
   const blockMetadata = specMapBlock(sb2block);
   if (!blockMetadata) {
@@ -221088,10 +222221,13 @@ const _parseBlock = function parseBlock(sb2block, addBroadcastMsg, getVariableId
         parseState.expectedArg = expectedArg;
         if (typeof providedArg[0] === 'object' && providedArg[0]) {
           // Block list occupies the input.
-          [innerBlocks, commentIndex] = parseBlockList(providedArg, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex);
+          var _parseBlockList3 = parseBlockList(providedArg, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex);
+          var _parseBlockList4 = _slicedToArray(_parseBlockList3, 2);
+          innerBlocks = _parseBlockList4[0];
+          commentIndex = _parseBlockList4[1];
         } else {
           // Single block occupies the input.
-          const parsedBlockDesc = _parseBlock(providedArg, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex);
+          const parsedBlockDesc = _parseBlock3(providedArg, addBroadcastMsg, getVariableId, extensions, parseState, comments, commentIndex);
           innerBlocks = parsedBlockDesc[0] ? [parsedBlockDesc[0]] : [];
           // Update commentIndex
           commentIndex = parsedBlockDesc[1];
@@ -221390,6 +222526,12 @@ module.exports = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * @fileoverview
  * The specMap below handles a few pieces of "translation" work between
@@ -221997,7 +223139,8 @@ const specMap = {
     }]
   },
   'whenSensorGreaterThan': _ref => {
-    let [, sensor] = _ref;
+    let _ref2 = _slicedToArray(_ref, 2),
+      sensor = _ref2[1];
     if (sensor === 'video motion') {
       return {
         opcode: 'videoSensing_whenMotionGreaterThan',
@@ -222863,6 +224006,12 @@ module.exports = specMap;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * @fileoverview
  * An SB3 serializer and deserializer. Parses provided
@@ -222882,16 +224031,13 @@ const MathUtil = __webpack_require__(/*! ../util/math-util */ "./node_modules/sc
 const StringUtil = __webpack_require__(/*! ../util/string-util */ "./node_modules/scratch-vm/src/util/string-util.js");
 const VariableUtil = __webpack_require__(/*! ../util/variable-util */ "./node_modules/scratch-vm/src/util/variable-util.js");
 const compress = __webpack_require__(/*! ./tw-compress-sb3 */ "./node_modules/scratch-vm/src/serialization/tw-compress-sb3.js");
-const {
-  loadCostume
-} = __webpack_require__(/*! ../import/load-costume.js */ "./node_modules/scratch-vm/src/import/load-costume.js");
-const {
-  loadSound
-} = __webpack_require__(/*! ../import/load-sound.js */ "./node_modules/scratch-vm/src/import/load-sound.js");
-const {
-  deserializeCostume,
-  deserializeSound
-} = __webpack_require__(/*! ./deserialize-assets.js */ "./node_modules/scratch-vm/src/serialization/deserialize-assets.js");
+const _require = __webpack_require__(/*! ../import/load-costume.js */ "./node_modules/scratch-vm/src/import/load-costume.js"),
+  loadCostume = _require.loadCostume;
+const _require2 = __webpack_require__(/*! ../import/load-sound.js */ "./node_modules/scratch-vm/src/import/load-sound.js"),
+  loadSound = _require2.loadSound;
+const _require3 = __webpack_require__(/*! ./deserialize-assets.js */ "./node_modules/scratch-vm/src/serialization/deserialize-assets.js"),
+  deserializeCostume = _require3.deserializeCostume,
+  deserializeSound = _require3.deserializeSound;
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 /**
@@ -223229,7 +224375,10 @@ const deserializeStandaloneBlocks = blocks => {
   blocks = JSON.parse(JSON.stringify(blocks));
   if (blocks.extensionURLs) {
     const extensionURLs = new Map();
-    for (const [id, url] of Object.entries(blocks.extensionURLs)) {
+    for (const _ref of Object.entries(blocks.extensionURLs)) {
+      var _ref2 = _slicedToArray(_ref, 2);
+      const id = _ref2[0];
+      const url = _ref2[1];
       extensionURLs.set(id, url);
     }
     return {
@@ -223392,7 +224541,10 @@ const serializeTarget = function serializeTarget(target, extensions) {
   obj.variables = vars.variables;
   obj.lists = vars.lists;
   obj.broadcasts = vars.broadcasts;
-  [obj.blocks, targetExtensions] = serializeBlocks(target.blocks);
+  var _serializeBlocks = serializeBlocks(target.blocks);
+  var _serializeBlocks2 = _slicedToArray(_serializeBlocks, 2);
+  obj.blocks = _serializeBlocks2[0];
+  targetExtensions = _serializeBlocks2[1];
   obj.comments = serializeComments(target.comments);
 
   // TODO remove this check/patch when (#1901) is fixed
@@ -223445,7 +224597,10 @@ const serializeTarget = function serializeTarget(target, extensions) {
 const serializeExtensionStorage = (extensionStorage, extensions) => {
   const result = {};
   let isEmpty = true;
-  for (const [key, value] of Object.entries(extensionStorage)) {
+  for (const _ref3 of Object.entries(extensionStorage)) {
+    var _ref4 = _slicedToArray(_ref3, 2);
+    const key = _ref4[0];
+    const value = _ref4[1];
     if (extensions.has(key) && value !== null && typeof value !== 'undefined') {
       isEmpty = false;
       result[key] = extensionStorage[key];
@@ -223508,9 +224663,9 @@ const serializeMonitors = function serializeMonitors(monitors, runtime, extensio
  * @return {object} Serialized runtime instance.
  */
 const serialize = function serialize(runtime, targetId) {
-  let {
-    allowOptimization = true
-  } = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  let _ref5 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
+    _ref5$allowOptimizati = _ref5.allowOptimization,
+    allowOptimization = _ref5$allowOptimizati === void 0 ? true : _ref5$allowOptimizati;
   // Fetch targets
   const obj = Object.create(null);
   // Create extension set to hold extension ids found while serializing targets
@@ -224030,14 +225185,10 @@ const parseScratchObject = function parseScratchObject(object, runtime, extensio
     fixSporkCompatibility(object.blocks);
   }
   // Costumes from JSON.
-  const {
-    costumePromises
-  } = assets;
+  const costumePromises = assets.costumePromises;
   // Sounds from JSON
-  const {
-    soundBank,
-    soundPromises
-  } = assets;
+  const soundBank = assets.soundBank,
+    soundPromises = assets.soundPromises;
   // Create the first clone, and load its run-state from JSON.
   const target = sprite.createClone(object.isStage ? StageLayering.BACKGROUND_LAYER : StageLayering.SPRITE_LAYER);
   // Load target properties from JSON.
@@ -224342,7 +225493,10 @@ const deserialize = async function deserialize(json, runtime, zip, isSingleSprit
 
   // Extract custom extension IDs, if they exist.
   if (json.extensionURLs) {
-    for (const [id, url] of Object.entries(json.extensionURLs)) {
+    for (const _ref6 of Object.entries(json.extensionURLs)) {
+      var _ref7 = _slicedToArray(_ref6, 2);
+      const id = _ref7[0];
+      const url = _ref7[1];
       extensions.extensionURLs.set(id, url);
     }
   }
@@ -225031,10 +226185,9 @@ class RenderedTarget extends Target {
     // Keep direction between -179 and +180.
     this.direction = MathUtil.wrapClamp(direction, -179, 180);
     if (this.renderer) {
-      const {
-        direction: renderedDirection,
-        scale
-      } = this._getRenderedDirectionAndScale();
+      const _this$_getRenderedDir = this._getRenderedDirectionAndScale(),
+        renderedDirection = _this$_getRenderedDir.direction,
+        scale = _this$_getRenderedDir.scale;
       this.renderer.updateDrawableDirectionScale(this.drawableID, renderedDirection, scale);
       if (this.visible) {
         this.emitVisualChange();
@@ -225093,10 +226246,9 @@ class RenderedTarget extends Target {
       const minScale = fencing ? Math.min(1, Math.max(5 / origW, 5 / origH)) : 0;
       const maxScale = fencing ? Math.min(1.5 * this.runtime.stageWidth / origW, 1.5 * this.runtime.stageHeight / origH) : Infinity;
       this.size = MathUtil.clamp(size / 100, minScale, maxScale) * 100;
-      const {
-        direction,
-        scale
-      } = this._getRenderedDirectionAndScale();
+      const _this$_getRenderedDir2 = this._getRenderedDirectionAndScale(),
+        direction = _this$_getRenderedDir2.direction,
+        scale = _this$_getRenderedDir2.scale;
       this.renderer.updateDrawableDirectionScale(this.drawableID, direction, scale);
       if (this.visible) {
         this.emitVisualChange();
@@ -225290,10 +226442,9 @@ class RenderedTarget extends Target {
       this.rotationStyle = RenderedTarget.ROTATION_STYLE_LEFT_RIGHT;
     }
     if (this.renderer) {
-      const {
-        direction,
-        scale
-      } = this._getRenderedDirectionAndScale();
+      const _this$_getRenderedDir3 = this._getRenderedDirectionAndScale(),
+        direction = _this$_getRenderedDir3.direction,
+        scale = _this$_getRenderedDir3.scale;
       this.renderer.updateDrawableDirectionScale(this.drawableID, direction, scale);
       if (this.visible) {
         this.emitVisualChange();
@@ -225385,10 +226536,9 @@ class RenderedTarget extends Target {
    */
   updateAllDrawableProperties() {
     if (this.renderer) {
-      const {
-        direction,
-        scale
-      } = this._getRenderedDirectionAndScale();
+      const _this$_getRenderedDir4 = this._getRenderedDirectionAndScale(),
+        direction = _this$_getRenderedDir4.direction,
+        scale = _this$_getRenderedDir4.scale;
       this.renderer.updateDrawablePosition(this.drawableID, [this.x, this.y]);
       this.renderer.updateDrawableDirectionScale(this.drawableID, direction, scale);
       this.renderer.updateDrawableVisible(this.drawableID, this.visible);
@@ -225825,12 +226975,10 @@ module.exports = RenderedTarget;
 
 const RenderedTarget = __webpack_require__(/*! ./rendered-target */ "./node_modules/scratch-vm/src/sprites/rendered-target.js");
 const Blocks = __webpack_require__(/*! ../engine/blocks */ "./node_modules/scratch-vm/src/engine/blocks.js");
-const {
-  loadSoundFromAsset
-} = __webpack_require__(/*! ../import/load-sound */ "./node_modules/scratch-vm/src/import/load-sound.js");
-const {
-  loadCostumeFromAsset
-} = __webpack_require__(/*! ../import/load-costume */ "./node_modules/scratch-vm/src/import/load-costume.js");
+const _require = __webpack_require__(/*! ../import/load-sound */ "./node_modules/scratch-vm/src/import/load-sound.js"),
+  loadSoundFromAsset = _require.loadSoundFromAsset;
+const _require2 = __webpack_require__(/*! ../import/load-costume */ "./node_modules/scratch-vm/src/import/load-costume.js"),
+  loadCostumeFromAsset = _require2.loadCostumeFromAsset;
 const newBlockIds = __webpack_require__(/*! ../util/new-block-ids */ "./node_modules/scratch-vm/src/util/new-block-ids.js");
 const StringUtil = __webpack_require__(/*! ../util/string-util */ "./node_modules/scratch-vm/src/util/string-util.js");
 const StageLayering = __webpack_require__(/*! ../engine/stage-layering */ "./node_modules/scratch-vm/src/engine/stage-layering.js");
@@ -226003,6 +227151,12 @@ module.exports = Sprite;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 class AsyncLimiter {
   constructor(callback, maxConcurrent) {
     this.callback = callback;
@@ -226024,7 +227178,11 @@ class AsyncLimiter {
       return;
     }
     this._current++;
-    const [resolve, reject, args] = this._queue.shift();
+    const _this$_queue$shift = this._queue.shift(),
+      _this$_queue$shift2 = _slicedToArray(_this$_queue$shift, 3),
+      resolve = _this$_queue$shift2[0],
+      reject = _this$_queue$shift2[1],
+      args = _this$_queue$shift2[2];
     this.callback.apply(null, args).then(result => {
       resolve(result);
       this._current--;
@@ -226797,11 +227955,9 @@ class JSONRPC {
     this._sendMessage(response);
   }
   _handleResponse(json) {
-    const {
-      result,
-      error,
-      id
-    } = json;
+    const result = json.result,
+      error = json.error,
+      id = json.id;
     const openRequest = this._openRequests[id];
     delete this._openRequests[id];
     if (openRequest) {
@@ -226813,11 +227969,9 @@ class JSONRPC {
     }
   }
   _handleRequest(json) {
-    const {
-      method,
-      params,
-      id
-    } = json;
+    const method = json.method,
+      params = json.params,
+      id = json.id;
     const rawResult = this.didReceiveCall(method, params);
     if (id !== null && typeof id !== 'undefined') {
       Promise.resolve(rawResult).then(result => {
@@ -227772,20 +228926,16 @@ const StringUtil = __webpack_require__(/*! ./util/string-util */ "./node_modules
 const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/format-message/index.js");
 const Variable = __webpack_require__(/*! ./engine/variable */ "./node_modules/scratch-vm/src/engine/variable.js");
 const newBlockIds = __webpack_require__(/*! ./util/new-block-ids */ "./node_modules/scratch-vm/src/util/new-block-ids.js");
-const {
-  loadCostume
-} = __webpack_require__(/*! ./import/load-costume.js */ "./node_modules/scratch-vm/src/import/load-costume.js");
-const {
-  loadSound
-} = __webpack_require__(/*! ./import/load-sound.js */ "./node_modules/scratch-vm/src/import/load-sound.js");
-const {
-  serializeSounds,
-  serializeCostumes
-} = __webpack_require__(/*! ./serialization/serialize-assets */ "./node_modules/scratch-vm/src/serialization/serialize-assets.js");
+const _require = __webpack_require__(/*! ./import/load-costume.js */ "./node_modules/scratch-vm/src/import/load-costume.js"),
+  loadCostume = _require.loadCostume;
+const _require2 = __webpack_require__(/*! ./import/load-sound.js */ "./node_modules/scratch-vm/src/import/load-sound.js"),
+  loadSound = _require2.loadSound;
+const _require3 = __webpack_require__(/*! ./serialization/serialize-assets */ "./node_modules/scratch-vm/src/serialization/serialize-assets.js"),
+  serializeSounds = _require3.serializeSounds,
+  serializeCostumes = _require3.serializeCostumes;
 __webpack_require__(/*! canvas-toBlob */ "./node_modules/canvas-toBlob/canvas-toBlob.js");
-const {
-  exportCostume
-} = __webpack_require__(/*! ./serialization/tw-costume-import-export */ "./node_modules/scratch-vm/src/serialization/tw-costume-import-export.js");
+const _require4 = __webpack_require__(/*! ./serialization/tw-costume-import-export */ "./node_modules/scratch-vm/src/serialization/tw-costume-import-export.js"),
+  exportCostume = _require4.exportCostume;
 const Base64Util = __webpack_require__(/*! ./util/base64-util */ "./node_modules/scratch-vm/src/util/base64-util.js");
 const RESERVED_NAMES = ['_mouse_', '_stage_', '_edge_', '_myself_', '_random_'];
 const CORE_EXTENSIONS = [
@@ -228203,10 +229353,9 @@ class VirtualMachine extends EventEmitter {
         resolve(res);
       });
     }).catch(error => {
-      const {
-        SB1File,
-        ValidationError
-      } = __webpack_require__(/*! scratch-sb1-converter */ "./node_modules/scratch-sb1-converter/index.js");
+      const _require5 = __webpack_require__(/*! scratch-sb1-converter */ "./node_modules/scratch-sb1-converter/index.js"),
+        SB1File = _require5.SB1File,
+        ValidationError = _require5.ValidationError;
       try {
         const sb1 = new SB1File(input);
         const json = sb1.json;
@@ -228441,10 +229590,8 @@ class VirtualMachine extends EventEmitter {
       return Promise.reject('Unable to verify Scratch Project version.');
     };
     return deserializePromise().then(_ref => {
-      let {
-        targets,
-        extensions
-      } = _ref;
+      let targets = _ref.targets,
+        extensions = _ref.extensions;
       if (typeof performance !== 'undefined') {
         performance.mark('scratch-vm-deserialize-end');
         try {
@@ -228599,10 +229746,8 @@ class VirtualMachine extends EventEmitter {
 
     const sb2 = __webpack_require__(/*! ./serialization/sb2 */ "./node_modules/scratch-vm/src/serialization/sb2.js");
     return sb2.deserialize(sprite, this.runtime, true, zip).then(_ref2 => {
-      let {
-        targets,
-        extensions
-      } = _ref2;
+      let targets = _ref2.targets,
+        extensions = _ref2.extensions;
       return this.installTargets(targets, extensions, false);
     });
   }
@@ -228617,10 +229762,8 @@ class VirtualMachine extends EventEmitter {
     // Validate & parse
     const sb3 = __webpack_require__(/*! ./serialization/sb3 */ "./node_modules/scratch-vm/src/serialization/sb3.js");
     return sb3.deserialize(sprite, this.runtime, zip, true).then(_ref3 => {
-      let {
-        targets,
-        extensions
-      } = _ref3;
+      let targets = _ref3.targets,
+        extensions = _ref3.extensions;
       return this.installTargets(targets, extensions, false);
     });
   }
@@ -229232,10 +230375,9 @@ class VirtualMachine extends EventEmitter {
    */
   shareBlocksToTarget(blocks, targetId, optFromTargetId) {
     const sb3 = __webpack_require__(/*! ./serialization/sb3 */ "./node_modules/scratch-vm/src/serialization/sb3.js");
-    const {
-      blocks: copiedBlocks,
-      extensionURLs
-    } = sb3.deserializeStandaloneBlocks(blocks);
+    const _sb3$deserializeStand = sb3.deserializeStandaloneBlocks(blocks),
+      copiedBlocks = _sb3$deserializeStand.blocks,
+      extensionURLs = _sb3$deserializeStand.extensionURLs;
     newBlockIds(copiedBlocks);
     const target = this.runtime.getTargetById(targetId);
     if (optFromTargetId) {
@@ -229839,9 +230981,8 @@ module.exports = function getSideChannelList() {
 			}
 		},
 		'delete': function (key) {
-			var root = $o && $o.next;
 			var deletedNode = listDelete($o, key);
-			if (deletedNode && root && root === deletedNode) {
+			if (deletedNode && $o && !$o.next) {
 				$o = void undefined;
 			}
 			return !!deletedNode;
@@ -229863,7 +231004,6 @@ module.exports = function getSideChannelList() {
 			listSet(/** @type {NonNullable<typeof $o>} */ ($o), key, value);
 		}
 	};
-	// @ts-expect-error TODO: figure out why this is erroring
 	return channel;
 };
 
@@ -230074,7 +231214,10 @@ module.exports = function getSideChannel() {
 	var channel = {
 		assert: function (key) {
 			if (!channel.has(key)) {
-				throw new $TypeError('Side channel does not contain ' + inspect(key));
+				var keyDesc = key && Object(key) === key
+					? 'the given object key'
+					: inspect(key);
+				throw new $TypeError('Side channel does not contain ' + keyDesc);
 			}
 		},
 		'delete': function (key) {
@@ -230094,7 +231237,7 @@ module.exports = function getSideChannel() {
 			$channelData.set(key, value);
 		}
 	};
-	// @ts-expect-error TODO: figure out why this is erroring
+
 	return channel;
 };
 
@@ -242086,6 +243229,7 @@ var defaults = {
     parseArrays: true,
     plainObjects: false,
     strictDepth: false,
+    strictMerge: true,
     strictNullHandling: false,
     throwOnLimitExceeded: false
 };
@@ -242096,8 +243240,19 @@ var interpretNumericEntities = function (str) {
     });
 };
 
-var parseArrayValue = function (val, options, currentArrayLength) {
+var parseArrayValue = function (val, options, currentArrayLength, isFlatArrayValue) {
     if (val && typeof val === 'string' && options.comma && val.indexOf(',') > -1) {
+        if (isFlatArrayValue && options.throwOnLimitExceeded) {
+            var commaCount = 0;
+            var commaIndex = val.indexOf(',');
+            while (commaIndex > -1) {
+                commaCount += 1;
+                if (commaCount >= options.arrayLimit) {
+                    throw new RangeError('Array limit exceeded. Only ' + options.arrayLimit + ' element' + (options.arrayLimit === 1 ? '' : 's') + ' allowed in an array.');
+                }
+                commaIndex = val.indexOf(',', commaIndex + 1);
+            }
+        }
         return val.split(',');
     }
 
@@ -242124,13 +243279,13 @@ var parseValues = function parseQueryStringValues(str, options) {
     var cleanStr = options.ignoreQueryPrefix ? str.replace(/^\?/, '') : str;
     cleanStr = cleanStr.replace(/%5B/gi, '[').replace(/%5D/gi, ']');
 
-    var limit = options.parameterLimit === Infinity ? undefined : options.parameterLimit;
+    var limit = options.parameterLimit === Infinity ? void undefined : options.parameterLimit;
     var parts = cleanStr.split(
         options.delimiter,
-        options.throwOnLimitExceeded ? limit + 1 : limit
+        options.throwOnLimitExceeded && typeof limit !== 'undefined' ? limit + 1 : limit
     );
 
-    if (options.throwOnLimitExceeded && parts.length > limit) {
+    if (options.throwOnLimitExceeded && typeof limit !== 'undefined' && parts.length > limit) {
         throw new RangeError('Parameter limit exceeded. Only ' + limit + ' parameter' + (limit === 1 ? '' : 's') + ' allowed.');
     }
 
@@ -242169,16 +243324,19 @@ var parseValues = function parseQueryStringValues(str, options) {
         } else {
             key = options.decoder(part.slice(0, pos), defaults.decoder, charset, 'key');
 
-            val = utils.maybeMap(
-                parseArrayValue(
-                    part.slice(pos + 1),
-                    options,
-                    isArray(obj[key]) ? obj[key].length : 0
-                ),
-                function (encodedVal) {
-                    return options.decoder(encodedVal, defaults.decoder, charset, 'value');
-                }
-            );
+            if (key !== null) {
+                val = utils.maybeMap(
+                    parseArrayValue(
+                        part.slice(pos + 1),
+                        options,
+                        isArray(obj[key]) ? obj[key].length : 0,
+                        part.indexOf('[]=') === -1
+                    ),
+                    function (encodedVal) {
+                        return options.decoder(encodedVal, defaults.decoder, charset, 'value');
+                    }
+                );
+            }
         }
 
         if (val && options.interpretNumericEntities && charset === 'iso-8859-1') {
@@ -242189,11 +243347,23 @@ var parseValues = function parseQueryStringValues(str, options) {
             val = isArray(val) ? [val] : val;
         }
 
-        var existing = has.call(obj, key);
-        if (existing && options.duplicates === 'combine') {
-            obj[key] = utils.combine(obj[key], val);
-        } else if (!existing || options.duplicates === 'last') {
-            obj[key] = val;
+        if (options.comma && isArray(val) && val.length > options.arrayLimit) {
+            val = utils.combine([], val, options.arrayLimit, options.plainObjects, options.throwOnLimitExceeded);
+        }
+
+        if (key !== null) {
+            var existing = has.call(obj, key);
+            if (existing && (options.duplicates === 'combine' || part.indexOf('[]=') > -1)) {
+                obj[key] = utils.combine(
+                    obj[key],
+                    val,
+                    options.arrayLimit,
+                    options.plainObjects,
+                    options.throwOnLimitExceeded
+                );
+            } else if (!existing || options.duplicates === 'last') {
+                obj[key] = val;
+            }
         }
     }
 
@@ -242214,25 +243384,40 @@ var parseObject = function (chain, val, options, valuesParsed) {
         var root = chain[i];
 
         if (root === '[]' && options.parseArrays) {
-            obj = options.allowEmptyArrays && (leaf === '' || (options.strictNullHandling && leaf === null))
-                ? []
-                : utils.combine([], leaf);
+            if (utils.isOverflow(leaf)) {
+                // leaf is already an overflow object, preserve it
+                obj = leaf;
+            } else {
+                obj = options.allowEmptyArrays && (leaf === '' || (options.strictNullHandling && leaf === null))
+                    ? []
+                    : utils.combine(
+                        [],
+                        leaf,
+                        options.arrayLimit,
+                        options.plainObjects,
+                        options.throwOnLimitExceeded
+                    );
+            }
         } else {
             obj = options.plainObjects ? { __proto__: null } : {};
             var cleanRoot = root.charAt(0) === '[' && root.charAt(root.length - 1) === ']' ? root.slice(1, -1) : root;
             var decodedRoot = options.decodeDotInKeys ? cleanRoot.replace(/%2E/g, '.') : cleanRoot;
             var index = parseInt(decodedRoot, 10);
-            if (!options.parseArrays && decodedRoot === '') {
-                obj = { 0: leaf };
-            } else if (
-                !isNaN(index)
+            var isValidArrayIndex = !isNaN(index)
                 && root !== decodedRoot
                 && String(index) === decodedRoot
                 && index >= 0
-                && (options.parseArrays && index <= options.arrayLimit)
-            ) {
+                && options.parseArrays;
+            if (!options.parseArrays && decodedRoot === '') {
+                obj = { 0: leaf };
+            } else if (isValidArrayIndex && index < options.arrayLimit) {
                 obj = [];
                 obj[index] = leaf;
+            } else if (isValidArrayIndex && options.throwOnLimitExceeded) {
+                throw new RangeError('Array limit exceeded. Only ' + options.arrayLimit + ' element' + (options.arrayLimit === 1 ? '' : 's') + ' allowed in an array.');
+            } else if (isValidArrayIndex) {
+                obj[index] = leaf;
+                utils.markOverflow(obj, index);
             } else if (decodedRoot !== '__proto__') {
                 obj[decodedRoot] = leaf;
             }
@@ -242244,58 +243429,101 @@ var parseObject = function (chain, val, options, valuesParsed) {
     return leaf;
 };
 
-var parseKeys = function parseQueryStringKeys(givenKey, val, options, valuesParsed) {
-    if (!givenKey) {
-        return;
+// Split a key like "a[b][c[]]" into ['a', '[b]', '[c[]]'] while preserving
+// qs parse semantics for depth/prototype guards.
+var splitKeyIntoSegments = function splitKeyIntoSegments(originalKey, options) {
+    var key = options.allowDots ? originalKey.replace(/\.([^.[]+)/g, '[$1]') : originalKey;
+
+    // depth <= 0 keeps the whole key as one segment
+    if (options.depth <= 0) {
+        if (!options.plainObjects && has.call(Object.prototype, key)) {
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+
+        return [key];
     }
 
-    // Transform dot notation to bracket notation
-    var key = options.allowDots ? givenKey.replace(/\.([^.[]+)/g, '[$1]') : givenKey;
+    var segments = [];
 
-    // The regex chunks
-
-    var brackets = /(\[[^[\]]*])/;
-    var child = /(\[[^[\]]*])/g;
-
-    // Get the parent
-
-    var segment = options.depth > 0 && brackets.exec(key);
-    var parent = segment ? key.slice(0, segment.index) : key;
-
-    // Stash the parent if it exists
-
-    var keys = [];
+    // parent before the first '[' (may be empty if key starts with '[')
+    var first = key.indexOf('[');
+    var parent = first >= 0 ? key.slice(0, first) : key;
     if (parent) {
-        // If we aren't using plain objects, optionally prefix keys that would overwrite object prototype properties
         if (!options.plainObjects && has.call(Object.prototype, parent)) {
             if (!options.allowPrototypes) {
                 return;
             }
         }
 
-        keys.push(parent);
+        segments[segments.length] = parent;
     }
 
-    // Loop through children appending to the array until we hit depth
+    var n = key.length;
+    var open = first;
+    var collected = 0;
 
-    var i = 0;
-    while (options.depth > 0 && (segment = child.exec(key)) !== null && i < options.depth) {
-        i += 1;
-        if (!options.plainObjects && has.call(Object.prototype, segment[1].slice(1, -1))) {
-            if (!options.allowPrototypes) {
-                return;
+    while (open >= 0 && collected < options.depth) {
+        var level = 1;
+        var i = open + 1;
+        var close = -1;
+
+        // balance nested '[' and ']' inside this bracket group using a nesting level counter
+        while (i < n && close < 0) {
+            var cu = key.charCodeAt(i);
+            if (cu === 0x5B) { // '['
+                level += 1;
+            } else if (cu === 0x5D) { // ']'
+                level -= 1;
+                if (level === 0) {
+                    close = i; // found matching close; loop will exit by condition
+                }
             }
+            i += 1;
         }
-        keys.push(segment[1]);
+
+        if (close < 0) {
+            // Unterminated group: wrap the raw remainder in one bracket pair so it stays
+            // a single literal segment (e.g. "[[]b" -> "[[]b]"); we do not infer missing ']'.
+            segments[segments.length] = '[' + key.slice(open) + ']';
+            return segments;
+        }
+
+        var seg = key.slice(open, close + 1);
+        // prototype guard for the content of this group
+        var content = seg.slice(1, -1);
+        if (!options.plainObjects && has.call(Object.prototype, content) && !options.allowPrototypes) {
+            return;
+        }
+
+        segments[segments.length] = seg;
+        collected += 1;
+
+        // find the next '[' after this balanced group
+        open = key.indexOf('[', close + 1);
     }
 
-    // If there's a remainder, check strictDepth option for throw, else just add whatever is left
-
-    if (segment) {
+    if (open >= 0) {
         if (options.strictDepth === true) {
             throw new RangeError('Input depth exceeded depth option of ' + options.depth + ' and strictDepth is true');
         }
-        keys.push('[' + key.slice(segment.index) + ']');
+
+        segments[segments.length] = '[' + key.slice(open) + ']';
+    }
+
+    return segments;
+};
+
+var parseKeys = function parseQueryStringKeys(givenKey, val, options, valuesParsed) {
+    if (!givenKey) {
+        return;
+    }
+
+    var keys = splitKeyIntoSegments(givenKey, options);
+
+    if (!keys) {
+        return;
     }
 
     return parseObject(keys, val, options, valuesParsed);
@@ -242357,6 +243585,7 @@ var normalizeParseOptions = function normalizeParseOptions(opts) {
         parseArrays: opts.parseArrays !== false,
         plainObjects: typeof opts.plainObjects === 'boolean' ? opts.plainObjects : defaults.plainObjects,
         strictDepth: typeof opts.strictDepth === 'boolean' ? !!opts.strictDepth : defaults.strictDepth,
+        strictMerge: typeof opts.strictMerge === 'boolean' ? !!opts.strictMerge : defaults.strictMerge,
         strictNullHandling: typeof opts.strictNullHandling === 'boolean' ? opts.strictNullHandling : defaults.strictNullHandling,
         throwOnLimitExceeded: typeof opts.throwOnLimitExceeded === 'boolean' ? opts.throwOnLimitExceeded : false
     };
@@ -242519,7 +243748,7 @@ var stringify = function stringify(
 
     if (obj === null) {
         if (strictNullHandling) {
-            return encoder && !encodeValuesOnly ? encoder(prefix, defaults.encoder, charset, 'key', format) : prefix;
+            return formatter(encoder && !encodeValuesOnly ? encoder(prefix, defaults.encoder, charset, 'key', format) : prefix);
         }
 
         obj = '';
@@ -242543,7 +243772,9 @@ var stringify = function stringify(
     if (generateArrayPrefix === 'comma' && isArray(obj)) {
         // we need to join elements in
         if (encodeValuesOnly && encoder) {
-            obj = utils.maybeMap(obj, encoder);
+            obj = utils.maybeMap(obj, function (v) {
+                return v == null ? v : encoder(v);
+            });
         }
         objKeys = [{ value: obj.length > 0 ? obj.join(',') || null : void undefined }];
     } else if (isArray(filter)) {
@@ -242713,6 +243944,11 @@ module.exports = function (object, opts) {
     var sideChannel = getSideChannel();
     for (var i = 0; i < objKeys.length; ++i) {
         var key = objKeys[i];
+
+        if (typeof key === 'undefined' || key === null) {
+            continue;
+        }
+
         var value = obj[key];
 
         if (options.skipNulls && value === null) {
@@ -242746,10 +243982,10 @@ module.exports = function (object, opts) {
     if (options.charsetSentinel) {
         if (options.charset === 'iso-8859-1') {
             // encodeURIComponent('&#10003;'), the "numeric entity" representation of a checkmark
-            prefix += 'utf8=%26%2310003%3B&';
+            prefix += 'utf8=%26%2310003%3B' + options.delimiter;
         } else {
             // encodeURIComponent('✓')
-            prefix += 'utf8=%E2%9C%93&';
+            prefix += 'utf8=%E2%9C%93' + options.delimiter;
         }
     }
 
@@ -242770,14 +244006,37 @@ module.exports = function (object, opts) {
 
 
 var formats = __webpack_require__(/*! ./formats */ "./node_modules/url/node_modules/qs/lib/formats.js");
+var getSideChannel = __webpack_require__(/*! side-channel */ "./node_modules/side-channel/index.js");
+var defineProperty = __webpack_require__(/*! es-define-property */ "./node_modules/es-define-property/index.js");
 
 var has = Object.prototype.hasOwnProperty;
 var isArray = Array.isArray;
 
+// Track objects created from arrayLimit overflow using side-channel
+// Stores the current max numeric index for O(1) lookup
+var overflowChannel = getSideChannel();
+
+var markOverflow = function markOverflow(obj, maxIndex) {
+    overflowChannel.set(obj, maxIndex);
+    return obj;
+};
+
+var isOverflow = function isOverflow(obj) {
+    return overflowChannel.has(obj);
+};
+
+var getMaxIndex = function getMaxIndex(obj) {
+    return overflowChannel.get(obj);
+};
+
+var setMaxIndex = function setMaxIndex(obj, maxIndex) {
+    overflowChannel.set(obj, maxIndex);
+};
+
 var hexTable = (function () {
     var array = [];
     for (var i = 0; i < 256; ++i) {
-        array.push('%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase());
+        array[array.length] = '%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase();
     }
 
     return array;
@@ -242793,7 +244052,7 @@ var compactQueue = function compactQueue(queue) {
 
             for (var j = 0; j < obj.length; ++j) {
                 if (typeof obj[j] !== 'undefined') {
-                    compacted.push(obj[j]);
+                    compacted[compacted.length] = obj[j];
                 }
             }
 
@@ -242813,6 +244072,19 @@ var arrayToObject = function arrayToObject(source, options) {
     return obj;
 };
 
+var setProperty = function setProperty(obj, key, value) {
+    if (key === '__proto__' && defineProperty) {
+        defineProperty(obj, key, {
+            configurable: true,
+            enumerable: true,
+            value: value,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+};
+
 var merge = function merge(target, source, options) {
     /* eslint no-param-reassign: 0 */
     if (!source) {
@@ -242821,9 +244093,23 @@ var merge = function merge(target, source, options) {
 
     if (typeof source !== 'object' && typeof source !== 'function') {
         if (isArray(target)) {
-            target.push(source);
+            var nextIndex = target.length;
+            if (options && typeof options.arrayLimit === 'number' && nextIndex >= options.arrayLimit) {
+                if (options.throwOnLimitExceeded) {
+                    throw new RangeError('Array limit exceeded. Only ' + options.arrayLimit + ' element' + (options.arrayLimit === 1 ? '' : 's') + ' allowed in an array.');
+                }
+                return markOverflow(arrayToObject(target.concat(source), options), nextIndex);
+            }
+            target[nextIndex] = source;
         } else if (target && typeof target === 'object') {
-            if (
+            if (isOverflow(target)) {
+                // Add at next numeric index for overflow objects
+                var newIndex = getMaxIndex(target) + 1;
+                target[newIndex] = source;
+                setMaxIndex(target, newIndex);
+            } else if (options && options.strictMerge) {
+                return [target, source];
+            } else if (
                 (options && (options.plainObjects || options.allowPrototypes))
                 || !has.call(Object.prototype, source)
             ) {
@@ -242837,7 +244123,26 @@ var merge = function merge(target, source, options) {
     }
 
     if (!target || typeof target !== 'object') {
-        return [target].concat(source);
+        if (isOverflow(source)) {
+            // Create new object with target at 0, source values shifted by 1
+            var sourceKeys = Object.keys(source);
+            var result = options && options.plainObjects
+                ? { __proto__: null, 0: target }
+                : { 0: target };
+            for (var m = 0; m < sourceKeys.length; m++) {
+                var oldKey = parseInt(sourceKeys[m], 10);
+                result[oldKey + 1] = source[sourceKeys[m]];
+            }
+            return markOverflow(result, getMaxIndex(source) + 1);
+        }
+        var combined = [target].concat(source);
+        if (options && typeof options.arrayLimit === 'number' && combined.length > options.arrayLimit) {
+            if (options.throwOnLimitExceeded) {
+                throw new RangeError('Array limit exceeded. Only ' + options.arrayLimit + ' element' + (options.arrayLimit === 1 ? '' : 's') + ' allowed in an array.');
+            }
+            return markOverflow(arrayToObject(combined, options), combined.length - 1);
+        }
+        return combined;
     }
 
     var mergeTarget = target;
@@ -242852,12 +244157,18 @@ var merge = function merge(target, source, options) {
                 if (targetItem && typeof targetItem === 'object' && item && typeof item === 'object') {
                     target[i] = merge(targetItem, item, options);
                 } else {
-                    target.push(item);
+                    target[target.length] = item;
                 }
             } else {
                 target[i] = item;
             }
         });
+        if (options && typeof options.arrayLimit === 'number' && target.length > options.arrayLimit) {
+            if (options.throwOnLimitExceeded) {
+                throw new RangeError('Array limit exceeded. Only ' + options.arrayLimit + ' element' + (options.arrayLimit === 1 ? '' : 's') + ' allowed in an array.');
+            }
+            return markOverflow(arrayToObject(target, options), target.length - 1);
+        }
         return target;
     }
 
@@ -242865,17 +244176,28 @@ var merge = function merge(target, source, options) {
         var value = source[key];
 
         if (has.call(acc, key)) {
-            acc[key] = merge(acc[key], value, options);
+            setProperty(acc, key, merge(acc[key], value, options));
         } else {
-            acc[key] = value;
+            setProperty(acc, key, value);
         }
+
+        if (isOverflow(source) && !isOverflow(acc)) {
+            markOverflow(acc, getMaxIndex(source));
+        }
+        if (isOverflow(acc)) {
+            var keyNum = parseInt(key, 10);
+            if (String(keyNum) === key && keyNum >= 0 && keyNum > getMaxIndex(acc)) {
+                setMaxIndex(acc, keyNum);
+            }
+        }
+
         return acc;
     }, mergeTarget);
 };
 
 var assign = function assignSingleSource(target, source) {
     return Object.keys(source).reduce(function (acc, key) {
-        acc[key] = source[key];
+        setProperty(acc, key, source[key]);
         return acc;
     }, target);
 };
@@ -242921,6 +244243,13 @@ var encode = function encode(str, defaultEncoder, charset, kind, format) {
     var out = '';
     for (var j = 0; j < string.length; j += limit) {
         var segment = string.length >= limit ? string.slice(j, j + limit) : string;
+        if (j + limit < string.length) {
+            var last = segment.charCodeAt(segment.length - 1);
+            if (last >= 0xD800 && last <= 0xDBFF) {
+                segment = segment.slice(0, -1);
+                j -= 1;
+            }
+        }
         var arr = [];
 
         for (var i = 0; i < segment.length; ++i) {
@@ -242974,7 +244303,7 @@ var encode = function encode(str, defaultEncoder, charset, kind, format) {
 
 var compact = function compact(value) {
     var queue = [{ obj: { o: value }, prop: 'o' }];
-    var refs = [];
+    var refs = getSideChannel();
 
     for (var i = 0; i < queue.length; ++i) {
         var item = queue[i];
@@ -242984,9 +244313,9 @@ var compact = function compact(value) {
         for (var j = 0; j < keys.length; ++j) {
             var key = keys[j];
             var val = obj[key];
-            if (typeof val === 'object' && val !== null && refs.indexOf(val) === -1) {
-                queue.push({ obj: obj, prop: key });
-                refs.push(val);
+            if (typeof val === 'object' && val !== null && !refs.has(val)) {
+                queue[queue.length] = { obj: obj, prop: key };
+                refs.set(val, true);
             }
         }
     }
@@ -243008,15 +244337,33 @@ var isBuffer = function isBuffer(obj) {
     return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
 };
 
-var combine = function combine(a, b) {
-    return [].concat(a, b);
+var combine = function combine(a, b, arrayLimit, plainObjects, throwOnLimitExceeded) {
+    // If 'a' is already an overflow object, add to it
+    if (isOverflow(a)) {
+        if (throwOnLimitExceeded) {
+            throw new RangeError('Array limit exceeded. Only ' + arrayLimit + ' element' + (arrayLimit === 1 ? '' : 's') + ' allowed in an array.');
+        }
+        var newIndex = getMaxIndex(a) + 1;
+        a[newIndex] = b;
+        setMaxIndex(a, newIndex);
+        return a;
+    }
+
+    var result = [].concat(a, b);
+    if (result.length > arrayLimit) {
+        if (throwOnLimitExceeded) {
+            throw new RangeError('Array limit exceeded. Only ' + arrayLimit + ' element' + (arrayLimit === 1 ? '' : 's') + ' allowed in an array.');
+        }
+        return markOverflow(arrayToObject(result, { plainObjects: plainObjects }), result.length - 1);
+    }
+    return result;
 };
 
 var maybeMap = function maybeMap(val, fn) {
     if (isArray(val)) {
         var mapped = [];
         for (var i = 0; i < val.length; i += 1) {
-            mapped.push(fn(val[i]));
+            mapped[mapped.length] = fn(val[i]);
         }
         return mapped;
     }
@@ -243031,7 +244378,9 @@ module.exports = {
     decode: decode,
     encode: encode,
     isBuffer: isBuffer,
+    isOverflow: isOverflow,
     isRegExp: isRegExp,
+    markOverflow: markOverflow,
     maybeMap: maybeMap,
     merge: merge
 };
