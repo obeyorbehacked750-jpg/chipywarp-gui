@@ -48,7 +48,6 @@ import {
 // Mod manager
 import modManagerIcon from './icon--modmgr.svg';
 
-import {openTipsLibrary, openSettingsModal, openRestorePointModal, openModManager} from '../../reducers/modals';
 import {
     autoUpdateProject,
     getIsUpdating,
