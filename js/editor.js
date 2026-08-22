@@ -51100,7 +51100,7 @@ const updateMicIndicator = function updateMicIndicator(visible) {
 /*!********************************!*\
   !*** ./src/reducers/modals.js ***!
   \********************************/
-/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openRestorePointModal, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal, openModManager, closeModManager */
+/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openRestorePointModal, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, openModManager, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal, closeModManager */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51124,6 +51124,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openFontsModal", function() { return openFontsModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openUnknownPlatformModal", function() { return openUnknownPlatformModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openInvalidProjectModal", function() { return openInvalidProjectModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openModManager", function() { return openModManager; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeBackdropLibrary", function() { return closeBackdropLibrary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeCostumeLibrary", function() { return closeCostumeLibrary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeExtensionLibrary", function() { return closeExtensionLibrary; });
@@ -51141,7 +51142,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeFontsModal", function() { return closeFontsModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeUnknownPlatformModal", function() { return closeUnknownPlatformModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeInvalidProjectModal", function() { return closeInvalidProjectModal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openModManager", function() { return openModManager; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeModManager", function() { return closeModManager; });
 const OPEN_MODAL = 'scratch-gui/modals/OPEN_MODAL';
 const CLOSE_MODAL = 'scratch-gui/modals/CLOSE_MODAL';
@@ -51162,7 +51162,7 @@ const MODAL_RESTORE_POINTS = 'restorePointModal';
 const MODAL_FONTS = 'fontsModal';
 const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 const MODAL_INVALID_PROJECT = 'invalidProjectModal';
-const MODAL_MOD_MANAGER = 'modManager';
+const MODAL_MOD_MANAGER = 'modManagerModal';
 const initialState = {
   [MODAL_BACKDROP_LIBRARY]: false,
   [MODAL_COSTUME_LIBRARY]: false,
@@ -51261,6 +51261,9 @@ const openUnknownPlatformModal = function openUnknownPlatformModal() {
 const openInvalidProjectModal = function openInvalidProjectModal() {
   return openModal(MODAL_INVALID_PROJECT);
 };
+const openModManager = function openModManager() {
+  return openModal(MODAL_MOD_MANAGER);
+};
 const closeBackdropLibrary = function closeBackdropLibrary() {
   return closeModal(MODAL_BACKDROP_LIBRARY);
 };
@@ -51311,9 +51314,6 @@ const closeUnknownPlatformModal = function closeUnknownPlatformModal() {
 };
 const closeInvalidProjectModal = function closeInvalidProjectModal() {
   return closeModal(MODAL_INVALID_PROJECT);
-};
-const openModManager = function openModManager() {
-  return openModal(MODAL_MOD_MANAGER);
 };
 const closeModManager = function closeModManager() {
   return closeModal(MODAL_MOD_MANAGER);
