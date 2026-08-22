@@ -34,7 +34,7 @@ import CloudVariablesToggler from '../../containers/tw-cloud-toggler.jsx';
 import TWSaveStatus from './tw-save-status.jsx';
 import TWNews from './tw-news.jsx';
 
-import {openTipsLibrary, openSettingsModal, openRestorePointModal} from '../../reducers/modals';
+import {openTipsLibrary, openSettingsModal, openRestorePointModal, openModManager} from '../../reducers/modals';
 import {setPlayer} from '../../reducers/mode';
 import {
     isTimeTravel220022BC,
@@ -977,7 +977,7 @@ class MenuBar extends React.Component {
                             </MenuLabel>
                         )}
                         
-                        {(this.props.onClickAddonSettings || this.props.onClickSettingsModal) && (
+                        {(this.props.onClickAddonSettings || this.props.onClickSettingsModal || this.props.onClickModManager) && (
                             <MenuLabel
                                 open={this.state.toolsMenuOpen}
                                 onOpen={this.handleOpenTools}
@@ -1011,6 +1011,18 @@ class MenuBar extends React.Component {
                                     place={this.props.isRtl ? 'left' : 'right'}
                                 >
                                     <MenuSection>
+                                        {this.props.onClickModManager && (
+                                            <MenuItem onClick={this.props.onClickModManager}>
+                                                <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+                                                    <img src={modManagerIcon} draggable={false} width={20} height={20} alt="Mod Manager" />
+                                                    <FormattedMessage
+                                                        defaultMessage="Mod Manager"
+                                                        description="Button to open mod manager"
+                                                        id="tw.menuBar.modManager"
+                                                    />
+                                                </div>
+                                            </MenuItem>
+                                        )}
                                         {this.props.onClickSettingsModal && (
                                             <MenuItem onClick={this.props.onClickSettingsModal}>
                                                 <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
@@ -1221,6 +1233,7 @@ MenuBar.propTypes = {
     onClickAccount: PropTypes.func,
     onClickAddonSettings: PropTypes.func,
     onClickDesktopSettings: PropTypes.func,
+    onClickModManager: PropTypes.func,
     onClickPackager: PropTypes.func,
     onClickRestorePoints: PropTypes.func,
     onClickEdit: PropTypes.func,
@@ -1323,6 +1336,7 @@ const mapDispatchToProps = dispatch => ({
     onRequestOpenAbout: () => dispatch(openAboutMenu()),
     onRequestCloseAbout: () => dispatch(closeAboutMenu()),
     onClickRestorePoints: () => dispatch(openRestorePointModal()),
+    onClickModManager: () => dispatch(openModManager()),
     onClickSettings: () => dispatch(openSettingsMenu()),
     onClickSettingsModal: () => {
         dispatch(closeEditMenu());
