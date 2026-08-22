@@ -48414,7 +48414,7 @@ const initialState = {
   [MODAL_FONTS]: false,
   [MODAL_UNKNOWN_PLATFORM]: false,
   [MODAL_INVALID_PROJECT]: false,
-  [MODAL_MOD_MANAGER]: false
+  [MODAL_MOD_MANAGER]: true
 };
 const reducer = function reducer(state, action) {
   if (typeof state === 'undefined') state = initialState;
