@@ -16,7 +16,7 @@ const CrashMessage = props => (
             />
             <p className={styles.header}>
                 <FormattedMessage
-                    defaultMessage="Oops! Something went wrong."
+                    defaultMessage="Holy Crash! Something went wrong."
                     description="Crash Message title"
                     id="gui.crashMessage.label"
                 />
@@ -52,7 +52,7 @@ const CrashMessage = props => (
                 onClick={props.onReload}
             >
                 <FormattedMessage
-                    defaultMessage="Reload"
+                    defaultMessage="Refresh"
                     description="Button to reload the page when page crashes"
                     id="gui.crashMessage.reload"
                 />
