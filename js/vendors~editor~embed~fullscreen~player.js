@@ -190294,6 +190294,7 @@ class Scratch3SensingBlocks {
       sensing_touchingobject: this.touchingObject,
       sensing_touchingcolor: this.touchingColor,
       sensing_coloristouchingcolor: this.colorTouchingColor,
+      sensing_coloratxy: this.getColorAtXY,
       sensing_distanceto: this.distanceTo,
       sensing_timer: this.getTimer,
       sensing_resettimer: this.resetTimer,
@@ -190585,6 +190586,25 @@ class Scratch3SensingBlocks {
     }
     // We're running in some non-browser environment. We probably have internet.
     return true;
+  }
+  getColorAtXY(args, util) {
+    const x = Cast.toNumber(args.X);
+    const y = Cast.toNumber(args.Y);
+    const renderer = util.runtime.renderer;
+    if (!renderer) {
+      return '#000000';
+    }
+    const canvasWidth = renderer.canvas.width;
+    const canvasHeight = renderer.canvas.height;
+    const glX = Math.round((x + 240) / 480 * canvasWidth);
+    const glY = Math.round((y + 180) / 360 * canvasHeight);
+    const pixel = new Uint8Array(4);
+    const gl = renderer.gl;
+    gl.readPixels(glX, glY, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, pixel);
+    const r = pixel[0].toString(16).padStart(2, '0');
+    const g = pixel[1].toString(16).padStart(2, '0');
+    const b = pixel[2].toString(16).padStart(2, '0');
+    return "#".concat(r).concat(g).concat(b);
   }
 }
 module.exports = Scratch3SensingBlocks;
