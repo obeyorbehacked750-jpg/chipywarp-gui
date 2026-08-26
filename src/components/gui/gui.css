@@ -8,6 +8,17 @@
     flex-direction: column;
 }
 
+.paint-editor_canvas-container_2D0a {
+    border: none !important;
+    outline: none !important;
+}
+
+.paint-editor_canvas-container {
+    border: none !important;
+    outline: none !important;
+}
+
+
 :global(.injectionDiv),
 :global(.blocklySvg) {
     border: none !important;
