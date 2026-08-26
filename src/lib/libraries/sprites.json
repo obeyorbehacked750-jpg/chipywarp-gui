@@ -1,5 +1,62 @@
 [
     {
+        "isStage": false,
+        "name": "Turbo Cat",
+        "variables": {},
+        "lists": {},
+        "broadcasts": {},
+        "blocks": {},
+        "comments": {},
+        "currentCostume": 3,
+        "costumes": [
+            {
+                "name": "Turbo Cat 1",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "assetId": "f8049d406984349985ed60a597cbcc15",
+                "md5ext": "f8049d406984349985ed60a597cbcc15.svg",
+                "rotationCenterX": 36.89196877951582,
+                "rotationCenterY": 30.78276483848606
+            },
+            {
+                "name": "Turbo Cat 2",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "assetId": "8e1d1322bbc05fa46da7f94f52a0f1e3",
+                "md5ext": "8e1d1322bbc05fa46da7f94f52a0f1e3.svg",
+                "rotationCenterX": 73.96523096574325,
+                "rotationCenterY": 42.31498500000001
+            },
+            {
+                "name": "Turbo Cat 3",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "assetId": "545145e9f16a671459eb1608fcfe532d",
+                "md5ext": "545145e9f16a671459eb1608fcfe532d.svg",
+                "rotationCenterX": 48.490295,
+                "rotationCenterY": 30.782757423809926
+            },
+            {
+                "name": "Turbo Cat 4",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "assetId": "c3a521e934a97dd299691b92483b3de3",
+                "md5ext": "c3a521e934a97dd299691b92483b3de3.svg",
+                "rotationCenterX": 26.260406561534296,
+                "rotationCenterY": 30.78275227142973
+            }
+        ],
+        "sounds": [],
+        "volume": 100,
+        "visible": true,
+        "x": 0,
+        "y": 0,
+        "size": 100,
+        "direction": 90,
+        "draggable": false,
+        "rotationStyle": "all around"
+    },
+    {
         "name": "Solo Bot",
         "tags": [
             "chipywarp"
