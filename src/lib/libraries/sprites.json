@@ -2,7 +2,7 @@
     {
         "isStage": false,
         "name": "Turbo Cat",
-        "tags":["chipywarp"]
+        "tags":["chipywarp"],
         "variables": {},
         "lists": {},
         "broadcasts": {},
