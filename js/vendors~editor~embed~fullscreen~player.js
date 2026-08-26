@@ -190587,6 +190587,8 @@ class Scratch3SensingBlocks {
     // We're running in some non-browser environment. We probably have internet.
     return true;
   }
+
+  // UNUSED chipywarp block
   getColorAtXY(args, util) {
     const x = Cast.toNumber(args.X);
     const y = Cast.toNumber(args.Y);
@@ -219047,7 +219049,7 @@ class TurboWarpBlocks {
   getInfo() {
     return {
       id: 'tw',
-      name: 'TurboWarp',
+      name: 'Chipywarp',
       color1: '#ff4c4c',
       color2: '#e64444',
       color3: '#c73a3a',
