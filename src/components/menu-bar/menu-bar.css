@@ -2,6 +2,7 @@
 @import "../../css/units.css";
 @import "../../css/z-index.css";
 
+
 .menu-bar {
     display: flex;
     flex-direction: row;
@@ -117,6 +118,11 @@
     background-color: white;
     color: inherit;
     height: 34px;
+    transition: all 0.25s ease;
+}
+
+.feedback-button:hover {
+    transform: scale(1.15);
 }
 
 .divider {
