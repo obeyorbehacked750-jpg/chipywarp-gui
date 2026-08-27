@@ -42487,7 +42487,7 @@ const myBlocks = function myBlocks(isInitialSetup, isStage, targetId, colors) {
 };
 
 // eslint-disable-next-line max-len
-const extraTurboWarpBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is TurboWarp?</field></block>\n";
+const extraTurboWarpBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is Chipywarp?</field></block>\n";
 /* eslint-enable no-unused-vars */
 
 const xmlOpen = '<xml style="display: none">';
@@ -51166,7 +51166,7 @@ const updateMicIndicator = function updateMicIndicator(visible) {
 /*!********************************!*\
   !*** ./src/reducers/modals.js ***!
   \********************************/
-/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openRestorePointModal, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, openModManager, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal, closeModManager */
+/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openRestorePointModal, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, openModManager, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal, closeModManager, openTestModal, closeTestModal */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51209,6 +51209,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeUnknownPlatformModal", function() { return closeUnknownPlatformModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeInvalidProjectModal", function() { return closeInvalidProjectModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeModManager", function() { return closeModManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openTestModal", function() { return openTestModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeTestModal", function() { return closeTestModal; });
 const OPEN_MODAL = 'scratch-gui/modals/OPEN_MODAL';
 const CLOSE_MODAL = 'scratch-gui/modals/CLOSE_MODAL';
 const MODAL_BACKDROP_LIBRARY = 'backdropLibrary';
@@ -51229,6 +51231,7 @@ const MODAL_FONTS = 'fontsModal';
 const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 const MODAL_MOD_MANAGER = 'modManagerModal';
+const MODAL_TEST = 'testModal';
 const initialState = {
   [MODAL_BACKDROP_LIBRARY]: false,
   [MODAL_COSTUME_LIBRARY]: false,
@@ -51247,7 +51250,8 @@ const initialState = {
   [MODAL_FONTS]: false,
   [MODAL_UNKNOWN_PLATFORM]: false,
   [MODAL_INVALID_PROJECT]: false,
-  [MODAL_MOD_MANAGER]: false
+  [MODAL_MOD_MANAGER]: false,
+  [MODAL_TEST]: false
 };
 const reducer = function reducer(state, action) {
   if (typeof state === 'undefined') state = initialState;
@@ -51383,6 +51387,14 @@ const closeInvalidProjectModal = function closeInvalidProjectModal() {
 };
 const closeModManager = function closeModManager() {
   return closeModal(MODAL_MOD_MANAGER);
+};
+
+// 3. Create open/close functions
+const openTestModal = function openTestModal() {
+  return openModal(MODAL_TEST);
+};
+const closeTestModal = function closeTestModal() {
+  return closeModal(MODAL_TEST);
 };
 
 
