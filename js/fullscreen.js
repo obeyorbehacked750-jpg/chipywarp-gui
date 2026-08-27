@@ -41701,7 +41701,7 @@ __webpack_require__.r(__webpack_exports__);
   disabled: false,
   incompatibleWithScratch: false,
   tags: ['cw'],
-  extensionURL: 'https://obeyorbehacked750-jpg.github.io/chipywarp-lab/extensions/sectetChipywarp.js'
+  extensionURL: 'https://obeyorbehacked750-jpg.github.io/chipywarp-lab/extensions/secretChipywarp.js'
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Custom Extension",
