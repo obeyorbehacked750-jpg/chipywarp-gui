@@ -22,9 +22,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          # Removed "cache: 'npm'" because your repo doesn't have a package-lock.json
+          cache: 'npm' # Caching is now enabled using your package-lock.json
 
       - name: Install dependencies
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
         run: npm install --legacy-peer-deps
 
       - name: Build project
