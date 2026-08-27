@@ -226,6 +226,13 @@ module.exports = [
                 title: `${APP_NAME} Credits`,
                 ...htmlWebpackPluginCommon
             }),
+            new HtmlWebpackPlugin({
+                chunks: ['gui'],
+                template: 'src/playground/modmgr.ejs',
+                filename: 'modmgr.html',
+                title: `${APP_NAME} Mod Manager`,
+                ...htmlWebpackPluginCommon
+            }),
             new CopyWebpackPlugin({
                 patterns: [
                     {

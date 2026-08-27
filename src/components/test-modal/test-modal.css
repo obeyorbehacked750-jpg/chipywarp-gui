@@ -1,0 +1,25 @@
+@import "../../css/colors.css";
+
+/* Controls the overall width of the modal popup */
+.modal-content {
+    max-width: 750px;
+}
+
+/* Styles the inner content area */
+.body {
+    background: $ui-modal-background;
+    padding: 1.5rem 2.25rem;
+    min-height: 150px;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+/* Make it responsive for small screens */
+@media (max-height: 600px) {
+    .modal-content {
+        margin: 50px auto;
+    }
+    .body {
+        max-height: calc(100vh - 150px);
+    }
+}

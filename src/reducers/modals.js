@@ -19,6 +19,7 @@ const MODAL_FONTS = 'fontsModal';
 const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 const MODAL_MOD_MANAGER = 'modManagerModal';
+const MODAL_TEST = 'testModal';
 
 const initialState = {
     [MODAL_BACKDROP_LIBRARY]: false,
@@ -38,7 +39,8 @@ const initialState = {
     [MODAL_FONTS]: false,
     [MODAL_UNKNOWN_PLATFORM]: false,
     [MODAL_INVALID_PROJECT]: false,
-    [MODAL_MOD_MANAGER]: false
+    [MODAL_MOD_MANAGER]: false,
+    [MODAL_TEST]: false
 };
 
 const reducer = function (state, action) {
@@ -181,6 +183,15 @@ const closeModManager = function () {
     return closeModal(MODAL_MOD_MANAGER);
 };
 
+
+// 3. Create open/close functions
+const openTestModal = function () {
+    return openModal(MODAL_TEST);
+};
+const closeTestModal = function () {
+    return closeModal(MODAL_TEST);
+};
+
 export {
     reducer as default,
     initialState as modalsInitialState,
@@ -219,5 +230,7 @@ export {
     closeFontsModal,
     closeUnknownPlatformModal,
     closeInvalidProjectModal,
-    closeModManager
+    closeModManager,
+    openTestModal,
+    closeTestModal
 };
