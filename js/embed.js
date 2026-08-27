@@ -39328,11 +39328,10 @@ __webpack_require__.r(__webpack_exports__);
   tags: ['tw'],
   featured: true
 }, {
-  name: 'Chipywarp Tools',
-  extensionId: 'chipywarptools',
-  iconURL: "https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/banners/chipywarp-tools.png",
-  insetIconURL: "https://obeyorbehacked750-jpg.github.io/Chipy-Extensions/extensions/icon.png",
-  description: 'Some chipywarp tools idk why you need use them, maybe also weird?',
+  name: 'Chipywarp Unused Blocks',
+  extensionId: 'chipywarpunusedblocksbtw',
+  iconURL: "https://obeyorbehacked750-jpg.github.io/chipywarp-lab/banners/chipywarp-tools.png",
+  description: 'Chipywarp unused blocks they are unused you can use them and be happy',
   featured: true,
   disabled: false,
   incompatibleWithScratch: false,
