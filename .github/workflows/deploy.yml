@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm' # Caching is now enabled using your package-lock.json
+          # Removed "cache: 'npm'" because your repo doesn't have a package-lock.json
 
       - name: Install dependencies
         env:
