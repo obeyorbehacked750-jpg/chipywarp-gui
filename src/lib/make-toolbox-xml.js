@@ -753,6 +753,32 @@ const variables = function (isInitialSetup, isStage, targetId, colors) {
         colour="${colors.primary}"
         secondaryColour="${colors.tertiary}"
         custom="VARIABLE">
+        <block type="data_getdynamicvar">
+            <value name="VAR_NAME">
+                <shadow type="text">
+                    <field name="TEXT">my variable</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="data_createdynamicvar">
+            <value name="VAR_NAME">
+                <shadow type="text">
+                    <field name="TEXT">my variable</field>
+                </shadow>
+            </value>
+            <value name="VALUE">
+                <shadow type="text">
+                    <field name="TEXT">0</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="data_resetdynamicvar">
+            <value name="VAR_NAME">
+                <shadow type="text">
+                    <field name="TEXT">my variable</field>
+                </shadow>
+            </value>
+        </block>
     </category>
     `;
 };
