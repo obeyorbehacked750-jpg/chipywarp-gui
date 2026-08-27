@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Chipywarp Mod Manager</title>
-    <!-- Include JSZip library from CDN to extract .cwm (zip) files -->
+    <!-- Include JSZip library from CDN to extract .cwm (zip) files[cite: 10] -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 </head>
 <body>
@@ -12,7 +12,6 @@
     
     <div>
         <label for="mod-upload">Upload .cwm Mod File:</label>
-        <!-- Accept .cwm files -->
         <input type="file" id="mod-upload" accept=".cwm" />
     </div>
 
@@ -20,10 +19,15 @@
 
     <h2>Installed Mods</h2>
     <div id="mod-list">
-        <!-- Mod details will appear here -->
+        <!-- Persistent mod details will render here -->
     </div>
 
     <script>
+        // Load and render all saved mods from localStorage when page opens
+        window.addEventListener('DOMContentLoaded', () => {
+            loadAndRenderSavedMods();
+        });
+
         // Listen for file selection
         document.getElementById('mod-upload').addEventListener('change', async function(event) {
             const file = event.target.files[0];
@@ -32,31 +36,31 @@
             const zip = new JSZip();
             
             try {
-                // Load the .cwm file as a zip archive
                 const loadedZip = await zip.loadAsync(file);
 
-                // 1. Ensure content.json exists
+                // 1. Ensure content.json exists[cite: 10]
                 if (!loadedZip.file("content.json")) {
                     throw new Error("Invalid mod: content.json is missing.");
                 }
 
-                // 2. Read and parse content.json
+                // 2. Read and parse content.json[cite: 10]
                 const jsonString = await loadedZip.file("content.json").async("string");
                 const manifest = JSON.parse(jsonString);
 
-                // 3. Extract the icon if it exists
+                // 3. Extract the icon if it exists[cite: 10]
                 let iconDataUrl = "";
                 if (manifest.icon && loadedZip.file(manifest.icon)) {
-                    // Read the image as base64 and create a Data URL
                     const base64Data = await loadedZip.file(manifest.icon).async("base64");
                     iconDataUrl = "data:image/png;base64," + base64Data;
                 }
 
-                // 4. Extract and run the scripts
+                // 4. Extract script sources
+                const scriptContents = [];
                 if (manifest.script && Array.isArray(manifest.script)) {
                     for (const scriptName of manifest.script) {
                         if (loadedZip.file(scriptName)) {
                             const scriptContent = await loadedZip.file(scriptName).async("string");
+                            scriptContents.push(scriptContent);
                             runModScript(scriptContent);
                         } else {
                             console.warn(`Script file ${scriptName} not found in the archive.`);
@@ -64,10 +68,20 @@
                     }
                 }
 
-                // 5. Display the mod info on the page
-                displayModInfo(manifest, iconDataUrl);
+                // 5. Save persistently to localStorage
+                saveModToStorage({
+                    name: manifest.name,
+                    version: manifest.version,
+                    author: manifest.author,
+                    description: manifest.description,
+                    icon: iconDataUrl,
+                    scripts: scriptContents
+                });
 
-                // Clear the file input so you can upload the same file again if needed
+                // Refresh the UI list
+                loadAndRenderSavedMods();
+                alert("Mod installed and saved successfully!");
+
                 event.target.value = "";
 
             } catch (err) {
@@ -76,36 +90,63 @@
             }
         });
 
-        // Function to securely inject and execute the mod's JavaScript code
+        // Function to save mod data into localStorage
+        function saveModToStorage(newMod) {
+            const installedMods = JSON.parse(localStorage.getItem('chipywarp_installed_mods') || '[]');
+            const existingIndex = installedMods.findIndex(m => m.name === newMod.name);
+
+            if (existingIndex >= 0) {
+                installedMods[existingIndex] = newMod; // Update existing
+            } else {
+                installedMods.push(newMod); // Add new
+            }
+
+            localStorage.setItem('chipywarp_installed_mods', JSON.stringify(installedMods));
+        }
+
+        // Function to load and render saved mods from storage
+        function loadAndRenderSavedMods() {
+            const modList = document.getElementById('mod-list');
+            modList.innerHTML = ''; // Clear current UI list to prevent duplicates
+
+            const savedMods = JSON.parse(localStorage.getItem('chipywarp_installed_mods') || '[]');
+
+            savedMods.forEach(mod => {
+                const modContainer = document.createElement('div');
+                
+                let htmlContent = `<h3>${mod.name} (v${mod.version})</h3>`;
+                htmlContent += `<p><strong>Author:</strong> ${mod.author}</p>`;
+                htmlContent += `<p><strong>Description:</strong> ${mod.description}</p>`;
+                
+                if (mod.icon) {
+                    htmlContent += `<img src="${mod.icon}" alt="${mod.name} Icon" width="64" height="64" />`;
+                }
+                
+                htmlContent += `<button onclick="uninstallMod('${mod.name}')">Uninstall</button>`;
+                htmlContent += `<hr />`;
+                
+                modContainer.innerHTML = htmlContent;
+                modList.appendChild(modContainer);
+            });
+        }
+
+        // Function to uninstall / remove a mod from storage
+        window.uninstallMod = function(modName) {
+            let installedMods = JSON.parse(localStorage.getItem('chipywarp_installed_mods') || '[]');
+            installedMods = installedMods.filter(m => m.name !== modName);
+            localStorage.setItem('chipywarp_installed_mods', JSON.stringify(installedMods));
+            alert("Mod uninstalled. Refresh page to complete cleanup.");
+            loadAndRenderSavedMods();
+        };
+
+        // Function to execute the mod's JavaScript code[cite: 10]
         function runModScript(jsCode) {
-            // Create a Blob from the code and create a temporary URL for it
             const blob = new Blob([jsCode], { type: 'application/javascript' });
             const scriptUrl = URL.createObjectURL(blob);
             
-            // Create a script tag and append it to the document
             const scriptElement = document.createElement('script');
             scriptElement.src = scriptUrl;
             document.body.appendChild(scriptElement);
-        }
-
-        // Function to render the mod data to the HTML page
-        function displayModInfo(manifest, iconDataUrl) {
-            const modList = document.getElementById('mod-list');
-            const modContainer = document.createElement('div');
-            
-            let htmlContent = `<h3>${manifest.name} (v${manifest.version})</h3>`;
-            htmlContent += `<p><strong>Author:</strong> ${manifest.author}</p>`;
-            htmlContent += `<p><strong>Description:</strong> ${manifest.description}</p>`;
-            
-            // If the icon was successfully extracted, display it
-            if (iconDataUrl) {
-                htmlContent += `<img src="${iconDataUrl}" alt="${manifest.name} Icon" width="64" height="64" />`;
-            }
-            
-            htmlContent += `<hr />`;
-            
-            modContainer.innerHTML = htmlContent;
-            modList.appendChild(modContainer);
         }
     </script>
 </body>
