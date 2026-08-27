@@ -1,4 +1,4 @@
-# Chipywarp GUI v.0.25
+# Chipywarp GUI v.0.26
 ✨ Welcome to chipywarp-gui repository 
 ℹ Chipywarp is turbowarp/scratch mod!
 
