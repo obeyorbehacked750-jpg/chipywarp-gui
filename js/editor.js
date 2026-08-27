@@ -49324,6 +49324,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _render_interface_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./render-interface.jsx */ "./src/playground/render-interface.jsx");
 /* harmony import */ var _app_target__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-target */ "./src/playground/app-target.js");
+/* harmony import */ var _mod_loader_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mod-loader.jsx */ "./src/playground/mod-loader.jsx");
 /**
  * Copyright (C) 2021 Thomas Weber
  *
@@ -49339,6 +49340,7 @@ __webpack_require__.r(__webpack_exports__);
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+
 
 
 
@@ -49423,6 +49425,47 @@ const loadServiceWorker = () => {
   if (false) {}
 };
 
+
+/***/ }),
+
+/***/ "./src/playground/mod-loader.jsx":
+/*!***************************************!*\
+  !*** ./src/playground/mod-loader.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+class ModLoader extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  componentDidMount() {
+    try {
+      const savedMods = JSON.parse(localStorage.getItem('chipywarp_installed_mods') || '[]');
+      savedMods.forEach(mod => {
+        if (mod.scripts && Array.isArray(mod.scripts)) {
+          mod.scripts.forEach(jsCode => {
+            const blob = new Blob([jsCode], {
+              type: 'application/javascript'
+            });
+            const scriptUrl = URL.createObjectURL(blob);
+            const scriptElement = document.createElement('script');
+            scriptElement.src = scriptUrl;
+            document.head.appendChild(scriptElement);
+          });
+        }
+      });
+    } catch (err) {
+      console.error("Failed to load persistent mods:", err);
+    }
+  }
+  render() {
+    return null; // This component runs silently in the background
+  }
+}
+/* harmony default export */ __webpack_exports__["default"] = (ModLoader);
 
 /***/ }),
 
