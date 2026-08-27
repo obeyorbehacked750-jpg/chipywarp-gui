@@ -800,7 +800,7 @@ const myBlocks = function (isInitialSetup, isStage, targetId, colors) {
 const extraTurboWarpBlocks = `
 <block type="argument_reporter_boolean"><field name="VALUE">is compiled?</field></block>
 <block type="argument_reporter_boolean"><field name="VALUE">is Chipywarp?</field></block>
-`;=
+`
 /* eslint-enable no-unused-vars */
 
 const xmlOpen = '<xml style="display: none">';
