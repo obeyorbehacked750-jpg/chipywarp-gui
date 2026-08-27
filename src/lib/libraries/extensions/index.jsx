@@ -415,7 +415,7 @@ export default [
     disabled: false,
     incompatibleWithScratch: false,
     tags: ['cw'],
-    extensionURL: 'https://obeyorbehacked750-jpg.github.io/chipywarp-lab/extensions/sectetChipywarp.js'
+    extensionURL: 'https://obeyorbehacked750-jpg.github.io/chipywarp-lab/extensions/secretChipywarp.js'
     },
     {
         name: (
